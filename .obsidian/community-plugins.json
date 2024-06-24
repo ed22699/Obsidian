@@ -2,5 +2,8 @@
   "obsidian-git",
   "dataview",
   "obsidian-projects",
-  "obsidian-excalidraw-plugin"
+  "obsidian-excalidraw-plugin",
+  "templater-obsidian",
+  "obsidian-book-search-plugin",
+  "quickadd"
 ]
