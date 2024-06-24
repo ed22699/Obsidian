@@ -124,6 +124,7 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "Pragmatic Thinking and Learning.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -140,6 +141,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
+                "file": "Pragmatic Thinking and Learning.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -161,7 +163,9 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {}
+              "state": {
+                "file": "Pragmatic Thinking and Learning.md"
+              }
             }
           }
         ]
@@ -181,11 +185,11 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "38ea3f0984d36003",
+  "active": "ec26edb03277b9bc",
   "lastOpenFiles": [
+    "Goals/Reading.md",
     "Pragmatic Thinking and Learning.md",
     "Pragmatic Programmer.md",
-    "Goals/Reading.md",
     "Welcome.md",
     "Goals"
   ]
