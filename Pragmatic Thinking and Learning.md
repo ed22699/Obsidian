@@ -7,5 +7,3 @@ Good book, key points:
 - Diversity in levels of expertise helps as different ways of thinking
 - SMART helps specify goals (Specific, Measurable, Achievable, Relevant, Time-Boxed)
 #Book 
-
-a change here
