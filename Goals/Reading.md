@@ -1,4 +1,4 @@
-
+[[Goals]]
 S - I want to read once a day
 M - Read at least 3 pages a day
 A 

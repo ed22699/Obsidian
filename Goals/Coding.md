@@ -1,3 +1,4 @@
+[[Goals]]
 S - I want to code once a day
 M - Have a GitHub green square on 80% of days
 A 
