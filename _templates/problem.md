@@ -1,7 +1,7 @@
 ---
 Difficulty: 
 link: 
-number: "0"
+number: 0
 tags:
   - Problem
 ---
