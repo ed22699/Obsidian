@@ -1,6 +1,3 @@
----
-date: 2024-06-27
----
 
 S - I want to read once a day
 M - Read at least 3 pages a day
@@ -9,6 +6,7 @@ R - Get better in computer science
 T - Read 3 books this year
 
 ## Read Books:
+
 ![[Books]]
 
 #SMART

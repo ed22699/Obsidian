@@ -14,6 +14,10 @@ description: "“One of the most significant books in my life.” –Obie Fernan
 link: https://play.google.com/store/books/details?id=LhOlDwAAQBAJ
 previewLink: http://books.google.co.uk/books?id=LhOlDwAAQBAJ&printsec=frontcover&dq=pragmattic+programmer&hl=&as_pt=BOOKS&cd=2&source=gbs_api
 isbn13: 9780135956915
-isbn10: 0135956919
+isbn10: 135956919
+tags:
+  - Book
+Status: Read
 ---
+[[Books]]
 Key Points:
