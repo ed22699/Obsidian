@@ -1,9 +1,13 @@
 ---
 Difficulty: 
+link: 
+number: "0"
 tags:
   - Problem
 ---
-[Question]()
+[[Problems]]
+### Problem
+
 - Description
 
 ### Solution
