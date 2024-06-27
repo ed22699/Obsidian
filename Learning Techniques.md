@@ -1,0 +1,8 @@
+- Use SQ3R:
+	- *Survey*: Scan the table of contents and chapter summaries for an overview
+	- *Question*: Note any questions you have
+	- *Read*: Read in its entirety
+	- *Recite*: Summarise, take notes, and put in your own words
+	- *Review*: Reread, expand notes, and discuss with colleagues
+- [Flashcard app with individual decay curve](http://www.mnemosyne-proj.org/)
+- Mindmaps  
