@@ -5,4 +5,6 @@
 	- *Recite*: Summarise, take notes, and put in your own words
 	- *Review*: Reread, expand notes, and discuss with colleagues
 - [Flashcard app with individual decay curve](http://www.mnemosyne-proj.org/)
-- Mindmaps  
+- Mindmaps 
+- Taking notes by hand activates more of the R-mode part 
+- Teach the topic, even if it is just to a rubber duck
