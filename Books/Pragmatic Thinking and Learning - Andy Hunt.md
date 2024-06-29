@@ -30,4 +30,4 @@ Key points:
 - SMART helps specify goals (Specific, Measurable, Achievable, Relevant, Time-Boxed)
 - [[Learning Techniques]]
 - [[Experimentation to learn]]
-- To make good changes it needs to be less about verbal instruction and more about awareness. See without judging (do the thing observe the consequences) then act (make a change and see how the results change)
+- To make good changes it needs to be less about verbal instruction and more about awareness. See without judging (do the thing observe the consequences) then act (make a change and see how the results change). For debugging, picture the bug think what should be wrong then see if its the case and change.
