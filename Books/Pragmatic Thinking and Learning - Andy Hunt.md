@@ -29,3 +29,4 @@ Key points:
 - Diversity in levels of expertise helps as different ways of thinking
 - SMART helps specify goals (Specific, Measurable, Achievable, Relevant, Time-Boxed)
 - [[Learning Techniques]]
+- [[Experimentation to learn]]
