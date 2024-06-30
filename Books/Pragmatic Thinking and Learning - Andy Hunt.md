@@ -32,3 +32,4 @@ Key points:
 - [[Experimentation to learn]]
 - To make good changes it needs to be less about verbal instruction and more about awareness. See without judging (do the thing observe the consequences) then act (make a change and see how the results change). For debugging, picture the bug think what should be wrong then see if its the case and change.
 - allow recovery time after time-pressure activities (the two days after a time pressured task your brain is still restricted in creativity)
+- you can improve performance by imagining that you've already done the activity successfully
