@@ -1,6 +1,7 @@
 ---
 tags:
   - CSS
+  - orphan
 ---
 
 h1, h2 - do on both
