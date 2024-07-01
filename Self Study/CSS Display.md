@@ -1,7 +1,6 @@
 ---
 tags:
   - CSS
-  - orphan
 ---
 display:
 - inline
@@ -15,3 +14,5 @@ display:
 	- elements can go onto same line
 - none
 	- element on screen will disappear 
+
+For text wrapping display layout see [[CSS Float]]
