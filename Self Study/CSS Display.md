@@ -15,4 +15,4 @@ display:
 - none
 	- element on screen will disappear 
 
-For text wrapping display layout see [[CSS Float]]
+For text wrapping display layout and general positioning see [[CSS Float]]
