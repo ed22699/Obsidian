@@ -15,7 +15,7 @@ link: https://play.google.com/store/books/details?id=jADVCQAAQBAJ
 previewLink: http://books.google.co.uk/books?id=jADVCQAAQBAJ&printsec=frontcover&dq=The+cyber+effect&hl=&as_pt=BOOKS&cd=1&source=gbs_api
 isbn13: 9781473610248
 isbn10: 1473610249
-Status: Reading
+Status: Read
 tags:
   - Book
 ---
