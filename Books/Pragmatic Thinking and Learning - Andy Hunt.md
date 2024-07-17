@@ -17,7 +17,7 @@ isbn13: 9781680504224
 isbn10: 1680504223
 tags:
   - Book
-Status: Reading
+Status: Read
 ---
 [[Books]]
 Key points:
@@ -33,3 +33,8 @@ Key points:
 - To make good changes it needs to be less about verbal instruction and more about awareness. See without judging (do the thing observe the consequences) then act (make a change and see how the results change). For debugging, picture the bug think what should be wrong then see if its the case and change.
 - allow recovery time after time-pressure activities (the two days after a time pressured task your brain is still restricted in creativity)
 - you can improve performance by imagining that you've already done the activity successfully
+- Use of [[meditation]] can help focus
+- Use of [[consultant's rule of three]]
+- Use a wiki to collect thoughts as the process helps you get more thoughts which are similar
+- Context switching ruins focus, 20-40% less productive, takes 20mins to get back into focus, try [[GTD]]
+- Use a second monitor to increase productivity as you context switch less. Should be same size and make for consistency

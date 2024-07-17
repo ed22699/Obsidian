@@ -1,0 +1,5 @@
+- Early adopter / fast adapter
+- Inquisitive
+- Critical thinker
+- Realistic
+- Jack of all trades

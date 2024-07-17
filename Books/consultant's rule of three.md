@@ -1,0 +1,1 @@
+you're not dine thinking until you've come up with 3 ways a plan could go wrong or 3 different solutions to a problem

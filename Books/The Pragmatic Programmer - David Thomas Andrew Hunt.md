@@ -21,3 +21,12 @@ Status: Read
 ---
 [[Books]]
 Key Points:
+- A [[Pragmatic Programmer]]
+- If you don't like your environment change it and move elsewhere
+- When something goes wrong take responsibility and provide options rather than excuses
+- fix bad design or code when it is found otherwise more bad design will come and don't write shit code cause theres already shit code in the system
+- [[Stone soup and boiled frogs]]
+- [[Your knowledge portfolio]]
+- Make code easy to change, don't repeat yourself and make your code easy to reuse
+- Keep modules in a system [[orthogonal]]
+- 
