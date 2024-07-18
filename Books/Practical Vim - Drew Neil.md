@@ -21,6 +21,9 @@ Status: Reading
 ---
 [[Books]]
 key points:
+- use the . command
 
 commands:
+- [[Normal Mode]]
+- [[Command Mode]]
 - [[Visual Mode]]
