@@ -21,3 +21,6 @@ Status: Reading
 ---
 [[Books]]
 key points:
+
+commands:
+- [[Visual Mode]]
