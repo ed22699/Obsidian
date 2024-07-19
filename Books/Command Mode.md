@@ -1,6 +1,6 @@
 | Command               | Effect                            | Repeat | Reverse |
--------------------- | --------------------------------- | ------ | --
-| /pattern              | search for that pattern forwards  |        |
-| ?pattern              | search for that pattern backwards |        |
-| :s/target/replacement | substitution                      |        |
-|                       |                                   |        |
+| --------------------- | --------------------------------- | ------ | ------- |
+| /pattern              | search for that pattern forwards  | n      | N       |
+| ?pattern              | search for that pattern backwards | n      | N       |
+| :s/target/replacement | substitution                      | &      | u       |
+|                       |                                   |        |         |

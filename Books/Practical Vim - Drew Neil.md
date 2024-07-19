@@ -20,10 +20,14 @@ tags:
 Status: Reading
 ---
 [[Books]]
-key points:
-- use the . command
-
-commands:
+## key points:
+- . command is very useful. Use one key to move and one key to change (combine ; , * with .)
+- Chunk your undos. If you have finished a sentence and are thinking what to write click Esc so you can do back by sentence
+	- Up, Down, Left, Right have the same affect as exiting insert mode (Also affects the . command - same as using i or o)
+## commands:
 - [[Normal Mode]]
 - [[Command Mode]]
 - [[Visual Mode]]
+
+## Cool Websites
+- https://vimgolf.com
