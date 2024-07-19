@@ -23,7 +23,10 @@ Status: Reading
 ## key points:
 - . command is very useful. Use one key to move and one key to change (combine ; , * with .)
 - Chunk your undos. If you have finished a sentence and are thinking what to write click Esc so you can do back by sentence
-	- Up, Down, Left, Right have the same affect as exiting insert mode (Also affects the . command - same as using i or o)
+	- Up, Down, Left, Right and have the same affect as exiting insert mode (Also affects the . command - same as using i or o)
+- Don't count if you can repeat dw. is better than 2dw as it is more repeatable with more control 
+- When an operator command is invoked in duplicate, it acts upon the current line (dd)
+- operator pending more is the mode activates upon operator keys being activated. This means you can write custom motions for this mode
 ## commands:
 - [[Normal Mode]]
 - [[Command Mode]]
