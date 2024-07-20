@@ -16,3 +16,4 @@ Other commands
 | `<C-v>{123}`          | Insert character by decimal code                               |
 | `<C-v>{1234}`         | Insert character by hexadecimal code                           |
 | `<C-k>{char1}{char2}` | Insert character represented by digraph (see :h digraph-table) |
+| `<C-r>{register}`     | paste from register                                            |

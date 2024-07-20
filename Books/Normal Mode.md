@@ -10,7 +10,8 @@
 | g       | a prefix that modifies the behaviour of the subsequent keystroke       |
 | ga      | get the hex and decimal number for the symbol                          |
 | gv      | reselects the last visual mode selection                               |
-|         |                                                                        |
+| K       | looks up documentation for what is under the cursor                    |
+| J       | joins the line below                                                   |
 
 Operator + Motion = Action
 
