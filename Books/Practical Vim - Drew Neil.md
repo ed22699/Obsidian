@@ -30,6 +30,8 @@ Status: Reading
 - Use operators over visual commands where possible
 - using :t means you don't override the register, sometimes useful
 - :normal has a lot of power good for . and @p commands use when running over many lines
+- increase your command history by doing set history=200, this is useful as you can start the command type click the up arrow and cycle through
+- use `<C-z>` to pause the job going back into bash then use fg to restart the job and go back into vim
 ## commands:
 - [[Normal Mode]]
 - [[Insert Mode]]
