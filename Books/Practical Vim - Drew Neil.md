@@ -26,9 +26,10 @@ Status: Reading
 	- Up, Down, Left, Right and have the same affect as exiting insert mode (Also affects the . command - same as using i or o)
 - Don't count if you can repeat dw. is better than 2dw as it is more repeatable with more control 
 - When an operator command is invoked in duplicate, it acts upon the current line (dd)
-- operator pending more is the mode activates upon operator keys being activated. This means you can write custom motions for this mode
+- operator pending mode is the mode activates upon operator keys being activated. This means you can write custom motions for this mode
 ## commands:
 - [[Normal Mode]]
+- [[Insert Mode]]
 - [[Command Mode]]
 - [[Visual Mode]]
 

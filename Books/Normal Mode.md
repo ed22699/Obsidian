@@ -8,6 +8,7 @@
 | `<C-a>` | increments the next number on the line                                 |
 | `<C-x>` | decrements the next number on the line                                 |
 | g       | a prefix that modifies the behaviour of the subsequent keystroke       |
+| ga      | get the hex and decimal number for the symbol                          |
 
 Operator + Motion = Action
 
