@@ -28,6 +28,8 @@ Status: Reading
 - When an operator command is invoked in duplicate, it acts upon the current line (dd)
 - operator pending mode is the mode activates upon operator keys being activated. This means you can write custom motions for this mode
 - Use operators over visual commands where possible
+- using :t means you don't override the register, sometimes useful
+- :normal has a lot of power good for . and @p commands use when running over many lines
 ## commands:
 - [[Normal Mode]]
 - [[Insert Mode]]
