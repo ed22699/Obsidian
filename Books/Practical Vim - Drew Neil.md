@@ -27,6 +27,7 @@ Status: Reading
 - Don't count if you can repeat dw. is better than 2dw as it is more repeatable with more control 
 - When an operator command is invoked in duplicate, it acts upon the current line (dd)
 - operator pending mode is the mode activates upon operator keys being activated. This means you can write custom motions for this mode
+- Use operators over visual commands where possible
 ## commands:
 - [[Normal Mode]]
 - [[Insert Mode]]
