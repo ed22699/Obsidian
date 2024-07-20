@@ -20,6 +20,8 @@
 | :[range]t{address}                            | same as copy                                                                    |
 | :[range]m{address}                            | same as move                                                                    |
 | @:                                            | repeat last Ex                                                                  |
+| `<C-d>`                                       | show list of possible completions                                               |
+| `<tab>`                                       | autocomplete                                                                    |
 before executing a normal command vim moves the cursor to the start of the line
 
 | Symbol | Address                                       |
