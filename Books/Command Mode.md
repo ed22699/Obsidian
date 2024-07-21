@@ -14,7 +14,7 @@
 | :[range]copy {address}                        | Copy the specified lines to below the line specified by {address}                                                           |
 | :[range]move {address}                        | Move the specified lines to below the line specified by {address}                                                           |
 | :[range]join                                  | Join the specified lines                                                                                                    |
-| :[range]normal {commands}                     | Execute Normal mode {commands} on each specified line                                                                       |
+| :[range]normal {commands}                     | Execute Normal mode {commands} on each specified line (can use norm)                                                        |
 | :[range]substitute/{pattern}/{string}/[flags] | Replace occurrences of {patter} with {string} on each specified line                                                        |
 | :[range]global/{pattern}/[cmd]                | Execute the Ex command [cmd] on all specified lines where the {pattern} matches                                             |
 | :[range]t{address}                            | same as copy                                                                                                                |
@@ -25,6 +25,8 @@
 | :%s//change/g                                 | change all of the last searched word to change (subsitution)                                                                |
 | `<C-r><C-w>`                                  | copy the word where the cursor is and paste it into command area (`<C-a>` if you want to paste the equivalent of W instead) |
 | :!{shell command}                             | runs the shell command without leaving vim                                                                                  |
+| :source {shell script name.vim}               | runs the series of vim commands                                                                                             |
+| :argdo source batch.vim                       | run the script in all launched files (launch multiple with `*.html` for example)                                            |
 before executing a normal command vim moves the cursor to the start of the line
 if you use q: you can enter command-line window and alter then run commands
 
