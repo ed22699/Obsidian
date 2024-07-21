@@ -38,5 +38,6 @@ Status: Reading
 - [[Command Mode]]
 - [[Visual Mode]]
 
+[[Files]]
 ## Cool Websites
 - https://vimgolf.com
