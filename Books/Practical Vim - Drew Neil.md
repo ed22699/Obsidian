@@ -32,6 +32,10 @@ Status: Reading
 - :normal has a lot of power good for . and @p commands use when running over many lines
 - increase your command history by doing set history=200, this is useful as you can start the command type click the up arrow and cycle through
 - use `<C-z>` to pause the job going back into bash then use fg to restart the job and go back into vim
+- navigate using the search word
+- use f to move and t for deleting and cutting, try use letters that are uncommon or just search word instead
+- for quick word navigation use WORD instead
+- use search in visual mode for quick deletions also just do d/word to delete to that word
 ## commands:
 - [[Normal Mode]]
 - [[Insert Mode]]
