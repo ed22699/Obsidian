@@ -1,4 +1,5 @@
 Use to save a cursor position so you can jump back to it
+using capital letters for marks create global marks which can be entered from other files
 
 | Command   | Effect                                        |
 | --------- | --------------------------------------------- |
