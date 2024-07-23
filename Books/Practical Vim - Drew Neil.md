@@ -36,6 +36,8 @@ Status: Reading
 - use f to move and t for deleting and cutting, try use letters that are uncommon or just search word instead
 - for quick word navigation use WORD instead
 - use search in visual mode for quick deletions also just do d/word to delete to that word
+- as a general rule aw is for deletion and iw if for cutting, same does with l, p, t, b or B
+- using the `` command can be useful to jump to the other bracket in replacement (using %)
 ## commands:
 - [[Normal Mode]]
 - [[Insert Mode]]
@@ -43,5 +45,6 @@ Status: Reading
 - [[Visual Mode]]
 
 [[Files]]
+[[Marks]]
 ## Cool Websites
 - https://vimgolf.com
