@@ -38,6 +38,7 @@ Status: Reading
 - use search in visual mode for quick deletions also just do d/word to delete to that word
 - as a general rule aw is for deletion and iw if for cutting, same does with l, p, t, b or B
 - using the `` command can be useful to jump to the other bracket in replacement (using %)
+- move around using jumps list and change list
 ## commands:
 - [[Normal Mode]]
 - [[Insert Mode]]
@@ -46,5 +47,6 @@ Status: Reading
 
 [[Files]]
 [[Marks]]
+[[Jumps]]
 ## Cool Websites
 - https://vimgolf.com
