@@ -48,5 +48,6 @@ Status: Reading
 [[Files]]
 [[Marks]]
 [[Jumps]]
+[[Registers]]
 ## Cool Websites
 - https://vimgolf.com
