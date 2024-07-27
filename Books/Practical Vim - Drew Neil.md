@@ -49,5 +49,6 @@ Status: Reading
 [[Marks]]
 [[Jumps]]
 [[Registers]]
+[[Macros]]
 ## Cool Websites
 - https://vimgolf.com
