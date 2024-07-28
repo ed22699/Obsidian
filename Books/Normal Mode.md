@@ -29,5 +29,6 @@ Operator + Motion = Action
 | !         | Filter {motion} lines through an external program |
 
 using shell can be very powerful, give a range before it and it will take the lines of that range as input meaning you can do stuff like this
-:2,$ !sort -t ',' -k2
+`:2,$ !sort -t ',' -k2`
 if you use !G it will put :.,$! into the Ex command automatically
+see [[Command Mode]]

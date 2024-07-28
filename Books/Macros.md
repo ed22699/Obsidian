@@ -17,6 +17,7 @@ not an item
 5. fifth item
 ```
 Here you would want to edit all the items in the list, doing it in series it would stop on the 4th line. However if you select it all in visual mode and then run `:'<,'>normal @{register}` this will reformat all the list items
+see [[Command Mode]]
 
 | Command | Effect                         |
 | ------- | ------------------------------ |
@@ -24,3 +25,25 @@ Here you would want to edit all the items in the list, doing it in series it wou
 | qa      | record macro to a              |
 | qA      | append onto the end of macro a |
 |         |                                |
+## Run macro across files - see [[Files]]
+### Parallel 
+- first create the list of arguments `:args *.rb`
+- record the macro (do not save file)
+- run `:edit!` to reverse changes to the file
+- run `:argdo normal @a` to run on all files
+### Series
+- edit the macro to go to next file `:next`
+- run `22@a` this will run across buffers until and issue is found
+>[!NOTE] 
+>When running macros across files try do it in series so errors are not missed
+
+## Run macro with vim script
+| Keystrokes            | Buffer Contents                                                                                             |
+| --------------------- | ----------------------------------------------------------------------------------------------------------- |
+| `:let i=1`            | partridge in a pear tree                                                                                    |
+| `qa`                  | partridge in a pear tree                                                                                    |
+| `I<C-r>=i<CR>) <Esc>` | 1) partridge in a pear tree                                                                                 |
+| `:let i+=1`           | 1) partridge in a pear tree                                                                                 |
+| `q`                   | 1) partridge in a pear tree                                                                                 |
+| `jVG`                 | 1) partridge in a pear tree<br>turtle doves<br>French hens<br>calling birds<br>golden rings                 |
+| `:'<,'>normal @a`     | 1) partridge in a pear tree<br>2) turtle doves<br>3) French hens<br>4) calling birds<br>5) golden rings<br> |
