@@ -47,3 +47,10 @@ see [[Command Mode]]
 | `q`                   | 1) partridge in a pear tree                                                                                 |
 | `jVG`                 | 1) partridge in a pear tree<br>turtle doves<br>French hens<br>calling birds<br>golden rings                 |
 | `:'<,'>normal @a`     | 1) partridge in a pear tree<br>2) turtle doves<br>3) French hens<br>4) calling birds<br>5) golden rings<br> |
+## Editing a macro
+1. record the macro e.g to register a
+2. `:put a` to enter the macro into the next line
+3. make changes to that line 
+4. yank to end of line back into register a, this will complete the change
+>[!NOTE]
+>it is better to use `"ay$` over `"ayy` as yanking the whole line will add `^J` to the end

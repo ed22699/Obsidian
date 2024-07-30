@@ -50,5 +50,6 @@ Status: Reading
 [[Jumps]]
 [[Registers]]
 [[Macros]]
+[[Pattern Matching]]
 ## Cool Websites
 - https://vimgolf.com
