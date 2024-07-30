@@ -22,4 +22,4 @@
 | `/\v"\zs[^"]+\ze"<CR>` | Match "quoted words" ---not quote marks (quoted words highlighted)   |
 
 - use the `?` for phrases with lots of problem characters as a back search and `/` for individual problem characters 
-- 
+- to paste the entire problem hyperlink into the search start the search with `/<C-r>=` and then enter `escape(@u, getcmdtype().'\'` and then enter
