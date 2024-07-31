@@ -29,3 +29,7 @@
 | gn           | search in visual mode forward                                                                                        |
 | gN           | search in visual mode backward                                                                                       |
 | `<C-r><C-w>` | paste the remainder of the highlighted word into the search (note will paste whole word instead if `\v` is involved) |
+| `/e`         | position cursor on the end of the search term                                                                        |
+>[!NOTE]
+> the use of `//` will use the last search term
+
