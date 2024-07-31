@@ -23,3 +23,9 @@
 
 - use the `?` for phrases with lots of problem characters as a back search and `/` for individual problem characters 
 - to paste the entire problem hyperlink into the search start the search with `/<C-r>=` and then enter `escape(@u, getcmdtype().'\'` and then enter
+## Searching - related to [[Normal Mode]]
+| Command      | Effect                                                                                                               |
+| ------------ | -------------------------------------------------------------------------------------------------------------------- |
+| gn           | search in visual mode forward                                                                                        |
+| gN           | search in visual mode backward                                                                                       |
+| `<C-r><C-w>` | paste the remainder of the highlighted word into the search (note will paste whole word instead if `\v` is involved) |
