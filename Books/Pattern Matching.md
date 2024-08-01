@@ -14,13 +14,17 @@
 	- `<` and `>` match word boundaries this means searching for the wont also find there
 	- `\_s` matches whitespace or line break
 
-| Expressions | Meaning                           |
-| ----------- | --------------------------------- |
-| `\1`        | first pattern within ()           |
-| `\_s`       | whitespace or line break          |
-| `.`         | single character                  |
-| `+`         | as many characters                |
-| `[^']+`     | as many characters that are not ' |
+| Expressions | Meaning                             |
+| ----------- | ----------------------------------- |
+| `\1`        | first pattern within ()             |
+| `\_s`       | whitespace or line break            |
+| `.`         | single character                    |
+| `+`         | as many characters                  |
+| `[^']+`     | as many characters that are not '   |
+| `\w`        | word                                |
+| `\W`        | WORD                                |
+| `\|`        | choice (note the \ is not included) |
+`q/` can be used to bring up the history (see [[Command Mode]])
 ### Boundaries of a match example
 | Keystrokes             | Buffer Contents                                                      |
 | ---------------------- | -------------------------------------------------------------------- |
@@ -40,3 +44,11 @@
 >[!NOTE]
 > the use of `//` will use the last search term
 
+## Counting matches
+### Via substitution
+`:%s///gn`
+5 matches on 4 lines
+### Via :vimgrep
+`:vimgrep //g %` (% keeps it to the current buffer)
+(3 of 5): viewport.buttons.previous.show();
+use `cnext` and `cprev` to traverse
