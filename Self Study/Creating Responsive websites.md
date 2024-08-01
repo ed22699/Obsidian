@@ -19,7 +19,7 @@ tags:
 }
 ```
 
-3. CSS Flexbox - good for 1D layout
+3. CSS [[Flexbox]] - good for 1D layout
 ```css
 .flex-container{
    display: flex;
