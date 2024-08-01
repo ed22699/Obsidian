@@ -14,6 +14,13 @@
 	- `<` and `>` match word boundaries this means searching for the wont also find there
 	- `\_s` matches whitespace or line break
 
+| Expressions | Meaning                           |
+| ----------- | --------------------------------- |
+| `\1`        | first pattern within ()           |
+| `\_s`       | whitespace or line break          |
+| `.`         | single character                  |
+| `+`         | as many characters                |
+| `[^']+`     | as many characters that are not ' |
 ### Boundaries of a match example
 | Keystrokes             | Buffer Contents                                                      |
 | ---------------------- | -------------------------------------------------------------------- |
