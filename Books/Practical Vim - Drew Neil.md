@@ -51,5 +51,6 @@ Status: Reading
 [[Registers]]
 [[Macros]]
 [[Pattern Matching]]
+[[Substitution]]
 ## Cool Websites
 - https://vimgolf.com
