@@ -30,4 +30,9 @@ to create a pretty generic reusable command we can run
 ```
 We can then use the substitute command multiple times, changing the register `/` and `a` where suitable 
 
-if you want to reuse a previous command to change it slightly you can run `:%s//~/&`, however if you want to rerun the exact command on the whole file you can simply type `g&`
+if you want to reuse a previous command to change it slightly you can run `:%s//~/&`, however if you want to rerun the exact command on the whole file you can simply type `g&` (this is the same as running `:%&&`)
+
+### Example - decrementing all header tags
+- find header tags with `\v\<\/?h\zs\d`
+- run `:%s//\=submatch(0)-1/g` 
+
