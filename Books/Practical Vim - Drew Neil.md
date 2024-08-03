@@ -52,5 +52,6 @@ Status: Reading
 [[Macros]]
 [[Pattern Matching]]
 [[Substitution]]
+[[Global Commands]]
 ## Cool Websites
 - https://vimgolf.com

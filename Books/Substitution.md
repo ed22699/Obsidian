@@ -35,4 +35,16 @@ if you want to reuse a previous command to change it slightly you can run `:%s//
 ### Example - decrementing all header tags
 - find header tags with `\v\<\/?h\zs\d`
 - run `:%s//\=submatch(0)-1/g` 
+### Example - swapping two words
+- first find the two words
+`\v(<dog>|<man>)`
+- create substitution
+`s//\={"dog":"man","man":"dog"}[submatch(1)]/g`
+
+## Changing project wide
+- create pattern `/Pragmatic\ze Vim`
+- search project wide `:vimgrep //*/**.txt`
+- if you want to see all found in this search run `:copen`
+- replace the words with `:cfdo %s//Practical/gc`
+- save all changed files with `:cfdo update`
 
