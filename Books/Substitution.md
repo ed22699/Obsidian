@@ -13,7 +13,7 @@ for range examples see [[Command Mode]]
 | Symbol           | Effect                                                           |
 | ---------------- | ---------------------------------------------------------------- |
 | `\r`             | insert a carriage return                                         |
-| `\t`             | insert a tab c ha rac ter                                        |
+| `\t`             | insert a tab character                                           |
 | `\\`             | insert single backslash                                          |
 | `\1`             | insert first submatch                                            |
 | `&`              | insert entire matched pattern                                    |
