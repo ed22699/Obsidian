@@ -52,3 +52,9 @@
 `:vimgrep //g %` (% keeps it to the current buffer)
 (3 of 5): viewport.buttons.previous.show();
 use `cnext` and `cprev` to traverse
+
+## Sort CSS 
+- select the area `vi{`
+- run `:'<,'>sort`
+alternatively you can run 
+- `:g/{/ .+1,/}/-1 sort`
