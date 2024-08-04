@@ -1,2 +1,8 @@
 .*
 !/.gitignore
+
+
+
+
+# Ignore Smart Connections folder
+.smart-connections
