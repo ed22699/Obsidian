@@ -53,5 +53,6 @@ Status: Reading
 [[Pattern Matching]]
 [[Substitution]]
 [[Global Commands]]
+[[ctags]]
 ## Cool Websites
 - https://vimgolf.com
