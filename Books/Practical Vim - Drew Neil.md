@@ -54,5 +54,6 @@ Status: Reading
 [[Substitution]]
 [[Global Commands]]
 [[ctags]]
+for compiling code and navigating errors with quickfix list read p263-272
 ## Cool Websites
 - https://vimgolf.com
