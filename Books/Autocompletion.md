@@ -8,3 +8,5 @@
 | `<C-x><C-l>` | Whole line completion   |
 | `<C-x><C-f>` | Filename completion     |
 | `<C-x><C-o>` | Omni-completion         |
+- using the sequence of `<C-x><C-p>` is powerful as it can auto complete a phrase
+- a similar thing can be done with `<C-x><C-l>` to complete multiline
