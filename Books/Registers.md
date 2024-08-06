@@ -8,6 +8,7 @@
 - "_ is the black hole register, nothing is saves that is stored here, this is useful if you don't want to overwrite the unnamed register
 - "+ is the system clipboard register, use this to copy and paste to and from external applications
 - "= is the expression register, it takes you to command line mode where you can write a script. If it outputs a string it will be used
+- "" is the unnamed register
 
 ## Read only registers
 
