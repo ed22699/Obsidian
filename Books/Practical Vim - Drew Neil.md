@@ -55,5 +55,7 @@ Status: Reading
 [[Global Commands]]
 [[ctags]]
 for compiling code and navigating errors with quickfix list read p263-272
+[[Project Wide Searching]]
+[[Autocompletion]]
 ## Cool Websites
 - https://vimgolf.com
