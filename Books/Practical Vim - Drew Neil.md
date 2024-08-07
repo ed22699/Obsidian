@@ -57,5 +57,6 @@ Status: Reading
 for compiling code and navigating errors with quickfix list read p263-272
 [[Project Wide Searching]]
 [[Autocompletion]]
+[[Spell Checker]]
 ## Cool Websites
 - https://vimgolf.com
