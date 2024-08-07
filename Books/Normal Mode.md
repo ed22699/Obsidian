@@ -33,3 +33,12 @@ using shell can be very powerful, give a range before it and it will take the li
 `:2,$ !sort -t ',' -k2`
 if you use !G it will put :.,$! into the Ex command automatically
 see [[Command Mode]]
+
+## Detailed Branches
+- [[Jumps]]
+- [[Files]]
+- [[Marks]]
+- [[Registers]]
+- [[Macros]]
+- [[Spell Checker]]
+- [[ctags]]

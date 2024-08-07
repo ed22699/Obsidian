@@ -18,3 +18,8 @@ Other commands
 | `<C-k>{char1}{char2}` | Insert character represented by digraph (see :h digraph-table) |
 | `<C-r>{register}`     | paste from register                                            |
 |                       |                                                                |
+
+## Detailed Branches
+- [[Registers]]
+- [[Autocompletion]]
+- [[Spell Checker]]

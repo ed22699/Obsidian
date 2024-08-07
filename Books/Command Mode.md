@@ -1,3 +1,4 @@
+
 | Command               | Effect                            | Repeat | Reverse |
 | --------------------- | --------------------------------- | ------ | ------- |
 | /pattern              | search for that pattern forwards  | n      | N       |
@@ -46,3 +47,13 @@ if you use q: you can enter command-line window and alter then run commands
 | 'm     | line containing the mark m                    |
 | '<     | start of visual section                       |
 | '>     | end of visual section                         |
+
+## Detailed Branches
+- [[Files]]
+- [[Registers]]
+- [[Macros]]
+- [[Pattern Matching]]
+- [[Substitution]]
+- [[Global Commands]]
+- [[ctags]]
+- [[Project Wide Searching]]

@@ -4,3 +4,7 @@
 | `<C-a>`  | increments numbers                         |
 | `g<C-a>` | increments extra number each row           |
 |          |                                            |
+
+## Detailed Branches
+- [[Macros]]
+- [[Pattern Matching]]

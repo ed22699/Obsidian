@@ -1,3 +1,5 @@
+Related to [[Normal Mode]] and [[Insert Mode]]
+
 | Command | Effect                                       |
 | ------- | -------------------------------------------- |
 | `]s`    | Jump to next spelling error                  |
