@@ -53,3 +53,4 @@ Content width < Width < flex-basis < min-width/max-width
 - `flex-basis` default is `auto` gives more to items with more content, if 0 it will give all equal content
 - can shorthand with `flex: 0 0 0` with grow shrink basis
 - `flex: 1` is the same as `flex: 1 1 0`
+- you can create a ratio for elements with `flex: 1` for one element and `flex: 2` for another
