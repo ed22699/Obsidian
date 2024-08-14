@@ -17,7 +17,7 @@ isbn13: 9781680504101
 isbn10: 168050410X
 tags:
   - Book
-Status: Reading
+Status: Read
 ---
 [[Books]]
 ## key points:
