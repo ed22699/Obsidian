@@ -8,3 +8,5 @@
 | `:vsplit \| terminal {cmd}`  | terminal buffer is created in a vertical split           |
 | `:tabedit \| terminal {cmd}` | terminal buffer is created in a new tab page             |
 - You can run terminal commands that activate the shell by substituting the `!` for `terminal` in command mode
+- `p` pastes to the command cursor position
+- when cursor is on file path you can use `gf` to open that file
