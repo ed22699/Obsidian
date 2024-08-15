@@ -21,3 +21,4 @@ Status: Reading
 ---
 [[Books]]
 key points:
+[[Terminal Mode]]
