@@ -9,7 +9,7 @@ tags:
 }
 ```
 
-2. [[CSS Grid]] - good for 2D layout
+2. [[Self Study/CSS Grid]] - good for 2D layout
 ```css
 .grid-container {
     display: grid;

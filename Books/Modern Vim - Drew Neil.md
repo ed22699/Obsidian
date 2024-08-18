@@ -21,5 +21,6 @@ Status: Read
 ---
 [[Books]]
 key points:
-[[Terminal Mode]]
-[[Sessions]]
+- [[Terminal Mode]]
+- [[Sessions]]
+- `.editorconfig` can be used for project standards see tip 27
