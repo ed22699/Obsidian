@@ -17,8 +17,9 @@ isbn13: 9781680506013
 isbn10: 1680506013
 tags:
   - Book
-Status: Reading
+Status: Read
 ---
 [[Books]]
 key points:
 [[Terminal Mode]]
+[[Sessions]]
