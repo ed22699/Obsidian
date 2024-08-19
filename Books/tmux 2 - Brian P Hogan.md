@@ -17,7 +17,7 @@ isbn13: 9781680505160
 isbn10: 1680505165
 tags:
   - Book
-Status: To Read
+Status: Reading
 ---
 [[Books]]
 key points:
