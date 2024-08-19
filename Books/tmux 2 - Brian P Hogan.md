@@ -21,3 +21,24 @@ Status: Reading
 ---
 [[Books]]
 key points:
+`<C-b>` is the command prefix, this comes before all tmux commands
+## Tmux commands (all prefixed by `<C-b>`)
+
+| Command | Effect                        |
+| ------- | ----------------------------- |
+| `t`     | large clock appears on screen |
+| `d`     | detach from a session         |
+|         |                               |
+|         |                               |
+
+- when you detach from a tmux session you're not actually closing tmux, any programs running will stay running (even if you close the terminal window)
+## Console commands
+
+| Command                             | Effect                                  |
+| ----------------------------------- | --------------------------------------- |
+| `tmux new[-session] -s basic`       | creates a session labeled basic         |
+| `exit`                              | exits tmux (destroys session)           |
+| `tmux list-sessions` or `tmux ls`   | lists tmux sessions                     |
+| `tmux a[ttach]`                     | attach to last session                  |
+| `tmux attach -t session-name`       | attaches to session called session-name |
+| `tmux kill-session -t session-name` | cills the session called session-name   |
