@@ -24,21 +24,46 @@ key points:
 `<C-b>` is the command prefix, this comes before all tmux commands
 ## Tmux commands (all prefixed by `<C-b>`)
 
-| Command | Effect                        |
-| ------- | ----------------------------- |
-| `t`     | large clock appears on screen |
-| `d`     | detach from a session         |
-|         |                               |
-|         |                               |
+| Command  | Effect                                                         |
+| -------- | -------------------------------------------------------------- |
+| `t`      | large clock appears on screen                                  |
+| `d`      | detach from a session                                          |
+| `c`      | create new window                                              |
+| `,`      | rename window                                                  |
+| `n`      | next window                                                    |
+| `p`      | previous window                                                |
+| `0`      | go to window 0                                                 |
+| `w`      | visual menu of windows                                         |
+| `f`      | search for window containing string of text                    |
+| `&`      | close a window                                                 |
+| spacebar | toggle through pane layouts                                    |
+| `x`      | closes a pane or window if theres only one pane in that window |
+| `?`      | list all predefined tmux key bindings                          |
 
 - when you detach from a tmux session you're not actually closing tmux, any programs running will stay running (even if you close the terminal window)
 ## Console commands
 
-| Command                             | Effect                                  |
-| ----------------------------------- | --------------------------------------- |
-| `tmux new[-session] -s basic`       | creates a session labeled basic         |
-| `exit`                              | exits tmux (destroys session)           |
-| `tmux list-sessions` or `tmux ls`   | lists tmux sessions                     |
-| `tmux a[ttach]`                     | attach to last session                  |
-| `tmux attach -t session-name`       | attaches to session called session-name |
-| `tmux kill-session -t session-name` | cills the session called session-name   |
+| Command                             | Effect                                                            |
+| ----------------------------------- | ----------------------------------------------------------------- |
+| `tmux new[-session] -s basic`       | creates a session labeled basic                                   |
+| `tmux new -s basic -n shell`        | creates session basic with first window named shell               |
+| `exit`                              | exits tmux (destroys session) or closes a window or closes a pane |
+| `tmux list-sessions` or `tmux ls`   | lists tmux sessions                                               |
+| `tmux a[ttach]`                     | attach to last session                                            |
+| `tmux attach -t session-name`       | attaches to session called session-name                           |
+| `tmux kill-session -t session-name` | cills the session called session-name                             |
+
+## Command mode
+use `<C-b>:` to enter command mode
+
+| Command                         | Effect                                                                 |
+| ------------------------------- | ---------------------------------------------------------------------- |
+| `new-window -n console "{cmd}"` | create a new window named console (best not to do this with a command) |
+### Pane layouts
+
+| `even-horizontal` | stacks all panes horizontally, left to right                                                                 |
+| ----------------- | ------------------------------------------------------------------------------------------------------------ |
+| `even-vertical`   | stacks all panes vertically, top to bottom                                                                   |
+| `main-horizontal` | create one larger pane on the top and smaller panes underneath                                               |
+| `main-vertical`   | create one large pane on the left side of the screen and stack the rest of the panes vertically on the right |
+| `tiled`           | arrange all panes evenly on the screen                                                                       |
