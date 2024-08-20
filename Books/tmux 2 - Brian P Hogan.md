@@ -59,6 +59,7 @@ use `<C-b>:` to enter command mode
 | Command                         | Effect                                                                 |
 | ------------------------------- | ---------------------------------------------------------------------- |
 | `new-window -n console "{cmd}"` | create a new window named console (best not to do this with a command) |
+| `source-file ~/.tmux.conf`      | reload your config                                                     |
 ### Pane layouts
 
 | `even-horizontal` | stacks all panes horizontally, left to right                                                                 |
