@@ -26,4 +26,4 @@ tags:
 }
 ```
 
-4. Bootstrap Framework - predefined layout
+4. [[Bootstrap Framework]] - predefined layout
