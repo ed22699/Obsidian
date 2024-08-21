@@ -43,15 +43,17 @@ key points:
 - when you detach from a tmux session you're not actually closing tmux, any programs running will stay running (even if you close the terminal window)
 ## Console commands
 
-| Command                             | Effect                                                            |
-| ----------------------------------- | ----------------------------------------------------------------- |
-| `tmux new[-session] -s basic`       | creates a session labeled basic                                   |
-| `tmux new -s basic -n shell`        | creates session basic with first window named shell               |
-| `exit`                              | exits tmux (destroys session) or closes a window or closes a pane |
-| `tmux list-sessions` or `tmux ls`   | lists tmux sessions                                               |
-| `tmux a[ttach]`                     | attach to last session                                            |
-| `tmux attach -t session-name`       | attaches to session called session-name                           |
-| `tmux kill-session -t session-name` | cills the session called session-name                             |
+| Command                               | Effect                                                            |
+| ------------------------------------- | ----------------------------------------------------------------- |
+| `tmux new[-session] -s basic`         | creates a session labeled basic                                   |
+| `tmux new -s basic -n shell`          | creates session basic with first window named shell               |
+| `exit`                                | exits tmux (destroys session) or closes a window or closes a pane |
+| `tmux list-sessions` or `tmux ls`     | lists tmux sessions                                               |
+| `tmux a[ttach]`                       | attach to last session                                            |
+| `tmux attach -t session-name`         | attaches to session called session-name                           |
+| `tmux kill-session -t session-name`   | cills the session called session-name                             |
+| `tmux split-wondow -h -t development` | splits the window in the development session                      |
+| `tmux split-window -v -t development` | vertical split of window in development                           |
 
 ## Command mode
 use `<C-b>:` to enter command mode
@@ -68,3 +70,30 @@ use `<C-b>:` to enter command mode
 | `main-horizontal` | create one larger pane on the top and smaller panes underneath                                               |
 | `main-vertical`   | create one large pane on the left side of the screen and stack the rest of the panes vertically on the right |
 | `tiled`           | arrange all panes evenly on the screen                                                                       |
+
+## Scripting Project configuration
+```bash
+# Check if session already created
+tmux has-session -t development
+if [ $? != 0 ]
+then
+   # Create session and open up neovim in the devproject directory
+   tmux new-session -s development -n editor -d
+   tmux send-keys -t development 'cd ~/devproject' C-m
+   tmux send-keys -t development 'nvim .' C-m
+   # Create new pane
+   tmux split-window -v -t development
+   tmux select-layout -t development main-horizontal
+   tmux send-keys -t development:1.2 'cd ~/devproject' C-m
+   # Create new window
+   tmux new-window -n console -t development
+   tmux send-keys -t development:2 'cd ~/devproject' C-m
+   tmux select-window -t development:1
+fi
+tmux attach -t development
+```
+- you can create special configuration files where you can open up tmux in these different ways, for example you could add this script (minus the tmux prefix) into a config called `app.conf`. If you now load up the session with `tmux -f app.conf attach`. Note this will look at your `tmux.conf` file first so you will not lose base settings
+
+### Tmuxinator
+- a tool for creating and managing different tmux configs.
+- run `tmuxinator open development` to create a new project named development
