@@ -39,6 +39,7 @@ key points:
 | spacebar | toggle through pane layouts                                    |
 | `x`      | closes a pane or window if theres only one pane in that window |
 | `?`      | list all predefined tmux key bindings                          |
+| `[`      | enters copy mode, where you can move around with vim motions   |
 
 - when you detach from a tmux session you're not actually closing tmux, any programs running will stay running (even if you close the terminal window)
 ## Console commands
@@ -97,3 +98,20 @@ tmux attach -t development
 ### Tmuxinator
 - a tool for creating and managing different tmux configs.
 - run `tmuxinator open development` to create a new project named development
+To get the same effect at the above script run
+```yaml
+name: development
+root: ~/devproject
+windows:
+  - editor:
+      layout: main-horizontal
+      panes:
+          - nvim
+          - 
+  - console:
+```
+- to run this run `tmuxinator development`
+- `tmuxinator debug development` will show the script that Tmuxinator will use
+
+## Working with buffers
+- enter with `<C-b>[` and exit with `<CR>` 

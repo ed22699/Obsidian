@@ -41,3 +41,6 @@ default break points means you can say stuff such as
 - `col-sm-2` on a small screen and above give 2/12th, below it gives each div 100%
 - `col-sm-12 col-md-8 col-lg-4`, this means on large screens take up 4 slots, on medium take up 8 and on small take on 12
 - `col` will just take the rest of the room
+
+## Bootstrap Components
+add in the script link file to add functionality
