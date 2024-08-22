@@ -126,12 +126,83 @@ windows:
 - you can also pick a buffer to paste from
 
 ## Pair Programming
-- for security it is best you use a VPN or virtual machine to create the environment
+- for security it is best you use a VPS or virtual machine to create the environment
 ### Pairing with a shared account
 1. enable SSH access on host
+```bash
+# create tmux user
+tmux@puzzles$ adduser tmux
+# switch to user
+su tmux
+# create folder for keys (only tmux user should be able to rwx this)
+mkdir ~/.ssh
+touch ~/.ssh/authorized_keys
+chmod 700 ~/.ssh
+chmod 600 ~/.ssh/authorized_keys
+```
 2. install and configure tmux
 ```bash
-tmux@puzzles$ adduser tmux
+# user generates their public key
+ssh-keygen
+# user transfers public key over to the server
+cat ~/.ssh/id_rsa.pub | ssh tmux@your_server 'cat >> .ssh/authorized_keys'
+# and alternative way to transfer key is via
+ssh-copy-id tmux@your_server
+# then configure the server with version control, text editors, etc
 ```
 3. create a tmux session
+```bash
+# create a new tmux session
+tmux new-session -s Pairing
+```
 4. second user logs into machine with same user account and attaches to the session
+```bash
+# other member of the team can now log onto this session
+tmux attach -t Pairing
+```
+
+#### Grouped Sessions
+- when two people are attached to the same tmux session, they usually both see the same thing and interact with the same window
+- with grouped sessions you can work on different windows without completely taking over control
+```bash
+# create session
+tmux new-session -s groupedsession
+# another user joins by creating a new session that targets the original session
+tmux new-session -t groupedsession -s mysession
+```
+- second user can `kill-session` and the groupedsession will persist. However if all windows are closed original session will also close
+
+## Pairing with tmate
+- a fork of tmux designed for pair programming
+- fire up tmate with `tmate`, when launched the connection address will be displayed in the bottom of the window where the status line would be
+- you can view this address again with `tmate show-messages`, here you can also give a read-only address as well
+- use these addresses to connect
+- this can be used with Tmuxinator (see p60)
+
+## Pairing with separate accounts and sockets
+- tmux supports sockets 
+```bash
+# create two new users for the session
+sudo adduser sonny
+sudo adduser jack
+# create tmux grop and the folder to hold the shared sessions
+sudo addgroup tmux
+sudo mkdir /var/tmux
+# change group ownership of /var/tmux so tmux group has access
+sudo chgrp tmux /var/tmux
+# alter permissions on folder so new files will be accessible for group members
+sudo chmod g+ws /var/tmux
+# add the users to the group
+sudo usermod -aG tmux sonny
+sudo usermod -aG tmux jack
+```
+- create and share sessions we need to create the session using the -S switch (`new-session` uses default socket location so is not reachable by every user)
+```bash
+# log in to server as sonny and create new tmux session
+tmux -S /var/tmux/pairing
+# in another terminal window log jack and attach to session via socket file
+tmux -S /var/tmux/pairing attach
+```
+>[!NOTE]
+>  the `.tmux.conf` used is that of the person who launched the session
+- this means jack is kept out of sonny's home directory
