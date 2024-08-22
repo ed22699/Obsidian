@@ -40,6 +40,8 @@ key points:
 | `x`      | closes a pane or window if theres only one pane in that window |
 | `?`      | list all predefined tmux key bindings                          |
 | `[`      | enters copy mode, where you can move around with vim motions   |
+| `]`      | pastes                                                         |
+| `=`      | list all paste buffers and pastes selected buffer contents     |
 
 - when you detach from a tmux session you're not actually closing tmux, any programs running will stay running (even if you close the terminal window)
 ## Console commands
@@ -63,6 +65,10 @@ use `<C-b>:` to enter command mode
 | ------------------------------- | ---------------------------------------------------------------------- |
 | `new-window -n console "{cmd}"` | create a new window named console (best not to do this with a command) |
 | `source-file ~/.tmux.conf`      | reload your config                                                     |
+| `capture-pane`                  | copies the pane                                                        |
+| `show-buffer`                   | shows the contents of the buffer                                       |
+| `save-buffer buffer.txt`        | save buffer content to file buffer                                     |
+| `choose-buffer`                 | pick a buffer to paste from                                            |
 ### Pane layouts
 
 | `even-horizontal` | stacks all panes horizontally, left to right                                                                 |
@@ -115,3 +121,17 @@ windows:
 
 ## Working with buffers
 - enter with `<C-b>[` and exit with `<CR>` 
+- copy by pressing space to start and enter to end. Paste with `<C-b>]`
+- `capture-pane` can be used to copy the pane, commands such as `capture-pane; save-buffer buffer.txt` saves the pane to a file called buffer
+- you can also pick a buffer to paste from
+
+## Pair Programming
+- for security it is best you use a VPN or virtual machine to create the environment
+### Pairing with a shared account
+1. enable SSH access on host
+2. install and configure tmux
+```bash
+tmux@puzzles$ adduser tmux
+```
+3. create a tmux session
+4. second user logs into machine with same user account and attaches to the session
