@@ -17,7 +17,7 @@ isbn13: 9781680505160
 isbn10: 1680505165
 tags:
   - Book
-Status: Reading
+Status: Read
 ---
 [[Books]]
 key points:
@@ -79,6 +79,7 @@ use `<C-b>:` to enter command mode
 | `join-pane -s panes:1`           | take window 1 of the panes session and join it to the current window                                                                      |
 | `join-pane -s panes:1.1`         | does the same but with the first pane in the first window                                                                                 |
 | `[session_name]:[window].[pane]` | the format used to take a pane from a different source session. You can specify a target window using the `-t` flag and the same notation |
+| `pipe-pane -o "cat >> mylog.txt` | pipes tmux activity to the mylog.txt file (if you repeat this command it will deactivate)                                                 |
 ### Pane layouts
 
 | `even-horizontal` | stacks all panes horizontally, left to right                                                                 |
