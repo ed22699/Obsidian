@@ -42,33 +42,43 @@ key points:
 | `[`      | enters copy mode, where you can move around with vim motions   |
 | `]`      | pastes                                                         |
 | `=`      | list all paste buffers and pastes selected buffer contents     |
+| `!`      | turns pane into window                                         |
+| `(`      | go to previous sesson                                          |
+| `)`      | move to next session                                           |
+| `s`      | display a list of sessions                                     |
+| `.`      | move window to another session                                 |
 
 - when you detach from a tmux session you're not actually closing tmux, any programs running will stay running (even if you close the terminal window)
 ## Console commands
 
-| Command                               | Effect                                                            |
-| ------------------------------------- | ----------------------------------------------------------------- |
-| `tmux new[-session] -s basic`         | creates a session labeled basic                                   |
-| `tmux new -s basic -n shell`          | creates session basic with first window named shell               |
-| `exit`                                | exits tmux (destroys session) or closes a window or closes a pane |
-| `tmux list-sessions` or `tmux ls`     | lists tmux sessions                                               |
-| `tmux a[ttach]`                       | attach to last session                                            |
-| `tmux attach -t session-name`         | attaches to session called session-name                           |
-| `tmux kill-session -t session-name`   | cills the session called session-name                             |
-| `tmux split-wondow -h -t development` | splits the window in the development session                      |
-| `tmux split-window -v -t development` | vertical split of window in development                           |
+| Command                                   | Effect                                                            |
+| ----------------------------------------- | ----------------------------------------------------------------- |
+| `tmux new[-session] -s basic`             | creates a session labeled basic                                   |
+| `tmux new -s basic -n shell`              | creates session basic with first window named shell               |
+| `exit`                                    | exits tmux (destroys session) or closes a window or closes a pane |
+| `tmux list-sessions` or `tmux ls`         | lists tmux sessions                                               |
+| `tmux a[ttach]`                           | attach to last session                                            |
+| `tmux attach -t session-name`             | attaches to session called session-name                           |
+| `tmux kill-session -t session-name`       | cills the session called session-name                             |
+| `tmux split-wondow -h -t development`     | splits the window in the development session                      |
+| `tmux split-window -v -t development`     | vertical split of window in development                           |
+| `tmux move-window -s process:1 -t editor` | move window to the session editor                                 |
+
 
 ## Command mode
 use `<C-b>:` to enter command mode
 
-| Command                         | Effect                                                                 |
-| ------------------------------- | ---------------------------------------------------------------------- |
-| `new-window -n console "{cmd}"` | create a new window named console (best not to do this with a command) |
-| `source-file ~/.tmux.conf`      | reload your config                                                     |
-| `capture-pane`                  | copies the pane                                                        |
-| `show-buffer`                   | shows the contents of the buffer                                       |
-| `save-buffer buffer.txt`        | save buffer content to file buffer                                     |
-| `choose-buffer`                 | pick a buffer to paste from                                            |
+| Command                          | Effect                                                                                                                                    |
+| -------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------- |
+| `new-window -n console "{cmd}"`  | create a new window named console (best not to do this with a command)                                                                    |
+| `source-file ~/.tmux.conf`       | reload your config                                                                                                                        |
+| `capture-pane`                   | copies the pane                                                                                                                           |
+| `show-buffer`                    | shows the contents of the buffer                                                                                                          |
+| `save-buffer buffer.txt`         | save buffer content to file buffer                                                                                                        |
+| `choose-buffer`                  | pick a buffer to paste from                                                                                                               |
+| `join-pane -s panes:1`           | take window 1 of the panes session and join it to the current window                                                                      |
+| `join-pane -s panes:1.1`         | does the same but with the first pane in the first window                                                                                 |
+| `[session_name]:[window].[pane]` | the format used to take a pane from a different source session. You can specify a target window using the `-t` flag and the same notation |
 ### Pane layouts
 
 | `even-horizontal` | stacks all panes horizontally, left to right                                                                 |
