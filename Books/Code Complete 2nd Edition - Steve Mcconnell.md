@@ -17,7 +17,7 @@ isbn10: 9350041243
 isbn13: 9789350041246
 tags:
   - Book
-Status: To Read
+Status: Reading
 ---
 [[Books]]
 key points:
