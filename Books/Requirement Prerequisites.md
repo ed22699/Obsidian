@@ -1,0 +1,1 @@
+- The goal of preperation is risk reduction. The most comen project risks are poor requirements and 
