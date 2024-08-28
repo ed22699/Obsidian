@@ -81,3 +81,28 @@ important as it determines the conceptual integrity of the system in turn determ
 - inside the program, at what level are errors handled?
 - what is the level of responsibility of each class for validating its input data?
 - do you want to use your environment's built-in exception-handling mechanisms or build your own?
+### Fault Tolerance
+### Architectural Feasibility
+### Overengineering
+- some systems require overly robust components so when combined they meet the minimal robustness
+### Buy vs build decisions 
+### Reuse Decisions
+### Change Strategy
+- how the system will be developed to handle changes in the architecture
+### General Architectural Quality
+- objectives clearly stated
+- should describe motivations for major design decisions
+- explicitly identify risky areas and steps to minimise that risk
+- should be no uneasy or hard to understand areas
+
+## Time on Prerequisites
+- should be 20-30% of the schedule 
+- cannot estimate the time the project will take until these sections are explored, think of this as a separate project
+## Key Points
+- the goal of preparing for construction is risk reduction, make sure your preparation does not increase risks
+- high-quality software requires attention to quality from the beginning to the end, with beginning having a greater influence on product quality
+- the kind of project affects the construction of prerequisites, many should be iterative and some should be sequential
+- if a good problem definition hasn't been specified, you may be solving the wrong problem during construction
+- requirements are costly, make sure they are right before programming
+- make sure architectural design is also correct and you are not solving the right problem the wrong way
+- understand what approach has been taken to the construction prerequisites and choose your construction approach accordingly
