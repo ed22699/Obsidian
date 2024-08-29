@@ -1,0 +1,5 @@
+- Every programming language has strengths and weaknesses. Be aware of the specific strengths and weaknesses of the language you're using
+- Establish programming conventions before you begin programming. It's nearly impossible to change code to match them later
+- More construction practices exist than you can use on any single project. Consciously choose the practices that are best suited to your project
+- Ask yourself whether the programming practices you're using are a response to the programming language you're using or controlled by it. Remember to program into the language, rather than programming in it
+- Your position on the technology wave determines what approaches will be effective or even possible. Identify where you are on the technology wave, and adjust your plans and expectations accordingly.
