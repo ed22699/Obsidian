@@ -1,0 +1,2 @@
+- use `Math.max(first, second)` to get the largest of the two values
+- use `Math.min(first, second)` to get the smallest of the two values
