@@ -24,3 +24,4 @@ key points:
 - Chapter 2: [[Metaphors]]
 - Chapter 3: [[Requirement Prerequisites]] 
 - Chapter 4: [[Key Construction Decisions]]
+- Chapter 5: [[Design In Construction]]
