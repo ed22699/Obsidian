@@ -38,3 +38,15 @@
 - **Leanness:** system has no extra parts
 - **Stratification:** can view system at any single level and get a consistent view.  Can view one level without dipping into other levels. If theres poor code creating an interface that interacts with this code and the rest of the system then interacts with this interface instead
 - **Standard techniques:** don't let the system rely on exotic pieces. System should be standardised with common approaches
+## Levels of Design
+### Level 1: Software System
+### Level 2: Division into Subsystems or Packages
+- identification of all major subsystems
+- deciding how to partition the program into major subsystems and defining how each subsystem is allowed to use each other subsystem
+- this definition of use is important to keep the structure of the system in tact 
+	- how many different parts of the system does a developer need to understand at least a little bit to change something in the graphics subsystem?
+	- what happens when you try to use the business rules in another system?
+	- what happens when you want to put a new user interface on the system, perhaps a command-line UI for test purposes?
+	- what happens when you want to put data storage on a remote machine?
+- communication between subsystems should be on a need to know basis
+- system-level should be an acyclic graph (a program shouldn't contain any cir)
