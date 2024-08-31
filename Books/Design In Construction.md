@@ -49,4 +49,27 @@
 	- what happens when you want to put a new user interface on the system, perhaps a command-line UI for test purposes?
 	- what happens when you want to put data storage on a remote machine?
 - communication between subsystems should be on a need to know basis
-- system-level should be an acyclic graph (a program shouldn't contain any cir)
+- system-level should be an acyclic graph (a program shouldn't contain any circular relationships which A uses B uses C uses A)
+#### Common Subsystems
+- **Business rules:** laws, regulations, policies and procedures that you encode into a system
+- **User interface** 
+- **Database access:** hide implementation details of accessing a database 
+- **System dependencies:** package OS dependencies into a subsystem, this allows you to swap them out
+### Level 3: Division into Classes
+- This is the creation of the interfaces and deciding which methods and attributes should be present
+### Level 4: Division into Routines
+- often left up to the individual programmer
+- deciding the private functions and attributes of a class
+### Level 5: Internal Routine Design
+- often left up to the individual programmer
+- the functionality of the individual routines
+## Design Heuristics
+### Real-World Objects
+follows the steps
+- identify the objects and their attributes (methods and data)
+- determine what can be done to each object
+- determine what each object is allowed to do to other objects
+- determine the parts of each object that will be visible to other objects - which parts will be public and which will be private
+- define each object's public interface
+### Form Consistent Abstractions
+- bad, low level abstractions complicate a system, package the interface levels into doorknob, door and house
