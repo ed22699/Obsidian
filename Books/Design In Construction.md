@@ -88,4 +88,21 @@ two categories of secrets
 - **Perceived performance penalties:** the calling of these many classes may be perceived as penalising performance, however this modular design means once bottlenecks are exposed they can be dealt with more effectively as they are isolated
 #### Value of Information Hiding
 - easier to modify
-- get into the habit of asking "What should I hide", if 
+- get into the habit of asking "What should I hide", if you can put a function or data into the class's public interface without compromising its secrets do, otherwise don't
+### Identify Areas Likely to Change
+1. Identify items that seem likely to change
+2. Separate items that are likely to change
+3. Isolate items that seem likely to change
+Areas likely to change:
+- **Business rules** 
+- **Hardware dependencies** 
+- **Input and output** 
+- **Nonstandard language features** 
+- **Difficult design and construction areas** 
+- **Status variables:** you should not define these with boolean variables but instead using an enumerated typed, adding two levels of flexibility and readability to their use:
+	- can easily add new status types
+	- can use access routines rather than checking directly, allowing possibility of more sophisticated state detection
+- **Data-size constraints**
+### Anticipating Different Degrees of Change
+- look at the minimal subset of the program, this is least likely to change. Next define minimal increments to the system
+- less likely to change areas can be designed so the effect or scope of the change can have a greater impact
