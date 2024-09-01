@@ -73,3 +73,19 @@ follows the steps
 - define each object's public interface
 ### Form Consistent Abstractions
 - bad, low level abstractions complicate a system, package the interface levels into doorknob, door and house
+### Encapsulate Implementation Details
+### Inherit - When Inheritance Simplifies the Design
+### Hide Secrets (Information Hiding)
+- interface to a class should reveal as little as possible about this inner workings
+- if you are creating a function such as creating a new ID encapsulate in within a function so the new ID process can evolve without other areas needing to know
+two categories of secrets
+- hiding complexity so that your brain doesn't have to deal with it unless you're specifically concerned with it
+- hiding sources of change so that when change occurs, the effects are localised
+#### Barriers to information hiding
+- **Excessive distribution of information:** if information will be present in many places in the program it is better to define it once and use that definition instead
+- **Circular dependencies:** avoid circular dependencies
+- **Class data mistaken for global data:** direct access to data is restricted to a few routines organised into a single class. The routines are aware that other routines operate on the data, they know which other routines they are. Requires well designed, small classes
+- **Perceived performance penalties:** the calling of these many classes may be perceived as penalising performance, however this modular design means once bottlenecks are exposed they can be dealt with more effectively as they are isolated
+#### Value of Information Hiding
+- easier to modify
+- get into the habit of asking "What should I hide", if 
