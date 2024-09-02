@@ -106,3 +106,42 @@ Areas likely to change:
 ### Anticipating Different Degrees of Change
 - look at the minimal subset of the program, this is least likely to change. Next define minimal increments to the system
 - less likely to change areas can be designed so the effect or scope of the change can have a greater impact
+### Keep Coupling Loose
+- coupling between modules should be loose enough that one module can be used easily by other modules
+- criteria for evaluating coupling between modules:
+	- Size (number of connections between modules, routines should take less parameters and classes should have minimal methods)
+	- Visibility (make connections obvious)
+	- Flexibility (the ease to change the connections between modules, the ease for other modules to call a module)
+- kinds of coupling:
+	- simple-data-parameter coupling (data passed between them are of primitive data types and all data is passed through parameter lists) this is normal and acceptable
+	- simple-object coupling (an object instantiates that object) this is fine
+	- object-parameter coupling (object1 requires object2 to pass it object3)
+	- semantic coupling (one module makes use not of some syntactic element of another module but of some semantic knowledge of another module's inner workings)
+### Look for Common Design Patterns
+Design patterns are described in the gang of four's [[Design Patterns - Erich Gamma Richard Helm Ralph Johnson John Vlissides]]
+patterns provide several benefits that fully custom design doesn't:
+- patterns reduce complexity by providing ready-made abstractions
+- patterns reduce errors by institutionalising details of common solutions
+- patterns provide heuristic value by suggesting design alternatives
+- patterns streamline communication by moving the design dialog to a higher level
+traps that you could fall into with patterns are:
+- force-fitting code to use a pattern. If pattern does not improve understandability it can sometimes increase complexity
+- using a pattern because of a desire to try out a pattern rather than because the pattern is an appropriate design solution
+### Other Heuristics
+- Aim for strong cohesion
+- Build hierarchies
+- Formalise class contracts
+- Assign responsibilities 
+- Design for test
+- Avoid failure
+- Choose binding time consciously
+- Make central points of control
+- Consider using brute force
+- Draw a diagram
+- Keep your design modular
+## Guidelines For Using Heuristics
+1. Understanding the problem
+2. Devising a plan
+3. Carrying out the plan
+4. Looking back
+you don't have to solve the whole design problem at once, if you don't have enough information you can leave that last 20% to fall into place when more information is available 
