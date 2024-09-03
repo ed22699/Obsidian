@@ -145,3 +145,53 @@ traps that you could fall into with patterns are:
 3. Carrying out the plan
 4. Looking back
 you don't have to solve the whole design problem at once, if you don't have enough information you can leave that last 20% to fall into place when more information is available 
+# Design Practices
+- Iterate (even if you think the first design is good enough the second will likely be better)
+- Divide and Conquer
+- Top-Down and Bottom-Up design approaches
+	- Top-down is easier as you breaking something down into smaller components 
+	- Bottom-up typically results in early identification of needed utility functionality, which results in a compact, well-factored design
+	- Bottom-up is useful if similar designs have already been built as you can ask "what can I reuse?"
+	- Bottom-up is hard to use exclusively
+	- top-down starts simple but sometimes low-level complexity ripples back to the top, making it more complex then needed. Bottom up identifies complexity early leading to better design of higher-level classes, if complexity doesn't torpedo the system first
+	- try a variety of approaches
+- Experimental Prototyping (can help with wickedness if used correctly)
+	- prototyping is <u>throw away code</u>
+	- write the minimum code needed to answer the question
+	- make sure the question is specific enough
+	- do not use the code for the real system, either implement the prototype using technology not present in the production technology or at least prefix classes with prototype
+- Collaborative design
+	- use less structured approaches to foster creativity and increase number of design alternatives
+	- use more structured approaches for quality assurance
+
+## How much design is enough?
+
+| Factor                                                                                     | Level of detail needed in design before construction | Documentation Formality |
+| ------------------------------------------------------------------------------------------ | ---------------------------------------------------- | ----------------------- |
+| Design/construction team has deep experience in applications area                          | low detail                                           | low formality           |
+| Design/construction team has deep experience but is inexperienced in the applications area | medium detail                                        | medium formality        |
+| Design/construction team is inexperienced                                                  | medium to high detail                                | low-medium formality    |
+| Design/construction team has moderate-to-high turnover                                     | medium detail                                        |                         |
+| Application is safety-critical                                                             | high detail                                          | high formality          |
+| Application is mission-critical                                                            | medium detail                                        | medium-high formality   |
+| Project is small                                                                           | low detail                                           | low formality           |
+| Project is large                                                                           | medium detail                                        | medium formality        |
+| Software is expected to have a short lifetime (weeks or months)                            | low detail                                           | low formality           |
+| Software is expected to have a long lifetime (months or years)                             | medium detail                                        | medium formality        |
+- if you can't decide how deeply to investigate a design, err on side of more detail. Errors tend to arise from areas you thought were easy so didn't design rather than areas you did design but badly
+- better to have 80% effort go into exploring alternatives and 20% go into documentation than the other way around
+## Capturing your work
+for small projects, informal projects or projects that need a light-weight way to record design use there approaches:
+- insert design documentation into the code itself
+- capture design discussion and decisions on a Wiki
+- write e-mail summaries
+- use a digital camera
+- save design flip charts
+- use CRC (class, responsibility, collaborator) cards
+- create UML diagrams at appropriate levels of detail
+# Key Points
+- software's primary technical imperative is managing complexity. This is greatly aided by a design focus on simplicity
+- simplicity is achieved in two general ways: minimising the amount of essential complexity that anyone's brain has to deal with at any one time, and keeping accidental complexity from proliferating needlessly
+- design is heuristic, Dogmatic adherence to any single methodology hurts creativity and hurts your programs
+- good design is iterative; the more design possibilities you try, the better your final design will be
+- information hiding is a particularly valuable concept. Asking "what should I hide?" settles many difficult design issues
