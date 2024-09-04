@@ -1,0 +1,1 @@
+- Present a consistent level of abstraction in the class interface (each class should implement one and only one abstract data type)
