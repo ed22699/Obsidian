@@ -76,3 +76,31 @@
 		- number of different direct routine calls on instantiated objects
 		- number of routine calls on objects returned by other instantiated objects
 ## Constructors
+- Initialise all member data in all constructors, if possible
+- Enforce the singleton property by using a private constructor
+	- if you want to define a class that allows only one object to be instantiated, you can enforce this by hiding all the constructors of the class and then providing a static `GetInstace()` routine to access the class's single instance
+- Prefer deep copies to shallow copies until proven otherwise
+	- deep copies are simple to code and maintain than shallow copies
+> [!question]  Look up
+> What are deep and shallow copies
+
+# Reasons to Create a Class
+- Model real-world objects
+- Model abstract objects
+- Reduce complexity
+- Isolate complexity
+- Hide implementation details
+- Limit effects of changes
+- Hide global data
+- Streamline parameter passing
+- Make central points of control
+- Facilitate reusable code
+	-  Projects that used an object-oriented approach were able to take more than 70% of their code from previous projects according to a NASA study
+- Plan for a family of programs
+- Package related operations
+- Accomplish a specific refactoring
+## Classes to Avoid
+- Avoid creating god classes (creating classes that are all-knowing and all-powerful)
+- Eliminate irrelevant classes (class that has only data but no behaviour)
+- Avoid classes named after verbs (don't make classes with only behaviour but no data)
+# Language-Specific Issues
