@@ -40,3 +40,39 @@
 	- Abstract overridable routine - derived class inherits the routine's interface but not its implementation
 	- Overridable routine - inherits the routine's interface and a default implementation an it is allowed to override the default implementation
 	- Non-overridable routine - inherits the routine's interface and its default implementation and it is not allowed to override the routine's implementation
+- Don't "override" a non-overridable member function (don't reuse names of non-overridable base-class routines in derived classes)
+- Move common interfaces, data, and behaviour as high as possible in the inheritance tree
+- Be suspicious of classes of which there is only one instance (could confuse objects with classes)
+	- consider whether you could just create an object instead of a new class or variation of derived class be represented in data rather than a distinct class. 
+	- Use singleton pattern if you still want to make this class
+> [!question] Need to look up
+> Should every base class have an interface?
+
+- Be suspicious of base classes of which there is only one derived class (don't create anymore inheritance structure than is necessary)
+- Be suspicious of classes that override a routine and do nothing inside the derived routine (indicates error in base class)
+- Avoid deep inheritance trees (try to keep it no more than two or three levels and 7+-2 subclasses)
+- Prefer polymorphism to extensive type checking (repeated case statements sometimes indicate inheritance might be a better design choice)
+- Make all data private, not protected
+	- if a derived class needs access use protected accessor functions instead
+## Multiple Inheritance
+- be careful with multiple inheritance. Sometimes valuable but mostly you're better off leaving the tool so it can't do damage
+- can be good for mixins, however, mixins must be truly independent of each other
+- should use multiple inheritance only after carefully considering the alternatives and weighing the impact on the system complexity and comprehensibility
+## Why Are There So Many Rules for Inheritance?
+- inheritance tends to work against the primary technical imperative you have as a programmer, which is to manage complexity
+- if multiple classes share common data but not behaviour, create a common object that those classes can contain
+- if multiple classes share common behaviour but not data, derive them from a common base class that defines the common routines
+- if multiple classes share common data and behaviour, inherit from a common base class that defines the common data and routines 
+- inherit when you want the base class to control your interface; contain when you want to control your interface
+## Member Functions and Data
+- Keep the number of routines in a class as small as possible
+- Disallow implicitly generated member functions and operators you don't want (such as construction methods)
+- Minimise the number of different routines called by a class
+- Minimise indirect routine calls to other classes
+	- Law of Demeter - Object A can call any of its own routines. If Object A instantiates an Object B, it can call any of Object B's routines. But it should avoid calling routines on objects provided by Object B.
+- In general, minimise the extent to which a class collaborates with other classes
+	- minimise:
+		- number of kinds of objects instantiated
+		- number of different direct routine calls on instantiated objects
+		- number of routine calls on objects returned by other instantiated objects
+## Constructors
