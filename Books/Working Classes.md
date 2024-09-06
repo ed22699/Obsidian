@@ -45,10 +45,8 @@
 - Be suspicious of classes of which there is only one instance (could confuse objects with classes)
 	- consider whether you could just create an object instead of a new class or variation of derived class be represented in data rather than a distinct class. 
 	- Use singleton pattern if you still want to make this class
-> [!question] Need to look up
-> Should every base class have an interface?
-
 - Be suspicious of base classes of which there is only one derived class (don't create anymore inheritance structure than is necessary)
+	- This goes for interfaces too, if only one class implements the interface you don't need an interface there. However, if you would like to also implement a mock of that class then an interface may be necessary
 - Be suspicious of classes that override a routine and do nothing inside the derived routine (indicates error in base class)
 - Avoid deep inheritance trees (try to keep it no more than two or three levels and 7+-2 subclasses)
 - Prefer polymorphism to extensive type checking (repeated case statements sometimes indicate inheritance might be a better design choice)
@@ -81,9 +79,16 @@
 	- if you want to define a class that allows only one object to be instantiated, you can enforce this by hiding all the constructors of the class and then providing a static `GetInstace()` routine to access the class's single instance
 - Prefer deep copies to shallow copies until proven otherwise
 	- deep copies are simple to code and maintain than shallow copies
-> [!question]  Look up
-> What are deep and shallow copies
-
+	- shallow copies the pointer points to the same space as the original. Deep copy creates a copy of the object inside the class
+```Java
+Truck original = new Truck();
+original.colour = "green";
+//Deep copy
+Truck copy = new Truck();
+copy.colour = original.colour;
+//Shallow copy
+Truck copy = original
+```
 # Reasons to Create a Class
 - Model real-world objects
 - Model abstract objects
