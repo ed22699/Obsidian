@@ -109,3 +109,22 @@ Truck copy = original
 - Eliminate irrelevant classes (class that has only data but no behaviour)
 - Avoid classes named after verbs (don't make classes with only behaviour but no data)
 # Language-Specific Issues
+- different classes have different defaults when it comes to a class being overridable
+- Here are some class related areas that vary significantly depending on the language:
+	- behaviour of overridden constructors and destructors in an inheritance tree
+	- behaviour of constructors and destructors under exception-handling conditions
+	- Importance of default constructors (constructors with no arguments)
+	- Time at which a destructor of finaliser is called
+	- Wisdom of overriding the language's built-in operators, including assignment and equality
+	- How memory is handled as objects are created and destroyed or as they are declared and go out of scope
+# Beyond Classes: Packages
+if a language doesn't support packages directly, you can create your own poor-programmer's version of a package and enforce it through programming standards that include the following:
+- Naming conventions that differentiate which classes are public and which are for the package's private use
+- Naming conventions, code-organisation conventions (project structure). or both that identify which packages each class belongs to
+- Rules that define which packages are allowed to use which other packages, including whether the used can be inheritance, containment, or both
+# Key Points
+- Class interfaces should provide a consistent abstraction. Many problems arise from violating this single principle. 
+- A class interface should hide something - a system interface, a design decision, or an implementation detail
+- Containment is usually preferable to inheritance unless you're modelling an "is a " relationship
+- Inheritance is a useful tool, but it adds complexity, which is counter to Software's Primary Technical Imperative of managing complexity
+- Classes are your primary tool for managing complexity. Give their design as much attention as needed to accomplish that objective.
