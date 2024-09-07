@@ -26,3 +26,4 @@ key points:
 - Chapter 4: [[Key Construction Decisions]]
 - Chapter 5: [[Design In Construction]]
 - Chapter 6: [[Working Classes]]
+- Chapter 7: [[High-Quality Routines]]
