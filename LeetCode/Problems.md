@@ -9,3 +9,5 @@ WHERE number != 0
 1. Deque
 2. StringBuilder
 3. [[ArrayList]]
+4. [[HashSet]]
+5. [[Math]]
