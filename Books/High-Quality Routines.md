@@ -33,3 +33,20 @@
 - Logical cohesion - several operations stuffed into a routine and one is chosen via a flag
 	- each operation should have its own routine and the calling routine (event handler) should have only the job of selecting which is ran
 - Coincidental cohesion - operations in a routine that have no discernible relationship
+# Good Routine Names
+- Describe everything the routine does
+- Avoid meaningless, vague, or wishy-washy verbs
+- Don't differentiate routine names solely by number
+- Make names of routines as long as necessary
+- To name a function, use a description of the return value
+- To name a procedure, use a strong verb followed by an object
+- Use opposites precisely
+- Establish conventions for common operations
+# How Long Can a Routine Be
+If writing a long routine its best to keep it below 100-200 lines, higher than that and you should be careful
+# How to Use Routine Parameters
+- Put parameters in input-modify-output order
+- If several routines use similar parameters, put the similar parameters in a consistent order
+- Use all the parameters 
+- Put status or error variables last
+- Don't use routine parameters as working variables
