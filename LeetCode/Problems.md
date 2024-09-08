@@ -11,3 +11,7 @@ WHERE number != 0
 3. [[ArrayList]]
 4. [[HashSet]]
 5. [[Math]]
+
+## Useful Algorithms
+1. [[sliding window]]
+2. [[two pointer approach]]
