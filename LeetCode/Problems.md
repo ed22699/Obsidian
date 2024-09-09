@@ -13,5 +13,8 @@ WHERE number != 0
 5. [[Math]]
 
 ## Useful Algorithms
-1. [[sliding window]]
-2. [[two pointer approach]]
+### Arrays
+1. [[sliding window]] (finding subarrays)
+2. [[two pointer approach]] (searching for pairs)
+### Graphs
+1. [[Breadth First Search]] (finding levels to a graph)
