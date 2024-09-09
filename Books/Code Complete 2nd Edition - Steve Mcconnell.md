@@ -27,3 +27,4 @@ key points:
 - Chapter 5: [[Design In Construction]]
 - Chapter 6: [[Working Classes]]
 - Chapter 7: [[High-Quality Routines]]
+- Chapter 8: [[Defensive Programming]]
