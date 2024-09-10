@@ -11,7 +11,7 @@ WHERE number != 0
 3. [[ArrayList]]
 4. [[HashSet]]
 5. [[Math]]
-
+	
 ## Useful Algorithms
 ### Arrays
 1. [[sliding window]] (finding subarrays)
