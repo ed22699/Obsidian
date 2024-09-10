@@ -6,8 +6,8 @@ WHERE number != 0
 
 
 ## Useful Concepts
-1. Deque
-2. StringBuilder
+1. [[Deque]]
+2. [[StringBuilder]]
 3. [[ArrayList]]
 4. [[HashSet]]
 5. [[Math]]
