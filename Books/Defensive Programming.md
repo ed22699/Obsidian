@@ -34,6 +34,44 @@ Use assertions to document assumptions made in the code and to flush out unexpec
 	- Set the value of a status variable
 	- Return status as the function's return value
 	- Throw an exception by using the language's built-in exception mechanism
+- Call an error-processing routine/object
+- Display an error message whenever the error is encountered
+- Handle the error in whatever way works best lcally
+- Shut down
 > [!tip]
  Use one or multiple of these techniques based on what is suitable for the system
+
+## Robustness vs Correctness
+Safety-critical applications tend to favour correctness to robustness. It is better to return no result than to return a wrong result. 
+
+Consumer applications tend to favour robustness to correctness. Any result whatsoever is usually better than the software shutting down. 
+# Exceptions
+the basic structure of an exception is that a routine uses throw to throw an exception object. Code in some other routine up the calling hierarchy will catch the exception within a try-catch block.
+- Use exceptions to notify other parts of the program about errors that should not be ignored
+- Throw an exception only for conditions that are truly exceptional
+- Don't use an exception to pass the buck (if error can be handled locally, handle it locally)
+- Avoid throwing exception in constructors and destructors unless you catch them in the same place
+- Throw exceptions at the right level of abstraction (if the error thrown requires knowlage of the method throwing it then it is breaking encapsulation)
+- Include in the exception message all information that led to the exception
+- Avoid empty catch blocks
+- Know the exceptions your library code throws
+- Consider building a centralised exception reporter
+- Standardise your project's use of exceptions
+	- if you're working in a language like C++ that allows you to throw a variety of kinds of objects, data, and pointers, standardise on what specifically you will throw. For compatibility with other languages, consider throwing only objects derived from the Exception base class
+	- Consider creating your own project-specific exception class, which can serve as the base class for all exceptions thrown on your project. This supports centralising and standardising logging, error reporting, and so on
+	- Define the specific circumstances under which code is allowed to throw an exception that won't be handled locally
+	- Determine whether a centralised exception reporter will be used
+	- Define whether exception are allowed in constructors and destructors
+- Consider alternatives to exceptions
+# Barricade Your Program to Contain the Damage Caused by Errors
+Barricades are a dame-containment strategy. Interfaces that deal with external data should clean data so the rest of the system is not at risk of these external issues.
+
+The class's public methods assume data is unsafe, and they are responsible for checking the data and sanitising it. Once accepted by the class's public methods, the class's private methods can assume the data is safe
+- Convert input data to the proper type at input time
+## Relationship Between Barricades and Assertions
+- Routines outside the barricade should use error handling because it isn't safe to make any assumptions about the data
+- Routines inside the barricade should use assertions, because the data passed to them is supposed to be sanitised before it's passed across the barricade 
+# Debugging Aids
+## Don't Automatically Apply Production Constraints to the Development Version
+- Be willing to trade speed and resource usage during development in exchange for built-in tools that can make development go more smoothly
 
