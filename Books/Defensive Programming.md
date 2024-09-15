@@ -76,5 +76,29 @@ The class's public methods assume data is unsafe, and they are responsible for c
 - Be willing to trade speed and resource usage during development in exchange for built-in tools that can make development go more smoothly
 ## Introduce Debugging Aids Early
 ## Use Offensive Programming
-- Make sure asserts abort the program.
+- Make sure asserts abort the program. Don't allow programmers to get into the habit of just hitting the Enter key to bypass a known problem. Make the problem painful enough that it will be fixed
+- completely fill any memory allocated so that you can detect memory allocation errors
+- Completely fill any files or steams allocated to flush out any file-format errors
+- Be sure the code in each case statement's default or else clause fails hard (aborts the program) or is otherwise impossible to overlook
+- Fill an object with junk data just before it's deleted
+- Set up the program to e-mail error log files to yourself so that you can see the kinds of errors that are occurring in the release software, if that's appropriate for the kind of software you're developing
+## Plan to Remove Debugging Aids
+- Use version-control tools and build tools like ant and make
+- Use a built-in preprocessor
+- Write your own preprocessor
+- Use debugging stubs
+# Determining How Much Defensive Programming to Leave in Production Code
+- Leave in code that check for important errors
+- Remove code that checks for trivial errors
+- Remove code that results in hard crashes
+- Leave in code that helps the program crash gracefully
+- Log errors for your technical support personnel
+- Make sure that the error messages you leave in are friendly
+# Key Points
+- Production code should handle errors in a more sophisticated way than "garbage in, garbage out"
+- Defensive-programming techniques make errors easier to find, easier to fix, and less damaging to production code
+- Assertions can help detect errors early, especially in large systems, high-reliability systems, and fast-changing code bases
+- the decision about how to handle bad inputs is a key error-handling decision and a key high-level design decision
+- Exceptions provide a means of handling errors that operates in a different dimension form the normal flow of the code. They are a valuable addition to the programmer's intellectual toolbox when used with care, and they should be weighed against other error-processing techniques
+- Constraints that apply to the production system do not necessarily apply to the development version. You can use that to your advantage, adding code to the development version that helps to flush out errors quickly
 
