@@ -74,4 +74,7 @@ The class's public methods assume data is unsafe, and they are responsible for c
 # Debugging Aids
 ## Don't Automatically Apply Production Constraints to the Development Version
 - Be willing to trade speed and resource usage during development in exchange for built-in tools that can make development go more smoothly
+## Introduce Debugging Aids Early
+## Use Offensive Programming
+- Make sure asserts abort the program.
 
