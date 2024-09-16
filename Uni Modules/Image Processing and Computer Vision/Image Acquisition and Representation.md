@@ -17,6 +17,19 @@ $$
 - Background clutter ------
 - Object intra-class variation (variations of an object type)
 - Local ambiguity (similar looking images)
-acquisition ----
-## [[Shannon's Sampling Theorem]] ------
-## Modelling a Spatial Brightness Pulse - Dirac Delta-Function ----
+![[imageSamplingQuantisation.png|700]]
+## [[Shannon's Sampling Theorem]] 
+## Modelling a Spatial Brightness Pulse 
+![[Dirac Delta-Function ]]
+## The Point Spread Function
+![[Screenshot 2024-09-16 at 17.42.14.png|300]]
+- ideally, the optical system should be mapping point information to points again, however, optical systems are never ideal
+- superposition principle : an image is the sum of the PSF of all its points
+if $f(x,y)$ is the original, $g(x, y)$ is the 
+## Colour Spaces
+### RGB ---
+### HSV ---
+- Hue
+- Saturation
+- Value
+### CIE -----
