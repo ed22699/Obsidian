@@ -9,7 +9,7 @@ $$
 \int^{\infty}_{-\infty}\delta(t)dt = 1
 $$
 ### Intuitively:
-![[Screenshot 2024-09-16 at 17.30.37.png|150]]
+![[diracIntuative.png|150]]
 $$
 \delta(t) = \lim_{\in \to 0}[y_{\in}(t)]
 $$

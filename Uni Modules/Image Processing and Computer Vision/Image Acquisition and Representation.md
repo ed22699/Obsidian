@@ -18,18 +18,29 @@ $$
 - Object intra-class variation (variations of an object type)
 - Local ambiguity (similar looking images)
 ![[imageSamplingQuantisation.png|700]]
-## [[Shannon's Sampling Theorem]] 
+ ![[Shannon's Sampling Theorem]] 
 ## Modelling a Spatial Brightness Pulse 
 ![[Dirac Delta-Function ]]
-## The Point Spread Function
-![[Screenshot 2024-09-16 at 17.42.14.png|300]]
-- ideally, the optical system should be mapping point information to points again, however, optical systems are never ideal
-- superposition principle : an image is the sum of the PSF of all its points
-if $f(x,y)$ is the original, $g(x, y)$ is the 
+![[Point Spread Function]]
 ## Colour Spaces
-### RGB ---
-### HSV ---
-- Hue
-- Saturation
-- Value
-### CIE -----
+![[colourSpaces.png|500]]
+in videos instead of $f[x,y]$ it is $f[x,y,t]$
+### RGB 
+- splits the image up into the intensities of the three main colours
+- cons: strongly correlated channels, non-perceptual
+### HSV 
+![[HSV.png|400]]
+- Hue: colour portion of the model, is a number from 0 to 360 degrees
+- Saturation: describes the amount of gray in a particular colour from 0 to 100 percent
+- Value: describes the brightness or intensity of the colour, from 0 to 100 percent
+### CIE L\*a\*b\*
+perceptually uniform colour space
+- Luminance = brightness
+- Chrominance = colour
+- use Euclidean distances to represent colour differences
+
+# Summary
+- effect of vary sparse sampling is aliasing
+	- anti-aliasing can be achieved by removing spatial frequencies above a critical limit (Shannon-Nyquist limit) [[Shannon's Sampling Theorem]]
+	![[quantization.png|400]]
+	
