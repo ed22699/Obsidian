@@ -1,0 +1,11 @@
+---
+tags:
+  - VerificationHierachy
+---
+- limited number of DUV facilities are utilised in a mostly black-box environment
+	- access important and stable features, the rest is kept in the dark
+- combines the pros (or cons if done wrong) of black and white box
+	- progression from black box to grey box should be carefully planned and started only when the DUV is sufficiently stable
+- in practice most verification environments are grey box
+	- may need to start with black box with planned evolution into grey box
+	- prediction of correct results on an interface is occasionally impossible without viewing an internal signal

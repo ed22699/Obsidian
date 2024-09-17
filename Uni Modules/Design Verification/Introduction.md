@@ -7,16 +7,19 @@ Design Verification is the process used to gain confidence in the correctness of
 ![[verification methods.png|300]]
 - Many different methods can be used to gain the is confidence 
 - Ensure requirements and specification are given if you want to verify a system
-## Verification ----
+## Verification (looks at behaviour) 
 - confirms that a system has a given input / output behaviour, sometimes called the transfer function of a system
-## Validation ----
+- role of verification to confirm that the system implements exactly that transfer function
+- in order to perform verification you need to know what the transfer function is (how inputs are transferred to output) and that what the system does given the inputs conforms to what the specification says it should do in order to produce the output 
+## Validation (looks at purpose)
 - Confirms that the system's transfer function results in the intended system behaviour when the system is employed in its target environment, e.g. as a component of an embedded system
+- Is the system fit for purpose? What is the intended behaviour when used in its target environment?
 # The IC Design Process
 ![[icDesignProcess.png|400]]
-- **Architectural Specification**: -----------------
-- **Micro Architectural Design**: 
-- **Behavioural Model**: 
+- **Architectural Specification**: Specifies the processors states and instruction set (usually a reference manual)
+- **Micro Architectural Design**: How the instruction set is implemented
 - **RTL Model**: 
+- **Behavioural Model**: 
 - **Gate-Level Model**: 
 - **Transistor-Level Model**: 
 - **Layout**: 

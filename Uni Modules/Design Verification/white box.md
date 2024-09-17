@@ -1,0 +1,14 @@
+---
+tags:
+  - VerificationHierachy
+---
+- internal facilities of the DUV are known, visible and utilised for verification
+- pros
+	- full visibility and controllability of internal signals
+		- can identify and cover corner cases
+		- can detect bugs as soon as they occur
+	- quickly possible to set up interesting conditions, e.g. counter roll-over
+- cons
+	- danger to follow the implantation/design instead of the specification
+	- sensitive to changes in the DUV (implementation)
+	- too many details make it hard to create and maintain

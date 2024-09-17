@@ -1,0 +1,15 @@
+---
+tags:
+  - VerificationHierachy
+---
+- has inputs, outputs, and performs some (well documented) function
+- to verify a black box, you need to understand the function
+- the verification code utilises only the external interfaces
+- the internal signals and state remain in the dark
+- Pros
+	- no knowledge of the actual implementation is required
+	- ability to predict functional results based on inputs alone ensures that the reference model remains independent from the DUV implementation
+	- verification code is less sensitive to changes inside the DUV
+- Cons
+	- difficult to locate source of problem, only exposes effects (however not all bugs propagate to the outputs)
+	- lacks controllability and observability 
