@@ -69,4 +69,27 @@ Productivity improvements drive early problem discovery
 - purpose of verification is to ensure that the result of some transformation is as intended or as expected 
 - purpose of test is to show design was manufactured properly
 - verification is done to ensure that design meets its functional intent prior to manufacture
- ![[Screenshot 2024-09-17 at 11.38.39.png]]
+ ![[verification and test.png|300]]
+## Design For Test
+- one method is scanning:
+	- link all internal registers together into a chain
+	- chain accessible from chip pins
+	- allows control/observation of internal state
+	- impacts area of design, but keeps testing costs down
+- means manufacturers can prove that it is not their chip which is at fault, can show that all transistors are working outside the designs function and can show the speed of different chips 
+- if fabrication is correct either design is incorrect or timing is wrong
+ ![[Screenshot 2024-09-17 at 11.43.16.png|300]]
+## Equivalence Checking
+Compares two models to heck for equivalence
+- proves mathematically that both are logically equivalent (commonly used on lower levels of design process) e.g. RTL to Gates
+- conceptually asking "is there an input vector such that the output of the XOR gate can be 1?"
+![[Screenshot 2024-09-17 at 11.46.04.png|250]]
+# Cost of Verification
+- always takes too long and costs too much
+- as number of bugs found decreases, cost and time of finding remaining ones increases
+- verification does not generate revenue
+- indispensable 
+	- ensures functionally correct design and provides benefits to customer
+	- proper functional verification demonstrates trustworthiness of the design
+	- right-first-time designs demonstrate professionalism and increase reputation
+![[Screenshot 2024-09-17 at 11.50.04.png|500]]

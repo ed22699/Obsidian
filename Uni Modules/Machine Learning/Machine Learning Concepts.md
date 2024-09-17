@@ -35,4 +35,4 @@ tags:
 	- Cons: More expensive to train (especially with large datasets as more parameters), risk of overfitting
 # Reading
 - Bishop 1.1-1.4
-- Murphy 1.1-1.2
+[[Bishop 1.1]]

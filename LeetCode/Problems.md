@@ -16,6 +16,7 @@ WHERE number != 0
 ### Arrays
 1. [[sliding window]] (finding subarrays)
 2. [[two pointer approach]] (searching for pairs)
+3. [[Dynamic Programming]] (finding minimum combinations)
 ### Graphs
 1. [[Breadth First Search]] (finding levels to a graph)
 2. [[Topological Sort (DFS)]] (traversing a directed acyclic graph (graph with no cycles))
