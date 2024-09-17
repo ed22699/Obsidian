@@ -18,12 +18,12 @@ Design Verification is the process used to gain confidence in the correctness of
 ![[icDesignProcess.png|400]]
 - **Architectural Specification**: Specifies the processors states and instruction set (usually a reference manual)
 - **Micro Architectural Design**: How the instruction set is implemented
-- **RTL Model**: 
-- **Behavioural Model**: 
+- **RTL Model**: (Register Transfer Level) written in a hardware description language like Verilog or VHDL
 - **Gate-Level Model**: 
 - **Transistor-Level Model**: 
-- **Layout**: 
-- **Mask Data**: 
+- **Layout**: How fast and long the signals have to travel in the physical implementation (about real time units)
+- **Mask Data**: Entry point for the chip manufacturing process
+- **Behavioural Model**: A cycle accurate model, executes a sequence of instruction in a specified number of clock cycles (about clock cycles)
 - **Design Library**: 
 - Functional verification aims to demonstrate that the functional intent of a design is preserved in its implementation
 # Why is Verification Important
