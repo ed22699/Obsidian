@@ -13,8 +13,8 @@ $$
 - Illumination
 - Occlusion (things in front of others)
 - Scale
-- Deformation ----
-- Background clutter ------
+- Deformation (motion blur)
+- Background clutter (busy backgrounds)
 - Object intra-class variation (variations of an object type)
 - Local ambiguity (similar looking images)
 ![[imageSamplingQuantisation.png|700]]
