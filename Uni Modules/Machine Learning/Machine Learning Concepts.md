@@ -27,12 +27,8 @@ tags:
 # [[Curse of Dimensionality in ML]]	
 # [[No Free Lunch Theorem]]
 # Parametric VS Non-Parametric Models	
-- Parametric: Model assumes a fixed number of parameters
-	- Pros: Simpler, fast to fit and may require less data
-	- Cons: Complexity is fixed. Simple models are better for simpler problems/datasets
-- Non-parametric: Number of model parameters grows with the amount of data
-	- Pros: Flexible (infer which functions to use), weak assumptions, can give better models
-	- Cons: More expensive to train (especially with large datasets as more parameters), risk of overfitting
+ ![[Parametric]]
+![[Non-Parametric]]
 # Reading
 - Bishop 1.1-1.4
 [[Bishop 1.1]]
