@@ -1,6 +1,7 @@
 ---
 tags:
   - MLConcepts
+  - Regression_and_Discriminant
 ---
 
 - Parametric: Model assumes a fixed number of parameters (e.g. $f(x)=ax + c$)
