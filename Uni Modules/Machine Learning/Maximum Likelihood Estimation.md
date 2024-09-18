@@ -20,3 +20,4 @@ tags:
 4. Set derivatives to $0$ and solve for $\theta$
 - in the case of standard linear regression the parameters which minimise the squared error are also the MLE parameters
 - in general this recipe will only find local maxima of the likelihood (not necessarily the MLE), this is due to the fact that there could be another lower dip later on and the function is stuck in the higher
+## [[Logistic Regression - Maximum Likelihood Estimation recipe]]
