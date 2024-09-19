@@ -25,4 +25,14 @@ Building a hash table with chaining results in the following time complexities
 | $add(x,v)$  | $O(1)$                              | add item to the list link if necessary                       |
 | $lookup(x)$ | $O($length of chain containing $x)$ | may search through the whole list containing $x$             |
 | $delete(x)$ | $O($length of chain containing $x)$ | only $O(1)$ to perform actual delete, have to find $x$ first |
-[[True randomness]]
+![[True randomness]]
+## Specifying the hash function
+- to specify truly random hash function we would need to specify a position in $T$ for each key in $U$. This is a number in $[m]$ and so requires $\approx \log_{2}m$ bits (in total $\approx u \log_{2}m$ bits)
+	- if we instead picked as we went we would only use $n \log_{2}m$ bits (one per key we store). However, to recall $h(x)$ next time we see $x$ we would need a dictionary (cyclic problem)
+	- **Solution**: instead define a set or family of hash functions $H=\{h_{1},h_{2},...\}$
+		- as part of initialising the hash table, we choose the hash function $h$ from $H$ randomly
+
+![[Weakly universal hashing]]
+
+Questions
+is there one hash function per hash map. If so how does selecting this randomly effect the probability of collisions

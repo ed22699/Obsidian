@@ -10,5 +10,7 @@ let indicator r.v. $I_{x,y}$ be $1$ iff $h(x) = h(y)$
 - $P(h(x) = h(y))=\frac{1}{m}$
 - $\mathbb{E}(I_{x,y})=\frac{1}{m}$
 Let $N_{x}$ be the number of keys stored in $T$ that are hashed to $h(x)$
+- $N_{x}=\sum_{y \in T}I_{x,y}$ 
+- $\mathbb{E}(N_{x})=\mathbb{E}(\sum_{y \in T}I_{x,y}) = \sum_{y \in T}\mathbb{E}(I_{x,y}) = n \cdot \frac{1}{m} = \frac{n}{m}$
 
 
