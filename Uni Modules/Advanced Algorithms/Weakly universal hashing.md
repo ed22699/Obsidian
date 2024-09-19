@@ -12,4 +12,4 @@ tags:
 - for $a,b \in [p]$, let
 	- $h_{a,b}(x)=((ax+b)\mod p)\mod m$
 	- $H_{p,m}=\{h_{a,b}|a \in \{1,...,p-1\},b \in \{0,...,p-1\}\}$
-	- 
+	- $ax+b$ is a linear transformation which spreads keys over $p$ when taken modulo $p$. This does not cause any collisions, only when taking modulo $m$ do we get collisions

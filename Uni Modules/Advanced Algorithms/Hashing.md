@@ -33,6 +33,9 @@ Building a hash table with chaining results in the following time complexities
 		- as part of initialising the hash table, we choose the hash function $h$ from $H$ randomly
 
 ![[Weakly universal hashing]]
+## True randomness vs weakly universal hashing
+- we have seen that when $m \geq n$ the expected lookup time in the hash table for both is is $O(1)$
+- the difference comes when we compare the **longest chain** of both
 
 Questions
 is there one hash function per hash map. If so how does selecting this randomly effect the probability of collisions
