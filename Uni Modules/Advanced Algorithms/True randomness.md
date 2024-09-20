@@ -25,6 +25,10 @@ equivalent to throwing $m$ balls into $m$ bins, the probability of having a bin 
 	- note $\begin{pmatrix} m\\k \end{pmatrix} = \frac{m!}{k!(m-k)!} = \frac{m \cdot (m-1) \cdot (m-2) \cdot ... \cdot (m-k+1) \cdot (m-k)!}{k!(m-k)!} = \frac{m \cdot (m-1) \cdot (m-2) \cdot ... \cdot (m-k+1)}{k!}$ 
 	$\leq \frac{m\cdot m \cdot m \cdot ... \cdot m}{k!} \leq \frac{m^{k}}{{k!}}$
 	
+- [[Union bound]] again gives us $P($at least one bin receives at least $k$ balls$)\leq m \cdot P(X_{1}\geq k)\leq \frac{m}{k!}$
+- where $k=3\log m$ we observe $\frac{m}{k!}\leq \frac{1}{m}$ for $m \geq 2$ 
+	- note $k! > 2^{k-1}$ 
+	- $2^{(3\log m-1)} \geq 2^{2\log m}=m^{2}$ 
 	
 	
 
