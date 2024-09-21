@@ -1,6 +1,7 @@
 ---
 tags:
   - probability
+  - Hashing
 ---
 
 Let $Y_{1}, Y_{2},...,Y_{k}$ be $k$ random variables. Then 

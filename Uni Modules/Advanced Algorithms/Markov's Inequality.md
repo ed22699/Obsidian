@@ -1,6 +1,7 @@
 ---
 tags:
   - probability
+  - Hashing
 ---
 if $X$ is a non-negative r.v., then for all $a > 0$ 
 $$

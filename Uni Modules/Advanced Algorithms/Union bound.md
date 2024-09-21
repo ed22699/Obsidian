@@ -1,6 +1,7 @@
 ---
 tags:
   - probability
+  - Hashing
 ---
 Let $V_{1},...,V_{k}$ be $k$ events. Then
 $$
