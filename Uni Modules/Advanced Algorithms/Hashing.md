@@ -36,6 +36,9 @@ Building a hash table with chaining results in the following time complexities
 ## True randomness vs weakly universal hashing
 - we have seen that when $m \geq n$ the expected lookup time in the hash table for both is is $O(1)$
 - the difference comes when we compare the **longest chain** of both
-
+	- if $h$ is selected uniformly at random from all functions $U\to [m]$ then, $P($any chain has length $\geq 3\log m)\leq \frac{1}{m}$
+		- $3\log m$ comes from the balls in bins model where with a truly random "throw" the the likelihood of $\log m$ balls ending up in the same bin decreases massively as the number of bins ($m$) increases
+	- if $h$ is selected uniformly at random from a weakly universal set of hash functions, $P($any chain has length $\geq 1+\sqrt{2m})\leq \frac{1}{2}$
+		- the $\sqrt{2m}$ represents the growth of large deviations in this less random process. $1$ represents a base level
 Questions
 is there one hash function per hash map. If so how does selecting this randomly effect the probability of collisions

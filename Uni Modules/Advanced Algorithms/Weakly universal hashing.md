@@ -27,3 +27,4 @@ $$
 - let r.v. $L$ be the length of the longest chain $\to C \geq \begin{pmatrix}L\\2\end{pmatrix}$
 - so, $P(\frac{(L-1)^{2}}{2}\geq m)\leq P(\begin{pmatrix}L\\2\end{pmatrix}\geq m)\leq P(C\geq m)\leq \frac{1}{2}$
 	- rearranging we get $P(L\geq 1+\sqrt{2m})\leq \frac{1}{2}$
+	
