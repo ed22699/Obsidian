@@ -17,4 +17,13 @@ tags:
 if $h$ is picked uniformly at random from a weakly universal set of hash functions then, over $m$ fixed inputs, $P($any chain has length $\geq 1 + \sqrt{2m}) \leq \frac{1}{2}$
 - note the bad upper bound does not rule out the possibility that the tightest upper bound is indeed very small. However, the upper bound of $\frac{1}{2}$ is tight
 ## Proof
-
+- for any two keys $x,y$ let indicator r.v. $I_{x,y}$ be $1$ iff $h(x)=h(y)$
+- let r.v. $C$ be the total number of collisions: $C=\sum_{x,y \in T, x<y}I_{x,y}$ 
+- using [[Linearity of expectation]] and $\mathbb{E}(I_{x,y})=\frac{1}{m}$ ($h$ is weakly universal)
+$$
+\mathbb{E}(C)=\mathbb{E}(\sum_{x,y\in T, x<y}I_{x,y})=\sum_{x,y\in T, x<y}\mathbb{E}(I_{x,y})=\begin{pmatrix}m\\2\end{pmatrix}\cdot \frac{1}{m}\leq \frac{m}{2}
+$$
+- by [[Markov's inequality]], $P(C\geq m)\leq \frac{\mathbb{E}(C)}{m}\leq \frac{1}{2}$
+- let r.v. $L$ be the length of the longest chain $\to C \geq \begin{pmatrix}L\\2\end{pmatrix}$
+- so, $P(\frac{(L-1)^{2}}{2}\geq m)\leq P(\begin{pmatrix}L\\2\end{pmatrix}\geq m)\leq P(C\geq m)\leq \frac{1}{2}$
+	- rearranging we get $P(L\geq 1+\sqrt{2m})\leq \frac{1}{2}$
