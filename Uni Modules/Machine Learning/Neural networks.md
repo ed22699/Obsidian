@@ -22,8 +22,14 @@ tags:
 - optimise network using backprop:
 	1. [[forward pass]] - calculate activations; generate $y_{k}$
 	2. calculate error/cost function
-	3. [[backward pass]] - use backprop to compute error gradient
+	3. backwards pass - use [[back-propagation]] to compute error gradient
 	4. use gradient to improve parameters
+![[gradient descent]]
 
-
-multilayer the w's are different diagram slightly wrong
+- as MLPs are highly flexible they can easily overfit
+	- you can solve this with early stopping (stop when test performance starts decreasing) and regularisation methods such as dropout (randomly turn off units during training)
+![[Screenshot 2024-09-23 at 13.25.35.png]]
+# Reading
+- Bishop 5.1 except 5.1.1
+- Bishop 5.2 except 5.2.2
+- Bishop 5.3 up to 5.3.2

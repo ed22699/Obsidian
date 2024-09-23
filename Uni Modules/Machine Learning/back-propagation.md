@@ -31,5 +31,30 @@ $$
 $$
 - if we introduce some notation $\delta_{j} \equiv \frac{dE_{n}}{da_{j}}$ 
 $$
-\frac{dE_{n}}{dw}
+\frac{dE_{n}}{dw_{ji}}=\delta_{j}z_{i}
 \tag{4}$$
+- compute $\delta_{j} \equiv \frac{dE_{n}}{da_{j}}$ backwards, starting with the output units
+- e.g. if the error (for a single datapoint) is $E_{n}=\frac{1}{2}\sum_{k}(y_{k}-t_{k})^{2}$ then
+$$
+\delta_{k}=y_{k}-t_{k}
+\tag{5}$$
+- for hidden units we use the chain rule
+$$
+\delta_{j}\equiv\frac{dE_{n}}{da_{j}}=\sum_{k}\frac{dE_{n}}{da_{k}}\frac{da_{k}}{da_{j}}
+$$
+	- where the sum runs over all units $k$ to which unit $j$ sends connections
+- $\delta_{j}$ can be reformulated to give the back-propagation formula:
+$$
+\delta_{j}=h^{'}(a_{j})\sum_{k}w_{kj}\delta_{k}
+\tag{6}$$
+
+in summary
+1. Apply an input vector $\boldsymbol{x}_{n}$ to the network and forward propagate through the network using (1) and (2) to find the activations of all the hidden and output units
+2. Evaluate the $\delta_{k}$ for all the outputs units using e.g. (5)
+3. Back-propagate the $\delta$'s using (6) to obtain $\delta_{j}$ for each hidden unit in the network
+4. Use (4) to evaluate the required derivatives
+- computing $\delta{j}$ helps us compute several other $\delta_{j'}$ values
+
+## In practice
+- crucial to organise the computation of all partial derivatives (i.e. the gradient) efficiently
+- quantities required will be organised in tensors (generalisation of matrices beyond 2 dimensions)
