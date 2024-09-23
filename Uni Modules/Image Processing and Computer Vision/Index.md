@@ -12,3 +12,9 @@ TABLE without ID file.link as Title,  filter(file.tags, (t) => t != "#Lesson") a
 From "Uni Modules/Image Processing and Computer Vision"
 Where file != this.file
 ```
+
+## Questions
+
+1. what is the use of Dirac delta-function (spatial brightness pulse)
+![[Dirac Delta-Function]]
+

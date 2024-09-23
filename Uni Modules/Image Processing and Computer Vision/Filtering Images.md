@@ -51,4 +51,26 @@ $$
 - sharpening spatial filters seek to highlight fine detail
 	- remove blurring from images
 	- highlight edges
-- 
+- based on spatial differentiation
+## Concept
+1. original image - smoothed image = detail (the edges)
+2. original image + $\alpha$ detail = sharpened
+	- concept is you are taking the edges and adding them onto the original image making them twice as prominent 
+
+- $1^{st}$ derivative of a function is $\frac{df}{dx}=f(x+1)-f(x)$ 
+	- difference between subsequent values 
+	- measures the rate of change of the function
+- $2^{nd}$ derivative of a function is $\frac{d^{2}f}{d^{2}x} =f(x+1)+f(x-1)-2f(x)$
+	- takes into account both values before and after the current value
+- $2^{nd}$ derivative is more useful for image sharpening as stronger response to fine detail
+
+![[Laplacian Filter]]
+![[Laplacian of Gaussian]]
+## Summary
+- images are often corrupted by random variations in intensity, illumination or have poor contrast and cannot be used directly
+- filtering allows us to achieve:
+	- enhancement: improves contrast
+	- smoothing: removes noise
+	- template matching: detects known patterns
+	- feature extraction: provides clues about objects
+	- and more

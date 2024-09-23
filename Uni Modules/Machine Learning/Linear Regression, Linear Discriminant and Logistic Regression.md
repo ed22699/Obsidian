@@ -40,13 +40,8 @@ $$
 - Model: Discriminant function (function that takes an input vector $x$ and assigns it to class $C_{k}$)
 	- is $K = 2$ then it is a linear function
  ![[Linear Discriminant Function]]
-# Logistic Regression
-- use logistic function to obtain the probability of class $C_{k}$: $y(\boldsymbol{x}) = \sigma(\boldsymbol{w}^{\boldsymbol{T}}\boldsymbol{x})$ where $\sigma$ denotes the logistic sigmoid function
-![[Screenshot 2024-09-18 at 16.46.24.png|300]]
-- s.t. when $y \to 0$ we choose class 2 and $y \to 1$ we choose class 1
-	- $p(C_{1}|\boldsymbol{x}) = y(\boldsymbol{x})$ and $p(C_{2}|\boldsymbol{x}) = 1 - p(C_{1}|\boldsymbol{x})$ 
+![[Logistic Regression]]
 	
-![[Logistic Regression - Maximum Likelihood Estimation recipe]]
 
 # Reading
 - Bishop 3.1 up to end of 3.1.1.
