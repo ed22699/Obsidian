@@ -45,3 +45,10 @@ $$
 	- 3x3 gaussian blur: $\frac{1}{16}\begin{bmatrix}1&2&1\\2&4&2\\1&2&1\end{bmatrix}$
 	- sharpen: $\begin{bmatrix}0&-1&0\\-1&4&-1\\0&-1&0\end{bmatrix}$
 	- basic edge detector: $\begin{bmatrix}-1&-1&-1\\-1&8&-1\\-1&-1&-1\end{bmatrix}$
+![[Gaussian Filter]]
+![[Median Filter]]
+# Sharpening
+- sharpening spatial filters seek to highlight fine detail
+	- remove blurring from images
+	- highlight edges
+- 
