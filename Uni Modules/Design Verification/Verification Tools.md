@@ -72,6 +72,7 @@ Challenge: What input patterns to supply to the Design Under Verification (DUV) 
 	- compiled design can be simulated
 ![[Screenshot 2024-09-24 at 13.03.30.png|400]]
 ![[Event-based simulators]]
+![[Cycle-based simulators]]
 # Simulation Speed
 - bottle-neck for functional verification is simulation throughput
 - can improve throughput with:
@@ -88,3 +89,5 @@ Challenge: What input patterns to supply to the Design Under Verification (DUV) 
 car breaks and medical equipment 
 controllability and observability worse in emulation
 low level verification can be more thorough due to time limitations will need to use quicker methods on the higher levels
+
+waveform viewers should not be used as a test cause hard to reach and some parts may be overlooked
