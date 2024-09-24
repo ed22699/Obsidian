@@ -37,7 +37,9 @@ Parallelism, abstraction and automation can reduce the duration of verification
 	- both for software and hardware (`gcc -Wall`)
 - only identify certain classes of problems
 	- false positives are reported so a filter program can be used to reduce these (try not to filter true positives)
-- can assist in enforcing coding guidelines
+- can assist in enforcing coding guidelines (rules can be added to linter)
+>[!note] 
+Still a use for linters as simulation-based testing may not provide a test which exposes the fault
 
 car breaks and medical equipment 
 controllability and observability worse in emulation
