@@ -36,3 +36,9 @@ Parallelism, abstraction and automation can reduce the duration of verification
 - assist in finding common coding mistakes
 	- both for software and hardware (`gcc -Wall`)
 - only identify certain classes of problems
+	- false positives are reported so a filter program can be used to reduce these (try not to filter true positives)
+- can assist in enforcing coding guidelines
+
+car breaks and medical equipment 
+controllability and observability worse in emulation
+low level verification can be more thorough due to time limitations will need to use quicker methods on the higher levels
