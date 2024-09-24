@@ -5,7 +5,7 @@ tags:
 
 - used for smoothing
 - parameter $\sigma$ determines the width of the filter and hence the amount of smoothing (higher $\sigma$ means more blurred)
-	- 1D: $g(x) = \frac{1}{2\pi \sigma}e^{-\frac{x^{2}}{2\sigma ^{2}}}$
+	- 1D: $g(x) = \frac{1}{\sqrt{2\pi} \sigma}e^{-\frac{x^{2}}{2\sigma ^{2}}}$
 	![[Screenshot 2024-09-23 at 10.04.29.png|150]]
 	- 2D: $g(x,y) = \frac{1}{2\pi \sigma}e^{-\frac{x^{2}+y^{2}}{2\sigma ^{2}}}$
 	![[Screenshot 2024-09-23 at 10.05.02.png|300]]	
