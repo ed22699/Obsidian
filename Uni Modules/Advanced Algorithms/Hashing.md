@@ -42,6 +42,13 @@ Building a hash table with chaining results in the following time complexities
 		- the $\sqrt{2m}$ represents the growth of large deviations in this less random process. $1$ represents a base level
 # Static Dictionaries and Perfect Hashing
 - static dictionary stores (key, value) and supports: lookup(key) - no inserts or deletes allowed
+## [[FKS hashing scheme]]
+- has no collisions 
+- every lookup takes $O(1)$ worst-case time
+- uses $O(n)$ space
+- can be built in $O(n)$ expected time
+# Cuckoo Hashing
+
 
 
 Questions
