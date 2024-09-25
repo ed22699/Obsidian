@@ -32,3 +32,5 @@ F(u,v)=\frac{1}{N^{2}}\sum_{x=0}^{N-1}\sum_{y=0}^{N-1}f(x,y)[\cos(\frac{2\pi(ux+
 $$
 for $u,v=0,1,2,...,N-1$
 - the slowest varying frequency component, i.e. when $u=0,v=0\to$ average image graylevel 
+- all kernels together form a new orthogonal basis for our images
+![[Screenshot 2024-09-25 at 10.47.54.png|400]]

@@ -40,6 +40,8 @@ Building a hash table with chaining results in the following time complexities
 		- $3\log m$ comes from the balls in bins model where with a truly random "throw" the the likelihood of $\log m$ balls ending up in the same bin decreases massively as the number of bins ($m$) increases
 	- if $h$ is selected uniformly at random from a weakly universal set of hash functions, $P($any chain has length $\geq 1+\sqrt{2m})\leq \frac{1}{2}$
 		- the $\sqrt{2m}$ represents the growth of large deviations in this less random process. $1$ represents a base level
+# Static Dictionaries and Perfect Hashing
+- static dictionary stores (key, value) and supports: lookup(key) - no inserts or deletes allowed
 
 
 Questions
