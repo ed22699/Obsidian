@@ -20,3 +20,4 @@ WHERE number != 0
 ### Graphs
 1. [[Breadth First Search]] (finding levels to a graph)
 2. [[Topological Sort (DFS)]] (traversing a directed acyclic graph (graph with no cycles))
+3. [[Depth First Search]]
