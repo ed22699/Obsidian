@@ -2,6 +2,7 @@
 tags:
   - freq_domain_and_trans
 ---
+**transforms a signal sampled in time or space to the same signal sampled in temporal or spatial frequency**
 ## Continuous Form
 - of two variables $f(x,y)$ is:
 $$
@@ -24,7 +25,7 @@ $$
 f(x,y) = \sum_{u=0}^{N-1}\sum_{v=0}^{N-1}F(u,v)e^{i2\pi(\frac{ux+vy}{N})}
 $$
 for $x,y = 0,1,2,...,N-1$
-# 2D Fourier Transforms
+
 - Euler's formula: $e^{i\theta}= \cos \theta + i \sin \theta$
 - each term of the Fourier Transform is composed of the sum of all values of the image function $f(x,y)$ multiplied by a particular kernel at a particular frequency and orientation specified by $(u,v)$
 $$
