@@ -38,7 +38,8 @@ Inverse Transform back to image space
 - convolution in spatial domain is equivalent to multiplication in frequency domain (and vice versa)
 	- $h=f*g$ implies $H=FG$
 	- $h=fg$ implies $H=F*G$
-### Fast filtering using the Convolution theorem
+# Filters in FS
+## Fast filtering using the Convolution theorem
 	![[Screenshot 2024-09-27 at 08.17.26.png|400]]
 ## Ideal Low Pass Filter
  ![[Screenshot 2024-09-27 at 08.23.34.png|400]]
