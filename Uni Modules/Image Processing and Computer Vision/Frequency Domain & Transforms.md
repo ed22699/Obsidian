@@ -28,7 +28,7 @@ Spaces:
 Inverse Transform back to image space
 ![[Screenshot 2024-09-27 at 08.05.19.png|300]]
 >[!note]
- higher frequencies represent the finer details of an image, hence you will get a 'blurry' image by removing these higher frequencies
+ higher frequencies represent the finer details of an image, hence you will get a 'blurry' image by removing these higher frequencies (due to the magnitudes of these frequencies being smaller)
 - you can manipulate the FS to alter image qualities, e.g.
 ![[Screenshot 2024-09-27 at 08.08.17.png|200]]
 ## Separability of FT
@@ -38,3 +38,12 @@ Inverse Transform back to image space
 	- $h=f*g$ implies $H=FG$
 	- $h=fg$ implies $H=F*G$
 	![[Filters in FS]]
+- Translation/shift in spatial domain:
+	- result in a linear phase change in the frequency domain, but no change in the magnitude spectrum, hence it looks the same wherever it is in the image
+- Rotation in spatial domain:
+	- rotation in spatial domain results in a corresponding rotation in the Fourier domain
+## Using D instead of r
+- Lowpass filters, $D_{0}$ is the cutoff frequency and $n$ is the order of the Butterworth filter
+![[Screenshot 2024-09-27 at 18.03.59.png|500]]
+- Highpass filters, $D_{0}$ is the cutoff frequency and $n$ is the order of the Butterworth filter
+![[Screenshot 2024-09-27 at 18.05.10.png|500]]
