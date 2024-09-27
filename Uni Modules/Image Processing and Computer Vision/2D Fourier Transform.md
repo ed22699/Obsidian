@@ -34,3 +34,12 @@ for $u,v=0,1,2,...,N-1$
 - the slowest varying frequency component, i.e. when $u=0,v=0\to$ average image graylevel 
 - all kernels together form a new orthogonal basis for our images
 ![[Screenshot 2024-09-25 at 10.47.54.png|400]]
+![[Screenshot 2024-09-27 at 07.50.08.png|200]]
+- ideal edge and line structures have a concentration along a line passing though the origin in the frequency domain in a direction perpendicular to their orientation
+- constructed by adding together all 2D sinusoidal waves that travel perpendicular to the edge or line
+![[Screenshot 2024-09-27 at 07.50.56.png|300]]
+![[Screenshot 2024-09-27 at 07.54.50.png|400]]
+>[!hint]
+ each dot on the FT space represents a $u$ and $v$ value, hence many of these dots with varying positions will form a grayscaled image
+
+ 
