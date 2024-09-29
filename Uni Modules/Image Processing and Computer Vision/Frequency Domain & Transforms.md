@@ -30,7 +30,7 @@ Inverse Transform back to image space
 >[!note]
  higher frequencies represent the finer details of an image, hence you will get a 'blurry' image by removing these higher frequencies (due to the magnitudes of these frequencies being smaller)
 - you can manipulate the FS to alter image qualities, e.g.
-![[Screenshot 2024-09-27 at 08.08.17.png|200]]
+![[Screenshot 2024-09-27 at 08.08.17.png|500]]
 ## Separability of FT
 - if 2D transform is separable, the result can be found by successive application of two 1D transformations (principle aspect of the Fast Fourier Transform)
 ### Convolution theorem
