@@ -1,0 +1,3 @@
+- $O(1)$ expected item per operation means every operation takes constant time in expectation
+- the total expected time complexity of performing any $n$ operations is $O(n)$, this **does not** imply every operation takes constant time in expectation
+	- it **does mean** that the amortised expected time complexity of an operation is $O(1)$
