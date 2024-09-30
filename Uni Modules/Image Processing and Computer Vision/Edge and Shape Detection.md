@@ -21,4 +21,5 @@ tags:
 	 ![[Prewitt Operator]]	
 	 ![[Sobel Operator]]
 # Shape Detection
-## Hough Transform
+![[Hough Transform]]
+	
