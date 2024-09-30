@@ -28,3 +28,22 @@ $$
 H(\rho, \theta)=H(\rho,\theta)+1
 $$
 4. in the parameter space, any element $H(\rho, \theta) > T_{h}$ represents a straight line detected n the image
+>[!note]
+$T_{s}$ is the threshold for the gradient magnitude. It basically filters out weaker edges to help focus on more prominent features and reduce noise
+
+### Algorithm using gradient information
+1. Make available an $n=2$ dimensional array $H(\rho,\theta)$ 
+2. find the gradient image: $G(x,y)=|G(x,y)|\angle G(x,y)$
+3. for any pixel satisfying $|G(x,y)|>T_{s}$
+$$
+\forall\theta|\angle G(x,y)-\Delta\theta\leq\theta\leq\angle G(x,y)+\Delta\theta
+$$
+$$
+\rho=x\cos\theta+y\sin\theta
+$$
+$$
+H(\rho,\theta)=H(\rho, \theta)+1
+$$
+- where $\Delta\theta$ defines a small range in $\theta$ to allow some room for error in $\angle G$
+- any element $H\rho, \theta)>T_{h}$ represents a straight line
+![[Screenshot 2024-09-30 at 10.06.29.png|300]]

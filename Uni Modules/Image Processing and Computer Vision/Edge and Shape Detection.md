@@ -22,4 +22,12 @@ tags:
 	 ![[Sobel Operator]]
 # Shape Detection
 ![[Hough Transform]]
-	
+## Circle Detection Algorithm
+1. for any pixel satisfying $|G(x,y)|>T_{s}$, increment all elements satisfying the two simultaneous equations
+$$
+\forall r, \begin{cases}x_{0}=x\pm r\cos\angle G \\y_{0}=y\pm r\sin \angle G\end{cases}
+$$
+$$
+H(x_{0}, y_{0}, r)=H(x_{0}, y_{0},r)+1
+$$
+2. in the parameter space, any element $H(x_{0},y_{0},r)>T_{h}$ represents a circle with radius $r$ located at $(x_{0}, y_{0})$ in the range 
