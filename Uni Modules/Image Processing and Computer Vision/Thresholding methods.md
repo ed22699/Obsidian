@@ -21,3 +21,9 @@ Perfect segmentation is difficult to achieve:
 	- for simple images it shows peaks and alleys around regions of the image
 	![[Screenshot 2024-10-01 at 12.01.26.png|100]]
 - ![[threshold selection algorithm]]
+## Issues
+issues occur when working with image types that are
+- dark
+- light
+- low contrast
+- high contrast

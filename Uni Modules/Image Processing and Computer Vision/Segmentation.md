@@ -26,10 +26,7 @@ goals
 - ![[Thresholding methods]]
 - Edge-based methods
 	- region boundaries are constructed from edge-maps
-- Region-based methods
-	- region growing from seed pixels
-	- region splitting and merging for efficient spatial encoding
-- Clustering and Statistical methods
-	- global, ofter histogram based image partitioning, e.g. K-means, Gaussian Mixture Model
+- ![[Region-based methods]]
+- ![[Clustering and Statistical methods]]
 - Topographic methods (not scope of unit)
 	- stepwise simplifications that take spatially wider (topographical) image configurations into account e.g. watershed transform, variational based methods
