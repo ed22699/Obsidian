@@ -4,6 +4,8 @@ tags:
   - trees
 ---
 # Decision Trees
+![[Screenshot 2024-10-01 at 11.05.25.png|300]]
+- one model is responsible for assigning a decision for each region of input space
 
 prune using cross validation or a validation set to select a $\lambda$ 
 
