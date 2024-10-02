@@ -22,3 +22,13 @@ typically more than one hyperplane that separates classes
 - the training data points closest to the separating hyperplane are the support vectors, in a sense they are the training datapoints 'that matter'
 ![[Screenshot 2024-10-02 at 16.32.05.png|300]]
 - the learning problem we have to solve is:
+$$
+\arg \max_{w,b}\{\frac {1}{||w||}\min_n[t_n(\boldsymbol{w}^T\phi(\boldsymbol{x}_n)+b)]\}
+\tag{1}
+$$
+- we can rescale $\boldsymbol{w}$ and $b$ so that for a point $\boldsymbol{x}_n$ that is closest to the separating hyperplane $t_n(\boldsymbol{w}^T\phi(\boldsymbol{x}_n)+b)=1$ 
+- and for all datapoints: 
+$$ t_n(\boldsymbol{w}^T\phi(\boldsymbol{x}_n)+b)\geq 1 \qquad n=1,...,N \tag{2}$$  
+- plugging back into (1) we now just need to maximise $\frac{1}{||\boldsymbol{w}||}$ which is the same as minimising: $\arg\min_{\boldsymbol{w},b}\frac 1 2 ||\boldsymbol{w}||^2$
+	- subject to the li ear inequality constraints (2)
+	- quadratic programming problem 
