@@ -23,19 +23,37 @@ $$
 - $\boldsymbol{x}$ is some datapoint
 - $\phi(\boldsymbol{x})$ is the M-dimensional feature vector which $\boldsymbol{x}$ gets mapped to by the basis functions
 - $\frac \lambda 2 \boldsymbol{w}^T \boldsymbol{w}$ is the regularisation term which pushes parameters which are not helping much to fit the data towards zero
-## Dual Representations
-- let $N$ be the size of the data
-- let $\Phi$ be the design matrix whose $n^{th}$ row is just the feature vector for the $n^{th}$ datapoint
-we can write the minimising value of $\boldsymbol{w}$ in terms of an N-dimensional parameter vector $\boldsymbol{a}$ as $\boldsymbol{w}=\Phi^T \boldsymbol{a}$, so that:
-- $y(\boldsymbol{x})=\boldsymbol{w}^T\phi(\boldsymbol{x})=\boldsymbol{a}^T \Phi \phi(\boldsymbol{x})$
-- so dual parameters $a_n$ are the ($\lambda$-adjusted) residuals: $a_n=-\frac 1 \lambda (\boldsymbol{w}^T\phi(\boldsymbol{x}_n)-t_n)$ 
-	- replaced an M-dimensional parameter vector with an N-dimensi
-- using $\boldsymbol{a}$ is known as a dual representation
 
-
-
-
-
-
+![[Dual Representations]]
+## Kernel functions are scalar products in feature space
+- Suppose $\boldsymbol{x}$ is some test datapoint
+- suppose, for example, we had 3 datapoints, $\boldsymbol{x}_1$, $\boldsymbol{x}_2$ and $\boldsymbol{x}_3$ and 2 features so
+$$
+\Phi\phi(\boldsymbol{x})=\begin{pmatrix}\phi_1(\boldsymbol{x}_1)&\phi_2(\boldsymbol{x}_1)\\\phi_1(\boldsymbol{x}_2)&\phi_2(\boldsymbol{x}_2)\\\phi_1(\boldsymbol{x}_3)&\phi_2(\boldsymbol{x}_3)\end{pmatrix}\begin{pmatrix}\phi_1(\boldsymbol{x})\\\phi_2(\boldsymbol{x})\end{pmatrix}=\begin{pmatrix}\phi(\boldsymbol{x}_1)^T\phi({x})\\\phi(\boldsymbol{x}_2)^T\phi({x})\\\phi(\boldsymbol{x}_3)^T\phi({x})\end{pmatrix}
+$$
+- if we define a kernel function: $k(\boldsymbol{x}, \boldsymbol{x}')=\phi(\boldsymbol{x})^T\phi(\boldsymbol{x}')$ then:
+$$
+\Phi\phi(\boldsymbol{x})=\begin{pmatrix}k(\boldsymbol{x}_1,\boldsymbol{x})\\k(\boldsymbol{x}_2,\boldsymbol{x})\\k(\boldsymbol{x}_3,\boldsymbol{x})\end{pmatrix}
+$$
 ![[The kernel trick]]
+## Similarity
+- kernel function represents the degree of similarity between its two arguments
+	- kernel functions are **always symmetric**
+- high kernel value represents a high degree of similarity
+with our example
+$$
+y(\boldsymbol{x})=\boldsymbol{a}^T\begin{pmatrix}k(\boldsymbol{x}_1,\boldsymbol{x})\\k(\boldsymbol{x}_2,\boldsymbol{x})\\k(\boldsymbol{x}_3,\boldsymbol{x})\end{pmatrix}=a_1k(\boldsymbol{x}_1,\boldsymbol{x})+a_2k(\boldsymbol{x}_2,\boldsymbol{x})+a_3k(\boldsymbol{x}_3,\boldsymbol{x})
+$$
+- prediction for $\boldsymbol{x}$ is a linear function of the similarities between $\boldsymbol{x}$ and each element of the training data
+- unlike linear regression it looks like we have to keep the entire training set around to make predictions but in fact we only need those $\boldsymbol{x}_i$ where $a_i \neq 0$ 
+## Learning with kernels
+- so far we've made predictions using a learned value of the dual parameter vector $\boldsymbol{a}$
+- if we needed to compute feature values $\phi(\boldsymbol{x})$ to learn $\boldsymbol{a}$, then the advantage of using kernels would disappear
+- however, for many models we can learn $\boldsymbol{a}$ just using kernels
+- learning and prediction just require evaluating kernel functions
+
+
+
+
+
 slack variable
