@@ -13,3 +13,6 @@ suppose we're doing classification where each training data point is $(x,y)$
 - choose a kernel function $k$ which measures similarity between raw data vectors $k(\boldsymbol{x}_m, \boldsymbol{x}_n)$ 
 - learn parameters using the $k(\boldsymbol{x}_m, \boldsymbol{x}_n)$ values and class labels
 	- when making a prediction for a test data vector $\boldsymbol{x}'$ use learned parameters and values of $k(\boldsymbol{x}_n, \boldsymbol{x}')$ to make a prediction
+
+[[Linear Regression, Linear Discriminant and Logistic Regression]]
+![[The kernel trick]]
