@@ -55,9 +55,22 @@ $$
 - gram matrix $\boldsymbol{K}$ is defined to be $\Phi\Phi^T$ 
 - $K_{nm}=\phi(\boldsymbol{x}_n)^T\phi(\boldsymbol{x}_m)=k(\boldsymbol{x}_n, \boldsymbol{x}_m)$ is the similarity between the $n^{th}$ and $m^{th}$ datapoint
 	- given data $\boldsymbol{x}_n$ and a particular choice of kernel $k$, we can computer the Gram matrix $\boldsymbol{K}$
-	
-
-
+- $\boldsymbol{K}$ is what we need for learning
+>[!note]
+$\boldsymbol{K}$ is symmetric
+### Example
+- suppose we want to add a quadratic regulariser (aka weight decay) term when minimising the squared error on the training set $\boldsymbol{w}$ 
+**Without kernels**
+- minimise $J(\boldsymbol{w})$ where $J(\boldsymbol{w})=\frac 1 2 \sum_{n=1}^N(\boldsymbol{w}^T\phi(\boldsymbol{x})-t_n)^2+\frac \lambda 2 \boldsymbol{w}^T \boldsymbol{w}$
+	- $N$ is the number of training datapoints
+	- $\lambda$ is the regularisation parameter
+	- $t_n$ is the observed target value of the $n^{th}$ training datapoint
+- let $\boldsymbol{t}=(t_1,...,t_N)^T$ 
+- let $\boldsymbol{I}_N$ be the $N$ x $N$ identity matrix
+- then setting $\boldsymbol{a}=(\boldsymbol{K}+\lambda\boldsymbol{I}_N)^{-1}\boldsymbol{t}$ is equivalent to minimising $J(\boldsymbol{w})$
+- however, for learning we need to compute the kernel value for every pair of training datapoints, and for prediction we need the entire training set
+# Support Vector Machines
+![[Support Vector Machines]]
 
 
 slack variable
