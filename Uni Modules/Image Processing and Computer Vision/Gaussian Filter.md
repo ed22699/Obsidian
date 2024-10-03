@@ -11,7 +11,7 @@ tags:
 	![[Screenshot 2024-09-23 at 10.05.02.png|300]]	
 - 2D Gaussian can be achieved faster using two 1D Gaussian filters as linear Gaussian kernel is separable
 	$$
-	K = \frac{1}{256}\begin{pmatrix}1&4&6&4&1\\4&16&24&16&4\\6&24&36&24&6\\4&16&24&16&4\\1&4&6&4&1\end{pmatrix}=\frac{1}{16}\begin{pmatrix}1\\4\\6\\4\\1\end{pmatrix}x\frac{1}{16}\begin{pmatrix}1&4&6&4&1\end{pmatrix}
+	K = \frac{1}{256}\begin{pmatrix}1&4&6&4&1\\4&16&24&16&4\\6&24&36&24&6\\4&16&24&16&4\\1&4&6&4&1\end{pmatrix}=\frac{1}{16}\begin{pmatrix}1\\4\\6\\4\\1\end{pmatrix}\cdot\frac{1}{16}\begin{pmatrix}1&4&6&4&1\end{pmatrix}
 	$$
 	$$
 	g(x,y) = \frac{1}{2\pi \sigma}e^{-\frac{x^{2}+y^{2}}{2\sigma ^{2}}} = (\frac{1}{2\pi \sigma}e^{-\frac{x^{2}}{2\sigma ^{2}}})(\frac{1}{2\pi \sigma}e^{-\frac{y^{2}}{2\sigma ^{2}}})=g(x)g(y)
