@@ -69,3 +69,6 @@ $$
 
 
 slack variable
+## Reading
+- Bishop 6.1
+- Bishop 7.1 (skip 7.1.2)
