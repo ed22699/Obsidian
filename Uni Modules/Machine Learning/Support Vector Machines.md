@@ -30,5 +30,34 @@ $$
 - and for all datapoints: 
 $$ t_n(\boldsymbol{w}^T\phi(\boldsymbol{x}_n)+b)\geq 1 \qquad n=1,...,N \tag{2}$$  
 - plugging back into (1) we now just need to maximise $\frac{1}{||\boldsymbol{w}||}$ which is the same as minimising: $\arg\min_{\boldsymbol{w},b}\frac 1 2 ||\boldsymbol{w}||^2$
-	- subject to the li ear inequality constraints (2)
+	- subject to the linear inequality constraints (2)
 	- quadratic programming problem 
+#### Dual representation
+[[Dual Representations]] of the maximum margin problem is to maximise: 
+$$
+\tilde{L}(\boldsymbol{a})= \sum_{n=1}^Na_n-\frac 12\sum_{n=1}^N\sum_{m=1}^Na_na_mt_nt_mk(\boldsymbol{x_n, \boldsymbol{x}_m})
+$$
+- with constraints
+	- $a_n \geq 0, \quad n=1,...,N$ 
+	- $\sum_{n=1}^Na_nt_n=0$
+- $k(\boldsymbol{x}_n, \boldsymbol{x}_m)=\phi(\boldsymbol{x}_n)^T\phi(\boldsymbol{x}_m)$
+- another quadratic problem
+- this can be derived from the original one by using Lagrange multipliers ($a_n$)
+
+#### SVM
+- to learn a max margin classifier we need the $k(\boldsymbol{x}_n, \boldsymbol{x}_m)$ values ([[Gram Matrix]])
+	- do not need to compute $\phi(\boldsymbol{x}_n)$ so $\phi(\boldsymbol{x}_n)$ can be as high-dimensional as we like
+- to classify a new datapoint we compute $y(\boldsymbol{x})=\sum_{n=1}^Na_nt_nk(\boldsymbol{x}, \boldsymbol{x}_n)+b$
+	- again only the kernel function is needed
+	- typically for most training datapoints $\boldsymbol{x}_n$ we have $a_n=0$ (not needed for making predictions)
+	- needed points are called **support vectors**
+## SVM kernels
+>[!todo]
+Look at Jupyter notebook example
+
+- default kernel for NuSVC is the RBF kernel: $k(\boldsymbol{x}, \boldsymbol{x}')=e^{-\gamma||\boldsymbol{x}-\boldsymbol{x}'||^2}$
+	- implicit feature space is infinite dimensional
+- data does not need to be real numbers, can also be: graphs, text documents, images, websites, etc.
+	- for any sort of $\boldsymbol{x}$ as long as we have a kernel function $k(\boldsymbol{x}, \boldsymbol{x}')$, measuring the similarity between $\boldsymbol{x}$ and $\boldsymbol{x}'$ we can apply kernel-based machine learning such as SVMs
+>[!todo]
+see paper on slide 21
