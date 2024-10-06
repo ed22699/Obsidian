@@ -14,4 +14,9 @@ aims at bridging the 'semantic gap' between
 	- classes are rarely well defined
 	- change of illumination, scale, pose, deformation, occlusion, etc
 	![[Screenshot 2024-10-04 at 16.38.15.png|300]]
-	
+## Techniques
+ ![[line and circle detection]]
+![[colour-based detection]]
+![[template matching]]
+- classifiers with sliding window detectors
+- deep learning-based object detectors
