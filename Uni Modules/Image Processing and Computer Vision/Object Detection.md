@@ -17,6 +17,8 @@ aims at bridging the 'semantic gap' between
 ## Techniques
  ![[line and circle detection]]
 ![[colour-based detection]]
+![[classifiers with sliding window detectors]]
 ![[template matching]]
-- classifiers with sliding window detectors
-- deep learning-based object detectors
+![[Point Feature Matching]]
+![[Optical Character Recognition]]
+![[deep learning-based object detectors (out of scope or unit)]]
