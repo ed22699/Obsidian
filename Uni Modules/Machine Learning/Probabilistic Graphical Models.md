@@ -58,4 +58,25 @@ $$
 **Hierarchical Regression**:
 - $P(\theta,y,\mu,\sigma^2)=P(\mu, \sigma^2)\Pi_{i=1}^kP(y_i|\theta_i)P(\theta_i|\mu,\sigma^2)$ $\Rightarrow$ ![[Screenshot 2024-10-07 at 11.35.49.png|120]]
 ## Conditional Independence 
-- a random variable $x$ is independent of another random variable $y$ conditional on a set of random variables $S$ iff: $P(x,)
+- a random variable $x$ is independent of another random variable $y$ conditional on a set of random variables $S$ iff: $P(x,y|S)=P(x|S)P(y|S)$, equivalently: $P(x|S)=P(x|y,S)$ 
+- DAG for BN encodes conditional independence relations
+$A{\perp\!\!\!}\;\: B|C$
+![[Screenshot 2024-10-07 at 11.44.37.png|200]]
+- b) $p(A,B|C)=\frac{p(A)p(C|A)p(B|C)}{p(C)}=\frac{p(A,C)p(B|C)}{p(C)}=p(A|C)p(B|C)$
+$A{\not\perp\!\!\!}\;\: B|C$ 
+![[Screenshot 2024-10-07 at 11.46.29.png|100]]
+- d) variables $A$, $B$ are conditionally dependent given $C$, $p(A, B|C)\propto p(A,B,C)=p(C|A,B)p(A)p(B)$
+### Paths and colliders
+$p(A,B,C,D,E)=p(A)p(B)p(C|A,B)p(D|C)p(E|B,C)$
+![[Screenshot 2024-10-07 at 11.52.38.png|120]]
+- a node is a collider on some path if both arrows point into it on that path
+- $C$ is a collider on the path $(A,C,B)$ but is not a collider on any other paths
+### d-separation
+- if all paths from node $x$ to node $y$ are blocked given nodes $S$ then $x$ and $y$ are d-separated by $S$ 
+	- path blocked by $S$ if:
+		1. there is a collider on the path that is not in $S$ and none of its descendants are in $S$
+		2. there is a non-collider on the path that is in $S$
+	- if $x$ and $y$ are d-separated by $S$ then $x{\perp\!\!\!}\;\: y|S$ for any probability distribution which factorises according to the DAG
+# Reading
+- Bishop 6.1
+- Bishop 7.1 (skip 7.1.2)
