@@ -52,9 +52,7 @@ $$
 	- typically for most training datapoints $\boldsymbol{x}_n$ we have $a_n=0$ (not needed for making predictions)
 	- needed points are called **support vectors**
 ## SVM kernels
->[!todo]
-Look at Jupyter notebook example
-
+![[Screenshot 2024-10-07 at 10.13.11.png|400]]
 - default kernel for NuSVC is the RBF kernel: $k(\boldsymbol{x}, \boldsymbol{x}')=e^{-\gamma||\boldsymbol{x}-\boldsymbol{x}'||^2}$
 	- implicit feature space is infinite dimensional
 	- is non-parametric (number of support vectors, and thus dual parameters, depends on the data and value of $\gamma$)
@@ -64,9 +62,6 @@ Look at Jupyter notebook example
 			- can be seen as inverse of the radius of influence of samples selected by the model as support vectors
 - data does not need to be real numbers, can also be: graphs, text documents, images, websites, etc.
 	- for any sort of $\boldsymbol{x}$ as long as we have a kernel function $k(\boldsymbol{x}, \boldsymbol{x}')$, measuring the similarity between $\boldsymbol{x}$ and $\boldsymbol{x}'$ we can apply kernel-based machine learning such as SVMs
->[!todo]
-see paper on slide 21
-
 - RBF is a popular choice of kernel
 - you can construct a new kernel function from existing known kernels, however, the function you define must be symmetric and any Gram matrix $\boldsymbol{K}$ must be a positive semidefinite matrix
 ## Soft margins
@@ -81,8 +76,6 @@ if you want a wide margin then you might have to allow training points to be ins
 - this is a soft margin
 	- being on the wrong side of the margin is merely penalised 
 	- $C$ is a regularisation parameter 
->[!todo]
-see slide 27
 
 ![[Screenshot 2024-10-04 at 09.32.14.png|300]]
 - plots above are defined by $\sum_{i\in SV}y_i\alpha_iK(x_i,x)+b$ 
@@ -92,6 +85,4 @@ see slide 27
 	- one-versus-one: where we train $\frac{k(k-1)}{2}$ SVM classifiers to distinguish between each pair of classes and then take a vote for the predicted class
 	- one-versus-the-rest: where we train $k$ SVM classifiers to distinguish between each class and all other classes
 - in scikit-learn, SVC and NuSVC go for one-versus-one and LinearSVC does one-versus-the-rest
->[!todo]
-see page 31
-
+![[Screenshot 2024-10-07 at 10.16.04.png|300]]

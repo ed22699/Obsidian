@@ -30,9 +30,9 @@ do not store any data (values) with the integers (keys), however, it is straight
 
 - all operations take $O(\log\log u)$ worst case time and the space used is $O(u)$
 - deterministic data structure
->[!todo]
->look up deterministic data structure effect
-
+	- if $U=\{1,2,3,4,...100\cdot n\}$, you get $O(\log\log n)$ time and $O(n)$ space
+	- if $U=\{1,2,3,4,...n^2\}$, you get $O(\log\log n)$ time and $O(n^2)$ space
+	- if $U=\{1,2,3,4,...n^3\}$, you get $O(\log\log n)$ time and $O(n^3)$ space
 #### Attempt 1: big array
 make array the size of the universe and put a $1$ where element is present
 - $A[i] = 1$ iff $i$ is in $S$

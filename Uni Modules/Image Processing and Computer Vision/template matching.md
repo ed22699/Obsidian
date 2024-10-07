@@ -10,10 +10,7 @@ correlation:
 $$
 \frac 1 n\sum_{i=1}^n(\frac{y_i-\mu_y}{\sigma_y})(\frac{\hat{y}_i-\mu_{\hat{y}}}{\sigma_{\hat{y}}})
 $$
-- $y_i$: pixel $i$ in box $y$ in the image, $y$ has the same size as $y$
->[!todo]
-what does this $y_i$ definition mean
-
+- $y_i$: pixel $i$ in box $y$ in the image, $y$ has the same size as $\hat{y}$ 
 - $\hat{y}_i$: pixel $i$ in template $\hat{y}$
 - $\mu$: mean
 - $\sigma$: standard deviation 
