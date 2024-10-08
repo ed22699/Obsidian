@@ -11,3 +11,5 @@ sometimes even leave the checkers in the silicon
 golden test vectors more often used in manufacturing
 
 write down approach and assumptions in your report if input does not have a matching output
+
+impure reference model if bug in design it may find itself into the reference model
