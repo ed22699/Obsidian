@@ -44,3 +44,13 @@ Viola-Jones detector is a sliding window detector
 1. filter bounding boxes by probability
 2. sort bounding boxes by probability
 3. non-maximum suppression loop
+	1. select box with highest score
+	2. suppress overlapping boxes
+		- compute the Intersection over Union (IoU) between the selected box and all other boxes: $IoU=\frac {Area \; of \; Overlap}{Area \; of \; Union}$
+		- if $IoU$ is greater than threshold then boxes overlap too much and the box is likely a redundant detection and so should be suppressed (discarded)
+		- if $IoU$ lower than the threshold, box is retained for further consideration
+	3. repeat until all boxes have been selected or suppressed
+### Performance Considerations
+![[Screenshot 2024-10-09 at 10.22.40.png|400]]
+**F-score**: $F_1=2\frac{precision \cdot recall}{precision + recall}=\frac{2tp}{2tp+fp+fn}$
+- used to evaluate the performace of a classifier, 
