@@ -4,7 +4,7 @@ default range is entire file (%)
 - you can use `:g` and `:v` as abbreviations
 
 ## Deleting lines containing patterns
-see [[Pattern Matching]]
+see [[Books/Pattern Matching]]
 ### Example - delete all lines with tags
 - get pattern `/\v\<\/?\w+>`
 - run `:g//d`

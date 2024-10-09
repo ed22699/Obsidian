@@ -50,7 +50,7 @@ Status: Read
 [[Jumps]]
 [[Registers]]
 [[Macros]]
-[[Pattern Matching]]
+[[Books/Pattern Matching]]
 [[Substitution]]
 [[Global Commands]]
 [[ctags]]

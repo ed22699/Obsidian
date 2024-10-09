@@ -52,7 +52,7 @@ if you use q: you can enter command-line window and alter then run commands
 - [[Files]]
 - [[Registers]]
 - [[Macros]]
-- [[Pattern Matching]]
+- [[Books/Pattern Matching]]
 - [[Substitution]]
 - [[Global Commands]]
 - [[ctags]]

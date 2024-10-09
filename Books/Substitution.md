@@ -1,4 +1,4 @@
-uses [[Pattern Matching]]
+uses [[Books/Pattern Matching]]
 `:[range]s[ubstitution]/{pattern}/{string}/[flags]`
 for range examples see [[Command Mode]]
 
