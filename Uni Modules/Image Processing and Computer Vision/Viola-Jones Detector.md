@@ -53,4 +53,8 @@ Viola-Jones detector is a sliding window detector
 ### Performance Considerations
 ![[Screenshot 2024-10-09 at 10.22.40.png|400]]
 **F-score**: $F_1=2\frac{precision \cdot recall}{precision + recall}=\frac{2tp}{2tp+fp+fn}$
-- used to evaluate the performace of a classifier, 
+- used to evaluate the performance of a classifier, based off precision and recall
+## Receiver Operating Characteristic (ROC) Curve
+![[Screenshot 2024-10-09 at 10.26.38.png|300]]
+![[Screenshot 2024-10-09 at 10.27.46.png|300]]
+- aim is to find the point furthest positive point from the $y=x$ line to be used as the threshold for discarding detections
