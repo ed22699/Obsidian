@@ -41,6 +41,7 @@ Viola-Jones detector is a sliding window detector
 ## Non-Maximum Suppression (NMS)
 - a post-processing step to remove redundant detections
 ![[Screenshot 2024-10-08 at 13.41.05.png|400]]
+![[Screenshot 2024-10-10 at 10.19.38.png|200]]
 1. filter bounding boxes by probability
 2. sort bounding boxes by probability
 3. non-maximum suppression loop
@@ -50,8 +51,7 @@ Viola-Jones detector is a sliding window detector
 		- if $IoU$ is greater than threshold then boxes overlap too much and the box is likely a redundant detection and so should be suppressed (discarded)
 		- if $IoU$ lower than the threshold, box is retained for further consideration
 	3. repeat until all boxes have been selected or suppressed
-### Performance Considerations
-![[Screenshot 2024-10-09 at 10.22.40.png|400]]
+### Performance Considerations22.40.png|400]]
 **F-score**: $F_1=2\frac{precision \cdot recall}{precision + recall}=\frac{2tp}{2tp+fp+fn}$
 - used to evaluate the performance of a classifier, based off precision and recall
 ## Receiver Operating Characteristic (ROC) Curve
