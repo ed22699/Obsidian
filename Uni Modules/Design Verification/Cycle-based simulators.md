@@ -24,3 +24,10 @@ tags:
 	![[Screenshot 2024-10-10 at 12.18.26.png|200]]
 - word-level operations can be easily parallelised
 ## Speed
+- clock cycle in design is only as fast as the longest possible combinational delay path settles before the cycle is over
+	- cycle time depends on the longest topological path
+		- calculated using static analysis without simulation as stronger result
+	![[Screenshot 2024-10-10 at 12.32.13.png|300]]
+			- number of processors (LP units)
+			- number of levels in the design
+- efficient communication and scheduling

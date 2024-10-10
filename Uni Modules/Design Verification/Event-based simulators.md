@@ -18,3 +18,11 @@ tags:
 	- event queue - one queue pair for each entry in the time queue (signal update queue, computation queue)
 - simulator needs to process all these queues at simulation time
 ![[Screenshot 2024-09-24 at 13.21.54.png|400]]
+# Speed
+- bottle-neck for functional verification is simulation throughput
+- can improve throughput with:
+	- [[parallelisation]]
+	- [[compiler optimisation techniques]]
+	- [[changing the level of abstraction]]
+	- methodology-based subsets of HDL (cycle-based simulation)
+	- special simulation machines

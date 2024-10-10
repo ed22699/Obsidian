@@ -1,0 +1,51 @@
+---
+tags:
+  - verification_tools
+---
+- created to address verification principles
+- HDLs had issues for verification:
+	- Verilog was designed with a focus on describing low-level hardware structures
+		- no support for data structures
+		- not object/aspect-orientated
+			- not good for testbenching
+	- VHDL designed for large design teams
+- limitations of HDLs inhibit efficient implementation of verification strategy
+- high-level verification languages 
+	- System Verilog
+		- the IEEE standard
+	- e-language
+	- Synopsys' Vera, System C didn't make it
+### Features of High-Level Verification Languages
+- raise level of abstraction
+	- from bits/vectors to high-level data types/structures
+- support for building the verification environment
+	- enable testbench automation
+	- modularity
+		- object/aspect oriented languages
+		- libraries to enable re-use
+- support for test generation
+	- constrained random test generation features
+		- control over randomisation to achieve the target values
+		- advanced: connection to DUV to generate stimulus depending on DUV state
+- support for coverage
+	- language constructs to implement functional coverage models
+### Other Verification tools
+- waveform viewers
+	- used to visually inspect design/testbench/verification environment
+	- decreases the performance of simulator ??????????
+	- bad for determine whether the DUV passes or fails a test
+		- waveform viewers should not be used as a test cause hard to read and some parts may be overlooked
+	- can be good for debugging
+- third party models
+	- chip needs to be verified in its target environment (Board/SoC verification)
+	- buying behavioural models (specs) for board pars is expensive however model you develop is not as reliable as the one you buy as model bought is used by many others
+	- often more expensive to develop your own model to the same degree of confidence than licensing one
+- metrics
+	- not really verification tools by managers love metrics and measurements
+	- managers want something measurable to assess progress
+	- metrics include:
+		- coverage
+		- number of lines of code
+		- ratio of line of code (between design and verification)
+		- drop of source code changes
+		- number of outstanding issues
