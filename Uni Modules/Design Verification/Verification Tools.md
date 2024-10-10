@@ -38,6 +38,6 @@ Parallelism, abstraction and automation can reduce the duration of verification
 ## Verification Languages
 ![[verification languages]]
 
-car breaks and medical equipment 
+car breaks and medical equipment are instances where speed is important
 
 

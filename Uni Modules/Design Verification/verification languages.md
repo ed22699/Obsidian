@@ -31,8 +31,16 @@ tags:
 	- language constructs to implement functional coverage models
 ### Other Verification tools
 - waveform viewers
-	- used to visually inspect design/testbench/verification environment
-	- decreases the performance of simulator ??????????
+	- used to visually inspect design/[[testbench]]/verification environment
+	- decreases the performance of simulator 
+		- high memory and storage usage 
+		- I/O overhead
+		- slow rendering and display (visualisation bottlenecks)
+		- can improve with:
+			- selective signal tracing (only log important signals), reduce waveform data size
+			- use compression to compress waveform data reducing storage and I/O overhead
+			- waveform filtering (filter to focus on the specific time ranges or events of interest)
+			- post-processing tools to reduce memory and performance overhead
 	- bad for determine whether the DUV passes or fails a test
 		- waveform viewers should not be used as a test cause hard to read and some parts may be overlooked
 	- can be good for debugging

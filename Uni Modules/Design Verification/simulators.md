@@ -43,4 +43,4 @@ Challenge: What input patterns to supply to the Design Under Verification (DUV) 
 | [[Hardware Acceleration]]    | 1000                            |
 | Emulation                    | 100000                          |
 - controllability and observability worse in emulation
-- low level verification can be more thorough due to time limitations will need to use quicker methods on the higher levels
+- low level verification can be more thorough, however, due to time limitations will need to use quicker methods on the higher levels
