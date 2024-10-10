@@ -23,9 +23,10 @@ tags:
 	- if we can sample from a sequence of distributions which eventually reaches (or get very close to) the desired distribution, then we can adopt the MCMC strategy:
 		1. draw a sample from each distribution in this sequence
 		2. only keep the sample once we get 'close enough' to the desired distribution
-## Markov Chains
-- first-order Markov chain is defined to be a series of random variables $\boldsymbol{z}^{(1)},...,\boldsymbol{z}^{(M)}$ such that the following conditional independence property holds for $m \in \{1,...,M-1\}$ 
-	- $\boldsymbol{z}^{(m)}$ often represents the $m^{th}$ state of some dynamic system so that $p(\boldsymbol{z}^{(m+1)}|\boldsymbol{z}^{(m)})$ is the state transition probability
-	- if $p(\boldsymbol{z}^{(m+1)}|\boldsymbol{z}^{(m)})$ is the same for all $m$ then the chain is homogeneous
-	- we also need an initial distribution $p(\boldsymbol{z}^{(1)})$
-- here's the Bayesian network representation of a Markov chain where $M=4$
+- the goal of MCMC is to design a [[Markov Chain]] so that the sequence of marginal distributions converges on the distribution we want
+- we can just sample from the [[Markov Chain]] and only keep the sampled values of the later random variables
+	- sampled values we draw are **not** independent (reducing the quality of the approximations we end up with), but this is a price we have to pay
+## how MCMC works
+- aim: given a target probability distribution $p(\boldsymbol{z})$, construct a Markov chain $\boldsymbol{z}^{(1)},...,\boldsymbol{z}^{(i)},...$ such that $\lim _{i \to \infty}p(\boldsymbol{z}^{(i)})=p(\boldsymbol{z})$ 
+	- for Bayesian machine learning the target distribution will be $P(\theta|D=d)$, the posterior distribution of the model parameters given the observed data
+	- one solution to this is the [[Metropolis-Hastings algorithm]]
