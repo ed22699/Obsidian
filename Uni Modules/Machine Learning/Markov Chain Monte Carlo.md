@@ -30,3 +30,10 @@ tags:
 - aim: given a target probability distribution $p(\boldsymbol{z})$, construct a Markov chain $\boldsymbol{z}^{(1)},...,\boldsymbol{z}^{(i)},...$ such that $\lim _{i \to \infty}p(\boldsymbol{z}^{(i)})=p(\boldsymbol{z})$ 
 	- for Bayesian machine learning the target distribution will be $P(\theta|D=d)$, the posterior distribution of the model parameters given the observed data
 	- one solution to this is the [[Metropolis-Hastings algorithm]]
+	- probabilistic programming systems like PyMC uses more sophisticated MCMC algorithms to avoid getting stuck
+- for MCMC we:
+	1. throw away early samples (burn-in)
+	2. run independent chains to check for convergence
+# Reading
+- bishop 11.1.2
+- bishop 11.2

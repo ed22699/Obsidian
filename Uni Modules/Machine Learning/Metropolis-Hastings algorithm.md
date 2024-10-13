@@ -11,4 +11,11 @@ tags:
 $$
 A(\boldsymbol{z}^*, \boldsymbol{z}^{(\tau)}=\min (1, \frac{p(\boldsymbol{z}^*)q(\boldsymbol{z}^{(\tau)}|\boldsymbol{z}^*)}{p(\boldsymbol{z}^{(\tau)})q(\boldsymbol{z}^*|\boldsymbol{z}^{(\tau)})})
 $$
-- if $p(\boldsymbol{z})=\frac{\tilde{p}(\boldsymbol{z})}{Z}$ then we have 
+- if $p(\boldsymbol{z})=\frac{\tilde{p}(\boldsymbol{z})}{Z}$ then we have $\frac{p(\boldsymbol{z}^*)}{p(\boldsymbol{z}^{(\tau)})}=\frac{\tilde p(\boldsymbol{z}^*)}{\tilde{p}(\boldsymbol{z}^{(\tau)})}$ so we only need $p$ up to normalisation
+- if proposal distribution is symmetric then the $q$ terms cancel out: a special case known as **Metropolis algorithm**
+>[!note]
+if $p(\boldsymbol{z}^*)\geq p(\boldsymbol{z}^{(\tau)})$ then we always accept and 'move' to $\boldsymbol{z}^*$
+
+- the target distribution is an invariant distribution of the Markov chain if the sequence of distributions $p(\boldsymbol{z}^{(i)})$ reaches the target distribution then it stays there
+- typically the Markov chain does converge to the target distribution
+- rate at which we converge to the target distribution is greatly influence by the choice of proposal distribution
