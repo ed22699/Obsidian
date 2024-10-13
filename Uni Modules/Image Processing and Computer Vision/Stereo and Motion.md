@@ -44,20 +44,4 @@ whats in the scene, where the cameras are can cause problems
 all three issues are interrelated, knowing one can help the others
 
 ### Geometry
-- need to understand geometric relationship between cameras to allow 3D reconstruction from correspondences
-![[pin hole camera model]]
-#### Simple two-view stereo
-- coplanar image planes (COPs in X-Z plane)
-- geometry defined by similar triangles
-- $T$ - baseline (distance between COPs)
-- point $P$ has depth $Z$
-- using similar triangles:
-	- $\frac T Z=\frac{T-x_L +x_R}{Z-f}$
-	- you can manipulate this to: $Z=\frac{fT}{x_L-x_R}=\frac{fT}d$ 
-	![[Screenshot 2024-10-13 at 18.11.30.png|200]]
-#### General stereo
-- geometry depends on position and orientation of cameras
-- epipolar geometry
-- reminder [[rotation matrices]]
-
-
+![[Stereo Geometry]]
