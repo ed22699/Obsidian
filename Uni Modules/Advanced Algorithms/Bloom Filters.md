@@ -57,7 +57,6 @@ we now maintain a much shorter bit string $B$ of some length $m<|U|$
 - by definition of $h(k)$ we can conclude that the probability $P(B[h(k)]=1)\leq \frac nm$
 	- if we choose $m=100n$ then we get a failure probability of at most 1%
 
-
 - like in a bloom filter, the $MEMBER(k)$ operation:
 	- returns yes if $k\in S$ always
 	- if $k$ is not in $S$ there is a small chance (1%) that it will still say yes
