@@ -33,11 +33,15 @@ tags:
 		![[Screenshot 2024-10-14 at 10.57.13.png|300]]
 		- as the tree has depth $O(\log n)$ and the sizes of the arrays add up to $n$, the total space used is $O(n\log n)$	
 		- preprocessing time $O(n\log n)$ 
-	- **Solution 2 (improved)**:
+	- **Solution 2 (improved)**: $O(\log n +k)$ lookup time
 		- when we do a 2D look-up we do $O(\log n)$ 1D lookups, all with the same $y_1$ and $y_2$ 
 		- slow part is finding the successor of $y_1$, if you knew where this point was a 1D lookup would only take $O(k')$ time
 			- arrays of points at the children partition the array of the parent
 				- The child arrays are sorted by $y$ coordinate (but have been partitioned by $x$ coordinate)
 			- consider a point in the parent array, we add a link to its successor in both child arrays (doing this at every point during preprocessing)
-			- if we know where the successor of $y_1$ is in the 
+			- if we know where the successor of $y_1$ is in the parent, we can find the successor in either child in $O(1)$ time (adding these links doesn't increase the space or the prep time)
+				![[Screenshot 2024-10-14 at 11.28.17.png|300]]
+		1. follow the paths to $x_1$ and $x_2$ (updating the successor to $y_1$ as you go)
+		2. discard off-path subtrees where the $x$ coordinates are too large or too small
+		3. for each off-path subtree where the $x$ coordinates are in range use the 1D range structure for that subtree to filter the $y$ coordinates
 - for $d=3$, $lookup(x_1,x_2,y_1,y_2,z_1,z_2)$ returns every point with $x_1\leq x \leq x_2$, $y_1\leq y \leq y_2$ and $z_1\leq z \leq z_2$

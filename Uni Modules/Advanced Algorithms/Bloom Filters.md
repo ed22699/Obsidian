@@ -80,7 +80,7 @@ we now maintain a much shorter bit string $B$ of some length $m<|U|$
 	- fraction of bits set to $1$ is at most $\frac {nr}m$ 
 	- $P($randomly chosen bit is $1)\leq \frac{nr}m$
 	- $P(r$ randomly chosen bits all equal $1)\leq (\frac{nr}m)^r$
-		- by differentiating we can find that $(\frac{nr}m)^2$ is minimised by letting $r=\frac{m}{ne}$
+		- by differentiating we can find that $(\frac{nr}m)^r$ is minimised by letting $r=\frac{m}{ne}$
 		- $P(failure)\leq (\frac 1 e)^{\frac m {ne}} \approx (0.69)^{\frac m n}$
 - to achieve 1% failure probability we can set $m\approx 12.52n$ bits (when storing up to $n$ keys)
 	- neither the space nor the failure probability depend on |U|, if we want better probability, we could use more space
