@@ -13,6 +13,11 @@ From "Uni Modules/Design Verification"
 Where file != this.file
 ```
 
+link back to **observability** and **controlability** when answering questions
+
+
+
+
 book points
 - just because it is proven correct does not mean it will do what you intend 
 - there are limits to what can be proven
