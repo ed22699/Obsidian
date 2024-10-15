@@ -44,7 +44,9 @@ $$
 		- symmetry/non-identifiability
 		- no closed form for the MLE
 	- Solution: [[EM algorithm]]
-		- 
+		- at least $K!$ solutions so have to resort to an iterative algorithm
+		- the iterative algorithm we use is called the Expectation-Maximisation [[EM algorithm]]
+		- it should be emphasised that there will generally be multiple local maxima of the log likelihood function
 # Reading
 - bishop 9.1 (skip 9.1.1 but interesting)
 - bishop 9.2 up to 9.2.1

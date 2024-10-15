@@ -30,4 +30,16 @@ finding the correct child could take a while as there could be $n$ edges. Here w
 - atomic suffix tree can have $(\frac n2+1)^2$ nodes (very big)
 ## Compacted Suffix Tree
 - replace each non-branching path with a single edge 
-	- edges are now labelled with substrings
+	- edges are now labelled with substrings rather than single characters 
+![[Screenshot 2024-10-15 at 11.57.42.png|200]]
+- there are $O(n)$ edges
+	- there are at most $n$ leaves
+	- every internal node has two or more children
+- only store the end points, instead of storing "nas" we actually store $(4,6)$
+**Compacted Suffix Tree** of T facts:
+- a rooted tree with $n$ leaves
+- every internal node has two or more children
+- every edge is labelled with a substring
+- no two edges leaving the same node have the same first character 
+- each leaf is labelled with a location in $T$ 
+- any root-to-leaf path spells out the corresponding suffix
