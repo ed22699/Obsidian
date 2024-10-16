@@ -23,4 +23,7 @@ tags:
 	- $\boldsymbol{\mu}_k^{new}=\frac 1 {N_k}\sum_{n=1}^N\gamma(z_{nk})\boldsymbol{x}_n$
 	- $\boldsymbol{\Sigma}_k^{new}=\frac 1{N_k}\sum_{n=1}^N\gamma(z_{nk})(\boldsymbol{x}_n - \boldsymbol{\mu}_k^{new})(\boldsymbol{x}_n-\boldsymbol{\mu}_k^{new})^T$
 	- $\pi_k^{new}=\frac{N_k}N$
+>[!note]
+E and M are iterated, each time converging more onto clusters
+
 ## Why does EM work?
