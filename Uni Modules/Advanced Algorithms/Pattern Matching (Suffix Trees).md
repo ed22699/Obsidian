@@ -1,7 +1,7 @@
 ---
 tags:
   - Lesson
-  - pattern_matching
+  - suffix_trees
 ---
 - input a test string $T$ (length $n$) and a pattern string $P$ (length $m$)
 - goal is to find all the locations where $P$ matches in $T$

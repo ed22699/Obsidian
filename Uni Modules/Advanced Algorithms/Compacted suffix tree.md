@@ -1,8 +1,12 @@
 ---
 tags:
-  - pattern_matching
+  - suffix_trees
 ---
-- comp
+## Summary
+- compacted suffix tree of a length $n$ text uses $O(n)$ space
+- finding all matches of a pattern $P$ of length m takes $O(m+occ)$
+- suffix trees can be built in $O(n)$ time (we only saw a $O(n^2)$ method, could build a [[Suffix Array]] as an alternative)
+## Method
 - replace each non-branching path with a single edge 
 	- edges are now labelled with substrings rather than single characters 
 ![[Screenshot 2024-10-15 at 11.57.42.png|200]]
@@ -46,3 +50,13 @@ inset suffix trees one at a time (longest first
 		- ana as (1,3)
 		- nas$ as (4,7)
 - takes $O(n)$ time per suffix so $O(n^2)$ time in total
+### Multiple text indexing
+![[Screenshot 2024-10-16 at 10.28.42.png|400]]
+- build a generalised suffix tree in $O(n_1+n_2)$ space
+- using the linear time method (which we omitted), this takes $O(n_1+n_2)$ time
+- finding all matches of a pattern $P$ of length $m$ still takes $O(m+occ)$ time
+>[!note]
+[[Suffix Array]] is much smaller than the suffix tree (in terms of constants)
+
+- you can get a suffix array from a suffix tree by performing a depth-first search (in lexicographical order)
+	- however this is quite a useless excise as you shouldn't have bothered with a suffix tree if you were going to use a suffix array 

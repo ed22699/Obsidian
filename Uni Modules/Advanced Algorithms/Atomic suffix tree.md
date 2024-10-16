@@ -1,7 +1,8 @@
 ---
 tags:
-  - pattern_matching
+  - suffix_trees
 ---
+
 ![[Screenshot 2024-10-14 at 13.43.28.png|400]]
 - suffix tree contains every suffix of $T$ as a root to leaf path
 - every edge is labelled with a character from $T$
