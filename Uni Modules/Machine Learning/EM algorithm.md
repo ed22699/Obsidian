@@ -27,3 +27,4 @@ tags:
 E and M are iterated, each time converging more onto clusters
 
 ## Why does EM work?
+change $q$ so $\ln p(q|p)=0$, this raises $\mathcal{L}(q,\theta)$ 
