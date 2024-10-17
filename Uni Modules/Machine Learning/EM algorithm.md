@@ -46,7 +46,7 @@ E and M are iterated, each time converging more onto clusters
 	- $KL(q||p)\geq 0$ for any choice of $q$, so $\mathcal{L}(q,\boldsymbol{\theta})\leq \ln p(\boldsymbol{X}|\boldsymbol{\theta})$ 
 		- in the E-step we increase $\mathcal{L}(q,\boldsymbol{\theta})$ by updating $q$ (and leaving $\boldsymbol{\theta}$ fixed)
 		- in the M-step we increase $\mathcal{L}(q,\boldsymbol{\theta})$ by updating $\boldsymbol{\theta}$ (and leaving $q$ fixed)
-		- after the E-step we have $\mathcal{L}(q,\boldsymbol{\theta})=\ln p(\boldsymbol{X}|\boldsymbol{\theta})$ so that in the following M-step increasing $\mathcal{L}(q,\boldsymbol{\theta})$ will also increase $\ln p(\boldsymbol{X}|\boldsymbol{\theta})$ 
+		- after the E-step we have $\mathcal{L}(q,\boldsymbol{\theta})=\ln p(\boldsymbol{X}|\boldsymbol{\theta})$ so that in the following M-step increasing $\mathcal{L}(q,\boldsymbol{\theta})$ will also increase $\ln p(\boldsymbol{X}|\boldsymbol{\theta})$ ¡!¡
 
 
 
