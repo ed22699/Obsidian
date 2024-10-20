@@ -46,7 +46,15 @@ E and M are iterated, each time converging more onto clusters
 	- $KL(q||p)\geq 0$ for any choice of $q$, so $\mathcal{L}(q,\boldsymbol{\theta})\leq \ln p(\boldsymbol{X}|\boldsymbol{\theta})$ 
 		- in the E-step we increase $\mathcal{L}(q,\boldsymbol{\theta})$ by updating $q$ (and leaving $\boldsymbol{\theta}$ fixed)
 		- in the M-step we increase $\mathcal{L}(q,\boldsymbol{\theta})$ by updating $\boldsymbol{\theta}$ (and leaving $q$ fixed)
-		- after the E-step we have $\mathcal{L}(q,\boldsymbol{\theta})=\ln p(\boldsymbol{X}|\boldsymbol{\theta})$ so that in the following M-step increasing $\mathcal{L}(q,\boldsymbol{\theta})$ will also increase $\ln p(\boldsymbol{X}|\boldsymbol{\theta})$ ¡!¡
+		- after the E-step we have $\mathcal{L}(q,\boldsymbol{\theta})=\ln p(\boldsymbol{X}|\boldsymbol{\theta})$ so that in the following M-step increasing $\mathcal{L}(q,\boldsymbol{\theta})$ will also increase $\ln p(\boldsymbol{X}|\boldsymbol{\theta})$
+### E-step
+$$
+	\ln p(\boldsymbol{X}|\theta^{old})=\mathcal{L}(q, \theta^{old})+KL(q||p)
+$$
+- we update $q$ but leave $\theta^{old}$ fixed
+- $KL(q||p)=0$ when $q=p$, so to maximise $\mathcal{L}(q,\theta^{old})$ we set $q(\boldsymbol{Z})=p(\boldsymbol{Z}|\boldsymbol{X},\theta^{old})$
+	- this increases $\mathcal{L}(q,\theta^{old})$ but not $\ln p(\boldsymbol{X}|\theta^{old})$
+![[Screenshot 2024-10-20 at 15.00.57.png|250]]
 
 
 
