@@ -55,8 +55,26 @@ $$
 - $KL(q||p)=0$ when $q=p$, so to maximise $\mathcal{L}(q,\theta^{old})$ we set $q(\boldsymbol{Z})=p(\boldsymbol{Z}|\boldsymbol{X},\theta^{old})$
 	- this increases $\mathcal{L}(q,\theta^{old})$ but not $\ln p(\boldsymbol{X}|\theta^{old})$
 ![[Screenshot 2024-10-20 at 15.00.57.png|250]]
-
-
+### M-step
+$$
+\ln p(\boldsymbol{X}|\theta^{new})=\mathcal{L}(q,\theta^{new})+KL(q||p)
+$$
+	$$
+	\mathcal{L}(q,\theta)=\sum_{\boldsymbol{Z}}q(\boldsymbol{Z})\ln \{\frac{p(\boldsymbol{X}, \boldsymbol{Z}|\theta)}{q(\boldsymbol{Z})}\}=\sum_\boldsymbol{Z}q(\boldsymbol{Z})\ln p(\boldsymbol{X},\boldsymbol{Z}|\theta)-\sum_{\boldsymbol{Z}}q(\boldsymbol{Z})\ln q(\boldsymbol{Z})
+	$$
+- find parameters $\theta^{new}$ which maximise $\mathcal{L}(q,\theta)$ while leaving $q$ fixed
+	- increases $\ln p(\boldsymbol{X}|\theta)$ since $KL(q||p)\geq 0$
+	- bonus since changing $p$ from $p(\boldsymbol{Z}|\boldsymbol{X},\theta^{old})$ to $p(\boldsymbol{Z}|\boldsymbol{X}, \theta^{new})$ will typically lead $KL(q||p)$ to increase from $0$ to some positive value
+![[Screenshot 2024-10-20 at 17.18.02.png|200]]
+### Gaussian mixtures
+- in standard case of independent and identically distributed dataset $\boldsymbol{X}$ we get: $p(\boldsymbol{Z}|\boldsymbol{X}, \theta)=\prod_{n=1}^N p(\boldsymbol{z}_n|\boldsymbol{x}_n,\theta)$
+- in the case of Gaussian mixtures the responsibilities $\gamma(z_{nk})$ define the $p(\boldsymbol{z}_n|\boldsymbol{x}_n,\theta)$
+	- computing the responsibilities is the E-step
+	- M-step maximises $\mathcal{L}(q,\theta)$ given the current responsibilities
 
 
 change $q$ so $\ln p(q|p)=0$, this raises $\mathcal{L}(q,\theta)$ 
+
+# Reading
+- bishop 9.2.2
+- bishop 9.4
