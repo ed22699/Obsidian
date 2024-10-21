@@ -24,4 +24,22 @@ tags:
 	- $\boldsymbol{p}_L=\begin{bmatrix}x_L\\y_L\\f\end{bmatrix}=M_L\begin{bmatrix}\hat{x}_L\\\hat{y}_L\\f\end{bmatrix}=M_L\hat{\boldsymbol{p}}_L$
 	- $F=M_R^TEM_L$ (fundamental matrix in pixel coordinates)
 ![[Screenshot 2024-10-21 at 15.54.26.png|300]]
-- given set of correspondences, $i=1...N$, we can also estimate the fundamental matrix: $\hat{\boldsymbol{p}}_{Ri}^TF\hat{\boldsymbol{p}}_{Li}=0 \quad i=1...N$
+- given set of correspondences, $i=1...N$, we can also estimate the fundamental matrix: $\hat{\boldsymbol{p}}_{Ri}^TF\hat{\boldsymbol{p}}_{Li}=0 \quad i=1...N \Rightarrow A\boldsymbol{v}=0$
+	- $A$ - $N$x$9$ matrix defined by correspondence vectors $\hat{\boldsymbol{p}}_{Li}$ and $\hat{\boldsymbol{p}}_Ri$
+	- $\boldsymbol{v}$ - components of $F$
+	- solve for $\boldsymbol{v}$ using singular value decomposition
+## 3D Reconstruction
+![[Screenshot 2024-10-21 at 17.21.26.png|200]]
+- you take a ray from the left camera and a ray from the right camera and find the point where they cross
+	- **problem**: relies on them being ridiculously accurate to cross
+	- instead find an approximation
+- assume that they do not cross, we find the shortest line between the two rays, this is the line that is perpendicular with both the left ray and the right ray
+- once this shortest line is found you can find the centre point of this line to estimate $\boldsymbol{P}$
+![[Screenshot 2024-10-21 at 17.26.55.png|300]]
+- find $a,b,c$ s.t: $a\boldsymbol{p}_L-bR^T\boldsymbol{p}_R-\boldsymbol{T}-c(\boldsymbol{p}_L\otimes R^T\boldsymbol{p}_R)=0$
+	- given corresponding points, we know $\boldsymbol{p}_L, \boldsymbol{p}_R$
+	- given calibrated views, we know $R, \boldsymbol{T}$
+	- so $a\begin{bmatrix}\cdot\\\boldsymbol{p}_L\\\cdot\end{bmatrix}-b\begin{bmatrix}\cdot\\R^T\boldsymbol{p}_R\\\cdot\end{bmatrix}-c\begin{bmatrix}\cdot\\\boldsymbol{p}_L\otimes R^T\boldsymbol{p}_R\\\cdot\end{bmatrix}=\begin{bmatrix}\cdot\\\boldsymbol{T}\\\cdot\end{bmatrix}$
+	- so $H\begin{bmatrix}a\\b\\c\end{bmatrix}=\boldsymbol{T}\Rightarrow \begin{bmatrix}a\\b\\c\end{bmatrix}=H^{-1}\boldsymbol{T}$
+	![[Screenshot 2024-10-21 at 17.39.25.png|300]]
+	- $\hat{\boldsymbol{P}}=(a\boldsymbol{p}_L+bR^T\boldsymbol{p}_R+\boldsymbol{T})/2$
