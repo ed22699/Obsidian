@@ -24,4 +24,4 @@ tags:
 	- $\boldsymbol{p}_L=\begin{bmatrix}x_L\\y_L\\f\end{bmatrix}=M_L\begin{bmatrix}\hat{x}_L\\\hat{y}_L\\f\end{bmatrix}=M_L\hat{\boldsymbol{p}}_L$
 	- $F=M_R^TEM_L$ (fundamental matrix in pixel coordinates)
 ![[Screenshot 2024-10-21 at 15.54.26.png|300]]
-- given set of correspondences, $i=1...N$, we can also estimate the fundamental matrix: $\hat{\boldsymbol{p}}_{Ri}^TF\hat{\boldsymbol{p}}_{Li}=0 \qquad i=1...N$
+- given set of correspondences, $i=1...N$, we can also estimate the fundamental matrix: $\hat{\boldsymbol{p}}_{Ri}^TF\hat{\boldsymbol{p}}_{Li}=0 \quad i=1...N$
