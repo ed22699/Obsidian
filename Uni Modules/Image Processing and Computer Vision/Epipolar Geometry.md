@@ -19,7 +19,7 @@ tags:
 3. if you do the same with the right camera, you end up with an epipolar line that lies in the same plane. For these two points we end up with the epipolar plane
 - where the line between the two centres of projection, where they cut the image plane is known as the epipole
 	- all epipolar lines all end up at the epipoles
-## Geometry Maths
+##  Epipolar Line Constraint
 ![[Screenshot 2024-10-21 at 12.26.11.png|200]]
 - rigid transformation between cameras: $\boldsymbol{P}_R=R(\boldsymbol{P}_L-\boldsymbol{T})$
 - perspective projection:
@@ -36,4 +36,15 @@ tags:
 		- $R^T\boldsymbol{P}_R=(\boldsymbol{P}_L-\boldsymbol{T})$
 			- $R^T=R^{-1}$
 		- $\boldsymbol{P}_R^TR=(\boldsymbol{P}_L-\boldsymbol{T})^T$
-		- 
+	- $\boldsymbol{P}_R^TRS\boldsymbol{P}_L=0$ 
+		- if you take a vector defining a point in the left coordinate system and a vector defining the same point in the right coordinate system, they are defined through this relationship
+![[Screenshot 2024-10-21 at 12.39.58.png|300]]
+- $\boldsymbol{P}_R^TRS\boldsymbol{P}_L=0 \Rightarrow \boldsymbol{P}_R^TE\boldsymbol{P}_L=0$
+	- $E=RS$ is the essential matrix
+		- 3x3 matrix
+		- all the epipolar lines are defined by this matrix
+- $\boldsymbol{P}_R^TE\boldsymbol{P}_L=0 \Rightarrow \frac{Z_R}f\boldsymbol{p}_R^TE\frac{Z_L}f\boldsymbol{p}_L=0\Rightarrow \boldsymbol{p}_R^TE\boldsymbol{p}_L=0$ 
+	- $\boldsymbol{p}_L=\frac{f\boldsymbol{P}_L}{Z_L}\Rightarrow \boldsymbol{P}_L=\frac{Z_L\boldsymbol{p}_L}{f}$
+	- $\boldsymbol{p}_R=\frac{f\boldsymbol{P}_R}{Z_R}\Rightarrow \boldsymbol{P}_R=\frac{Z_R\boldsymbol{p}_R}{f}$
+	- original relationship in terms of 3D points is the same for 2D points as $\boldsymbol{p}_R$ are scaler versions of $\boldsymbol{P}_R$ so constraint itself doesn't change
+	

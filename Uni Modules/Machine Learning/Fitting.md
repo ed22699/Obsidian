@@ -9,9 +9,9 @@ $$
 R(a_{0}, a_{1}) = \sum_{i=1}^{N}(y_{i} - (a_{0}+a_{1}x_{i}))^{2}
 $$
 2. Using matrix notation we have:
-$$
-\frac{dR}{d\theta} = -2X^{T}(y-X\theta)
-$$
+	$$
+	\frac{dR}{d\theta} = -2X^{T}(y-X\theta)
+	$$
 	- $X_{ij}$ is the value of the $j$th feature in the $i$th datapoint (we also add a fake feature which is always 1 to handle the intercept)
 	- $y_{i}$ is the value of the response in the $i$th datapoint
 3. Set $\frac{dR}{d\theta}$ to $0$ and re-arrange:
