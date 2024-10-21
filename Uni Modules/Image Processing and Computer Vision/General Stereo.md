@@ -32,4 +32,4 @@ tags:
 	- $\boldsymbol{P}'_R=H_{WR}\boldsymbol{P}'_W$
 	- $\boldsymbol{P}_R=R(\boldsymbol{P}_L-\boldsymbol{T})$
 ![[Screenshot 2024-10-13 at 19.02.43.png|300]]
-	
+![[Screenshot 2024-10-21 at 11.59.23.png|400]]
