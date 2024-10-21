@@ -26,4 +26,4 @@ $$
 $y = \begin{pmatrix} 0 \\ 1 \\ 3 \\ 9 \end{pmatrix}$ $X = \begin{pmatrix}1 & -1 \\ 1 & 0 \\ 1 & 1 \\ 1 & 2 \end{pmatrix}$  
 $X^{T}X = \begin{pmatrix}1 & 1& 1&1\\-1&0&1&2 \end{pmatrix}\begin{pmatrix}1 & -1 \\ 1 & 0 \\ 1 & 1 \\ 1 & 2 \end{pmatrix} = \begin{pmatrix}4&2\\2&6 \end{pmatrix}$ 
 $\hat{\theta} = (X^{T}X)^{-1}X^{T}y = \frac{1}{20}\begin{pmatrix}6&-2\\-2&4 \end{pmatrix}\begin{pmatrix}1&1&1&1\\-1&0&1&2 \end{pmatrix} \begin{pmatrix}0\\1\\3\\9 \end{pmatrix} = \begin{pmatrix}1.8\\2.9 \end{pmatrix}$ 
-$y = 1.8 + 2.9$ 
+$y = 1.8 + 2.9x$ 
