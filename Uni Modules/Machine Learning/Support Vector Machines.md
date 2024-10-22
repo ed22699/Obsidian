@@ -52,7 +52,7 @@ $$
 	- typically for most training datapoints $\boldsymbol{x}_n$ we have $a_n=0$ (not needed for making predictions)
 	- needed points are called **support vectors**
 ## SVM kernels
-![[Screenshot 2024-10-07 at 10.13.11.png|400]]
+![[Screenshot 2024-10-07 at 10.13.11.png|600]]
 - default kernel for NuSVC is the RBF kernel: $k(\boldsymbol{x}, \boldsymbol{x}')=e^{-\gamma||\boldsymbol{x}-\boldsymbol{x}'||^2}$
 	- implicit feature space is infinite dimensional
 	- is non-parametric (number of support vectors, and thus dual parameters, depends on the data and value of $\gamma$)
