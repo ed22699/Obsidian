@@ -59,9 +59,9 @@ $$
 $$
 \ln p(\boldsymbol{X}|\theta^{new})=\mathcal{L}(q,\theta^{new})+KL(q||p)
 $$
-	$$
-	\mathcal{L}(q,\theta)=\sum_{\boldsymbol{Z}}q(\boldsymbol{Z})\ln \{\frac{p(\boldsymbol{X}, \boldsymbol{Z}|\theta)}{q(\boldsymbol{Z})}\}=\sum_\boldsymbol{Z}q(\boldsymbol{Z})\ln p(\boldsymbol{X},\boldsymbol{Z}|\theta)-\sum_{\boldsymbol{Z}}q(\boldsymbol{Z})\ln q(\boldsymbol{Z})
-	$$
+$$
+\mathcal{L}(q,\theta)=\sum_{\boldsymbol{Z}}q(\boldsymbol{Z})\ln \{\frac{p(\boldsymbol{X}, \boldsymbol{Z}|\theta)}{q(\boldsymbol{Z})}\}=\sum_\boldsymbol{Z}q(\boldsymbol{Z})\ln p(\boldsymbol{X},\boldsymbol{Z}|\theta)-\sum_{\boldsymbol{Z}}q(\boldsymbol{Z})\ln q(\boldsymbol{Z})
+$$
 - find parameters $\theta^{new}$ which maximise $\mathcal{L}(q,\theta)$ while leaving $q$ fixed
 	- increases $\ln p(\boldsymbol{X}|\theta)$ since $KL(q||p)\geq 0$
 	- bonus since changing $p$ from $p(\boldsymbol{Z}|\boldsymbol{X},\theta^{old})$ to $p(\boldsymbol{Z}|\boldsymbol{X}, \theta^{new})$ will typically lead $KL(q||p)$ to increase from $0$ to some positive value
