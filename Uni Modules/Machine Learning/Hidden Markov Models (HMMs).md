@@ -11,6 +11,7 @@ tags:
 	- e.g. classifying words in a text document into grammatical categories such as noun, verb, adjective, etc
 	- this is called part-of-speech (POS) tagging and is used by natural language understanding systems e.g. to extract facts and events from text data
 	![[Screenshot 2024-10-28 at 10.49.56.png|200]]
+	- english language makes sequential text difficult as it has a lot of ambiguity when it comes to nouns, verbs, etc
 - we use an HMM model for human action recognition as actions typically follow a temporal sequence
 - HMMs can be used for different goals:
 	- inferring the latent states (sequence labelling)
@@ -31,11 +32,35 @@ tags:
 		- a vector of probabilities $\pi$ is used for $\boldsymbol{z_1}$ (to give the initial state probabilities), this us does to it having no predecessor
 		- a transition matrix for a mixture model would have all rows looking the same as data is independent
 	- **The emission distributions**: models the observations given each latent state value
-		- distribution over the observed variables, $p(\boldsymbol{x}_n|\boldsymbol{z}_n, \phi)$, where $\phi$ are paramets of the distributions, e.g.
-			- 
-
-
-
-english language makes sequential text difficult as it has a lot of ambiguity when it comes to nouns, verbs, etc
-
-[[EM algorithm]]
+		- distribution over the observed variables, $p(\boldsymbol{x}_n|\boldsymbol{z}_n, \phi)$, where $\phi$ are parameters of the distributions, e.g.
+			- real-valued observations may use Gaussian emissions
+			- if there are multiple observations, we may use a multivariate Gaussian
+			- discrete observations may use a categorical distribution
+		- for each observation there are $K$ values of $p(\boldsymbol{x}_n|\boldsymbol{z}_n, \phi)$, one for each possible value of the unobserved $\boldsymbol{z}_n$
+- the complete HMM can be defined by the joint distribution over observations and latent states:
+	$$
+	p(\boldsymbol{X},\boldsymbol{Z}|\boldsymbol{A},\pi,,\phi)=p(\boldsymbol{z}_1|\pi)\prod_{n=2}^Np(\boldsymbol{z}_n|\boldsymbol{z}_{n-1},\boldsymbol{A})\prod_{n=1}^Np(\boldsymbol{x}_n|\boldsymbol{z}_n,\phi)
+	$$
+	- $\boldsymbol{A}, \pi$ and $\phi$ are parameters that must be learned or marginalised
+	- generative model: think of generating each of the state variables $\boldsymbol{z}_n$ in turn, then generating the observation $\boldsymbol{x}_n$ for each generated state
+	- it is ancestral sampling (see [[univariate sampling]] notes)
+### EM for HMMs
+- we want to use maximum likelihood to estimate the HMM parameters:
+	- $\boldsymbol{A}$ - transition matrix
+	- $\pi$ - initial state probabilities
+	- $\phi$ - parameters of the emission distributions
+- examine the unsupervised case where the sequence of states $\boldsymbol{Z}$ is not observed
+	- $\ln p(\boldsymbol{X}|\boldsymbol{A},\pi,\phi)=\ln\sum_{\boldsymbol{Z}}\{p(\boldsymbol{z}_1|\pi)\prod_{n=2}^Np(\boldsymbol{z}_n|\boldsymbol{z}_{n-1}, \boldsymbol{A})\prod_{n=1}^Np(\boldsymbol{x}_n|\phi, \boldsymbol{z}_n)\}$
+- as with GMMs, there is no closed-form solution to the MLE, we turn to [[EM algorithm]]
+- unlike GMM, the likelihood doesn't factorise over the data points:
+	- $\ln p(\boldsymbol{X}|\boldsymbol{A},\pi,\phi)=\ln\sum_{\boldsymbol{Z}}\{p(\boldsymbol{z}_1|\pi)\prod_{n=2}^Np(\boldsymbol{z}_n|\boldsymbol{z}_{n-1}, \boldsymbol{A})\prod_{n=1}^Np(\boldsymbol{x}_n|\phi, \boldsymbol{z}_n)\}$
+	- the distribution of $\boldsymbol{z}_n$ depends on $\boldsymbol{z}_{n-1}$, which also depends on $\boldsymbol{z}_{n-2...}$
+	- can't just sum over the values of $z_n$ independently for each data point
+	- we have to sum over all $K^N$ possible sequences $\boldsymbol{Z}$
+- EM, maximising the log likelihood of a HMM
+	- first define $Q(\boldsymbol{\theta}|\boldsymbol{\theta}^{old})\ln p(\boldsymbol{X}, \boldsymbol{Z}|\boldsymbol{\theta})$
+		1. initialise the parameters with a random guess: $\boldsymbol{\theta}^{old}=\{\boldsymbol{A},\pi,\phi\}$
+		2. **E-step**: use $\boldsymbol{\theta}^{old}$ to compute expectations over $\boldsymbol{Z}$ required to compute $Q(\boldsymbol{\theta}|\boldsymbol{\theta}^{old})$ 
+		3. **M-step**: choose the values of $\boldsymbol{\theta}=\{\boldsymbol{A}, \pi,\phi\}$ that maximise $Q(\boldsymbol{\theta}|\boldsymbol{\theta}^{old})$
+		4. set $\boldsymbol{\theta}^{old}=\boldsymbol{\theta}$
+		5. repeat steps 2-4 until convergence

@@ -3,7 +3,7 @@ tags:
   - Lesson
   - van_emde_boas_trees
 ---
-	- dynamic dictionary data structure we store (key, value)-pairs such that for any key there is at most one pair (key, value) in the dictionary
+- dynamic dictionary data structure we store (key, value)-pairs such that for any key there is at most one pair (key, value) in the dictionary
 - three operations:
 	- $add(x,v)$ - add the pair $(x,v)$ where $x\in U$
 	- $lookup(x)$ - return $v$ if $(x,v)$ is in dictionary, $NULL$ otherwise
