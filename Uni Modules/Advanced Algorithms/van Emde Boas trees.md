@@ -94,7 +94,7 @@ we can find the min/max quickly if we store them separately
 #### Time Complexity
 - let $T(u)$ be the time complexity of the add operation
 	- we have that, $T(u)=T(\sqrt u)+O(1)$
-	- using substitution and the master method you can show that $T(u)=O(\log\log u)$
+	- using substitution and the [[Master Method]] you can show that $T(u)=O(\log\log u)$
 - this holds for all the operations
 - let $Z(u)$ be the space used by a vEB tree over a universe of size $u$
 	- we have that, $Z(u)=(\sqrt u + 1)\cdot Z(\sqrt u)+O(1)$
