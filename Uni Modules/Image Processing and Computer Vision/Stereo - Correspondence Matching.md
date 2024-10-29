@@ -36,8 +36,12 @@ tags:
 - find salient (distinct) points in each view and match points by comparing pixels or image descriptors in local regions about each point
 - examples:
 	- [[Harris corner detector]] (salient points)
-	- Scale-Invariant Feature Transform (SIFT)
-
+	- [[Scale-Invariant Feature Transform (SIFT) Matching]]
+	- typically use salient points followed by SIFT matching
+### Where to look - Calibrated
+- for calibrated stereo set up, corresponding points lie on epipolar lines
+	- given point in left image, search for point in right image along band about epipolar line
+	- increases speed, reduces mismatches
 
 
 

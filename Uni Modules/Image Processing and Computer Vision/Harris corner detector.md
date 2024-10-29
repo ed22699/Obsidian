@@ -2,4 +2,12 @@
 tags:
   - correspondence_matching
 ---
-- detects salient (distinct, interesting)
+- detects salient (distinct, interesting) image points
+- covariance of spatial gradient vectors within region $W$
+	- $A = \sum_{x,y\in W}\begin{bmatrix}\boldsymbol{I}^2_x && \boldsymbol{I}_x\boldsymbol{I}_y \\ \boldsymbol{I}_x\boldsymbol{I}_y && \boldsymbol{I}_y^2\end{bmatrix}$
+		- $\boldsymbol{I}_x \equiv \boldsymbol{I}_x(x,y)$ (spatial gradient)
+		- ![[Screenshot 2024-10-29 at 13.02.38.png|100]]
+	- eigenvalues $\lambda _1$ and $\lambda_2$ of $A$ indicate 'spread' of gradients in region, e.g. 2 high values $\rightarrow$ 'busy' region
+		- e.g. saliency metric: $sal=\frac{\lambda_1\lambda_2}{(\lambda_1+\lambda_2)}$
+			- if eigenvalues both large $\rightarrow sal$ large 
+			- if either eigenvalue small $\rightarrow sal$ small
