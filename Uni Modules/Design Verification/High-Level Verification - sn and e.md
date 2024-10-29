@@ -26,3 +26,8 @@ don't keep tests you keep the constrains so you can get the tests again
 what principles should be adhered to 
 - repeatability
 - random stability (acknowledging the fact that code does evolve)
+
+ordering of operations from threading or different compilers with floating point operations caused randomness. Need to tie the tools down all the way to the operating system to control these threads and therefore this randomness
+
+MSB = most significant bit
+LSB = least significant bit
