@@ -77,7 +77,14 @@ tags:
 - **M Step**:
 	- $\pi_k=\gamma(z_{1k})$
 	- $A_{jk}=\sum_{n=2}^N\xi(z_{n-1,j},z_{nk})/\sum_{n=2}^N\gamma(z_{n-1,j})$
-
+	- $\phi_k$: parameters of posterior emission distributions, with observations weighted by responsibilities, $\gamma(z_{nk})$
+		- if we have Gaussian emissions, the equations are the same as for GMM
+		- discrete observations with value $i$:
+		$$
+		\phi_{ki}=p(x_n=i|z_n=k)=\frac{\sum_{n=1}^N\gamma(z_nk)[x_n=i]}{\sum_{n=1}^N\gamma(z_{nk})}
+		$$
+## Forward-backward Algorithm
+![[Forward-backward Algorithm]]
 
 
 once we're done with our training there are two things you might want to do with a HMM you might want to:

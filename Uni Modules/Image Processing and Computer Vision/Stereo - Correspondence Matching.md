@@ -47,13 +47,13 @@ tags:
 - often leads to mismatches amongst true matches, known as outliers and inliers
 - we know that inliers will be related by epipolar constraint equation $\hat p _R ^T F \hat p _L=0$ 
 - we can use random sample consensus (RANSAC) to sort out:
-	- select subset of matches at random (minimum 4)
-	![[Screenshot 2024-10-30 at 10.07.57.png|200]]
-	- compute fundamental matrix $F$ from subset
-	![[Screenshot 2024-10-30 at 10.08.41.png|200]]
-	- assess support for $F$ amongst other correspondences
-	![[Screenshot 2024-10-30 at 10.10.21.png|200]]
-	- repeat until best $F$ found
+	1. select subset of matches at random (minimum 4)
+		![[Screenshot 2024-10-30 at 10.07.57.png|200]]
+	2. compute fundamental matrix $F$ from subset
+		![[Screenshot 2024-10-30 at 10.08.41.png|200]]
+	3. assess support for $F$ amongst other correspondences
+		![[Screenshot 2024-10-30 at 10.11.52.png|200]]
+	4. repeat until best $F$ with most support found
 - if we know $F$ we can see which corresponding matches we think are matches satisfy the constraint equation. Those that satisfy the equation are inliers
 
 
