@@ -42,6 +42,20 @@ tags:
 - for calibrated stereo set up, corresponding points lie on epipolar lines
 	- given point in left image, search for point in right image along band about epipolar line
 	- increases speed, reduces mismatches
+### Where to look - Uncalibrated
+- when geometry unknown, can only match points using pixel values - region or feature based approach
+- often leads to mismatches amongst true matches, known as outliers and inliers
+- we know that inliers will be related by epipolar constraint equation $\hat p _R ^T F \hat p _L=0$ 
+- we can use random sample consensus (RANSAC) to sort out:
+	- select subset of matches at random (minimum 4)
+	![[Screenshot 2024-10-30 at 10.07.57.png|200]]
+	- compute fundamental matrix $F$ from subset
+	![[Screenshot 2024-10-30 at 10.08.41.png|200]]
+	- assess support for $F$ amongst other correspondences
+	![[Screenshot 2024-10-30 at 10.10.21.png|200]]
+	- repeat until best $F$ found
+- if we know $F$ we can see which corresponding matches we think are matches satisfy the constraint equation. Those that satisfy the equation are inliers
+
 
 
 

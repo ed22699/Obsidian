@@ -45,6 +45,7 @@ tags:
 	- generative model: think of generating each of the state variables $\boldsymbol{z}_n$ in turn, then generating the observation $\boldsymbol{x}_n$ for each generated state
 	- it is ancestral sampling (see [[univariate sampling]] notes)
 ### EM for HMMs
+- EM is for estimating when we don't have the $\boldsymbol Z$ only the $\boldsymbol X$ 
 - we want to use maximum likelihood to estimate the HMM parameters:
 	- $\boldsymbol{A}$ - transition matrix
 	- $\pi$ - initial state probabilities
@@ -58,11 +59,28 @@ tags:
 	- can't just sum over the values of $z_n$ independently for each data point
 	- we have to sum over all $K^N$ possible sequences $\boldsymbol{Z}$
 - EM, maximising the log likelihood of a HMM
-	- first define $Q(\boldsymbol{\theta}|\boldsymbol{\theta}^{old})\ln p(\boldsymbol{X}, \boldsymbol{Z}|\boldsymbol{\theta})$
+	- first define $Q(\boldsymbol{\theta}|\boldsymbol{\theta}^{old})=\sum_{\boldsymbol Z}p(\boldsymbol Z|\boldsymbol X, \boldsymbol{\theta}^{old}\ln p(\boldsymbol{X}, \boldsymbol{Z}|\boldsymbol{\theta})$
 		1. initialise the parameters with a random guess: $\boldsymbol{\theta}^{old}=\{\boldsymbol{A},\pi,\phi\}$
 		2. **E-step**: use $\boldsymbol{\theta}^{old}$ to compute expectations over $\boldsymbol{Z}$ required to compute $Q(\boldsymbol{\theta}|\boldsymbol{\theta}^{old})$ 
 		3. **M-step**: choose the values of $\boldsymbol{\theta}=\{\boldsymbol{A}, \pi,\phi\}$ that maximise $Q(\boldsymbol{\theta}|\boldsymbol{\theta}^{old})$
 		4. set $\boldsymbol{\theta}^{old}=\boldsymbol{\theta}$
 		5. repeat steps 2-4 until convergence
+- **E Step**:
+	- compute expectations of the latent states and pairs of latent states
+	- probability is just a special type of expectation: one for a binary random variable
+	- Responsibilities: $\gamma(z_{nk})=p(z_n=k|\boldsymbol X, \boldsymbol{\theta}^{(old)})$
+	- State pairs: $\xi(z_{n-1,j},z_{nk})=p(z_{n-1}=j,z_n=k|\boldsymbol X, \boldsymbol{\theta}^{(old)})$
+	- compute efficiently we need the forward-backward algorithm
+
+	- find posterior distribution of the latent variables $p(\boldsymbol Z| \boldsymbol X, \boldsymbol{\theta}^{old})$
+		- note we don't compute and store the entire distribution $p(\boldsymbol Z| \boldsymbol X, \boldsymbol{\theta}^{old})$ only the expectations of the things we need for the subsequent M step
+- **M Step**:
+	- $\pi_k=\gamma(z_{1k})$
+	- $A_{jk}=\sum_{n=2}^N\xi(z_{n-1,j},z_{nk})/\sum_{n=2}^N\gamma(z_{n-1,j})$
 
 
+
+once we're done with our training there are two things you might want to do with a HMM you might want to:
+- workout the most probable state (most probable tag for a word)
+- workout the most probable state trajectory (most probable sequence of tags)
+	- use the [[Viterbi Algorithm]] to do this
