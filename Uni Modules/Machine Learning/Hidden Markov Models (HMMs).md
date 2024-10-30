@@ -64,3 +64,5 @@ tags:
 		3. **M-step**: choose the values of $\boldsymbol{\theta}=\{\boldsymbol{A}, \pi,\phi\}$ that maximise $Q(\boldsymbol{\theta}|\boldsymbol{\theta}^{old})$
 		4. set $\boldsymbol{\theta}^{old}=\boldsymbol{\theta}$
 		5. repeat steps 2-4 until convergence
+
+
