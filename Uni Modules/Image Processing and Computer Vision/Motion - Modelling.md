@@ -5,3 +5,5 @@ tags:
 ---
 with motion we use frames close together compared to stereo where we will use key frames, further apart
 - we can use small angle approximation as we are assuming there is a small change in angle per frames as we are looking at close together frames
+
+if you rotate a camera but it remains in the same place motion field is independent of depth

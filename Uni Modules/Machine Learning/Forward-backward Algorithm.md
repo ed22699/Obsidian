@@ -2,6 +2,7 @@
 tags:
   - sequential_data
 ---
+- an instance of the more general sum-product algorithm to marginalise over sequences of hidden states
 example of the sum-product algorithm used in the E-step
 - forward pass computes for each time-step $n$ and state value $k$:
 	- $\alpha(z_{nk})=p(\boldsymbol x_1,..., \boldsymbol x_n, z_n=k|\pi,\boldsymbol A, \phi)$

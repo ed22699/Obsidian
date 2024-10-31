@@ -83,6 +83,8 @@ tags:
 		$$
 		\phi_{ki}=p(x_n=i|z_n=k)=\frac{\sum_{n=1}^N\gamma(z_nk)[x_n=i]}{\sum_{n=1}^N\gamma(z_{nk})}
 		$$
+>[!note]
+>cannot just learn with only unlabelled data using EM algorithm as likelihood surface will be chaos with lodes of symmetries, stuck in local maxima. Mix up with semi-supervised learning
 ## Forward-backward Algorithm
 ![[Forward-backward Algorithm]]
 
@@ -91,3 +93,7 @@ once we're done with our training there are two things you might want to do with
 - workout the most probable state (most probable tag for a word)
 - workout the most probable state trajectory (most probable sequence of tags)
 	- use the [[Viterbi Algorithm]] to do this
+# Reading 
+- bishop 13.1
+- bishop 13.2 up to 13.2.2
+- bishop 13.2.5
