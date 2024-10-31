@@ -61,3 +61,16 @@ tags:
 	- $O(n\log\log n)$ space
 	- $O(n\log\log n)$ prep time
 	- $O(1)$ query time
+## Solving RMQs using LCAs
+[[Lowest Common Ancestor]]
+build the cartesian tree, $T_A$ of the array $A$:
+- the root is the smallest value
+- the selected location partitions the array in two
+- the rest of the tree is given by recursing left and right
+![[Screenshot 2024-10-31 at 14.05.23.png|300]]
+>[!note]
+this isn't very efficient, a better solution takes $O(n)$ time
+
+**Key Fact**: the LCA in $T_A$ equals the RMQ in $A$
+![[Screenshot 2024-10-31 at 14.06.36.png|200]]
+- this gives us $O(n)$ space, $O(n)$ prep time and $O(1)$ query time for the RMQ problem

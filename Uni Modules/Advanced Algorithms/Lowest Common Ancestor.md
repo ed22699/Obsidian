@@ -18,14 +18,14 @@ tags:
 >[!note]
 any copy of $i$ and $j$ is fine to use
 
-**Preprocessing Summary**:
+**Preprocessing Summary** - $O(n)$ space/prep time:
 1. construct $N$ and $D$ from $T$ - $O(n)$
 2. add a pointer from each node $i$ to some $N[i']=i$ - $O(n)$
-3. preprocess $D$ for RMQs
-**Query Summary** - $LCA(i,j)$:
+3. preprocess $D$ for RMQs - $O(n)$ (using [[+-1 Range Minimum Query]])
+**Query Summary** - $LCA(i,j)$ - $O(1)$:
 1. find any $i'$ st. $N[i']=i$ - $O(1)$
 2. find any $j'$ st. $N[j']=j$ - $O(1)$
-3. compute $RMQ(i', j')$ in $D$
+3. compute $RMQ(i', j')$ in $D$ - $O(1)$ (using [[+-1 Range Minimum Query]])
 4. $LCA(i,j)=N[RMQ(i',j')]$ - $O(1)$
 
 to speed up we need to use $\pm$ range minimum queries as they take advantage of the fact that items in $D$ only ever increase or decrease by $1$
