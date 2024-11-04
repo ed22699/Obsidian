@@ -36,7 +36,7 @@ Viola-Jones detector is a sliding window detector
 	- repeat for specified number of iterations $T$, or until the error becomes small enough
 6. Final Hypothesis
 	- strong classifier is a weighted sum of all the weak classifiers: $\boldsymbol{H}(x)=sign(\sum_{t=1}^T\alpha_t \cdot h_t(x))$. 
-![[Screenshot 2024-10-08 at 13.38.50.png|200]]
+![[Screenshot 2024-10-08 at 13.38.50.png|300]]
 ![[Screenshot 2024-10-08 at 13.39.47.png|500]]
 ## Non-Maximum Suppression (NMS)
 - a post-processing step to remove redundant detections
@@ -51,7 +51,8 @@ Viola-Jones detector is a sliding window detector
 		- if $IoU$ is greater than threshold then boxes overlap too much and the box is likely a redundant detection and so should be suppressed (discarded)
 		- if $IoU$ lower than the threshold, box is retained for further consideration
 	3. repeat until all boxes have been selected or suppressed
-### Performance Considerations22.40.png|400]]
+### Performance Considerations
+![[Screenshot 2024-10-09 at 10.22.40.png|400]]
 **F-score**: $F_1=2\frac{precision \cdot recall}{precision + recall}=\frac{2tp}{2tp+fp+fn}$
 - used to evaluate the performance of a classifier, based off precision and recall
 ## Receiver Operating Characteristic (ROC) Curve
