@@ -21,6 +21,7 @@ tags:
 		- $I(x+\Delta x, y+\Delta y, t+\Delta t) = I(x,y,t)$ 
 		- using Taylor's expansion: $I(x+\Delta x, y+\Delta y, t+\Delta t) = I(x,y,t)+\frac{\delta I}{\delta x}\Delta x+\frac{\delta I}{\delta y}\Delta y+\frac {\delta I}{\delta t}\Delta t+...$
 ## Optical Flow Equation (OFE)
+![[Screenshot 2024-11-04 at 22.40.50.png|150]]
 - for $I(x+\Delta x, y+\Delta y, t+\Delta t) = I(x,y,t)$ 
 	- $\frac{\delta I}{\delta x}\Delta x+\frac{\delta I}{\delta y}\Delta y+\frac {\delta I}{\delta t}\Delta t=0$
 	- dividing throughout by $\Delta t$: $\frac{\delta I}{\delta x}\frac{\Delta x}{\Delta t}+\frac{\delta I}{\delta y}\frac{\Delta y}{\Delta t}+\frac {\delta I}{\delta t}=0$
@@ -37,8 +38,29 @@ tags:
 		- $\nabla I\cdot u_p=0$
 ## Normal Flow
 - $\nabla I\cdot u+I_t=\nabla I\cdot u_n+I_t=0 \Rightarrow ||u_n||=-I_t/||\nabla I|| \quad \angle u_n = \angle \nabla I$ 
-- **Ap
-
+![[Screenshot 2024-11-04 at 22.40.11.png|100]]
+- **Aperture Problem**: with single gradient direction in window (aperture), observed motion is different from true motion as we can only observe motion parallel to the gradient
+	- hence: Good motion estimation depends on having sufficient variation in spatial gradient within regions
+		![[Screenshot 2024-11-04 at 22.39.36.png|200]]
+## Constraining the OFE
+- OFE is under constrained - can only estimate normal flow, we need to add extra constraints, e.g. assume parametric form of motion field in regions
+	- assume constant velocity is linear in $x$ and $y$
+		- $u_x=ax+by+c$
+		- $u_y=dx+ey+f$
+### Constant Velocity Model
+- for a region, find the velocity $\boldsymbol u=(u_x,u_y)$ which minimises: $\mathcal E(u_x,u_y)=\sum_{region}(I_xu_x+I_yu_y+I_t)^2$ (same $\boldsymbol u$ over whole region)
+### Lucas and Kanade Algorithm
+- gets the partial derivatives of $\mathcal E(u_x,u_y)$ w.r.t $u_x$ and $u_y$, sets them to zero and solves for $u_x$ and $u_y$
+	- $\frac {d \mathcal E}{d u_x}=2\sum_R(I_xu_x+I_yu_y+I_t)I_x=0 \Rightarrow \sum_R(I^2_xu_x+I_xI_yu_y+I_xI_t)=0$
+	- $\frac {d \mathcal E}{d u_y}=2\sum_R(I_xu_x+I_yu_y+I_t)I_y=0 \Rightarrow \sum_R(I_xI_yu_x+I^2_yu_y+I_yI_t)=0$
+- hence given that:
+	- $u_x\sum_RI_x^2+u_y\sum_RI_xI_y=-\sum_RI_tI_x$
+	- $u_x\sum_RI_xI_y+u_y\sum_RI_y^2=-\sum_RI_tI_y$
+	- $\Rightarrow Au = b$
+		- $u=\begin{bmatrix}u_x\\u_y\end{bmatrix}=A^{-1}b$
+		- $A=\sum_R\begin{bmatrix}I_x^2 & I_xI_y\\I_xI_y & I_y^2\end{bmatrix}$ (this is a convolution matrix)
+		- $b=-\sum_R\begin{bmatrix}-I_tI_x\\-I_tI_y\end{bmatrix}$
+### Spatial and Temporal Gradients
 
 
 
