@@ -46,3 +46,17 @@ tags:
 ![[Bayesian Model Averaging (BMA)]]
 # Ensembles
 ![[Ensembles]]
+
+
+
+
+# Bagging
+
+
+# Boosting
+aims to create diversity, generally a good thing
+## AdaBoost
+errors are assumed below $\frac 12$ so weights get bigger
+![[Screenshot 2024-11-06 at 09.13.48.png|500]]
+
+Random forest is a combination of decision trees

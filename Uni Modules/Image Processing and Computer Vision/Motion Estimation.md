@@ -42,6 +42,12 @@ tags:
 - **Aperture Problem**: with single gradient direction in window (aperture), observed motion is different from true motion as we can only observe motion parallel to the gradient
 	- hence: Good motion estimation depends on having sufficient variation in spatial gradient within regions
 		![[Screenshot 2024-11-04 at 22.39.36.png|200]]
+	- note the red apertures cannot predict the true motion
+	- need aperture on the edges to view any motion
+- why don't I make my regions of apertures very big?
+	- potentially different motion in every pixel so a big aperture will likely see lots of motions, this won't really help us. Lots of spatial gradients but lots of motions
+- why don't I make my regions of apertures very small?
+	- more likely to get just a single spatial gradient
 ## Constraining the OFE
 - OFE is under constrained - can only estimate normal flow, we need to add extra constraints, e.g. assume parametric form of motion field in regions
 	- assume constant velocity is linear in $x$ and $y$
