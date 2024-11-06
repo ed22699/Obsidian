@@ -50,12 +50,15 @@ tags:
 	- more likely to get just a single spatial gradient
 ## Constraining the OFE
 - OFE is under constrained - can only estimate normal flow, we need to add extra constraints, e.g. assume parametric form of motion field in regions
+	- assume each of these four motion vectors are the same (not unreasonable unless when we are looking at an edge as there is a large change in depth it will create a large motion vector)
 	- assume constant velocity is linear in $x$ and $y$
 		- $u_x=ax+by+c$
 		- $u_y=dx+ey+f$
 ### Constant Velocity Model
 - for a region, find the velocity $\boldsymbol u=(u_x,u_y)$ which minimises: $\mathcal E(u_x,u_y)=\sum_{region}(I_xu_x+I_yu_y+I_t)^2$ (same $\boldsymbol u$ over whole region)
+	- rather than wanting $0$ over a pixel we are looking to get $0$ over a whole region
 ### Lucas and Kanade Algorithm
+- finds the velocity $\boldsymbol u=(u_x,u_y)$ which minimises $\mathcal E(u_x,u_y)$
 - gets the partial derivatives of $\mathcal E(u_x,u_y)$ w.r.t $u_x$ and $u_y$, sets them to zero and solves for $u_x$ and $u_y$
 	- $\frac {d \mathcal E}{d u_x}=2\sum_R(I_xu_x+I_yu_y+I_t)I_x=0 \Rightarrow \sum_R(I^2_xu_x+I_xI_yu_y+I_xI_t)=0$
 	- $\frac {d \mathcal E}{d u_y}=2\sum_R(I_xu_x+I_yu_y+I_t)I_y=0 \Rightarrow \sum_R(I_xI_yu_x+I^2_yu_y+I_yI_t)=0$
@@ -66,25 +69,31 @@ tags:
 		- $u=\begin{bmatrix}u_x\\u_y\end{bmatrix}=A^{-1}b$
 		- $A=\sum_R\begin{bmatrix}I_x^2 & I_xI_y\\I_xI_y & I_y^2\end{bmatrix}$ (this is a convolution matrix)
 		- $b=-\sum_R\begin{bmatrix}-I_tI_x\\-I_tI_y\end{bmatrix}$
+![[Screenshot 2024-11-06 at 10.28.06.png|400]]
+![[Screenshot 2024-11-06 at 10.28.30.png|100]]
+- this algorithm can go wrong when $A$ does not have an inverse
+	- the scenario for this will typically be when our region is over an edge or when all the spatial gradients are $0$
+	- should have a check to see if there is an inverse, no inverse when the determinant of $A$ is $0$
 ### Spatial and Temporal Gradients
-
-
-
-
-
-
-
-assume optical flow results from brightness constancy constraint
-- natural to assume, if we are taking enough frames per second this is a valid assumption as there will only be small changes. With larger gaps between frames, illumination can effect this
-
-you can only predict the motion perpendicular to the edge (you can only be sure of $u_n$ in normal flow) $\rightarrow$ aperture problem
-- aperture is a region within our frame where we are viewing this motion
-- why don't I make very big aperture?
-	- motion in a scene typically has motion going in different directions, this will be lost with a big aperture
-- why don't I make a very small aperture
-	- motion with potentially each pixel, within the entire image due to depth, etc, leads to a lot of motion which you can't do much with
-predicting motion is bad when it comes to edge as will suddenly have a large depth between two points so will be viewed as a large change
-
-$A$ will not have an inverse when our region is over an edge
-- will not have an inverse is determinant of $A$ is $0$ 
-issue when motion within the region is all in different directions
+where does $I_x, I_y$ and $I_t$ come from?
+- Approximate gradients using differences, e.g. $I_x=\frac {\delta I}{\delta x}\approx I(x+1,y,t)-I(x,y,t)$
+	- i.e. assume $\delta x=1$
+	- is the rate of change of $I$ with $x$
+	- basically assuming a straight line in the spatial gradient
+	![[Screenshot 2024-11-06 at 10.24.54.png|150]]
+- or use averaging to reduce noise, e.g. $I_x \approx (I_x^a+ I_x^b+I_x^c+ I_x^d)/4$
+	![[Screenshot 2024-11-06 at 10.27.13.png|120]]
+>[!note]
+below is not on the test
+# Multiresolution L&K
+- to deal with large motions, implement L&K over multiple resolutions - result at lower resolutions used to 'warp' higher resolution images prior to estimation (like with [[Scale-Invariant Feature Transform (SIFT) Matching]])
+![[Screenshot 2024-11-06 at 10.34.29.png|200]]
+# Affine Motion Model
+- $u=Ap$ coming from:
+	- $u_x=ax+by+c$
+	- $u_y=dx+ey+f$
+	- $p^T=(a,b,c,d,e,f)$
+- models translation, scaling, rotation and shear
+- $p^TA^T\nabla I+I_t=0$ affine OFE $\Rightarrow \hat p + M^{-1}\boldsymbol b$
+	- $M=\sum_{region}A^T\nabla I\nabla I^TA$
+	- $b=-\sum_{region}I_t(A^T\nabla I)$
