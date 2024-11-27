@@ -3,7 +3,7 @@ tags:
   - Lesson
   - viola_jones_detector
 ---
-Viola-Jones detector is a sliding window detector
+-Jones detector is a sliding window detector
 ## Harr-like Features
 ![[Harr-like Features]]
 ## Integral Image
