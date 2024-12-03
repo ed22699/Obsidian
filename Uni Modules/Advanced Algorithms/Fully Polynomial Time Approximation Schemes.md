@@ -74,4 +74,23 @@ tags:
 	- inductive step: assume that the lemma holds for $(i-1)$
 		- as $y\in L_i$ we have that either $y\in L_{i-1}$ or $(y-s_i)\in L_{i-1}$
 			- if $y\in L_{i-1}$ then there is a $x\in L_{i-1}'$ with $\frac y {(1+\delta)^{(i-1)}}\leq x \leq y$ 
-	- by the definition of trim there is some $z\in L_i'$ with $z\leq z\leq z\cdot (1+\delta)
+	- by the definition of trim there is some $z\in L_i'$ with $z\leq z\leq z\cdot (1+\delta)$
+		- so we have that $z\leq x \leq y$ and $z\geq \frac x {1+\delta} \geq \frac y {(1+\delta)^i}$
+		- i.e. that there is an $x\in L_i'$ with $\frac y {(1+\delta)^i}\leq z \leq y$ as required
+	- by setting $i=m$ and $\delta=\epsilon/2m$ we have that, for any $y\in L_m$ there is a $z\in L_m'$ with $\frac y {(1+\frac\epsilon {2m})m}\leq z\leq y$
+	- for $Opt\in L_m$ meaning there is a $z\in L_m'$ with $\frac {Opt}{(1+\frac \epsilon {2m})^m}\leq z\leq Opt$
+- $\frac {Opt}{1+\epsilon}\leq z \leq Opt$ vs $\frac{Opt}{(1+\frac \epsilon {2m})^m}\leq z \leq Opt$
+	- show that $(1+\frac \epsilon {2m})^m \leq 1+\epsilon$ (for $0<\epsilon<1$)
+		- $(1+\frac \epsilon {2m})^m \leq e^{\epsilon / 2}\leq 1+\frac \epsilon 2 + (\frac \epsilon 2)^2 \leq 1+\epsilon$
+			- $e^x \geq (1+\frac x m)^m$ for all $x, m > 0$
+			- $e^x=\sum_{i=0}^{\infty}\frac {x^i} {i!} \leq 1 + x + x^2$
+		- so the output of the algorithm is some $z$ where, $\frac {Opt}{1+\epsilon}\leq z\leq Opt$
+- how long does it take to run?
+	- time complexity depends on $|L_i'|$
+	- by the definition of Trim we have that, any two successive elements, $z, z'$ of $L_i'$ have $\frac {z'}z \geq 1+\delta = 1+\frac \epsilon {2m}$
+	- further, all elements are no greater than $t$
+	- so $L_i'$ contains at most $O(\log_{(1+\delta)}t)$ elements
+		- $\log_{(1+\delta)}t=\frac{\ln t}{\ln(1+(\epsilon / 2m))} \leq \frac{2m(1+(\epsilon / 2m))\ln t}{\epsilon}=O(\frac {m\log t}\epsilon)$
+	- as $|L_i'| =O(m\log t/\epsilon)$ the algorithm runs in $O(m^2\log t/\epsilon)=O(n^3\log n/\epsilon)$ time ($m \leq n$ and $\log t = O(n\log n)$)
+	- the output $z$ is such that $\frac {Opt}{1+\epsilon}\leq z \leq Opt$
+	- so this is actually FPTAS for subset sum
