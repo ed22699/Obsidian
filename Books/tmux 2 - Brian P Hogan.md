@@ -30,6 +30,7 @@ key points:
 | `d`      | detach from a session                                          |
 | `c`      | create new window                                              |
 | `,`      | rename window                                                  |
+| `$`      | rename session                                                 |
 | `n`      | next window                                                    |
 | `p`      | previous window                                                |
 | `0`      | go to window 0                                                 |
