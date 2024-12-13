@@ -38,3 +38,9 @@ Mesh object is a visual object in space
 
 2. game view - when the game is running, what you see in this view is the game
 - you can switch between these two views while the game is running, this can be useful for debugging
+- you can move in the view move in the view using `ctr-alt`
+- you can orbit in the view using `alt`
+### Objects
+- you can move, rotate and resize objects using `w`, `e`, and `r` respectively once the object has been selected
+### Scripts
+- a frame is a single cycle of the looping game code
