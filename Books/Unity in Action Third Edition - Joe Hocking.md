@@ -44,3 +44,7 @@ Mesh object is a visual object in space
 - you can move, rotate and resize objects using `w`, `e`, and `r` respectively once the object has been selected
 ### Scripts
 - a frame is a single cycle of the looping game code
+> [!note]
+Code is written in a separate IDE, however, you should still click play in Unity rather than run in this other IDE
+
+- to link a script to an object you drag it to that object, you will then see in the inspector menu that it has been linked
