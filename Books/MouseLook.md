@@ -3,7 +3,6 @@ tags:
   - Unity
   - Script
 ---
-
 ```cs
 using System.Collections;
 using System.Collections.Generic;
