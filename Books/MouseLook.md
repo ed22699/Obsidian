@@ -3,6 +3,7 @@ tags:
   - Unity
   - Script
 ---
+- Code to allow player to look around with the mouse
 ```cs
 using System.Collections;
 using System.Collections.Generic;
