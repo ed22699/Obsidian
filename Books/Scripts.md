@@ -36,3 +36,6 @@ Code is written in a separate IDE, however, you should still click play in Unity
 
 - `RequireComponent` attribute ensures all needed components are also attached to the object
 - `AddComponentMenu` adds script to the component menu in Unity editor, if you tell the attribute the name of the menu item you want to add and then the script can be selected when you click add component at the bottom of the inspector
+- Coroutines are a way of handling tasks that execute incrementally over time, in contract, most functions make the program wait until they finish
+	- Unity makes coroutines behave similarly to asynchronous functions through the use of enumerators and the `yield` keyword
+- Rendering is the process of displaying the 3D scene into the 2D grid, calculating the colour of all the pixels through running an algorithm	
