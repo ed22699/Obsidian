@@ -45,3 +45,7 @@ Basic AI follows a loop and is ran with each frame, the aim is to have the AI al
 2. raycast forward to look for obstacles
 3. turn away from obstacles
 4. frame rendered, return to step 1
+
+- finite-state machines - code structure in which the current state of the object is tracked, well-defined transitions exist between states, and the code behaves differently based on the state 
+- to see the initials of a FSM see [[WanderingAI]]
+- using `SerializeField` means that it cannot be altered by other scripts like `Public` variables can, however, it is still visible to the Inspector (see [[SceneController]])
