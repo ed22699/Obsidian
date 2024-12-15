@@ -7,3 +7,5 @@ tags:
 - `ScreenPointToRay()` is a method that can be used to project a ray through the centre of the cameras view
 - once you have a ray it can be passed to the `Physics.Raycast()` method to perform raycasting using that ray
 - for a shooting example see [[RayShooter]]
+- for bullets it is assumed an infinitely small ray and so `Raycast` is an acceptable method but for AI you need a larger cross section (accounting for the width of the character) and so `SphereCast()` method should be used instead
+- for AI seeing obstacles example see

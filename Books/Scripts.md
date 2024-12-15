@@ -39,3 +39,9 @@ Code is written in a separate IDE, however, you should still click play in Unity
 - Coroutines are a way of handling tasks that execute incrementally over time, in contract, most functions make the program wait until they finish
 	- Unity makes coroutines behave similarly to asynchronous functions through the use of enumerators and the `yield` keyword
 - Rendering is the process of displaying the 3D scene into the 2D grid, calculating the colour of all the pixels through running an algorithm	
+## Basic AI
+Basic AI follows a loop and is ran with each frame, the aim is to have the AI always moving
+1. Move forward a little bit
+2. raycast forward to look for obstacles
+3. turn away from obstacles
+4. frame rendered, return to step 1
