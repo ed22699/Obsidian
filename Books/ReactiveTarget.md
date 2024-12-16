@@ -3,7 +3,7 @@ tags:
   - Unity
   - Script
 ---
-- If a ReactToHi
+- If a ReactToHit is called the target will die and the `WanderingAi` related script will have alive set to false
 ```cs
 using System.Collections;
 using System.Collections.Generic;

@@ -3,7 +3,7 @@ tags:
   - Unity
   - Script
 ---
-- Raycasting for a player shooter connected to the camera. Also locks the mouse produces a point for aiming and spheres to show where the hit occurred
+- Raycasting for a player shooter connected to the camera. Also locks the mouse produces a point for aiming and spheres to show where the hit occurred, targets will react to being hit
 ```cs
 using System.Collections;
 using System.Collections.Generic;
@@ -35,8 +35,19 @@ public class RayShooter : MonoBehaviour
             // Raycast fills a referenced variable with information
             if (Physics.Raycast(ray, out hit))
             {
-                // Launch a coroutine in response to a hit
-                StartCoroutine(SphereIndicator(hit.point));
+                // Retrieve the object the ray hit
+                GameObject hitObject = hit.transform.gameObject;
+                ReactiveTarget target = hitObject.GetComponent<ReactiveTarget>();
+                // Check for ReactiveTarget component on the object
+                if (target != null)
+                {
+                    target.ReactToHit();
+                }
+                else
+                {
+                    // Launch a coroutine in response to a hit
+                    StartCoroutine(SphereIndicator(hit.point));
+                }
             }
         } 
     }
