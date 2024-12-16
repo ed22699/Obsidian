@@ -17,4 +17,4 @@ tags:
 ### Giving an object colour
 - surface properties such as colour are controlled using materials
 	- a material is a packet of information that defines the surface properties of any 3D object that the material is attached to (e.g. colour, shininess and even subtle roughness)
-	- materials can be made through choosing $Assets \rightarrow
+	- materials can be made through choosing $Assets \rightarrow Create \rightarrow Material$ 

@@ -49,3 +49,7 @@ Basic AI follows a loop and is ran with each frame, the aim is to have the AI al
 - finite-state machines - code structure in which the current state of the object is tracked, well-defined transitions exist between states, and the code behaves differently based on the state 
 - to see the initials of a FSM see [[WanderingAI]]
 - using `SerializeField` means that it cannot be altered by other scripts like `Public` variables can, however, it is still visible to the Inspector (see [[SceneController]])
+- `OnTriggerEnter()` is called automatically when the object has a collision
+	- for this the collider needs to be a trigger (check the Is Trigger check box in sphere collider checkbox)
+		- collider component will still react to touching / overlapping other objects but will no longer stop other objects form physically passing through
+	- will also need to be a rigid body so the physics system is able to register collision triggers for that object ($Physics \rightarrow Rigidbody$)
