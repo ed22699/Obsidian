@@ -8,4 +8,5 @@ tags:
 - a copy of a prefab is called an instance
 - prefab - game object existing outside of any scene, instance - copy of the objet that's placed in a scene
 - create prefab by dragging object down from Hierarchy view into the project view
-- to instantiate the prefab we need to have an empty game object with the script 
+- to instantiate the prefab we need to have an empty game object with the script for example see [[SceneController]]
+- for a projectile prefab
