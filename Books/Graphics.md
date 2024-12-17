@@ -45,7 +45,32 @@ Resources, Plugins, Editor, and Gizmos are special folders, avoid naming folders
 	- this is useful only for texturing whitebox geometry. In a polished game, the floor and walls will be built with more intricate art tools, and that includes setting up their textures
 - A skybox is a cube surrounding the camera with pictures of the sky on each side. No matter what direction the camera is facing, it's looking at a picture of the sky
 	- Unity can take care of this for you, go to $Window \rightarrow Rendering \rightarrow Lighting$ and switch to the Environment tab and see skybox material
+	- for skyboxes shaders, click the skybox section and choose 6 sided in the submenu
+	- for the textures change the wrap mode setting from repeat to clamp, this will limit the boundaries of the texture and get rid of the blending found in repeat which can show faint lines
 - a shader is a short program that outlines instructions for drawing a surface, including whether to use any textures
 	- most common shaders take the colour of the material and darkens them according to the light, but shaders can also be used for all sorts of visual effects
 	- every material has a shader that controls it
-	- new materials are set to Standard shader by default, this 
+	- new materials are set to Standard shader by default, this displays the colour of the material while applying light and shadows across the surface
+### Custom 3D models
+- You can create these for free using Blender
+
+| File type     | Pros and cons                                                                         |
+| ------------- | ------------------------------------------------------------------------------------- |
+| FBX           | Mesh and animation; recommended option when available                                 |
+| COLLADA (DAE) | Mesh and animation; another good option when FBX isn't available                      |
+| OBJ           | Mesh only; this is a text format, so sometimes useful for streaming over the internet |
+| 3DS           | Mesh only; a pretty old and primitive model format                                    |
+| DXF           | Mesh only; a pretty old and primitive model format                                    |
+| Maya          | Works via FBX; requires this application to be installed                              |
+| 3ds Max       | Works via FBX; requires this application to be installed                              |
+| Blender       | Works via FBX; requires this application to be installed                              |
+- gITF is also a growing option
+- it is not recommended that you use 3D art application files directly in Unity as they require you to have the relevant application installed
+- to export from Blender do $File \rightarrow Export \rightarrow FBX$, once saved, import it into Unity
+- Unity defaluts imported models to a very small scale, you may need to change the scale factor to 50, you may also want to click the generate colliders check box so that you cannot walk though the object
+- Switch to the animation tab in the import settings and deselect import animation as this model doesn't have animation
+- the texture for this model will need to be edited to define the mapping of image to mesh
+	- texture coordinates are an extra set of values for each vertex that assign polygons to areas of the texture image
+	- when Unity imported the FBX file it also generated a material with the same settings as the material in Blender, if the image file used in Blender has been imported into Unity, the generated material will automatically link to that texture
+		- if this doesn't work you can extract the models material for further editing
+- typically you would also replace the whitebox geometry with models created in an external tool, this new geometry may look identical but you'll have much more flexibility in controlling the texture
