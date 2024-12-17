@@ -13,3 +13,17 @@
 	- closely associated with level design (the discipline of planning and creating scenes/levels in a game)
 	- this is the foundation in which you typically build up from
 - A floor plan is the simple layout of the level
+- A texture is a 2D image being used to enhance 3D graphics
+
+| File type | Pros and cons                                                                                                                                                                  |
+| --------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| PNG       | Commonly used on the web. Lossless compression, has and alpha channel                                                                                                          |
+| JPG       | Commonly used on the web. Lossy compression, no alpha channel                                                                                                                  |
+| GIF       | Commonly used on the web. Lossy compression; no alpha channel                                                                                                                  |
+| BMP       | Default image format for Windows. No compression; no alpha channel                                                                                                             |
+| TGA       | commonly used for 3D graphics; obscure everywhere else. No or lossless compression; has an alpha channel                                                                       |
+| TIFF      | commonly used for digital photography and publishing. No or lossless compression; no alpha channel                                                                             |
+| PICT      | Default image format on old Macs. Lossy compression; no alpha channel                                                                                                          |
+| PSD       | Native file format for Adobe Photoshop. No compression; has an alpha channel. The main reason to use this file format would be the advantage of using Photoshop files directly |
+> [!note]
+an alpha channel is used to store transparency information in an image. The visible colours come in three channels of information: Red, Green, and Blue. Alpha is an
