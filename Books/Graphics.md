@@ -45,3 +45,7 @@ Resources, Plugins, Editor, and Gizmos are special folders, avoid naming folders
 	- this is useful only for texturing whitebox geometry. In a polished game, the floor and walls will be built with more intricate art tools, and that includes setting up their textures
 - A skybox is a cube surrounding the camera with pictures of the sky on each side. No matter what direction the camera is facing, it's looking at a picture of the sky
 	- Unity can take care of this for you, go to $Window \rightarrow Rendering \rightarrow Lighting$ and switch to the Environment tab and see skybox material
+- a shader is a short program that outlines instructions for drawing a surface, including whether to use any textures
+	- most common shaders take the colour of the material and darkens them according to the light, but shaders can also be used for all sorts of visual effects
+	- every material has a shader that controls it
+	- new materials are set to Standard shader by default, this 
