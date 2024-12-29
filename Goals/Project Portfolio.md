@@ -7,4 +7,8 @@ T:
 1. [[Write 3 Blog posts]]
 2. [[Style Portfolio]]
 
+[succeeded](https://ed22699.github.io/)
+## TODO
+- add no entry sign detector
+- fix stereo geometry and add to portfolio
 #SMART 
