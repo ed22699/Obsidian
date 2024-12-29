@@ -1,3 +1,8 @@
+---
+aliases:
+  - Advanced Algorithms
+---
+
 [Unit Page](https://seis.bristol.ac.uk/~csxrc/coms30042-2024/)
 # Lessons
 ```dataview

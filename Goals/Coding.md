@@ -14,7 +14,11 @@ T - Complete timer app by end of year
 
 ```tracker
 searchType: frontmatter
-searchTarget:
+searchTarget: HoursCoded
+folder: Daily Notes
+datasetName: Coding
+month:
+	startWeekOn: 'Mon'
 ```
 
 #SMART 

@@ -1,3 +1,8 @@
+---
+aliases:
+  - Machine Learning
+---
+
 [Unit Page](https://uob-coms30035.github.io/)
 # Lessons
 ```dataview

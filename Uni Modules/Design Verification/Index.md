@@ -1,3 +1,8 @@
+---
+aliases:
+  - Design Verification
+---
+
 [Unit Page](https://uobdv.github.io/Design-Verification/)
 # Lessons
 ```dataview
