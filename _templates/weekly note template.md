@@ -1,12 +1,31 @@
 ---
 tags: 
-PagesRead: 
-HoursCoded: 
+HoursCoded: 0
+PagesRead: 0
 VanResearch:
 ---
-```dataview
-Table sum(PagesRead), HoursCoded, VanResearch
+```dataviewjs
+const amounts = await dv.query(`
+TABLE WITHOUT ID PagesRead, HoursCoded, VanResearch
 FROM "Journal/Daily Notes"
-WHERE dateformat(file.day, "'W'WW-kkkk") = this.file.name SORT file.name asc
-```
+WHERE dateformat(file.day, "'W'WW-kkkk") = this.file.name
+`)
 
+if ( amounts.successful ) {
+  const pages = amounts.value.values
+    .map(a => a[0])
+    .reduce((tmp, curr) => tmp + curr, 0)
+  const hours = amounts.value.values
+    .map(a => a[1])
+    .reduce((tmp, curr) => tmp + curr, 0)
+  const van = amounts.value.values
+    .map(a => a[2])
+    .reduce((tmp, curr) => tmp || curr, false)
+
+  dv.paragraph("Total pages: " + pages)
+  dv.paragraph("Total hours coded: " + hours)
+  dv.paragraph("Van Research: " + van)
+} else
+  dv.paragraph("~~~~\n" + amounts.error + "\n~~~~")
+
+```

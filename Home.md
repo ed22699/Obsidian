@@ -10,9 +10,11 @@ banner_y: 0
 # Trackers
 - 👨‍💻 Code
 	- ```tracker
-	searchType: frontmatter
+	searchType: file
 	searchTarget: HoursCoded
-	folder: Journal/Daily Notes
+	folder: Journal/Weekly Notes
+    xField: fileName
+	dateFormat: "WWW-YYYY"
 	fixedScale: 0.7
 	penalty: 0
 	line:
@@ -24,7 +26,7 @@ banner_y: 0
 	- ```tracker
 	searchType: frontmatter
 	searchTarget: HoursCoded
-	folder: Journal/Daily Notes
+	folder: Journal/Weekly Notes
 	summary:
 		template: "Maximum: {{max()}} hours\nAverage: {{average()}} hours"
 - 📚 Reading
