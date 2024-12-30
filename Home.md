@@ -10,11 +10,10 @@ banner_y: 0
 # Trackers
 - 👨‍💻 Code
 	- ```tracker
-	searchType: file
-	searchTarget: HoursCoded
+	searchType: frontmatter, frontmatter
+	searchTarget: date, HoursCoded
+	xDataset: 0
 	folder: Journal/Weekly Notes
-    xField: fileName
-	dateFormat: "WWW-YYYY"
 	fixedScale: 0.7
 	penalty: 0
 	line:

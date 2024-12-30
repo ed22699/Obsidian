@@ -1,4 +1,5 @@
 ---
+date: <% tp.date.now("YYYY-MM-DD") %>
 tags: 
 HoursCoded: 0
 PagesRead: 0
