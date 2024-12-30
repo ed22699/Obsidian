@@ -12,7 +12,7 @@ banner_y: 0
 	- ```tracker
 	searchType: frontmatter
 	searchTarget: HoursCoded
-	folder: Daily Notes
+	folder: Journal/Daily Notes
 	fixedScale: 0.7
 	penalty: 0
 	line:
@@ -24,23 +24,23 @@ banner_y: 0
 	- ```tracker
 	searchType: frontmatter
 	searchTarget: HoursCoded
-	folder: Daily Notes
+	folder: Journal/Daily Notes
 	summary:
 		template: "Maximum: {{max()}} hours\nAverage: {{average()}} hours"
 - 📚 Reading
 	- ```tracker
 	searchType: frontmatter
 	searchTarget: PagesRead
-	folder: Daily Notes
+	folder: Journal/Daily Notes
 	datasetName: Reading
 	fixedScale: 0.7
 	month:
 	- ```tracker
 	searchType: frontmatter
 	searchTarget: PagesRead
-	folder: Daily Notes
+	folder: Journal/Daily Notes
 	summary:
-	    template: "Longest Streak: {{maxStreak()}} day(s)\nLongest Breaks: {{maxBreaks()}} day(s)\nLast streak: {{currentStreak()}} day(s)"
+	    template: "Longest Streak: {{maxStreak()}} day(s)\nLongest Breaks: {{maxBreaks()}} day(s)\nLast streak: {{currentStreak()}} day(s)\nTotal Pages: {{sum()}}"
 # Uni
 - 🗄️ Recent file updates
  `$=dv.list(dv.pages('"Uni Modules"').sort(f=>f.file.mtime.ts,"desc").limit(5).file.link)`
