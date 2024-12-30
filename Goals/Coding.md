@@ -12,13 +12,5 @@ A -
 R - Improve as a software developer
 T - Complete timer app by end of year
 
-```tracker
-searchType: frontmatter
-searchTarget: HoursCoded
-folder: Daily Notes
-datasetName: Coding
-month:
-	startWeekOn: 'Mon'
-```
 
 #SMART 

@@ -7,6 +7,40 @@ banner_y: 0
 
 <div class="title" style="color:white">HOME</div>
 
+# Trackers
+- 👨‍💻 Code
+	- ```tracker
+	searchType: frontmatter
+	searchTarget: HoursCoded
+	folder: Daily Notes
+	fixedScale: 0.7
+	penalty: 0
+	line:
+		title: Personal Project Weekly Coding Hours
+		yAxisLabel: Hours
+		yMin: 0
+		yAxisTickInterval: 1
+
+	- ```tracker
+	searchType: frontmatter
+	searchTarget: HoursCoded
+	folder: Daily Notes
+	summary:
+		template: "Maximum: {{max()}} hours\nAverage: {{average()}} hours"
+- 📚 Reading
+	- ```tracker
+	searchType: frontmatter
+	searchTarget: PagesRead
+	folder: Daily Notes
+	datasetName: Reading
+	fixedScale: 0.7
+	month:
+	- ```tracker
+	searchType: frontmatter
+	searchTarget: PagesRead
+	folder: Daily Notes
+	summary:
+	    template: "Longest Streak: {{maxStreak()}} day(s)\nLongest Breaks: {{maxBreaks()}} day(s)\nLast streak: {{currentStreak()}} day(s)"
 # Uni
 - 🗄️ Recent file updates
  `$=dv.list(dv.pages('"Uni Modules"').sort(f=>f.file.mtime.ts,"desc").limit(5).file.link)`
