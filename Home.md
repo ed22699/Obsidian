@@ -45,6 +45,24 @@ banner_y: 0
 	folder: Journal/Daily Notes
 	summary:
 	    template: "Longest Streak: {{maxStreak()}} day(s)\nLongest Breaks: {{maxBreaks()}} day(s)\nLast streak: {{currentStreak()}} day(s)\nTotal Pages: {{sum()}}"
+- ☑️ Daily To Do's
+	- ```dataviewjs
+		const today = dv.date("today").toISODate(); // Get today's date in "YYYY-MM-DD" format
+		
+		const tasks = dv.pages('"Journal/Kanban/Kanban"')
+		    .file.tasks
+		    .where(t => !t.completed && t.text.includes(today))
+		    .sort(t => dv.date(t.due?.file?.name));
+		
+		dv.table(
+		    ["Task", "Status"],
+		    tasks.map(t => [
+		        t.text.replace(/@\{.*$/, ""), // Clean up the task text
+		        t.section?.subpath ?? "No Status", // Task section's subpath
+		    ])
+		);
+	- [[Kanban]]
+
 # Uni
 - 🗄️ Recent file updates
  `$=dv.list(dv.pages('"Uni Modules"').sort(f=>f.file.mtime.ts,"desc").limit(5).file.link)`
