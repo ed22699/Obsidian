@@ -74,3 +74,9 @@ Resources, Plugins, Editor, and Gizmos are special folders, avoid naming folders
 	- when Unity imported the FBX file it also generated a material with the same settings as the material in Blender, if the image file used in Blender has been imported into Unity, the generated material will automatically link to that texture
 		- if this doesn't work you can extract the models material for further editing
 - typically you would also replace the whitebox geometry with models created in an external tool, this new geometry may look identical but you'll have much more flexibility in controlling the texture
+### Creating effects by using particle systems
+- useful for creating visual effects like fire, smoke, or spraying water
+- particle systems are created **within Unity itself**
+- create a new particle system and watch the default effect play: $Effects \Rightarrow Particle \; System$ 
+- when you select a particle system, the particle playback panel is displayed in the corner of the screen and indicates the amount of time that has elapsed
+- you can click and drag the label Playback Time to play back and forth

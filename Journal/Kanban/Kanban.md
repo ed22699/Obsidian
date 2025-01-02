@@ -10,13 +10,13 @@ kanban-plugin: board
 
 ## To Do
 
-- [ ] Read Unity Book #Habit
-	@{2024-12-31}
 - [ ] Check Finances #Personal @{2025-01-05}
 
 
 ## In Progress
 
+- [ ] Read Unity Book #Habit
+	@{2025-01-02}
 
 
 ## Complete
