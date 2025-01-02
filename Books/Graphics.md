@@ -80,3 +80,12 @@ Resources, Plugins, Editor, and Gizmos are special folders, avoid naming folders
 - create a new particle system and watch the default effect play: $Effects \Rightarrow Particle \; System$ 
 - when you select a particle system, the particle playback panel is displayed in the corner of the screen and indicates the amount of time that has elapsed
 - you can click and drag the label Playback Time to play back and forth
+> [!note]
+> for example of creating a fire effect see page 97
+
+- once you have the basic animation down you should apply a texture to the effect
+	1. first you create a texture and add this to a material
+	2. change the materials shader to a particle submenu option and its rendering more to additive
+		- additive is a shader effect that adds the colour of the particle to the colour behind it, as opposed to replacing the pixels
+	3. add the material to the material option in the renderer tab of the effect
+- add the effect as a child to the object in which you want it to be a part of
