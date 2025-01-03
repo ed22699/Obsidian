@@ -5,3 +5,5 @@ HoursCoded: 0
 VanResearch: false
 aliases:
 ---
+# Actions towards weekly goal
+# Todays goals
