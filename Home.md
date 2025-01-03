@@ -61,6 +61,41 @@ banner_y: 0
 		        t.section?.subpath ?? "No Status", // Task section's subpath
 		    ])
 		);
+	const today = dv.date("today").toISODate(); // Get today's date in "YYYY-MM-DD" format
+
+- ```dataviewjs
+	const tasks = dv.pages('"Journal/Kanban/Kanban"')
+	    .file.tasks
+	    .where(t => {
+	        // Extract the date from the task text (assuming YYYY-MM-DD format is included)
+	        const dateMatch = t.text.match(/\d{4}-\d{2}-\d{2}/);
+	        if (dateMatch) {
+	            const taskDate = dv.date(dateMatch[0]).toISODate(); // Convert to a comparable date
+	            return !t.completed && taskDate <= today; // Filter non-completed tasks with due date <= today
+	        }
+	        return false; // Exclude tasks without a valid date
+	    })
+	    .sort(t => {
+	        // Extract the date again for sorting
+	        const dateMatch = t.text.match(/\d{4}-\d{2}-\d{2}/);
+	        return dateMatch ? dv.date(dateMatch[0]) : null;
+	    });
+	
+	dv.table(
+	    ["Task", "Status", "Due Date"],
+	    tasks.map(t => {
+	        // Extract the date for display
+	        const dateMatch = t.text.match(/\d{4}-\d{2}-\d{2}/);
+	        const dueDate = dateMatch ? dateMatch[0] : "No Date";
+	
+	        return [
+	            t.text.replace(/@\{.*$/, ""), // Clean up the task text
+	            t.section?.subpath ?? "No Status", // Task section's subpath
+	            dueDate // Show the extracted due date
+	        ];
+	    })
+	);
+
 	- [[Kanban]]
 
 # Uni
