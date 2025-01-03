@@ -1,0 +1,3 @@
+- The primary kind of 2D art asset is called a *sprite*
+	- *Sprites* are 2D images displayed directly on the screen, as opposed to images displayed on the surface of 3D models (*textures*)
+	- technically, these sprites will be objects in 3D space, but they'll be flat surfaces all oriented perpendicular to the z-axis

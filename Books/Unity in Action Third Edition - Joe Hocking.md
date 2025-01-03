@@ -30,3 +30,4 @@ key points:
 - [[Raycasting]]
 - [[Prefabs]]
 - [[Graphics]]
+- [[2D Functionality]]
