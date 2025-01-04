@@ -31,6 +31,7 @@ if ( amounts.successful ) {
 
 ```
 
+![[Goals]]
 # What do you want to achieve
 ## Goal Breakdown
 ## Why
