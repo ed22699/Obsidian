@@ -36,3 +36,4 @@ Pixels Per Unit - In Unity one unit isn't necessarily one pixel, by default it i
 - Use an invisible `SceneController` component and instantiate clones of an object
 	- image on the card will be changed within the script via `SpriteRenderer`
 		- `SpriteRenderer` makes the GameObject into a sprite object and determines which sprite asset will be displayed
+- the scripts used for this are [[MemoryCard]] and [[MemorySceneController]]
