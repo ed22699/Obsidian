@@ -10,7 +10,7 @@ kanban-plugin: board
 
 ## To Do
 
-- [ ] Check Finances #Personal @{2025-01-05}
+- [ ] Check Finances #Personal @{2025-01-06}
 
 
 ## In Progress
