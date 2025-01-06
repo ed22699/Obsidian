@@ -31,3 +31,4 @@ key points:
 - [[Prefabs]]
 - [[Graphics]]
 - [[2D Functionality]]
+- [[Basic 2D Platformer]]

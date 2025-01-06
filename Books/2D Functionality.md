@@ -44,3 +44,11 @@ Pixels Per Unit - In Unity one unit isn't necessarily one pixel, by default it i
 	- if it isn't already installed for the menu, choose $Window \Rightarrow Package \; Manager$ and scroll down to $TextMeshPro$ 
 	- with the installed package you can create a TextMeshPro object in the scene by going to the GameObject menu and choosing $3D \; Object \Rightarrow Text - TextMeshPro$ 
 		- if TMP Importer window appears import TMP Essentials
+## Creating a reset button
+- insert the sprite
+- add a collider to this sprite
+- add a script [[UIButton]]
+- `component.SendMessage("Method")` is another way of doing `component.Method()`, this way is more generic and so can be used in many different areas however, it is also less efficient for the CPU
+- `LoadScene()` is a method that can load different scenes or reset a game
+	- everything from the current level is flushed from memory, and then everything from the new scene is loaded
+	- you can exclude objects from this flush with `DontDestroyOnLoad()`
