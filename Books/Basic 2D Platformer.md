@@ -33,3 +33,32 @@ tags:
 - A falling player sticks to the side of the floor, to change this add the $Physics \; 2D\Rightarrow Platform \; Effector \; 2D$ components to block and floor
 	- this makes objects behave more like platforms in a platform game
 	- you should also set Used By Effector on the collider and turn off Use One Way on the effector
+- `AddForce()` adds an upward force to the Rigidbody and does so in impulse mode
+	- *impulse* is a sudden jolt, as opposed to a continuously applied force
+	- to stop the player jumping midair use the players collision box and look for overlapping colliders in an area of the same width just below the player
+### Texturing the map
+- one image for a level would be too large so a common solution are *tilemaps*
+	- it is constructing a larger, combined image out of lots of small tiling images
+	- uses small blocks that are repeated throughout the map so no single image is very large
+	- an official tilemap system for Unity is available by looking for 2D Tilemap Editor in $Window \Rightarrow Package \; Manager$
+	- you could also use an external library such as SuperTiled2Unity which imports tilemaps created in Tiled, a popular free tilemap editor
+## Unusual Floors
+### Slope
+- set the duplicate floor objects rotation to `0, 0, -25` to create a slope
+- player will slowly slide down when idle, to fix this turn off gravity for the player when they are standing on the ground and idle
+### One-way Platforms
+- platforms you can jump through but still stand on
+- turn on the one-way setting for the Platform Effector Component
+- set Order In Layer to `1` for the player to ensure when it jumps it goes in front of the other sprites
+### Moving Platforms
+- this requires the script [[MovingPlatform]]
+- also requires changes to the players script so that they attach to moving platforms
+	- this causes a scaling issue that can be fixed by counter-scaling
+## Drawing custom gizmos
+- Your scripts can draw custom helper images int he scene view
+	- example is a gizmos that shows the movement path of the platform
+	- Gizmos show only in the Scene view and not the Game view
+	- for example see [[MovingPlatform]]
+	- `DrawLine()` is used to define a line by using start and end points
+	- `DrawRay()` is used to draw a line in a given direction (good for raycasts from AI characters)
+- Gizmos also work in 3D games
