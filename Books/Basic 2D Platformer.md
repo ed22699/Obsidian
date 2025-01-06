@@ -26,3 +26,10 @@ tags:
 - to apply controller to character click add component to choose $Miscellaneous \Rightarrow Animator$
 	- drag controller into the controller slot in the inspector, with the player still selected, open $Window \Rightarrow Animation \Rightarrow Animator$
 		- animations in the animator window are displayed as blocks referred to as *states*, the controller switches between states when running 
+		- conditions (parameters) can be used to choose the animations. These conditions can be altered using scripts such as [[PlatformerPlayer]]
+		- connect states and use parameters to switch between them
+## Making Player Jump
+- by default gravity weakly affects the player, you can adjust this through the edit menu; $Edit \Rightarrow Project \; Settings \Rightarrow Physics \; 2D$, for the example we changed Gravity Y to -40
+- A falling player sticks to the side of the floor, to change this add the $Physics \; 2D\Rightarrow Platform \; Effector \; 2D$ components to block and floor
+	- this makes objects behave more like platforms in a platform game
+	- you should also set Used By Effector on the collider and turn off Use One Way on the effector
