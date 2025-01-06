@@ -4,3 +4,10 @@ tags:
 ---
 - In 2D games whiteboxing is done with sprites rather than meshes 
 	- for the platformer game we will use a blank image for a sprite
+- Sprite sheets can be used for animation, multiple sprites are grouped into a single image
+	- set Sprite Mode to Multiple
+	- click Sprite Editor and click Slice, set Type to Grid By Cell Size and click Slice once size is correct, then save
+	- to add this to the scene expand the sprite sheet and select the sprite you want
+- remember to add collider and Rigidbody to the player
+	- Collider defines the shape for physics to act on, and the Rigidbody tells the physics simulation what objects to act on
+	- Rigidbody needs Collision detection set to Continuous and Freeze Rotation Z turned on
