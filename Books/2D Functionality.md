@@ -37,3 +37,10 @@ Pixels Per Unit - In Unity one unit isn't necessarily one pixel, by default it i
 	- image on the card will be changed within the script via `SpriteRenderer`
 		- `SpriteRenderer` makes the GameObject into a sprite object and determines which sprite asset will be displayed
 - the scripts used for this are [[MemoryCard]] and [[MemorySceneController]]
+### Comparing Cards
+- Coroutines can be used to allow us to pause before checking for a match, allowing the user to see both cards even if match was incorrect ([[Scripts#^24a786|Coroutines]])
+## Creating a text display
+- TextMeshPro package is a good approach to creating text displays
+	- if it isn't already installed for the menu, choose $Window \Rightarrow Package \; Manager$ and scroll down to $TextMeshPro$ 
+	- with the installed package you can create a TextMeshPro object in the scene by going to the GameObject menu and choosing $3D \; Object \Rightarrow Text - TextMeshPro$ 
+		- if TMP Importer window appears import TMP Essentials
