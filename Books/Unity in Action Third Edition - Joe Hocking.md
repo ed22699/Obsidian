@@ -32,3 +32,4 @@ key points:
 - [[Graphics]]
 - [[2D Functionality]]
 - [[Basic 2D Platformer]]
+- [[GUI]]
