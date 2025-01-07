@@ -28,6 +28,9 @@ tags:
 - UI elements need to be a child of the canvas object
 - Click set native size to resize objects to the ratio of their sprites used
 - for a custom font for a Text import the font into Unity then choose $Window \Rightarrow TestMeshPro \Rightarrow Font \; Asset\; Creator$
+>[!warning]
+ Sometimes the UI automatically uses the arrow keys, this can interfere with the game, to stop this deselect `Send Navigation Event` in the EventSystem
+
 ## Controlling the position of UI elements
 - All UI objects have an anchor, displayed in the editor as an X shape
 	- the *anchor* is a flexible way of positioning objects on the UI
@@ -55,6 +58,14 @@ tags:
 ## Updating the game by responding to events
 - To alert the UI of actions in the scene we can use a broadcast messenger system
 	- scripts can register to listen for an event, other code can broadcast an event, and listeners will be alerted about broadcast messages
+	- objects can register to listen for specific events, assigning a function as the callback
+	- [[Messenger]] is a central module that routes messages between broadcasters and listeners 
+	- Other objects can tell Messenger to broadcast specific events. Messenger will route the message to everything listening for that event
+	- Events messages are defined in [[GameEvent]]
+### Broadcasting and listening for events from the scene
+- code is modified in [[UIController]] and [[RayShooter]] to allow communication via messenger
+### Broadcasting and listening for events from the HUD
+- code is modified in [[WanderingAI]], [[FPSInput]], [[SceneController]] and [[SettingsPopup]]
 # Saving settings between plays by using PlayerPrefs
 - one method is called `PlayerPrefs`
 	- you don't worry about details to save small amounts of information
