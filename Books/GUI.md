@@ -34,3 +34,15 @@ tags:
 	- anchors can keep the objects rooted in place even when different monitors are used
 	- anchor points can also adjust scale as well as position
 ## Programming invisible UIController
+- in general UI interaction is programmed with a standard series of steps:
+	1. Create a UI object in the scene (e.g. buttons)
+	2. Write a script to call when the UI is operated [[UIController]]
+	3. Attach that script to an object in the scene (can use an empty object)
+	4. Link UI elements (e.g. buttons) to the objects with that script
+
+- for buttons add an `OnClick` entry to the button and drag the controller object onto it. Look. in `UIController` and select `OnOpenSettings()` in that section
+### Creating pop-up window
+- create a new image for the UI. Popup will be a *sliced image*
+	- a sliced image is split into nine sections that scale differently from one another. As you can scale the edges and middle separately you can ensure sharp crisp edges
+	- to set up the nine borders, select the popup sprite in the Projects view, in Inspector find Sprite Editor button
+	- create a script for the popup [[SettingsPopup]]
