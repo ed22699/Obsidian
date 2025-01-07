@@ -24,4 +24,13 @@ tags:
 	- `World Space` places the canvas object within the scene, as if the UI were part of the 3D scene
 - Pixel Perfect setting causes the rendering to subtly adjust the position of images so that they're always perfectly crisp and sharp
 ## Buttons images and text labels
-- the UI section of the GameObject menu contains options to create an image, text, or button: $GameObject \Rightarrow UI \Rightarrow Image$, $GameObject \Rightarrow UI \Rightarrow Image$
+- the UI section of the GameObject menu contains options to create an image, text, or button: $GameObject \Rightarrow UI \Rightarrow Image$, $GameObject \Rightarrow UI \Rightarrow Text - TextMeshPro$ and $GameObject \Rightarrow UI \Rightarrow Button - TextMeshPro$
+- UI elements need to be a child of the canvas object
+- Click set native size to resize objects to the ratio of their sprites used
+- for a custom font for a Text import the font into Unity then choose $Window \Rightarrow TestMeshPro \Rightarrow Font \; Asset\; Creator$
+## Controlling the position of UI elements
+- All UI objects have an anchor, displayed in the editor as an X shape
+	- the *anchor* is a flexible way of positioning objects on the UI
+	- anchors can keep the objects rooted in place even when different monitors are used
+	- anchor points can also adjust scale as well as position
+## Programming invisible UIController
