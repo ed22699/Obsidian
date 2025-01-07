@@ -45,4 +45,19 @@ tags:
 - create a new image for the UI. Popup will be a *sliced image*
 	- a sliced image is split into nine sections that scale differently from one another. As you can scale the edges and middle separately you can ensure sharp crisp edges
 	- to set up the nine borders, select the popup sprite in the Projects view, in Inspector find Sprite Editor button
-	- create a script for the popup [[SettingsPopup]]
+- create a script for the popup [[SettingsPopup]]
+	- Add button to be the child of the popup and set it to close in the script
+### Sliders and input fields
+- use $GameObject \Rightarrow UI \Rightarrow InputField - TextMeshPro$ to create text field
+- use $GameObject \Rightarrow UI \Rightarrow Slider$ to create the slider
+- make the objects children of the pup-up
+
+## Updating the game by responding to events
+- To alert the UI of actions in the scene we can use a broadcast messenger system
+	- scripts can register to listen for an event, other code can broadcast an event, and listeners will be alerted about broadcast messages
+# Saving settings between plays by using PlayerPrefs
+- one method is called `PlayerPrefs`
+	- you don't worry about details to save small amounts of information
+	- this isn't too useful for large amounts of data but good for settings
+	- provides simple commands to get and set named values
+	- example in [[SettingsPopup]]
