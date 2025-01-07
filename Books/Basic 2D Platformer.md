@@ -62,3 +62,6 @@ tags:
 	- `DrawLine()` is used to define a line by using start and end points
 	- `DrawRay()` is used to draw a line in a given direction (good for raycasts from AI characters)
 - Gizmos also work in 3D games
+## Camera Control
+- use the [[FollowCam]] script and the `LateUpdate()` method, this executes every frame, but happens after `Update()` this is less jarring
+- `SmoothDamp()` makes values smoothly transition to a new value making the camera again less jarring
