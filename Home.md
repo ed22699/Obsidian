@@ -83,6 +83,8 @@ banner_y: 0
 # Uni
 - 🗄️ Recent file updates
  `$=dv.list(dv.pages('"Uni Modules"').sort(f=>f.file.mtime.ts,"desc").limit(5).file.link)`
+- 🔖 Tagged:  favorite 
+ `$=dv.list( dv.pages('"Uni Modules"') .where(p => p.tags && p.tags.includes("favorite")) .sort(p => p.file.name, "desc") .limit(4) .map(p => { const firstAlias = Array.isArray(p.aliases) ? p.aliases[0] : p.alias || p.file.name; return [${firstAlias}](${p.file.path}); }))`
 - 📚 Modules
 	- [[Uni Modules/Machine Learning/Index|Machine Learning]]
 	- [[Uni Modules/Image Processing and Computer Vision/Index|Image Processing and Computer Vision]]

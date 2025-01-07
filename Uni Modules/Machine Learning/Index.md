@@ -1,6 +1,8 @@
 ---
 aliases:
   - Machine Learning
+tags:
+  - favorite
 ---
 
 [Unit Page](https://uob-coms30035.github.io/)
