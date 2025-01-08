@@ -34,3 +34,12 @@ tags:
 	 2. move the character forward
 ## Rotating the character to face movement direction
 - create the script [[RelativeMovement]], drag this onto the player and link the camera to the target property
+### Smoothly rotating using lerp
+- the `Quaternion.Lerp()` method smoothly changes between the current and target rotations
+- this is interpolating, Lerp is linear interpolation, you can interpolate positions, colours or anything else
+- slerp - spherical linear interpolation is another method that works better for slower turns
+## Moving forward in that direction
+- add character controller component to the player object $Component \Rightarrow Physics \Rightarrow Character \; Controller$
+- changes should then be added to the [[RelativeMovement]] script
+## Jumping
+- first we add vertical movement to [[RelativeMovement]]
