@@ -43,3 +43,8 @@ tags:
 - changes should then be added to the [[RelativeMovement]] script
 ## Jumping
 - first we add vertical movement to [[RelativeMovement]]
+- we then add a minimum downward force, acceleration and terminal velocity all together producing the final script
+- issue, slopes appear as solid ground you can jump off when checking for collisions on the bottom of the character
+	- solution: use raycasting to detect the ground
+	- cast a ray straight down from the player's position. If it registers a hit just below the character's feet, the player is standing on the ground
+	- when the raycast doesn't detect ground below but the character controller is colliding with the ground the code should make the character slide off the ledge, will fall and push away from the ledge as the capsule would otherwise still hit the platform
