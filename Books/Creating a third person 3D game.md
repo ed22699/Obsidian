@@ -1,0 +1,11 @@
+---
+tags:
+  - Unity
+---
+- first position the player object and set up the camera to look at this player
+- in the characters scratch folder we have a 
+	- FBX item which is the model
+	- TGA item which is the texture
+- in the FBX model select how to handle Normals and change to calculate
+	- Normals are direction vectors sticking out of polygons that tell the computer which direction the polygon is facing. This facing direction is used for lighting calculations
+	- default is Import which uses the normals defined in the imported mesh geometry. If this is not correctly defined Unity will calculate a vector for the facing direction of every polygon

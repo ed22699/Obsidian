@@ -33,3 +33,4 @@ key points:
 - [[2D Functionality]]
 - [[Basic 2D Platformer]]
 - [[GUI]]
+- [[Creating a third person 3D game]]
