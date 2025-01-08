@@ -8,6 +8,7 @@ tags:
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.EventSystems;
 
 public class RayShooter : MonoBehaviour
 {
@@ -25,8 +26,16 @@ public class RayShooter : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        // Toggle mouse movement
+        if (Input.GetKeyDown(KeyCode.L))
+        {
+            Cursor.visible = !Cursor.visible;
+            Cursor.lockState = Cursor.visible ? CursorLockMode.None : CursorLockMode.Locked;
+        }
+        
         // Respond to the left (first) mouse button
-        if (Input.GetMouseButtonDown(0))
+        // Check that GUI isn't being used
+        if (Input.GetMouseButtonDown(0) && !EventSystem.current.IsPointerOverGameObject())
         {
             Vector3 point = new Vector3(cam.pixelWidth / 2, cam.pixelHeight / 2, 0);
             // Create the ray at that position
@@ -42,6 +51,7 @@ public class RayShooter : MonoBehaviour
                 if (target != null)
                 {
                     target.ReactToHit();
+                    Messenger.Broadcast(GameEvent.ENEMY_HIT);
                 }
                 else
                 {

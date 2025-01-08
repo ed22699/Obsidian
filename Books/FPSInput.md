@@ -4,6 +4,7 @@ tags:
   - Script
 ---
 - Movement keys so player can move around space, with collisions and gravity set
+- Communicated with GUI
 ```cs
 using System.Collections;
 using System.Collections.Generic;
@@ -15,8 +16,25 @@ public class FPSInput : MonoBehaviour
 {
     private CharacterController charController;
     public float speed = 6.0f;
+    public const float baseSpeed = 6.0f;
 
     public float gravity = -9.8f;
+
+    void OnEnable()
+    {
+        Messenger<float>.AddListener(GameEvent.SPEED_CHANGED, OnSpeedChanged);
+    }
+    
+    void OnDisable()
+    {
+        Messenger<float>.RemoveListener(GameEvent.SPEED_CHANGED, OnSpeedChanged);
+    }
+
+    private void OnSpeedChanged(float value)
+    {
+        speed = baseSpeed * value;
+    }
+    
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -42,4 +60,5 @@ public class FPSInput : MonoBehaviour
 
     }
 }
+
 ```

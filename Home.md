@@ -99,6 +99,7 @@ banner_y: 0
 	 - [[Startup]]
 - 📚 Reading
 	- [[Books]]
+	- [[Blogs]]
 
 # Work
 - ❓ Leet Code
