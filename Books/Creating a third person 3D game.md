@@ -59,8 +59,20 @@ tags:
 	- select the animation tab and make sure Import Animation is checked
 	- go to Rig tab and switch Animation Type from Generic to Humanoid
 2. define animation clips in the imported file
+	- different movements happen at different times, e.g. walking, running, jumping
+	- often imported animations come as a single long timeline that can be cut up into shorter individual animations
+	- to split up animation clips, select the Animations tab in the inspector, find the Clips panel, use the + and - buttons to add and remove clips on the list
+	- when you select a clip information will appear, you can rename, define start and end times, allowing you to slice chunks out of the longer animation
+	- if start and end of looped animation are the same there is a green dot, if they are slightly off its a orange dot and if they're completely off its a red dot
 3. set up the controller to play those animation clips
+	- begin by creating a new animator controller asset $Assets \Rightarrow Create \Rightarrow Animator \; Controller$ 
+	- in Project view find the icon with a funny-looking network of lines on it and rename it to player
+	- select the character in the scene, it has a component called animator, this has a controller slot for you to link a specific animator controller, drag and drop
+	- open animator $Window \Rightarrow Animation$ select Animator
+	- drag animation clips to get new nodes (project view, click. the arrow on the side of the model asset, among the contents are the animation clips)
+	- set idle as layer default state (turns orange) this is where the network starts, handle setup similar to that in [[Basic 2D Platformer#Animating player|2D Platformer]]
 4. incorporate that animation controller in your code
+	- this involves making changes to [[RelativeMovement]] script
 - Unity has a sophisticated system for managing animations on models, called Mecanim
 	- Mecanim identifies the newer more advanced animation system
 	- one major advantage of this approach is that you can apply animations from other FBX files to a character. e.g. all human enemies can share a single set of animations
