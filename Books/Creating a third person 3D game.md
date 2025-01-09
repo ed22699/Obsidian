@@ -48,3 +48,19 @@ tags:
 	- solution: use raycasting to detect the ground
 	- cast a ray straight down from the player's position. If it registers a hit just below the character's feet, the player is standing on the ground
 	- when the raycast doesn't detect ground below but the character controller is colliding with the ground the code should make the character slide off the ledge, will fall and push away from the ledge as the capsule would otherwise still hit the platform
+- this 0.4 that comes in the [[RelativeMovement]] script is meant to be the height of the player plus the rounded ends, divided by two with some leeway, e.g. 1.9 instead of 2
+- collisions with the character controller are reported through a callback function called `OnControllerColliderHit()`
+# Setting animation on the player character
+- can be created with a few approaches, most character animation in modern games use a technique called *skeletal animation*
+	- in skeletal animation a series of bones is set up inside the model, and then the bones are moved around during the animation. When a bone moves, the model's surface linked to that bone moves along with it
+	- can also be used in bendy objects such as tentacles, although the bones move rigidly, the model surface around the bones can bend and flex
+1. turn on the animation system
+	- select the player model in the Project view to see its Import settings
+	- select the animation tab and make sure Import Animation is checked
+	- go to Rig tab and switch Animation Type from Generic to Humanoid
+2. define animation clips in the imported file
+3. set up the controller to play those animation clips
+4. incorporate that animation controller in your code
+- Unity has a sophisticated system for managing animations on models, called Mecanim
+	- Mecanim identifies the newer more advanced animation system
+	- one major advantage of this approach is that you can apply animations from other FBX files to a character. e.g. all human enemies can share a single set of animations
