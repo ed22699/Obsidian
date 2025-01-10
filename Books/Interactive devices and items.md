@@ -21,4 +21,11 @@ tags:
 	- Unity's physics system will act only on objects that have a Rigidbody component 
 - to have the player apply a force to the boxes, make an addition to [[RelativeMovement]]
 ## Trigger a device in the level
+- open and close a door in response to the character colliding with another object in the scene
+- create another door
+- create a new cube to be used as a trigger and check Is Trigger for the collider, set the trigger object to Ignore Raycast layer (top right corner of the Inspector has a Layer menu), turn off Cast Shadows from this object
+	- Rigidbody isn't required on the trigger as the player's character controller already fulfils the physics system enabled requirement
+- triggers are often referred to as *volumes* rather than objects to conceptually differentiate solid objects from objects you can move through
+- create a script for this trigger called [[DeviceTrigger]]
+- you will also need to alter [[DoorOpenDevice]] script
 ## Disappear on contact (for item pickups)
