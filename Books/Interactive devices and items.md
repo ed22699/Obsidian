@@ -8,4 +8,5 @@ tags:
 - to make the opening of the door less instant you can use tweens to make it open smoothly
 - you also need a script to call the `Operate()` function, for this we'll use [[DeviceOperator]]
 	- `OverlapSphere()` returns an array of all objects that are within a given distance of a given position
-	- `DontRequireReciever()` method means
+	- `DontRequireReciever()` method means no error will occur if nothing in that object receives the message
+	- you can use the dot product to filter out any objects you are not facing
