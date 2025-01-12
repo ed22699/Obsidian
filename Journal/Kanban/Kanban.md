@@ -10,20 +10,20 @@ kanban-plugin: board
 
 ## To Do
 
-- [ ] Complete Design document #Habit @{2025-01-13}
 
 
 ## In Progress
 
 - [ ] Read Unity Book #Habit
 	@{2025-01-02}
-- [ ] Complete SRS document #Habit @{2025-01-10}
+- [ ] Complete Design document #Habit @{2025-01-13}
 
 
 ## Complete
 
 **Complete**
 - [x] Check Finances #Personal @{2025-01-06}
+- [x] Complete SRS document #Habit @{2025-01-10}
 
 
 
