@@ -1,0 +1,2 @@
+- Binary format
+- File system-like access
