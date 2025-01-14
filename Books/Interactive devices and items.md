@@ -29,3 +29,25 @@ tags:
 - create a script for this trigger called [[DeviceTrigger]]
 - you will also need to alter [[DoorOpenDevice]] script
 ## Disappear on contact (for item pickups)
+- Create a sphere object and place it hovering at about waist height, make it small but otherwise prepare it like you did in the last volume example
+- select the is trigger setting in the collider and set the object to ignore raycast layer
+- create a new script to attach called [[CollectibleItem]]
+	- remember to call `Destroy()` on `this.gameObject` and not just `this` as `this` only refers to the script component rather than the object its attached to
+- rather an names items in more complex games often have an identifier used to look up further data. E.g. one item might be assigned ID 301 and ID 301 correlates to a certain display name, image, description, so forth
+- turn these objects into prefabs
+### Managing Inventory data and game state
+- you need background data managers for the game's inventory
+- will be similar to a MVC architecture
+- idea is to split up all the data management into separate, well defined modules with each managing its own area of responsibility
+	- create a module to maintain player state in [[PlayerManager]]
+	- create a module to maintain the inventory list in [[InventoryManager]]
+	- both [[PlayerManager]] and [[InventoryManager]] will be have like *model* in MVC
+	- *controller* is an invisible object in most scenes (not required here but think back to [[SceneController]])
+	- rest of the scene is analogous to *view*
+	- a higher level *manager of managers* will keep track of all the separate modules, this will keep a list of all managers and will control the life cycles of various managers (in particular initialising them at the start). All other scripts will be able to access these centralised modules by going through the main manager
+		- other code can use static properties in the main manager to connect with the specific module desired
+	- for main manager to reference other modules in a consistent way, these modules must all inherit properties from a common base, for this we will use an interface ([[IGameManager]]) so the Managers object can treat both [[PlayerManager]] and [[InventoryManager]] as type [[IGameManager]] 
+		- the enum within [[IGameManager]] is defined in [[ManagerStatus]]
+	- design patterns for accessing centralised shared modules are the Singleton pattern, alternatively some use the service locator or the dependency injection
+		- the code here uses a variation of the service locator
+- create an empty GameObject and link the data managers to it
