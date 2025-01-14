@@ -10,6 +10,8 @@ kanban-plugin: board
 
 ## To Do
 
+- [ ] Do prereqs for the lab #Uni @{2025-01-15}
+- [ ] Implement this weeks task in the Unity project #Uni @{2025-01-15}
 
 
 ## In Progress
@@ -17,6 +19,7 @@ kanban-plugin: board
 - [ ] Read Unity Book #Habit
 	@{2025-01-02}
 - [ ] Complete Design document #Habit @{2025-01-13}
+- [ ] Complete notes for first lecture #Uni @{2025-01-14}
 
 
 ## Complete

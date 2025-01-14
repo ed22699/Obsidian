@@ -40,3 +40,7 @@ tags:
 | lat/lon                    | retrieving location              |
 - good format for sparse data e.g. $\begin{pmatrix} - & - & 1 \\ - & - & - \\ - & 2 & - \end{pmatrix}$ is with a coordinate system e.g $(x, y, n)$ so $(0, 2, 1)$
 # Serialising generic objects
+## JSON (JavaScript Object Notation)
+![[JSON (JavaScript Object Notation)]]
+## HDF5 (Hierarchical Data Format)
+![[HDF5 (Hierarchical Data Format)]]

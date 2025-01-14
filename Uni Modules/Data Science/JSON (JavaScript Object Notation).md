@@ -1,0 +1,2 @@
+- human readable, dict-like format
+- very robust language; suits many purposes
