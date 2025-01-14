@@ -44,3 +44,10 @@ tags:
 ![[JSON (JavaScript Object Notation)]]
 ## HDF5 (Hierarchical Data Format)
 ![[HDF5 (Hierarchical Data Format)]]
+# Data Collection Methods:
+- **Web Scraping**: extracting data from websites using automated tools
+- **APIs**: Accessing data programmatically through APIs provided by various services
+- **Databases**: Queering a database to extract relevant data
+- **Sensors**: Collecting data from sensors and other devices
+- **Surveys and questionnaires**: Gathering directly from individuals
+- **Publicly available datasets**: Accessing datasets from government agencies, research institutions and other organisations
