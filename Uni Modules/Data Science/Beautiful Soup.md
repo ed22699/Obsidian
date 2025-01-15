@@ -12,7 +12,7 @@ tags:
 ## Functions
 - `soup.prettify()` corrects the HTML source
 - `soup.find_all("head")` finds all instances within and including the head tag
-	- `soup.find_all("div", attrs=("class": "col-sm-2"))` finds all instances within and including the div tag whee it has that class attribute
+	- `soup.find_all("div", attrs={"class": "col-sm-2"})` finds all instances within and including the div tag whee it has that class attribute
 - `soup.find("head")` finds the first instance of content within and including the head tag
 - `soup.find("title").text` gets the text within the title tag
 ```python
