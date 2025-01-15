@@ -46,8 +46,10 @@ tags:
 	- rest of the scene is analogous to *view*
 	- a higher level *manager of managers* will keep track of all the separate modules, this will keep a list of all managers and will control the life cycles of various managers (in particular initialising them at the start). All other scripts will be able to access these centralised modules by going through the main manager
 		- other code can use static properties in the main manager to connect with the specific module desired
-	- for main manager to reference other modules in a consistent way, these modules must all inherit properties from a common base, for this we will use an interface ([[IGameManager]]) so the Managers object can treat both [[PlayerManager]] and [[InventoryManager]] as type [[IGameManager]] 
+	- for main manager to reference other modules in a consistent way, these modules must all inherit properties from a common base, for this we will use an interface ([[IGameManager]]) so the [[Managers]] object can treat both [[PlayerManager]] and [[InventoryManager]] as type [[IGameManager]] 
 		- the enum within [[IGameManager]] is defined in [[ManagerStatus]]
 	- design patterns for accessing centralised shared modules are the Singleton pattern, alternatively some use the service locator or the dependency injection
 		- the code here uses a variation of the service locator
-- create an empty GameObject and link the data managers to it
+- create an empty GameObject and link the data managers to it ([[Managers]], [[PlayerManager]] and [[InventoryManager]])
+> [!note]
+> `Awake()` runs once when the code first starts running but even sooner then `Start()`, allowing for initialisation tasks that absolutely must run before any other code modules
