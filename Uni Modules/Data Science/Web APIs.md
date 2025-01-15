@@ -1,0 +1,11 @@
+---
+tags:
+  - web_scraping
+---
+- provide a portal for explicit data acquisition, and are generally less prone to the issues from HTML scraping as:
+	- code is optimised for retrieval and not for visual layout/aesthetics
+	- standard serialisation tools (e.g. JSON) are typically used
+	- the core items of interest have been extracted (e.g. dates, URLs)
+- [Examples of Web APIs](https://github.com/toddmotto/public-apis)
+- web APIs, although similar in principle, will have very different schemas
+- writing code for APIs is generally simpler than parsing HTML, requires less maintenance, are often documented, and results in faster overall code
