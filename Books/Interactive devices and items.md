@@ -53,3 +53,13 @@ tags:
 - create an empty GameObject and link the data managers to it ([[Managers]], [[PlayerManager]] and [[InventoryManager]])
 > [!note]
 > `Awake()` runs once when the code first starts running but even sooner then `Start()`, allowing for initialisation tasks that absolutely must run before any other code modules
+
+### Storing Inventory
+- the list of items collected could also be stores as a `List` object, for this we update [[InventoryManager]] and have [[CollectibleItem]] now call its new function
+	- one issue of the list is that you will see multiple copies of the same item listed if multiple are picked up
+- using a `Dictionary` makes it more simple to aggregate multiple copies of the same item (updates the [[InventoryManager]])
+### Displaying in the UI
+- This requires public methods for accessing items in the [[InventoryManager]]
+- Add the UI images into a *Resources* folder in a subfolder called Icons
+	- Resources folder can be loaded in code by using the `Resources.Load()` method
+- Create a new empty GameObject names `Controller` and assign is a new script called [[BasicUI]]

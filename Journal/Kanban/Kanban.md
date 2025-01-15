@@ -6,6 +6,7 @@ kanban-plugin: board
 
 ## Backlog
 
+- [ ] Create notes for [[The Cold Outbound Playbook]] #Habit
 
 
 ## To Do
