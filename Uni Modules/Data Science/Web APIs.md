@@ -2,6 +2,7 @@
 tags:
   - web_scraping
 ---
+## Content
 - provide a portal for explicit data acquisition, and are generally less prone to the issues from HTML scraping as:
 	- code is optimised for retrieval and not for visual layout/aesthetics
 	- standard serialisation tools (e.g. JSON) are typically used
@@ -9,7 +10,7 @@ tags:
 - [Examples of Web APIs](https://github.com/toddmotto/public-apis)
 - web APIs, although similar in principle, will have very different schemas
 - writing code for APIs is generally simpler than parsing HTML, requires less maintenance, are often documented, and results in faster overall code
-## RESTful APIs
+### RESTful APIs
 - representational state transfer (REST) or RESTful Web services are one way of providing interoperability between computer systems on the internet
 - in most circumstances API keys are required before data can be accessed
 ```python
@@ -32,9 +33,78 @@ response = json.loads(requests.get(url).text)
 print(response.keys())
 # ["currentPage", "orderBy", "pageSize", "pages", "results", "startIndex", "status", "total", "userTier"]
 ```
-## Summary
+### Summary
 - API-based querying is robust, reliable, well maintained and documented with a static schema
 - information extraction is not based on fickle naming conventions of tag attributes
 - since only content is acquired (not images, JavaScript or style files) the bandwidth spent to acquire data is reduced significantly. This lends itself to faster processing
 - Since access is acquired through API keys, it is easy for the service provider to manage the bandwidth and throughput of its service as necessary
 - The data structures being received from APIs are complex, and need specific serialisation tools to be built
+## Examples
+```python
+from __future__ import print_function
+
+import requests
+import json
+from configparser import ConfigParser
+
+# Get key from config file
+parser = ConfigParser()
+parser.read('./myconfig.cfg')
+
+myapikey = parser.get('guardian', 'api-key-2024')
+
+# Inspect all sections
+url = 'https://content.guardianapis.com/sections?api-key=' + myapikey
+req = requests.get(url)
+src = req.text
+
+sections = json.loads(src)['response']
+print(sections.keys())
+# dict_keys(['status', 'userTier', 'total', 'results'])
+print(json.dumps(sections['results'][0], indent=2, sort_keys=True))
+# Find just technology based sections
+for result in sections['results']:
+	if 'tech' in result['id'].lower():
+		print(result['webTitle'], result['apiUrl'])
+```
+- Hard coding a secret such as a password or a key in a code file is a security risk. Instead you should *store your api-key in a config file*
+	```cfg
+	[guardian]
+	api-key=alkruio-xxxx-xxxx-xxxx-sdhl3489
+	```
+### Manual query on whole API
+```python
+# Specify the arguments 
+args = {
+		"section": "technology",
+		"order-by": "newest", 
+		"api-key": myapikey,
+		"page-size": "100"
+}
+
+# Construct the URL
+base_url = 'http://content.guardianapis.com/search'
+url = '{}?{}'.format(
+	base_url,
+	'&'.join(["{}={}".format(kk, vv) for kk, vv in args.items()])
+)
+
+# Make the request and extract the source
+req = requests.get(url)
+src = req.text
+print('Number of byes received:', len(src))
+```
+### Parsing the JSON
+```python
+response = json.loads(src)['response']
+print('The following are available:\n ', sorted(respinse.keys()))
+# impoirtant to verify that the status message is `ok` before continuing, if it isn't no real data will have been received
+assert response['status'] == 'ok'
+
+# List results
+print(json.dumps(response['results'][0], indent=2, sort_keys=True))
+
+print('Total news stories:', response['total']) 
+print('Pages:', response['pages'])
+print('Page size:', response['pageSize'])
+```

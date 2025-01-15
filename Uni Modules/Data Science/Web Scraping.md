@@ -8,7 +8,7 @@ tags:
 - scraping technologies must be tolerant to several artefacts of real-world data (wrangling)
 - Erroneous data makes parsing information difficult
 # Beautiful Soup 
-![[Beautiful Soup]]
+![[Beautiful Soup#Concepts]]
 # Web APIs
 ![[Web APIs]]
 # Regular Expression
