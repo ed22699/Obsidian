@@ -63,3 +63,9 @@ tags:
 - Add the UI images into a *Resources* folder in a subfolder called Icons
 	- Resources folder can be loaded in code by using the `Resources.Load()` method
 - Create a new empty GameObject names `Controller` and assign is a new script called [[BasicUI]]
+## Equipping a key to use on locked doors
+- adjust [[DeviceTrigger]] script and [[InventoryManager]] script
+- update the functionality of the UI so that buttons can be used [[BasicUI]]
+- click requireKey option in `DeviceTrigger`, now you will only be able to get through the door if you have a key
+## Restoring the player's health by consuming health packs
+- requires a new method in [[InventoryManager]] and a new button in [[BasicUI]]

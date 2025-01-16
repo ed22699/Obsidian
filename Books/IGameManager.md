@@ -3,7 +3,13 @@ tags:
   - Unity
   - Script
 ---
-- Description
+- Interface for managers
 ```cs
+public interface IGameManager
+{
+    ManagerStatus status { get; }
+
+    void Startup();
+}
 
 ```

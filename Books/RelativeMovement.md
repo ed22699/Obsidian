@@ -12,6 +12,7 @@ using UnityEngine;
 [RequireComponent(typeof(CharacterController))]
 public class RelativeMovement : MonoBehaviour
 {
+    public float pushForce = 3.0f;
     public float rotSpeed = 15.0f;
     public float moveSpeed = 6.0f;
     public float jumpSpeed = 15.0f;
@@ -122,7 +123,14 @@ public class RelativeMovement : MonoBehaviour
     void OnControllerColliderHit(ControllerColliderHit hit)
     {
         contact = hit;
+
+        // Check if the collided object has Rigidbody to recieve physics forces
+        Rigidbody body = hit.collider.attachedRigidbody;
+        if (body != null && !body.isKinematic)
+        {
+            // Apply velocity to the physics body
+            body.linearVelocity = hit.moveDirection * pushForce;
+        }
     }
 }
-
 ```
