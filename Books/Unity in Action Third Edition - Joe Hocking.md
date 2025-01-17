@@ -35,3 +35,4 @@ key points:
 - [[GUI]]
 - [[Creating a third person 3D game]]
 - [[Interactive devices and items]]
+- [[Connecting your game to the internet]]
