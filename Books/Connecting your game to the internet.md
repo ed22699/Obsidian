@@ -23,4 +23,4 @@ HTTP is a communication protocol for sending requests to and receiving responses
 	- create a new script and name it [[WeatherController]]
 ## Downloading weather data from an internet service
 - code will be structured around a [[Managers]] script, [[WeatherManager]] will be initialised from here and be in charge or retrieving and storing weather data. For this it will need to be able to communicate with the internet using the [[NetworkService]] script.
-	- will need [[ManagerStatus]] and [[IGameManager]] altered slightly [[IGameManager (Internet)]]
+	- will need [[ManagerStatus]] and [[IGameManager]] altered slightly [[IGameManager (Internet)]], [[Managers]] will also be altered to [[Managers(Weather)]]
