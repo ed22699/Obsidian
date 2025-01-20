@@ -24,3 +24,18 @@ HTTP is a communication protocol for sending requests to and receiving responses
 ## Downloading weather data from an internet service
 - code will be structured around a [[Managers]] script, [[WeatherManager]] will be initialised from here and be in charge or retrieving and storing weather data. For this it will need to be able to communicate with the internet using the [[NetworkService]] script.
 	- will need [[ManagerStatus]] and [[IGameManager]] altered slightly [[IGameManager (Internet)]], [[Managers]] will also be altered to [[Managers(Weather)]]
+### Requesting HTTP data using coroutines
+- the primary class for this is `UnityWebRequest` which communicates with the internet. Instantiating a request object using a URL will send a request to that URL
+- co-routines are important here
+	- first send a request, then you continue with the rest of the program, after some time you receive a response
+- This will be written in [[NetworkService]]
+#### Writing coroutine methods that cascade through each other
+- `GetWeatherXML()` is the coroutine method that outside code can use to tell `Network-Service` to make an HTTP request
+	- yielding can cascade through multiple methods. If the initial coroutine method itself calls another method, and that other method yields part of the way through, then the coroutine will pause inside that second method and resume there. Thus the yield statement in `CallAPI()` pauses the coroutine that was started in `GetWeatherXML()`
+#### How the callback works
+- `Action` type is a delegate. Delegates are references to some other method/function. They allow you to store the function (or rather the pointer to that function) in a variable and to pass the function as a parameter to another function
+
+- You can update [[WeatherManager]] to use the [[NetworkService]]
+## Parsing XML
+- use [[Messenger]] and create a script called [[GameEvent (weather)]]
+- once in place, adjust [[WeatherManager]]
