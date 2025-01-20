@@ -11,6 +11,9 @@ kanban-plugin: board
 
 ## To Do
 
+- [ ] Data Science Notes week 2 #Uni @{2025-01-21}
+- [ ] Data Science Prereqs 2 #Uni @{2025-01-22}
+- [ ] Meeting notes #Uni @{2025-01-21}
 
 
 ## In Progress
