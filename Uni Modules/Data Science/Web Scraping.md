@@ -10,6 +10,6 @@ tags:
 # Beautiful Soup 
 ![[Beautiful Soup#Concepts]]
 # Web APIs
-![[Web APIs]]
+![[Web APIs#Content]]
 # Regular Expression
 ![[Regular Expressions]]

@@ -1,3 +1,8 @@
+---
+tags:
+  - data_ingress
+---
+
 - human readable, dict-like format
 - very robust language; suits many purposes
 - JSON is a syntax for storing and exchanging data

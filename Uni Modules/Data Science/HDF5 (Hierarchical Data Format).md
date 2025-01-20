@@ -1,3 +1,8 @@
+---
+tags:
+  - data_ingress
+---
+
 - Binary format
 - File system-like access
 - is a format for serialising data

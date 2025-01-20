@@ -107,4 +107,52 @@ print(json.dumps(response['results'][0], indent=2, sort_keys=True))
 print('Total news stories:', response['total']) 
 print('Pages:', response['pages'])
 print('Page size:', response['pageSize'])
+- [ ] ```
+### Finding all tech stories that talk about AI and OpenAI but not ChatGPT
+```python
+args = {
+    'section': 'technology', 
+    'order-by': 'newest', 
+    'api-key': myapikey, 
+    'page-size': '10',
+    'q' : 'AI%20AND%20OpenAI%20AND%20NOT%20(ChatGPT)'
+}    
+
+# Construct the URL
+base_url = 'http://content.guardianapis.com/search'
+url = '{}?{}'.format(
+    base_url, 
+    '&'.join(["{}={}".format(kk, vv) for kk, vv in args.items()])
+)
+
+# Make the request and extract the source
+req = requests.get(url) 
+src = req.text
+
+print('Number of byes received:', len(src))
+
+# Parsing JSON
+response = json.loads(src)['response']
+print('The following are available:\n ', sorted(response.keys()))
+
+# Verifying the status code
+assert response['status'] == 'ok'
+
+# Listing the results
+print(json.dumps(response['results'][0], indent=2, sort_keys=True))
+
+# Response statistics
+print('Total news stories:', response['total']) 
+print('Pages:', response['pages'])
+print('Page size:', response['pageSize'])
+```
+### Request Specific Content from the API
+#### Fetching the $i^{th}$ result
+```python
+i = 0
+api_url = response['results'][i]['apiUrl']
+api_id = response['results'][i]['id']
+
+print(api_url)
+print(api_id)
 ```
