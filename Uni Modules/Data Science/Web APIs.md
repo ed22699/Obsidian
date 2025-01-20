@@ -156,3 +156,64 @@ api_id = response['results'][i]['id']
 print(api_url)
 print(api_id)
 ```
+#### Fetching the headline and body text of the news story with id
+```python
+# Construct url
+base_url = "https://content.guardianapis.com/search?"
+search_string = "ids=%s&api-key=%s&show-fields=headline,body" %(api_id, myapikey)
+
+url = base_url + search_string
+print(url)
+
+# Request url
+req = requests.get(url) 
+src = req.text
+
+# Get and check response
+response = json.loads(src)['response']
+assert response['status'] == 'ok'
+
+# Print headline
+print(response['results'][0]['fields']['headline'])
+
+# Print body of story
+body = response['results'][0]['fields']['body']
+print(body)
+```
+### Text Processing: Word count and store in data frame
+```python
+import pandas as pd
+import re
+
+# First, we need to clean that data -- remove HTML tags. 
+# Here is a "not so good" way to do it. You could consider BeautifulSoup here!
+
+words = body.replace('<p>','').replace('</p>','').split()
+print(len(words))
+unique_words = list(set(words))
+print(len(unique_words))
+# count_dictionary = {word: count for word, count in zip(words, [words.count(w) for w in words])}
+count_dictionary = {'word': unique_words, 'count': [words.count(w) for w in unique_words]}
+
+# Store in a dataframe
+df = pd.DataFrame(count_dictionary)
+df.sort_values(by='count', ascending=False)
+
+# We could export the data frame in a CSV and observe the complete output
+# df.to_csv('term-frequency.csv')
+
+# Regex format the words to remove , e.g. Facebook, will be Facebook
+words_wo_punctuation = re.sub(r'[^\w\s]','',body.replace('<p>','').replace('</p>','')).split() 
+unique_words = list(set(words_wo_punctuation))
+print(len(unique_words))
+count_dictionary = {'word': unique_words, 'count': [words_wo_punctuation.count(w) for w in unique_words]}
+
+df = pd.DataFrame(count_dictionary)
+df.sort_values(by='count', ascending=False)
+
+# We could export the data frame in a CSV and observe the complete output
+# df.to_csv('term-frequency-regex.csv')
+# Open the CSV in a text editor or a spread sheet and analyse the output
+
+df.sort_values(by='count', ascending=False).to_csv('term-frequency-regex.csv')
+```
