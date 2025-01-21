@@ -12,14 +12,13 @@ kanban-plugin: board
 ## To Do
 
 - [ ] Data Science Prereqs 2 #Uni @{2025-01-22}
-- [ ] Meeting notes #Uni @{2025-01-21}
+- [ ] Complete Wireframes #Habit @{2025-01-26}
 
 
 ## In Progress
 
 - [ ] Read Unity Book #Habit
 	@{2025-01-02}
-- [ ] Complete Design document #Habit @{2025-01-13}
 
 
 ## Complete
@@ -31,6 +30,8 @@ kanban-plugin: board
 - [x] Complete notes for first lecture #Uni @{2025-01-14}
 - [x] Implement this weeks task in the Unity project #Uni @{2025-01-15}
 - [x] Data Science Notes week 2 #Uni @{2025-01-21}
+- [x] Meeting notes #Uni @{2025-01-21}
+- [x] Complete Design document #Habit @{2025-01-13}
 
 
 
