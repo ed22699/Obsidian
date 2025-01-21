@@ -34,3 +34,25 @@ tags:
 ![[Internal attack]]
 ### Dominance attack
 ![[Dominance attack]]
+## Techniques for tables
+### Non-perturbative
+![[Non-perturbative]]
+### Perturbative
+![[Perturbative]]
+## Techniques for Databases
+### Query perturbation
+![[Query perturbation]]
+### Query restriction
+![[Query restriction]]
+### Camouflage
+![[Camouflage]]
+# Differential Privacy
+- A learner implements a summary statistic called $\mathcal{A}$ 
+- Adversary proposes two datasets $S$ and $S'$ that differ by only one row or example, and a test set $Q$
+- **Differential Privacy**:
+	- A is called epsilon-differentially private iff $|\log{(\frac{P(\mathcal{A}(S)\in Q)}{P(\mathcal{A}(S')\in Q)})}| \leq \epsilon$ 
+	- differential privacy is a condition on the release mechanism and not on the database itself
+	- presence or absence of an individual will not affect the final output
+# $k$-anonymity
+- A dataset is said to satisfy $k$-anonymity if each combination of values of the quasi-identifier attributes in it is shared by at least $k$ records
+- how to achieve $k$-anonymity
