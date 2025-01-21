@@ -53,4 +53,4 @@ HTTP is a communication protocol for sending requests to and receiving responses
 	- Unity provides an API for multiplayer games called MLAPI but other options include Mirror or Photon
 # Adding a networked billboard
 - besides text data images are also a common request. `UnityWebRequest` can be used to download images too
-## Loading images from the interne
+## Loading images from the internet
