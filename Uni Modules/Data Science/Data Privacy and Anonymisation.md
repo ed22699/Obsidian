@@ -54,5 +54,11 @@ tags:
 	- differential privacy is a condition on the release mechanism and not on the database itself
 	- presence or absence of an individual will not affect the final output
 # $k$-anonymity
-- A dataset is said to satisfy $k$-anonymity if each combination of values of the quasi-identifier attributes in it is shared by at least $k$ records
-- how to achieve $k$-anonymity
+![[k-anonymity]]
+# Other approaches to data privacy
+- **PPDM**: Privacy-preserving data ining seeks the data owner's privacy when several owners wish to co-operate without giving away their data to each other
+- **PIR**: Private information retrieval seeks user privacy to allow the user of a database to retrieve some information item without the database knowing which item was recovered
+# Anonymisation tools
+- [ARX](http://arx.deidentifier.org/): $k$-anonymity, $\mathscr{l}$-diversity, $t$-closeness implementation in Java
+- [Argus](http://neon.vb.cbs.nl/casc): software designed to create safe microdata files
+- [SdcMicro](http://cran.r-project.org/package=sdcMicro): Disclosure control methods for anonymisation and risk estimation

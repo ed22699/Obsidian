@@ -39,3 +39,18 @@ HTTP is a communication protocol for sending requests to and receiving responses
 ## Parsing XML
 - use [[Messenger]] and create a script called [[GameEvent (weather)]]
 - once in place, adjust [[WeatherManager]]
+## Parsing JSON
+- alternative format for transferring data
+- [[JSON (JavaScript Object Notation)]]
+- Unity provides a `JsonUtility` class, also external developments like Json.NET
+- [[NetworkService]] can be altered to also parse JSON files
+- modify [[WeatherManager]] to request JSON instead
+## Affecting the scene based on weather data
+- once extracted we can use `SetOvercast()` method in [[WeatherController]]
+## Game networking beyond HTTP
+- form many games making a request and receiving a response is too slow
+- for something like multiplayer FPS this would need a different approach
+	- Unity provides an API for multiplayer games called MLAPI but other options include Mirror or Photon
+# Adding a networked billboard
+- besides text data images are also a common request. `UnityWebRequest` can be used to download images too
+## Loading images from the interne

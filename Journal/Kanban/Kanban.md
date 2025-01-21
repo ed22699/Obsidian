@@ -11,7 +11,6 @@ kanban-plugin: board
 
 ## To Do
 
-- [ ] Data Science Notes week 2 #Uni @{2025-01-21}
 - [ ] Data Science Prereqs 2 #Uni @{2025-01-22}
 - [ ] Meeting notes #Uni @{2025-01-21}
 
@@ -31,6 +30,7 @@ kanban-plugin: board
 - [x] Do prereqs for the lab #Uni @{2025-01-15}
 - [x] Complete notes for first lecture #Uni @{2025-01-14}
 - [x] Implement this weeks task in the Unity project #Uni @{2025-01-15}
+- [x] Data Science Notes week 2 #Uni @{2025-01-21}
 
 
 
