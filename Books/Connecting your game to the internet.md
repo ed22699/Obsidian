@@ -56,3 +56,12 @@ HTTP is a communication protocol for sending requests to and receiving responses
 ## Loading images from the internet
 - Create a new manager module called [[ImagesManager]] which will be in charge of downloaded images to be displayed
 	- connecting to the internet and sending the HTTP request will be handles in [[NetworkService]]
+### Displaying Images on the billboard
+- create a billboard object (create a cube object)
+- need to create a device that operates just like the colour-changing monitor
+	- use [[DeviceOperator]] and create a script for the billboard device called [[WebLoadingBillboard]]
+### Caching the downloaded image for reuse
+- Provide a callback function in [[ImagesManager]] that first saves the image and then calls the callback from [[WebLoadingBillboard]]
+	- this is hard and requires lambda function to complete
+		- *lambda (anonymous) function*: function that doesn't have a name, created on the fly inside another function
+# Posting data to a web server
