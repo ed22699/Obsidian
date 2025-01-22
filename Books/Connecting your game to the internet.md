@@ -54,3 +54,5 @@ HTTP is a communication protocol for sending requests to and receiving responses
 # Adding a networked billboard
 - besides text data images are also a common request. `UnityWebRequest` can be used to download images too
 ## Loading images from the internet
+- Create a new manager module called [[ImagesManager]] which will be in charge of downloaded images to be displayed
+	- connecting to the internet and sending the HTTP request will be handles in [[NetworkService]]
