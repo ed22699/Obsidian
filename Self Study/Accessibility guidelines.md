@@ -1,0 +1,14 @@
+- approximately one in seven people have a disability that affects the way they interact with the world and their devices
+- prioritising *simplicity* and *perceivability* and examining every design decision to ensure that it doesn't  exclude people with disabilities or who interact with their devices in different ways
+	- simplicity - support familiar, consistent interactions that make complex tasks simple and straightforward to perform
+	- perceivability - make sure that all content can be perceived whether people are using sight, hearing, or tough
+- support personalisation
+	- Bold text, larger text, invert colours, increase contrast options
+- consider using Xcode's *Accessibility Inspector*
+- VoiceOver, Assistive Touch, Pointer Control, and Switch Control need to be supported correctly
+## Gestures
+- *don't override platform gestures*, swiping down should reveal Notification centre regardless of the app
+- prefer *simplified gestures* for *common interactions*. Complex gestures such as multifinger or multihand, long presses or gestures that require repeated movements are challenging
+- *provide alternative ways to perform gesture-based actions*. Include an option for people who may not be able to perform a specific gesture. e.g. if people can use a gesture to delete a row provide a way to delete items through an edit mode or by offering a Delete button in an item detail view
+- when possible app's core functionality should be accessible through more than one type of physical interaction
+	- camera can take photo with button or devi
