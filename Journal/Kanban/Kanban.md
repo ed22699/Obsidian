@@ -11,7 +11,6 @@ kanban-plugin: board
 
 ## To Do
 
-- [ ] Data Science Prereqs 2 #Uni @{2025-01-22}
 - [ ] Complete Wireframes #Habit @{2025-01-26}
 
 
@@ -26,6 +25,7 @@ kanban-plugin: board
 **Complete**
 - [x] Check Finances #Personal @{2025-01-06}
 - [x] Complete SRS document #Habit @{2025-01-10}
+- [x] Data Science Prereqs 2 #Uni @{2025-01-22}
 - [x] Do prereqs for the lab #Uni @{2025-01-15}
 - [x] Complete notes for first lecture #Uni @{2025-01-14}
 - [x] Implement this weeks task in the Unity project #Uni @{2025-01-15}
