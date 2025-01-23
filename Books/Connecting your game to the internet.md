@@ -65,3 +65,11 @@ HTTP is a communication protocol for sending requests to and receiving responses
 	- this is hard and requires lambda function to complete
 		- *lambda (anonymous) function*: function that doesn't have a name, created on the fly inside another function
 # Posting data to a web server
+- an example of sending data
+- this requires a server to send requests to
+	- XAMPP is recommended for a test server
+	- Once XAMPP is running, create a folder called `uia` in htdocs, this is where you'll put the server-side script
+- this task is posting weather data to the server when the player reaches a checkpoint
+	- checkpoint will be a trigger volume
+## Tracking current weather: sending post requests
+- the code for sending data will involve [[WeatherManager]] telling [[NetworkService]] to make the request. [[NetworkService]] handles the details of HTTP communication 
