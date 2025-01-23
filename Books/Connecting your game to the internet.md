@@ -73,3 +73,6 @@ HTTP is a communication protocol for sending requests to and receiving responses
 	- checkpoint will be a trigger volume
 ## Tracking current weather: sending post requests
 - the code for sending data will involve [[WeatherManager]] telling [[NetworkService]] to make the request. [[NetworkService]] handles the details of HTTP communication 
+- create a [[CheckpointTrigger]] script
+### Server-side code in PHP
+- create a text file in htdocs and name it [[api.php]]

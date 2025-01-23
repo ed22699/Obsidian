@@ -36,3 +36,4 @@ key points:
 - [[Creating a third person 3D game]]
 - [[Interactive devices and items]]
 - [[Connecting your game to the internet]]
+- [[Playing audio, Sound effects and music]]
