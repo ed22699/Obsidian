@@ -10,4 +10,4 @@
 - Consider offering an alternate app icon in app's settings
 - *Don't use replicas of Apple hardware products*
 ## iOS considerations
-- people can customise the appearence of their app icons
+- people can customise the appearance of their app icons to be light, dark or tinted. You can create your own variations to ensure that each one looks exactly the way you want
