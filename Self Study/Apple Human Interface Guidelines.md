@@ -4,3 +4,4 @@
 - support interactions that *accommodate the way people hold their phone* (middle and bottom is easier to reach), let people swipe to navigate back or initiate actions in a list row
 - with permission, integrate information available through platform capabilities in ways that enhance the experience without asking people to enter data. e.g. accept payments through biometric authentication
 - [[Accessibility guidelines]]
+- [[App Icons]]
