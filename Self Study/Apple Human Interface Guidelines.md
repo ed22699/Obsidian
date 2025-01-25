@@ -5,3 +5,7 @@
 - with permission, integrate information available through platform capabilities in ways that enhance the experience without asking people to enter data. e.g. accept payments through biometric authentication
 - [[Accessibility guidelines]]
 - [[App Icons]]
+- [[Branding]]
+- [[Colour]]
+- [[Dark Mode]]
+- [[Icons]]

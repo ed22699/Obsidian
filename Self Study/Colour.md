@@ -1,0 +1,21 @@
+- *Use colour sparingly* in non-game apps
+- Avoid using the same colour to mean different things
+- Make sure your app's colours work well in both light and dark contexts
+- Test your app's colour scheme under a variety of lighting conditions
+- Test on different devices
+- If your app lets people choose colours, prefer system-provided colour controls where available, see `ColorPicker`
+- Consider how the colours you use might be perceived in other countries and cultures
+- Avoid hard-coding system colour values in your app, use `Color`
+- Avoid replicating dynamic system colours
+- Avoid redefining the semantic meanings of dynamic system colours
+- Apply colour profiles to your images
+## iOS considerations
+- use the grouped background colours (`systemGroupedBackground`, `secondarySystemGroupedBackground` and `tertiarySystemGroupedBackground`) when you have a grouped table view
+- otherwise, use the system set of background colours (`systemBackground`, `secondarySystemBackground` and `tertiarySystemBackground`)
+- with both sets of background colours, you generally use the variants to indicate hierarchy in the following ways:
+	- primary for the overall view
+	- secondary for grouping content or elements within the overall view
+	- tertiary for grouping content or elements within secondary elements
+- For foreground content, iOS defined the following dynamic colours:
+	![[Screenshot 2025-01-25 at 17.13.18.png|500]]
+- to see all the system colours see [here](https://developer.apple.com/design/human-interface-guidelines/color)

@@ -1,0 +1,8 @@
+- Use your brand's unique voice and tone in all the written communication you display
+- Consider choosing an accent colour
+- Consider using a custom font
+- Ensure branding always defers to content
+- Help people feel comfortable by using standard patterns consistently
+- *Resist the temptation to display your logo throughout your app* or game unless it's essential for providing context
+- Avoid using a launch screen as a branding opportunity. Consider displaying a welcome or onboarding screen
+- Follow Apple's trademark guidelines

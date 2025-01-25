@@ -11,3 +11,20 @@
 - *Don't use replicas of Apple hardware products*
 ## iOS considerations
 - people can customise the appearance of their app icons to be light, dark or tinted. You can create your own variations to ensure that each one looks exactly the way you want
+- Design your dark and tinted icons to feel at home next to system app icons and widgets
+- Consider a simplified version of your icon that captures its essential features
+- Use your light app icon as a basis for your dark icon. Choose complementary colours that reflect the default design, avoid excessively bright images
+- *Omit the background* so the system-provided background can show through
+- Provide your tinted icon as a grayscale image
+- *Don't add an overlay or border to your Settings icon*. iOS automatically adds a 1-pixel stroke to all icons so that they look good on the white background of Settings
+## App icon attributes
+- use a PNG format and support the following colour spaces:
+	- sRGB
+	- Gray Gamma 2.2 (grayscale)
+- iOS also supports Display P3 (wide-gamut colour)
+- iSO is single layer no transparency square asset shape
+## App icon sizes
+- for the app store, create an app icon that measures 1024x1024 px
+- you can let the system automatically scale down your icon to produce other icons
+	- if you want custom appearance of the icon at specific sizes you can supply multiple versions such as the following
+		![[Screenshot 2025-01-25 at 16.51.38.png|500]]

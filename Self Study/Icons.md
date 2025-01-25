@@ -1,0 +1,3 @@
+- Create a recognisable, highly simplified design
+- Maintain visual consistency across all interface icon in your app
+- In general, match the weights of interface icons and adjacent text
