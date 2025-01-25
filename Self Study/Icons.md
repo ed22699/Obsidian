@@ -1,3 +1,9 @@
 - Create a recognisable, highly simplified design
 - Maintain visual consistency across all interface icon in your app
-- In general, match the weights of interface icons and adjacent text
+- In general, match the weights of interface icons and adjacent text, unless if you want to emphasis one
+- If necessary, add padding to a custom interface icon to achieve optical alignment
+- Provide a selected-state version of an interface icon only if necessary
+- Create inclusive designs, depict human figures without unnecessary references o specific genders and be sure that your icons are welcoming and understandable to everyone
+- Include text in your design only when it's essential for conveying meaning
+- If your create a custom interface icon, use a vector format like PDF or SVG
+- Avoid using replicas of Apple hardware products, designs tend to change frequently and can make your interface icons appear dated

@@ -9,3 +9,4 @@
 - [[Colour]]
 - [[Dark Mode]]
 - [[Icons]]
+- [[Inclusion]]

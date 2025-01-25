@@ -12,6 +12,10 @@ using UnityEngine.EventSystems;
 
 public class RayShooter : MonoBehaviour
 {
+	[SerializeField] AudioSource soundSource;
+	[SerializeField] AudioClip hitWallSound;
+	[SerializeField] AudioClip hitEnemySound;
+	
     private Camera cam;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
@@ -51,12 +55,14 @@ public class RayShooter : MonoBehaviour
                 if (target != null)
                 {
                     target.ReactToHit();
+					soundSource.PlayOneShot(hitEnemySound);
                     Messenger.Broadcast(GameEvent.ENEMY_HIT);
                 }
                 else
                 {
                     // Launch a coroutine in response to a hit
                     StartCoroutine(SphereIndicator(hit.point));
+					soundSource.PlayOneShot(hitWallSound);
                 }
             }
         } 

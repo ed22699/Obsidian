@@ -11,11 +11,13 @@ using UnityEngine;
 
 [RequireComponent(typeof(PlayerManager))]
 [RequireComponent(typeof(InventoryManager))]
+[RequireComponent(typeof(AudioManager))]
 public class Managers : MonoBehaviour
 {
     // Static properties that other code uses to access managers
     public static PlayerManager Player { get; private set; }
     public static InventoryManager Inventory { get; private set; }
+    public static AudioManager Audio { get; private set; }
 
     // The list of managers to loop through during the startup sequence
     private List<IGameManager> startSequence;
@@ -24,10 +26,12 @@ public class Managers : MonoBehaviour
     {
         Player = GetComponent<PlayerManager>();
         Inventory = GetComponent<InventoryManager>();
+        Audio = GetComponent<AudioManager>();
 
         startSequence = new List<IGameManager>();
         startSequence.Add(Player);
         startSequence.Add(Inventory);
+        startSequence.Add(Audio);
 
         // Launch startup sequence asynchronously
         StartCoroutine(StartupManagers());

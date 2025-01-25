@@ -35,3 +35,14 @@ tags:
 - *audio listener* is the object that hears the sound projected from the audio sources
 - Audio mixers are an advanced alternative way to control audio in Unity. They enable you to process audio signals and apply various effects to your clips
 ### Assigning a looping sound
+- select $Audio \Rightarrow Audio \; Source$ to create an `AudioSource` component
+- tell the audio source what sound clip to play, drag an audio file from the project view up to the audio clip slot in the inspector
+- select both Play On Awake and Loop
+	- play on awake tells the audio source to begin playing as soon as the scene starts
+	- loop tells the audio source to keep playing continuously, repeating the audio clip when playback is over
+### Triggering sound effects from code
+- make changes to the [[RayShooter]] script
+	- `PlayOneShot()` causes an audio source to play a given audio clip
+## Using the audio control interface
+- you need to create an [[AudioManager]], for this you need the [[Managers]] framework so [[IGameManager]], [[ManagerStatus]] and [[NetworkService]] are needed ([[NetworkService]] won't be used here)
+### Volume control UI
