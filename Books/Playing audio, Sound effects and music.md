@@ -46,3 +46,21 @@ tags:
 ## Using the audio control interface
 - you need to create an [[AudioManager]], for this you need the [[Managers]] framework so [[IGameManager]], [[ManagerStatus]] and [[NetworkService]] are needed ([[NetworkService]] won't be used here)
 ### Volume control UI
+- create a new object `Settings Popup`
+- volume control needs to be addd to the [[AudioManager]]
+- for the popup create a script [[SettingsPopupSound]]
+- In the inspector for the button, with On Click add a new entry and drag `Settings Popup` to the object slot then look at [[SettingsPopupSound]] in the menu and select `OnSoundToggle()`, do the same for the slider with OnValueChanged
+	- choose a function under Dynamic Float and not Static Parameter
+- Create a script so the popup only appears when you press the M key, create the script [[UIControllerMusic]]
+### Playing UI sounds
+- make addition to [[AudioManager]]
+	- UI sound effects aren't part of the scene, so you need to set up a special `AudioSource` for [[AudioManager]] when there isn't any other audio source
+	- Create a new empty GameObject and attach it as a child to the main Game Managers object. This new object is going to have an AudioSource used by AudioManager so call the new object Audio
+	- add an AudioSource component to this object and then add code to the [[AudioManager]] before modifying [[SettingsPopupSound]]
+- drag the UI sound effect onto the variable slot
+## Adding background music
+- will be done by adding music to the [[AudioManager]]
+- Optimising when music loads is done using the `Resources.Load()`, this can be use to delay loading
+	- we want ot lazy-load the audio clips for music so it doesn't consume a lot of memory even when it isn't being used
+### Playing music loops
+1. Import audio clips

@@ -15,4 +15,8 @@
 ## Location button
 - Consider using the location button to give people a lightweight way to share their location for specific app features
 - Consider customising the location button to harmonise with your UI
-##
+## Protecting data
+- Avoid relying solely on passwords for authentication, where possible use passkeys to replace passwords. If they continue using passwords augment security by requiring two-factor authentication
+- Store sensitive information in a keychain
+- Never store passwords or other secure content in plain-text files
+- Avoid inventing custom authentication schemes
