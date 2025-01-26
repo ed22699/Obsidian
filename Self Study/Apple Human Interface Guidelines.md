@@ -11,3 +11,5 @@
 - [[Icons]]
 - [[Inclusion]]
 - [[Layout]]
+- [[Motion]]
+- [[Privacy]]
