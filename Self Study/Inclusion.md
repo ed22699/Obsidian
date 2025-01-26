@@ -18,4 +18,7 @@
 - don't assume a disability might prevent someone from wanting to enjoy the experience your software provides
 - avoid images and language that exclude people with disabilities
 - Take a people first approach when writing about people with disabilities
-## 
+## Languages
+- prepare your software to handle languages and regions other than your won (internationalisation). Provide translated text and resources for specific locales
+	- using SF Symbols and plain language avoiding the above lends itself well to be translated across many cultures
+- beware of colours culture-specific meanings
