@@ -19,9 +19,36 @@ public class SettingsPopup: MonoBehaviour {
 		Managers.Audio.PlaySound(sound);
 	}
 
+	// Button will toggle mute property of AudioManager
+	public void OnMusicToggle(){
+		Managers.Audio.musicMute = !Manager.Audio.musicMute;
+		Managers.Audio.PlaySound(sound);
+	}
+
 	// Slider will adjust the volume property of AudioManager
 	public void OnSoundValue(float volume){
 		Mangers.Audio.soundVolume = volume;
+	}
+
+	// Slider will adjust the volume property of AudioManager
+	public void OnMusicValue(float volume){
+		Mangers.Audio.musicVolume = volume;
+	}
+
+	public void OnPlayMusic(int selector){
+		Managers.Audio.PlaySound(sound);
+
+		switch (selector) {
+			case 1:
+				Managers.Audio.PlayIntroMusic();
+				break;
+			case 2:
+				Managers.Audio.PlayLevelMusic();
+				break;
+			default:
+				Managers.Audio.StopMusic();
+				break;
+		}
 	}
 }
 ```

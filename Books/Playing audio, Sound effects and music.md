@@ -73,3 +73,10 @@ tags:
 	- You may wan to reduce the Priority value (this tells Unity which sounds are important, lower values have higher priority. When too many sounds are playing the audio system will discard sounds, this higher priority means the music will keep playing when too many sound effects trigger at the same time)
 3. Writing code to play the audio clips in AudioManager
 	- set up [[AudioManager]]
+4. Add music controls to the UI
+	- Update [[SettingsPopupSound]]
+## Controlling music volume separately
+- tell the music AudioSource to ignore the settings on AudioListener. We want volume and mute on the global AudioListener to continue to affect all sound effects, but we don't want this volume to apply to music
+	- make the changes for this to [[AudioManager]]
+- add another control for music volume by adjusting [[SettingsPopupSound]]
+### Fading between songs
