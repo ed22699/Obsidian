@@ -7,17 +7,20 @@ kanban-plugin: board
 ## Backlog
 
 - [ ] Create notes for [[The Cold Outbound Playbook]] #Habit
+- [ ] Create notes for [[I am not a failure. Lessons I've learned from six failed startup attempts]] #Habit
 
 
 ## To Do
 
 - [ ] Complete Wireframes #Habit @{2025-01-26}
+- [ ] Data Science Prereqs #Uni @{2025-01-29}
 
 
 ## In Progress
 
 - [ ] Read Unity Book #Habit
 	@{2025-01-02}
+- [ ] Data Science Notes #Uni @{2025-01-28}
 
 
 ## Complete
