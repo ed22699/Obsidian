@@ -61,6 +61,15 @@ tags:
 ## Adding background music
 - will be done by adding music to the [[AudioManager]]
 - Optimising when music loads is done using the `Resources.Load()`, this can be use to delay loading
-	- we want ot lazy-load the audio clips for music so it doesn't consume a lot of memory even when it isn't being used
+	- we want to lazy-load the audio clips for music so it doesn't consume a lot of memory even when it isn't being used
 ### Playing music loops
 1. Import audio clips
+	- drag files into Unity to import them. Audio format should be Vorbis. Set quality to 50% in the slider that appears
+	- Adjust Load Type and choose streaming, turn on Load in Background so that the game won't pause or slow down while music is loading
+	- Remember that the `Resources.Load()` requires the assets to be in the Resources folder. Create a folder in Resources called Music
+2. Set up an AudioSource for [[AudioManager]] to use
+	- create another empty GameObject and name it Music 1 and attach it as a child of the Audio object
+	- add an AudioSource component to Music 1. Deselect Play on Awake but turn on the Loop option this time. Leave the Spatial Blend setting at 2D as music doesn't have any specific position in the scene
+	- You may wan to reduce the Priority value (this tells Unity which sounds are important, lower values have higher priority. When too many sounds are playing the audio system will discard sounds, this higher priority means the music will keep playing when too many sound effects trigger at the same time)
+3. Writing code to play the audio clips in AudioManager
+	- set up [[AudioManager]]
