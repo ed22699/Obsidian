@@ -2,3 +2,12 @@
 tags:
   - data_management
 ---
+- distributed multi-level sorted map involving several levels of keys
+	- first-level keys (*row keys*) identify rows, consisting of key-value pairs
+	- second-level keys are called *column keys*, organised in *column families*
+- efficient space utilisation
+	- no keys without value, nulls take 0 space
+- stored in lexicographic order by key
+	- enables high compression rate
+	- efficient query of row subsets
+- cells can be versioned

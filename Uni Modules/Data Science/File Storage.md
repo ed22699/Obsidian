@@ -2,3 +2,10 @@
 tags:
   - data_management
 ---
+- Behave like a file system
+- also referred to as Network Attached Storage (NAS)
+- Transfer files via Server Message Block (SMB) protocol or similar
+	- e.g. up to 5TB each on Azure
+	- throughput max 60MB/s
+- concurrency, latency, file locking mechanisms, and other capabilities vary widely between protocols, implementations, vendors, and scales
+- also backed by blobs
