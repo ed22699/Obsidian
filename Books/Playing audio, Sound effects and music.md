@@ -80,3 +80,4 @@ tags:
 	- make the changes for this to [[AudioManager]]
 - add another control for music volume by adjusting [[SettingsPopupSound]]
 ### Fading between songs
+- make changes to [[AudioManager]]

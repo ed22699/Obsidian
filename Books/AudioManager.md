@@ -10,13 +10,20 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class AudioManager: MonoBehaviour, IGameManager{
-	[SerializeField] AudioSource musicSource;
+	[SerializeField] AudioSource music1Source;
+	[SerializeField] AudioSource music2Source;
 	[SerializeField] AudioSource soundSource;
 
 	[SerializeField] string introBGMusic;
 	[SerializeField] string levelBGMusic;
 	
-	public ManagerStatus status {get; privaet set;}
+	public ManagerStatus status {get; private set;}
+
+	private AudioSource activeMusic;
+	private AudioSource inactiveMusic;
+
+	public flot crossFadeRate = 1.5f;
+	private bool crossFading;
 
 
 	public float soundVolume{
@@ -37,8 +44,9 @@ public class AudioManager: MonoBehaviour, IGameManager{
 			_musicVolume = value;
 
 			// Adjust volume of the AudioSource directly
-			if (music1Source != null){
+			if (music1Source != null && !crossFading){
 				music1Source.volume = _musicVolume;
+				music2Source.volume = _musicVolume;
 			}
 		}
 	}
@@ -52,7 +60,8 @@ public class AudioManager: MonoBehaviour, IGameManager{
 		}
 		set {
 			if (music1Source != null){
-				musicSource.mute = value;
+				music1Source.mute = value;
+				music2Source.mute = value;
 			}
 		}
 	}
@@ -64,9 +73,14 @@ public class AudioManager: MonoBehaviour, IGameManager{
 
 		music1Source.ignoreListenerVolume = true;
 		music1Source.ignoreListenerPause = true;
+		music2Source.ignoreListenerVolume = true;
+		music2Source.ignoreListenerPause = true;
 		
 		soundVolume = 1f;
 		musicVolume = 1f;
+
+		activeMusic = music1Source;
+		inactiveMusic = music2Source;
 
 		status = ManagerStatus.Started;
 	}
@@ -88,12 +102,39 @@ public class AudioManager: MonoBehaviour, IGameManager{
 
 	// Play music by setting AudioSource.clip
 	public void PlayMusic(AudioClip clip){
-		music1Source.clip = clip;
-		music1Source.Play();
+		if (crossFading){ return; }
+		StartCoroutine(CrossFadeMusic(clip));
 	}
 
 	public void StopMusic(){
-		music1Source.Stop();
+		activeMusic.Stop();
+		inactiveMusic.Stop();
+	}
+
+	private IEnumerator CrossFadeMusic(AudioClip clip){
+		crossFading = true;
+
+		inactiveMusic.clip = clip;
+		inactiveMusic.volume = 0;
+		inactiveMusic.Play();
+
+		float scaledRate = crossFadeRate * musicVolume;
+		while (activeMusic.volume > 0){
+			activeMusic.volume -= scaledRate * Time.deltaTime;
+			inactiveMusic.volume += scaledRate * Time.deltaTime;
+
+			yield return null;
+		}
+
+		AudioSource temp = activeMusic;
+
+		activeMusic = inactiveMusic;
+		activeMusic.volume = musicVolume;
+
+		inactiveMusic = temp;
+		activeMusic.Stop();
+
+		crossFading = false;
 	}
 }
 ```
