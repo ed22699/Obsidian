@@ -70,3 +70,9 @@ Database technologies sit on top storage
 ### The CAP Theorem
 - distributed system cannot provide all three, always a trade off between these three properties
 ![[Screenshot 2025-01-28 at 12.12.34.png|400]]
+![[Screenshot 2025-01-28 at 12.13.12.png|600]]
+## Types of consistency
+- *strong consistency*: after an update completes, any subsequent access will return the same updated value
+- *weak consistency*: subsequent accesses are not guaranteed to return the updated value
+- *eventual consistency*: eventually all subsequent accesses will return the updated value (e.g. updates eventually propagate to replicas in a lazy but ordered fashion)
+![[Screenshot 2025-01-28 at 12.16.11.png|600]]
