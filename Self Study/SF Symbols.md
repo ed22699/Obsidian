@@ -5,3 +5,37 @@
 	- Multicolour - applies intrinsic colours to some symbols to enhance meaning
 - Confirm that a symbol's rendering mode works well in every context
 ## Variable colour
+- use variable colour to communicate change - don't use it to communicate depth (to convey depth and visual hierarchy use Hierarchical rendering mode to elevate certain layers )
+## Animations
+- SF symbols 5 and later support the following animations:
+	- *appear*: causes a symbol to gradually emerge into view
+	- *disappear*: causes a symbol to gradually recede out of view
+	- *bounce*: briefly scales a symbol with an elastic-like movement that goes either up or down and then returns to the symbol's initial state
+		- can help communicate that an action occurred or needs to take place
+	- *scale*: changes the size of a symbol, increasing or decreasing its scale.Unlike bounce, scale persists until set a new scale or remove effect.
+		- use to draw people's attention to selected item or as feedback when people choose a symbol
+	- *pulse*: varies the opacity of a symbol with time
+		- use to communicate ongoing activity
+	- *Variable colour*: incrementally varies the opacity of layers within a symbol. Can be cumulative or iterative
+		- use to communicate progress
+	- *replace*: replaces one symbol with another
+		- down-up: outgoing symbol scales down and the incoming symbol scales up (communicating change in state)
+		- up-up: both outgoing and incoming symbols scale up (communicates change in state that includes a sense of forward progression)
+		- off-up: outgoing symbol hides immediately and incoming symbol scales up (communicates a state change that emphasises the next available state or action)
+	- *magic replace*: smart transition between two symbols with related shapes. Is default replace animation
+- SF symbols 6 and later support:
+	- *Wiggle*: moves symbol back and forth along a directional axis
+	- *breathe*: smoothly increases and decreases the presence of a symbol
+	- *rotate*: rotates the symbol to act as a visual indicator or imitate an object's behaviour in real world
+- apply symbol animations judiciously. Too many can overwhelm an interface
+- make sure that animations serve a clear purpose in communicating a symbol's intent
+- use symbol animations to communicate information more efficiently
+- consider your app's tone when adding animations
+## Custom symbols
+- use the template as a guide: simple, recognisable, inclusive, directly related to the action or content it represents
+- assign negative side margins to your custom symbol if necessary
+- optimise layers to use animations with custom symbols
+- test animations for custom symbols
+- avoid making custom symbols that include common variants, such as enclosures or badges
+- provide alternative text labels for custom symbols
+- don't design replicas of apple products

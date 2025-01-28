@@ -15,3 +15,5 @@
 - [[Privacy]]
 - [[Right to left]]
 - [[SF Symbols]]
+- [[Typography]]
+- [[Writing]]

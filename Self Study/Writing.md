@@ -1,0 +1,17 @@
+- determine your app's voice
+- match your tone to the context
+- be clear
+- write for everyone
+## Best practices
+- consider each screen's purpose
+- be action oriented
+- build language patterns
+	- title or sentence case
+	- first or second person
+	- continue or next
+- write for how people use each device
+- provide clear next steps on any blank screens (on empty to do list use the opportunity to make people feel welcome and educate them about your apps)
+- write clear error messages
+- choose the right delivery method
+- keep settings labels clear and simple
+- show hints in text fields
