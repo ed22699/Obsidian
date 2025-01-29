@@ -13,7 +13,6 @@ kanban-plugin: board
 ## To Do
 
 - [ ] Complete Wireframes #Habit @{2025-01-26}
-- [ ] Data Science Prereqs #Uni @{2025-01-29}
 - [ ] Code with charlie #Uni @{2025-01-29}
 - [ ] Write Recipe notes #Personal @{2025-01-29}
 
@@ -22,6 +21,7 @@ kanban-plugin: board
 
 - [ ] Read Unity Book #Habit
 	@{2025-01-02}
+- [ ] Data Science Prereqs #Uni @{2025-01-29}
 
 
 ## Complete
