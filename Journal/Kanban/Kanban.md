@@ -13,7 +13,6 @@ kanban-plugin: board
 ## To Do
 
 - [ ] Complete Wireframes #Habit @{2025-01-26}
-- [ ] Code with charlie #Uni @{2025-01-29}
 - [ ] Write Recipe notes #Personal @{2025-01-29}
 
 
@@ -27,6 +26,7 @@ kanban-plugin: board
 
 **Complete**
 - [x] Check Finances #Personal @{2025-01-06}
+- [x] Code with charlie #Uni @{2025-01-29}
 - [x] Complete SRS document #Habit @{2025-01-10}
 - [x] Data Science Prereqs #Uni @{2025-01-29}
 - [x] Data Science Notes #Uni @{2025-01-28}
