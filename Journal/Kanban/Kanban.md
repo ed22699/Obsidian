@@ -21,7 +21,6 @@ kanban-plugin: board
 
 - [ ] Read Unity Book #Habit
 	@{2025-01-02}
-- [ ] Data Science Prereqs #Uni @{2025-01-29}
 
 
 ## Complete
@@ -29,6 +28,7 @@ kanban-plugin: board
 **Complete**
 - [x] Check Finances #Personal @{2025-01-06}
 - [x] Complete SRS document #Habit @{2025-01-10}
+- [x] Data Science Prereqs #Uni @{2025-01-29}
 - [x] Data Science Notes #Uni @{2025-01-28}
 - [x] Data Science Prereqs 2 #Uni @{2025-01-22}
 - [x] Do prereqs for the lab #Uni @{2025-01-15}
