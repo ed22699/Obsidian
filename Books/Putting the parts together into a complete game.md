@@ -20,3 +20,6 @@ tags:
 #### Operating devices by using the mouse
 - create a base script that all devices inherit [[BaseDevice]]
 - now alter [[ColorChangeDevice]] to inherit from script [[ColorChangeDevice (final)]]. As this inherits from [[BaseDevice]] it gets the mouse control functionality
+- change [[PointClickMovement]] so it will not move for device interactions
+	- create a new layer, select edit layers in the menu and type Ground in an empty layer slot. Make everything the player can walk on a ground layer
+### Replacing the old GUI with a new interface

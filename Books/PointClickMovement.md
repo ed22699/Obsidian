@@ -51,9 +51,12 @@ public class PointClickMoevement : MonoBehaviour
 			Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
 			RaycastHit mouseHit;
 			if (Physics.Raycast(ray, out mouseHit())){
-				// Set target to te position that was hit
-				targetPos = mouseHit.point;
-				curSpeed = moveSpeed;
+				GameObject hitObject = mouseHit.transform.gameObject;
+				if (hitObject.layer == LayerMask.NameToLayer("Ground")){
+					// Set target to te position that was hit
+					targetPos = mouseHit.point;
+					curSpeed = moveSpeed;
+				}
 			}
 		}
 
