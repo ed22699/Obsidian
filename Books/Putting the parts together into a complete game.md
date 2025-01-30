@@ -16,3 +16,7 @@ tags:
 #### Writing the movement code
 - player movement is being controlled indirectly by clicking
 	- this movement is useful for AI characters as well. Rather than using mouse clicks, the target position could be on a path that the character follows
+- create a new script called [[PointClickMovement]] and replace the [[RelativeMovement]] component on the player
+#### Operating devices by using the mouse
+- create a base script that all devices inherit [[BaseDevice]]
+- now alter [[ColorChangeDevice]] to inherit from script [[ColorChangeDevice (final)]]. As this inherits from [[BaseDevice]] it gets the mouse control functionality
