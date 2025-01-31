@@ -26,3 +26,8 @@ tags:
 - Create a HUD via the canvas method
 - use the same [[Messenger]] system as before and create a [[GameEvent (final)]]
 - broadcast this to [[PlayerManager (final)]]
+- to adjust the health label create [[UIController (final)]]
+	- attach this to the Canvas and create an [[InventoryPopup]] script and attach to the Inventory Popup object
+- adjust the [[PointClickMovement]] so clicking popup doesn't cause player to move
+#### Implementing the inventory popup
+- create the popup interface and write the code for [[InventoryPopup]]

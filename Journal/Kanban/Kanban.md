@@ -12,7 +12,6 @@ kanban-plugin: board
 
 ## To Do
 
-- [ ] Complete Wireframes #Habit @{2025-01-26}
 - [ ] Write Recipe notes #Personal @{2025-01-29}
 
 
@@ -20,6 +19,7 @@ kanban-plugin: board
 
 - [ ] Read Unity Book #Habit
 	@{2025-01-02}
+- [ ] Complete Wireframes #Habit @{2025-01-26}
 
 
 ## Complete

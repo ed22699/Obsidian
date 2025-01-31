@@ -46,7 +46,7 @@ public class PointClickMoevement : MonoBehaviour
         // Start with vector (0,0,0) and add movement components progressively 
         Vector3 movement = Vector3.zero;
 		// Set the target position when the mouse clicks
-		if (Input.GetMouseButton(0)){
+		if (Input.GetMouseButton(0) && !EventSystem.current.IsPointerOverGameObject()){
 			// Raycast at the mouse position
 			Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
 			RaycastHit mouseHit;
