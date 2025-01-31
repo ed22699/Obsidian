@@ -23,3 +23,6 @@ tags:
 - change [[PointClickMovement]] so it will not move for device interactions
 	- create a new layer, select edit layers in the menu and type Ground in an empty layer slot. Make everything the player can walk on a ground layer
 ### Replacing the old GUI with a new interface
+- Create a HUD via the canvas method
+- use the same [[Messenger]] system as before and create a [[GameEvent (final)]]
+- broadcast this to [[PlayerManager (final)]]
