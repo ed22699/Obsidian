@@ -38,3 +38,11 @@ tags:
 ### Controlling mission flow and multiple levels
 - you want a single set of game managers shared by all scenes. To do this you create a separate Startup scene that initialises the managers and then shares that object with the other scenes of the game
 - create a new managers for progress management called [[MissionManager]]
+	- `LoadScene()` is useful for this
+- add to the [[Managers (final)]] script
+	- the `DontDestroyOnLoad()` ensures the object will still be there in the new scene
+#### Separate scenes for startup and level
+- because the game managers object will persist in all scenes, you must separate the mangers for individual levels of the game. In project view duplicate the scene and rename appropriately startup and level 1
+	- delete level 1 game managers object and in startup delete everything other than game managers, controller, main camera, HUD Canvas and EventSystem. Adjust the camera by removing the [[OrbitCamera (final)]] component. Remove the script components on controller and delete the UI objects parented to the canvas
+	- the controller object no longer has any script components so create a new [[StartupController]] script and attach
+- add the two scenes to Build Settings. Choose $File \Rightarrow Build \; Settings$ and add open scenes to add both the scenes 
