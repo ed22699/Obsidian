@@ -31,3 +31,10 @@ tags:
 - adjust the [[PointClickMovement]] so clicking popup doesn't cause player to move
 #### Implementing the inventory popup
 - create the popup interface and write the code for [[InventoryPopup]]
+	- remember to add the EventTrigger to all the images added in the item icons, don't assign event listeners as this is done in the [[InventoryPopup]] code
+## Developing the overarching game structure
+- making multiple levels will involve decoupling teh scene further from the [[Managers (final)]] back end
+- create a new script called [[StartupEvent]]
+### Controlling mission flow and multiple levels
+- you want a single set of game managers shared by all scenes. To do this you create a separate Startup scene that initialises the managers and then shares that object with the other scenes of the game
+- create a new managers for progress management called [[MissionManager]]
