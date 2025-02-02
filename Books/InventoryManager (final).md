@@ -22,11 +22,19 @@ public class InventoryManager : MonoBehaviour, IGameManager
     {
         // Any long-running startup tasks go here
         Debug.Log("Inventory manager starting...");
-		items = new Dictionary<string, int>();
+		UpdateData(new Dictionary<string, int>());
 		network = service;
         // For long running tasks use stats initializing instead
         status = ManagerStatus.Started;
     }
+
+	public void UpdateData(Dictionary<string, int> items){
+		this.items = items;
+	}
+
+	public Dictionary<string, int> GetData(){
+		return items;
+	}
 	
 	private void DisplayItems()
 	{

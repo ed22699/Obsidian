@@ -46,3 +46,17 @@ tags:
 	- delete level 1 game managers object and in startup delete everything other than game managers, controller, main camera, HUD Canvas and EventSystem. Adjust the camera by removing the [[OrbitCamera (final)]] component. Remove the script components on controller and delete the UI objects parented to the canvas
 	- the controller object no longer has any script components so create a new [[StartupController]] script and attach
 - add the two scenes to Build Settings. Choose $File \Rightarrow Build \; Settings$ and add open scenes to add both the scenes 
+### Completing a level by reaching the exit
+- to handle completion put an object in the scene for the player to touch, this will inform [[MissionManager]]. This involves the UI responding ot a message about level completion so you will need to add another entry to [[GameEvent (final)]]
+- you will need to adjust [[UIController (final)]] to respond to [[GameEvent (final)]]
+- for the completion object create a cube, select is trigger, turn off both cast and receive shadows in mesh renderer and set the object to ignore raycast layer.
+	- Create a new material called objective and create the [[ObjectiveTrigger]] script
+### Losing the level when caught by enemies
+- add another entry in [[GameEvent (final)]]
+- adjust [[PlayerManager (final)]] to broadcast the message when player's health drops to 0
+- add a method to [[MissionManager]] to restart the level
+- add another event to the [[UIController (final)]]
+## Handling the player's progression through the game
+### Saving and loading the player's progress
+- Unity and Mono provide I/O functionality that you can use for this purpose
+- first add `UpdateData()` to both [[MissionManager]] and [[InventoryManager (final)]]

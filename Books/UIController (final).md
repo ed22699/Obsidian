@@ -13,11 +13,14 @@ using TMPro;
 public class UIController : MonoBehaviour
 {
     [SerializeField] TMP_Text healthLabel;
+    [SerializeField] TMP_Text levelEnding;
     [SerializeField] InventoryPopup popup;
 
     void Start()
     {
 		OnHealthUpdated();
+
+		levelEnding.gameObject.SetActive(false);
 		popup.gameObject.SetActive(false);
     }
 
@@ -33,12 +36,16 @@ public class UIController : MonoBehaviour
     {
         // Declare which method reponds to the ENEMY_HIT event
         Messenger.AddListener(GameEvent.HEALTH_UPDATED, OnHealthUpdated);
+        Messenger.AddListener(GameEvent.LEVEL_COMPLETE, OnLevelComplete);
+        Messenger.AddListener(GameEvent.LEVEL_FAILED, OnLevelFailed);
     }
 
     void OnDisable()
     {
         // When an object is deactivated, remove the listener to avoid errors
         Messenger.RemoveListener(GameEvent.HEALTH_UPDATED, OnHealthUpdated);
+        Messenger.RemoveListener(GameEvent.LEVEL_COMPLETE, OnLevelComplete);
+        Messenger.RemoveListener(GameEvent.LEVEL_FAILED, OnLevelFailed);
     }
 
     // Method called by Settings button
@@ -47,5 +54,33 @@ public class UIController : MonoBehaviour
 		string message = $"Health: {Managers.Player.health}/{Managers.Player.maxHealth}";
 		healthLabel.text = message;
     }
+
+	private void OnLevelComplete(){
+		StartCoroutine(CompleteLevel());
+	}
+
+	private IEnumerator CompleteLevel(){
+		levelEnding.gameObject.SetActive(true);
+		levelEnding.text = "Level Complete";
+
+		// Show the message for two seconds then go to next level
+		yield return new WaitForSeconds(2);
+
+		Managers.Mission.GoToNext();
+	}
+
+	private void OnLevelFailed(){
+		StartCoroutine(FailLevel());
+	}
+
+	private IEnumerator FailLevel(){
+		levelEnding.gameObject.SetActive(true);
+		levelEnding.text = "Level Failed";
+
+		yield return new WaitForSeconds(2);
+
+		Managers.Player.Respawn();
+		Managers.Mission.RestartCurrent();
+	}
 }
 ```
