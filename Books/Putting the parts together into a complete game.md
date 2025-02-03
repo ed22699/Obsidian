@@ -60,3 +60,6 @@ tags:
 ### Saving and loading the player's progress
 - Unity and Mono provide I/O functionality that you can use for this purpose
 - first add `UpdateData()` to both [[MissionManager]] and [[InventoryManager (final)]]
+- saving the data will involve a procedure referred to as *serialising* the data
+- `PlayerPrefs` can be used to save only a handful of values but for the entire game create [[DataManager]] script
+- Add the [[DataManager]] to the [[Managers (final)]]

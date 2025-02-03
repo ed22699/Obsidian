@@ -13,6 +13,7 @@ using UnityEngine;
 [RequireComponent(typeof(InventoryManager))]
 [RequireComponent(typeof(AudioManager))]
 [RequireComponent(typeof(MissionManager))]
+[RequireComponent(typeof(DataManager))]
 public class Managers : MonoBehaviour
 {
     // Static properties that other code uses to access managers
@@ -20,6 +21,7 @@ public class Managers : MonoBehaviour
     public static InventoryManager Inventory { get; private set; }
     public static AudioManager Audio { get; private set; }
     public static MissionManager Mission { get; private set; }
+    public static DataManager  { get; private set; }
 
     // The list of managers to loop through during the startup sequence
     private List<IGameManager> startSequence;
