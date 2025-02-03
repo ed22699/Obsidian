@@ -39,6 +39,7 @@ public class MissionManager : MonoBehaviour, IGameManager{
 		}
 		else{
 			Debug.Log("Last level");
+			Messanger.Broadcast(GameEvent.GAME_COMPLETE);
 		}
 	}
 	public void ReachObjective(){

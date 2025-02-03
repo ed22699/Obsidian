@@ -63,3 +63,13 @@ tags:
 - saving the data will involve a procedure referred to as *serialising* the data
 - `PlayerPrefs` can be used to save only a handful of values but for the entire game create [[DataManager]] script
 - Add the [[DataManager]] to the [[Managers (final)]]
+- create save game and add game buttons in the level 1 HUD canvas and update [[UIController (final)]]
+	- link the functions to OnClick listeners in the buttons
+### Beating the game by completing three levels
+- add to [[GameEvent (final)]]
+- modify [[MissionManager]] to broadcast that message after the last level
+- respond to the message in [[UIController (final)]]
+#### Adding more levels
+- you must keep the player object the floor object set to the ground layer, and the objective object, controller, HUD canvas and EventSystem on all new levels
+- you ideally should move the HUD to a central place that is shared among levels. Use the Additive scene loading mode (p312)
+- you will also need to adjust the [[MissionManager]] to load new levels, changing the `maxLevel`

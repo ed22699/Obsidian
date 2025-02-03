@@ -21,7 +21,7 @@ public class Managers : MonoBehaviour
     public static InventoryManager Inventory { get; private set; }
     public static AudioManager Audio { get; private set; }
     public static MissionManager Mission { get; private set; }
-    public static DataManager  { get; private set; }
+    public static DataManager Data { get; private set; }
 
     // The list of managers to loop through during the startup sequence
     private List<IGameManager> startSequence;
@@ -34,12 +34,14 @@ public class Managers : MonoBehaviour
         Inventory = GetComponent<InventoryManager>();
         Audio = GetComponent<AudioManager>();
         Mission = GetComponent<MissionManager>();
+        Data = GetComponent<DataManager>();
 
         startSequence = new List<IGameManager>();
         startSequence.Add(Player);
         startSequence.Add(Inventory);
         startSequence.Add(Audio);
         startSequence.Add(Mission);
+        startSequence.Add(Data);
 
         // Launch startup sequence asynchronously
         StartCoroutine(StartupManagers());
