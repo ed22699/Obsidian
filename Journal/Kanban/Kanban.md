@@ -14,6 +14,7 @@ kanban-plugin: board
 
 - [ ] Write Recipe notes #Personal @{2025-01-29}
 - [ ] Make notes from lab 3 #Uni @{2025-02-03}
+- [ ] Buy pads #Personal @{2025-02-03}
 
 
 ## In Progress
