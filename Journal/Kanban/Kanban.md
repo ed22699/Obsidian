@@ -8,13 +8,13 @@ kanban-plugin: board
 
 - [ ] Create notes for [[The Cold Outbound Playbook]] #Habit
 - [ ] Create notes for [[I am not a failure. Lessons I've learned from six failed startup attempts]] #Habit
+- [ ] Update notes on salt #Habit
 
 
 ## To Do
 
-- [ ] Write Recipe notes #Personal @{2025-01-29}
 - [ ] Make notes from lab 3 #Uni @{2025-02-03}
-- [ ] Buy pads #Personal @{2025-02-03}
+- [ ] Do prereqs #Uni @{2025-02-05}
 
 
 ## In Progress
@@ -29,7 +29,9 @@ kanban-plugin: board
 **Complete**
 - [x] Check Finances #Personal @{2025-01-06}
 - [x] Code with charlie #Uni @{2025-01-29}
+- [x] Write Recipe notes #Personal @{2025-01-29}
 - [x] Complete SRS document #Habit @{2025-01-10}
+- [x] Buy pads #Personal @{2025-02-03}
 - [x] Data Science Prereqs #Uni @{2025-01-29}
 - [x] Data Science Notes #Uni @{2025-01-28}
 - [x] Data Science Prereqs 2 #Uni @{2025-01-22}

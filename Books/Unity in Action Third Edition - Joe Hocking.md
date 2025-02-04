@@ -38,3 +38,4 @@ key points:
 - [[Connecting your game to the internet]]
 - [[Playing audio, Sound effects and music]]
 - [[Putting the parts together into a complete game]]
+- [[Deploying your game to players' devices]]
