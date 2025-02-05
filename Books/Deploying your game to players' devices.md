@@ -32,3 +32,17 @@ tags:
 ### Adjusting player settings: Setting the game's name and Icon
 - Build Settings, click Player Settings 
 ### Platform-dependent compilation
+- unity provides compiler directives known as platform defines that can cause different code to run on different platforms, a link to all these are on p319
+- some code assemblies only exist on one platform, [[PlatformTest]] shows how to write this
+- you can change quality settings for different platforms
+## Building for the web
+### Building the game embedded in a web page
+- in build settings switch the platform to WebGL
+- you will need to run the game from a web server
+### Communicating with JavaScript in the browser
+- unity can communicate with the browser with messages going in both directions
+- to send messages to the browser, you write JavaScript code into a code library
+- for messages from the browser, JavaScript in the browser identifies an object by name, and then Unity passes the message to the named object in the scene
+- create  [[WebTestObject]] and an empty object in the scene called JSListener
+	- `DllImport` imports a function from the JavaScript library to use in C# code. Implies you have a JavaScript library
+	- create a special folder called `Plugins` and within that create a folder called `WebGL`, put a file called [[WebTest]] in there that has the extension jslib 
