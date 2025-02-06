@@ -47,3 +47,22 @@ tags:
 	- `DllImport` imports a function from the JavaScript library to use in C# code. Implies you have a JavaScript library
 	- create a special folder called `Plugins` and within that create a folder called `WebGL`, put a file called [[WebTest]] in there that has the extension jslib 
 - to send the other way Unity provides templates
+- create a folder called WebGLTemplates directly under assets, this is where custom templates go. Create a subfolder names WebTest and put [[index.html]] in here
+- once you make your custom template you need to tell unity to use this. Open the Player Settings and find WebGL Template in the web settings, change to WebTest
+## Building for mobile: iOS and Android
+### Setting up the build tools
+#### Setting up iOS build tools
+- this requires XCode
+#### Setting up Android build tools
+- unity can generate the final Android application (either an APK for android application package, or AAB for android app bundle), this requires pointing unity to the Android SDK, which includes the necessary compiler
+### Texture compression
+- image compression is trickier on android, as they are not all the same hardware
+### Developing plugins
+- the process of communicating with mobile plugins is similar to the process of communicating with the browser
+- create a folder called Plugins and a subfolder for both Android and iOS
+#### iOS Plugins
+- create a script in Unity to handle the native code, call this [[TestPlugin]]
+- create a script called [[MobileTestObject]], create an empty object in the scene and attach the script
+	- this initialises the plugin object then calls plugin methods in response to touch input
+- write the native code that [[TestPlugin]] references. For iOS with is in Objective C and or C (or swift) so you need both a .h file and a .mm file so create [[TestPlugin.h]] and [[TestPlugin.mm]]
+#### Android plugins

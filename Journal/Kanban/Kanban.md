@@ -14,7 +14,7 @@ kanban-plugin: board
 ## To Do
 
 - [ ] Make notes from lab 3 #Uni @{2025-02-03}
-- [ ] Do prereqs #Uni @{2025-02-05}
+- [ ] Make week 4 lecture notes #Uni @{2025-02-06}
 
 
 ## In Progress
@@ -22,6 +22,7 @@ kanban-plugin: board
 - [ ] Read Unity Book #Habit
 	@{2025-01-02}
 - [ ] Complete Wireframes #Habit @{2025-01-26}
+- [ ] Do prereqs #Uni @{2025-02-05}
 
 
 ## Complete
