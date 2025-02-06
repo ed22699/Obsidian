@@ -85,3 +85,4 @@ $$ Kurt[X] = \mathbb E [(\frac {X-\mu} \sigma)^4] = \frac {\mu _4}{\sigma ^ 4} =
 - sample excess kurtosis:
 $$g_2 = \frac {m_4}{s_4 ^2} - 3 = \frac{\frac 1 n \sum _{i=1}^n (x_i - \bar x)^4}{(\frac 1 {n-1}\sum _{i=1}^n (x_i - \bar x)^2)^{4/2}} - 3$$
 ![[Screenshot 2025-02-06 at 11.46.04.png|400]]
+![[Screenshot 2025-02-06 at 11.59.42.png|300]]
