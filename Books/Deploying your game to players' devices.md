@@ -46,3 +46,4 @@ tags:
 - create  [[WebTestObject]] and an empty object in the scene called JSListener
 	- `DllImport` imports a function from the JavaScript library to use in C# code. Implies you have a JavaScript library
 	- create a special folder called `Plugins` and within that create a folder called `WebGL`, put a file called [[WebTest]] in there that has the extension jslib 
+- to send the other way Unity provides templates
