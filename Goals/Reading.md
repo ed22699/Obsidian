@@ -6,6 +6,7 @@ R - Get better in computer science
 T - Read 3 books this year
 
 2024 Success - 6 books read
+2025 - 1 book read
 ## Read Books:
 
 ![[Books]]

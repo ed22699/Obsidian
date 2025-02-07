@@ -66,3 +66,16 @@ tags:
 	- this initialises the plugin object then calls plugin methods in response to touch input
 - write the native code that [[TestPlugin]] references. For iOS with is in Objective C and or C (or swift) so you need both a .h file and a .mm file so create [[TestPlugin.h]] and [[TestPlugin.mm]]
 #### Android plugins
+- almost exactly the same, no changes to [[MobileTestObject]] are required. Make additions to [[TestPlugin]]
+- the android plugins will only compile when unity is set to the android platform, in particular note the calls to AndroidJNI, this is the system within Unity for connecting to native android
+	- in android activity is an app process
+- the native Android code is required, you must be a JAR packaged 
+- write [[TestPlugin.java]] that compiles into a JAR
+## Developing XR (both VR and AR)
+- XR stands for extended reality (this encompasses both VR and AR)
+### Supporting virtual reality headsets
+- install XR package and enable it in Project Settings
+### AR foundation for mobile augmented reality
+- create a new Unity project, go to Package Manager and install AR foundation, along with either ARKit XR (iOs) or ARCore XR (android) depending on which mobile platform you are developing for
+- create a script called [[PlaneTrackingController]] and drag the script onto the Controllers object, drag AR Session Origin and AR Default Plane onto their component slots in the inspector
+- planar surfaces should now be detected in the environment along with raycasting to show a cube 

@@ -17,8 +17,7 @@ isbn13: 9781617299339
 isbn10: 1617299332
 tags:
   - Book
-  - favorite
-Status: Reading
+Status: Read
 ---
 [[Books]]
 key points:

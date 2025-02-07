@@ -19,8 +19,6 @@ kanban-plugin: board
 
 ## In Progress
 
-- [ ] Read Unity Book #Habit
-	@{2025-01-02}
 - [ ] Complete Wireframes #Habit @{2025-01-26}
 - [ ] Do prereqs #Uni @{2025-02-05}
 
@@ -28,6 +26,8 @@ kanban-plugin: board
 ## Complete
 
 **Complete**
+- [x] Read Unity Book #Habit
+	@{2025-01-02}
 - [x] Check Finances #Personal @{2025-01-06}
 - [x] Code with charlie #Uni @{2025-01-29}
 - [x] Write Recipe notes #Personal @{2025-01-29}
