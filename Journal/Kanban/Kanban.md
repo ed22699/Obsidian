@@ -19,13 +19,13 @@ kanban-plugin: board
 
 ## In Progress
 
-- [ ] Complete Wireframes #Habit @{2025-01-26}
 - [ ] Do prereqs #Uni @{2025-02-05}
 
 
 ## Complete
 
 **Complete**
+- [x] Complete Wireframes #Habit @{2025-01-26}
 - [x] Read Unity Book #Habit
 	@{2025-01-02}
 - [x] Check Finances #Personal @{2025-01-06}
