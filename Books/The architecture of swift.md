@@ -18,3 +18,7 @@ tags:
 	- *var* can have its initial value replaced as long as it remains the same type
 ## Object types
 - in swift structs and enums are an object type
+- all object types can be instantiated
+### Class
+### Struct
+### Enum
