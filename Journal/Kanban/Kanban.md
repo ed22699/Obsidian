@@ -15,17 +15,18 @@ kanban-plugin: board
 
 - [ ] Make notes from lab 3 #Uni @{2025-02-03}
 - [ ] Make week 4 lecture notes #Uni @{2025-02-06}
+- [ ] Make notes from lab 4 #Uni @{2025-02-09}
 
 
 ## In Progress
 
-- [ ] Do prereqs #Uni @{2025-02-05}
 
 
 ## Complete
 
 **Complete**
 - [x] Complete Wireframes #Habit @{2025-01-26}
+- [x] Do prereqs #Uni @{2025-02-05}
 - [x] Read Unity Book #Habit
 	@{2025-01-02}
 - [x] Check Finances #Personal @{2025-01-06}
