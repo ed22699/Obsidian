@@ -22,3 +22,4 @@ Status: Reading
 [[Books]]
 key points:
 - [[The architecture of swift]]
+- [[Functions]]
