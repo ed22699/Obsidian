@@ -30,3 +30,24 @@ func say() -> Int {
 let result: String = say()
 ```
 - overloading the type must be explicit or implied within the context
+p33
+### Default parameter values
+```swift
+class Dog{
+	func say(_ s:String, times:Int = 1){
+		for _ in 1...times{
+			print(s)
+		}
+	}
+}
+```
+### Variadic Parameters
+- caller can supply as many argument values to this parameters type as desired, separated by a comma; the function body will receive these values as an array
+```swift
+func sayStrings(_ array:String ...){
+	for s in array { print(s)}
+}
+
+// calling
+sayStrings("hey", "ho", "hi")
+```
