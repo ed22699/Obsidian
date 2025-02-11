@@ -16,10 +16,12 @@ kanban-plugin: board
 - [ ] Make notes from lab 3 #Uni @{2025-02-03}
 - [ ] Make week 4 lecture notes #Uni @{2025-02-06}
 - [ ] Make notes from lab 4 #Uni @{2025-02-09}
+- [ ] make week 5 lecture notes @{2025-02-11} #Uni
 
 
 ## In Progress
 
+- [ ] Week 5 prereqs @{2025-02-11} #Uni
 
 
 ## Complete
