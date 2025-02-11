@@ -21,13 +21,13 @@ kanban-plugin: board
 
 ## In Progress
 
-- [ ] Week 5 prereqs @{2025-02-11} #Uni
 
 
 ## Complete
 
 **Complete**
 - [x] Complete Wireframes #Habit @{2025-01-26}
+- [x] Week 5 prereqs @{2025-02-11} #Uni
 - [x] Do prereqs #Uni @{2025-02-05}
 - [x] Read Unity Book #Habit
 	@{2025-01-02}
