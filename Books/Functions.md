@@ -30,7 +30,6 @@ func say() -> Int {
 let result: String = say()
 ```
 - overloading the type must be explicit or implied within the context
-p33
 ### Default parameter values
 ```swift
 class Dog{
@@ -50,4 +49,25 @@ func sayStrings(_ array:String ...){
 
 // calling
 sayStrings("hey", "ho", "hi")
+```
+- this can be done with a second variadic parameter but you still need an external label on the second one
+### Modifiable parameters
+- parameters themselves cannot be reassigned within the function will need to create a local variable for this within the function
+- if we want a function to alter the original value of an argument we must:
+	- the type of the parameter we intent to modify must be declared `inout`
+	- when we call the function, the variable holding the value to be modified must be declared with `var` not `let`
+	- instead of passing the variable as an argument, we must pass its address. This is done by preceding its name with an ampersand (&)
+```swift
+func removeCharacter(_ c: Character, from s: inout String) -> Int{
+	var howMany = 0
+	while let ix = s.firstIndex(of:c){
+		s.remove(at:ix)
+		howMany += 1
+	}
+	return howMany
+}
+
+// calling
+var s = "hello"
+let result = removeCharacter("l", from:&s)
 ```
