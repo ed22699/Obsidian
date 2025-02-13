@@ -83,3 +83,43 @@ func doThis(_ f:90 -> ()){
 }
 ```
 ### Anonymous Functions
+- a nameless function body. For this you need two things:
+	- create the function body itself, including the surrounding curly braces, but with no function declaration
+	- if necessary, express the function's parameter list and return type as the first thing inside the curly braces, followed by the keyword `in`
+```swift
+UIView.animate(withDuration:0.4,
+	animations: {
+		() -> () in
+		self.myButton.frame.origin.y += 20
+	}, 
+	completion: {
+	(finished:Bool) -> () in
+	print("finished: \(finished)")
+	}
+)
+```
+#### Abbreviated syntax
+- *omission of the return type*: if the return type is already known to the compiler, you can omit the arrow operator and the specification of the return type
+- *omission of the in expression when there are no parameters*: if the anonymous function takes no parameters, and if the return type can be omitted, the in expression itself can be omitted
+- *omission of the parameter types*: if the anonymous function takes parameters and their types are already known to the compiler, the types can be omitted
+- *omission of the parentheses*: if the parameter types are omitted, the parentheses around the parameter list can be omitted
+- *omission of the in expression even when there are parameters*: if the return type can be omitted, and if the parameter types are already known to the compiler, you can omit the in expression and refer to the parameters directly within the body of the anonymous function by using the magic names $0, $1 and so on
+- *omission of the parameter names*: if the anonymous function body doesn't need to refer to a parameter, you can substitute an underscore for its name in the parameter list in the in expression
+- *omission of the function argument label*: if your anonymous function is the last argument being passed in this function call - which will just about always be the case - you can close the function call with a right parenthesis before this last argument, and then put just the anonymous function body without a label. This is called trailing closure syntax
+	- if you have multiple anonymous functions the first one does not take a label and the rest do
+- *omission of the calling function parentheses*: if you use a trailing closure, and if the function you are calling takes no parameters other than the function you are passing to it, you can omit the empty parentheses from the call. This is the only situation in which you can omit the parentheses from a function call
+- *omission of the keyword return*: if the anonymous function body consists of exactly one statement consisting of returning a value with the keyword return, the keyword return can be omitted 
+### Define-and-call
+- defining an anonymous function and calling it all in one move
+	- curly braces define an anonymous function body and the parentheses call that anonymous function. 
+```swift
+content.addAttribute(
+	.paragraphStyle,
+	value: {
+		let para = NSMutableParagraphStyle()
+		para.headIndent = 10
+		para.firstLineHeadIndent = 10
+		return para
+	}(),
+	range: NSRange(location:0, length:1))
+```
