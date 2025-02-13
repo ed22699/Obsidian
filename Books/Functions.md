@@ -71,3 +71,15 @@ func removeCharacter(_ c: Character, from s: inout String) -> Int{
 var s = "hello"
 let result = removeCharacter("l", from:&s)
 ```
+### Reference Type Modifiable parameters
+- one common situation where your function can modify a parameter without declaring it as inout, is when it is an instance of a class. Classes are mutable
+	- classes are reference types
+	- other object types are value types
+### Function as value
+- functions can be passed as values
+```swift
+func doThis(_ f:90 -> ()){
+	f()
+}
+```
+### Anonymous Functions
