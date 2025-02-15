@@ -139,3 +139,26 @@ func makeRoundedRectangleMaker(_ sz:CGSize) -> () -> UIImage {
 	return f
 }
 ```
+- knowledge of the size has been baked into the makers
+```swift
+func makeRoundedRectangleMaker(_ sz:CGSize) -> () -> UIImage {
+	return {
+		return imageOfSize(sz){
+			let p = UIBezierPath(
+				roundedRect: CGRect(origin:CGPoint.zero, size:sz),
+				cornerRadius: 8 )
+			p.stroke()
+		}
+	}
+}
+```
+- if a function passed around as a value will be preserved for later execution, rather than being called directly, it is a closure that captures and preserves its environment over time. This is an escaping closure and is marked with `@escaping`
+```swift
+func funcPasser(f:@escaping () -> ()) -> () -> () {
+	return f
+}
+```
+### Capture Lists
+- you might want a function to refer to a variable outside itself, just in order to get its value, but without capturing the variable. In swift this can only be done with anonymous functions
+	- at the start you put square brackets containing a comma-separated list of references to variables in the surrounding environment, this is called a capture list
+- capture lists must be followed with keyword `in`
