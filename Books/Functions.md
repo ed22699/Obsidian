@@ -123,3 +123,19 @@ content.addAttribute(
 	}(),
 	range: NSRange(location:0, length:1))
 ```
+### Closures
+- swift functions are closures - they can capture references to external variables in scope within the body of the function
+```swift
+func makeRoundedRectangleMaker(_ sz:CGSize) -> () -> UIImage {
+	func f () -> UIImage {
+		let im = imageOfSize(sz){
+			let p = UIBezierPath(
+				roundedRect: CGRect(origin:CGPoint.zero, size:sz),
+				cornerRadius: 8 )
+			p.stroke()
+		}
+		return im
+	}
+	return f
+}
+```
