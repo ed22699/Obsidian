@@ -162,3 +162,17 @@ func funcPasser(f:@escaping () -> ()) -> () -> () {
 - you might want a function to refer to a variable outside itself, just in order to get its value, but without capturing the variable. In swift this can only be done with anonymous functions
 	- at the start you put square brackets containing a comma-separated list of references to variables in the surrounding environment, this is called a capture list
 - capture lists must be followed with keyword `in`
+```swift
+self.undoer.registerUndo(withTarget: self){
+	[oldCenter = self.center] myself in 
+	myself.setCenterUndoably(oldCenter)
+}
+```
+### Curried Functions
+- when a function returns a function that takes a parameter it is called a curried function
+### Function References and Selectors
+- a way of referring to a function more precisely when there are multiple functions of the same name
+- *full name*: base name along with parentheses containing the external names of its parameters
+- *Signature*: the signature of a swift function may be appended to its bare name with the keyword `as`
+	- `let barkFunction = bark as () -> ()`
+### Function Reference Scope
