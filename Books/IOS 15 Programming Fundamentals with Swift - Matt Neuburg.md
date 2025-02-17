@@ -23,3 +23,4 @@ Status: Reading
 key points:
 - [[The architecture of swift]]
 - [[Functions]]
+- [[Variables and Simple Types]]

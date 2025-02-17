@@ -175,4 +175,3 @@ self.undoer.registerUndo(withTarget: self){
 - *full name*: base name along with parentheses containing the external names of its parameters
 - *Signature*: the signature of a swift function may be appended to its bare name with the keyword `as`
 	- `let barkFunction = bark as () -> ()`
-### Function Reference Scope
