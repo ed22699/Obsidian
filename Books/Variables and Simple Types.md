@@ -54,3 +54,21 @@ var now : String {
 	- facade for a elaborate calculation
 	- facade for storage
 ## Property Wrappers
+- if you have several computed properties that do the same thing you can use a property wrapper
+```swift
+@propertyWrapper struct Clamped {
+	private var _i : Int = 0
+	var wrappedValue : Int {
+		get {
+			self._i
+		}
+		set {
+			self._i = Swift.max(Swift.min(newValue,5),0)
+		}
+	}
+}
+
+@Clamped var p
+```
+## Built-In Simple Types
+- `Bool`
