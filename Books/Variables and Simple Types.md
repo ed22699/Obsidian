@@ -73,3 +73,5 @@ var now : String {
 ## Built-In Simple Types
 - if you know the hex code for the unicode character you can write it as `let left TripleArrow = "\u{21DA}"`
 - can input stuff into a string like so `let s = "You have \(n) widgets."`
+- `...` is a closed range operator, `a...b` means everything from a up to and including b
+- `..<` means everything from a up to but not including b
