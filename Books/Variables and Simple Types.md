@@ -86,5 +86,7 @@ var s2 = "World"
 - can refer to the first item in a tuple like so `let ix = pair.0`
 - you can also access them with labels
 ```swift
-let pair = (first: 1, second: "T)
+let pair = (first: 1, second: "Two")
+let x = pair.first
 ```
+### Optional
