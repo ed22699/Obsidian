@@ -75,3 +75,16 @@ var now : String {
 - can input stuff into a string like so `let s = "You have \(n) widgets."`
 - `...` is a closed range operator, `a...b` means everything from a up to and including b
 - `..<` means everything from a up to but not including b
+### Tuple
+`var pair : (Int, String) = (1, "Two")`
+- can assign a pair to one another through tuple swaps
+```swift
+var s1 = "hello"
+var s2 = "World"
+(s1, s2) = (s2, s1)
+```
+- can refer to the first item in a tuple like so `let ix = pair.0`
+- you can also access them with labels
+```swift
+let pair = (first: 1, second: "T)
+```
