@@ -2,7 +2,7 @@
 Start Date: 2025-02-24
 End Date: 2025-03-16
 Complete: false
-Status: To Do
+Status: Delayed
 ---
 - Implement notifications
 	- for timer ends
