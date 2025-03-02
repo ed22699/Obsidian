@@ -91,19 +91,3 @@ let x = pair.first
 ```
 ### Optional
 - `!`, is not very safe and can cause crashes if `nil`, best to use `?` instead where possible
-**Take notes from notebook**
-```swift
-class Moi {
-	let first = "Matt"
-	let last = "Neuburg"
-	let whole = self.first + " " + self.last // compile error
-	// either make computed property
-	var whole : String {
-		self.first + " " + self.last
-	}
-	// or make lazy
-	lazy var whole = self.first + " " + self.last
-}
-```
-- the above issue is fine for static properties as they are lazy
-## Enums
