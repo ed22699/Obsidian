@@ -106,3 +106,4 @@ class Moi {
 }
 ```
 - the above issue is fine for static properties as they are lazy
+## Enums
