@@ -41,3 +41,23 @@ if type == .albums{
 //
 }
 ```
+- an optional is just an enum with two cases, `.none` and `.some`
+- if you declare the enum with `Equatable` then you can compare
+- if you declare the enum with `CaseIterable` it keeps a list automatically
+- can have explicit initialisations as long as the choose one case
+```swift
+enum Filter : String, CaseIterable {
+	case albums = "Albums"
+	case playlists = "Playlists"
+	case podcasts = "Podcasts"
+	case books = "Audiobooks"
+	init(_ ix:Int){
+		self = Filter.allCases[ix]
+	}
+}
+
+let type1 = Filter.albums
+let type2 = Filter(rawValue:"Playlists")
+let type3 = Filter(2)
+```
+- an enum instance property can't be a stored property
