@@ -61,3 +61,32 @@ let type2 = Filter(rawValue:"Playlists")
 let type3 = Filter(2)
 ```
 - an enum instance property can't be a stored property
+- enums can include methods
+```swift
+enum Shape {
+	case rectangle
+	case ellipse
+	case diamond
+	func addSahpe (to p: CGMutablePath, in r: CGRect) -> () {
+		switch self {
+		case .rectangle:
+			p.addRect(r)
+		case .ellipse:
+			p.addEllipse(in:r)
+		case .diamond:
+			p.move(to: CGPoint(x:r.minX, y:r.midY))
+			p.addLine(to: CGPoint(x: r.midX, y: r.minY))
+			p.addLine(to: CGPoint(x: r.maxX, y: r.midY))
+			p.addLine(to: CGPoint(x: r.midX, y: r.maxY))
+			p.closeSubpath()
+		}
+	}
+}
+```
+- an enum instance method that modifies the enum itself must be marked as `mutating`
+- enum is a switch whose states have names, this is great when theres 5 or so things but even when there is only two things it can be better than a bool because it has names
+	- can also store extra information in enums associated value or raw value
+## Structs
+- basically a class with less features
+- struct doesn't need an explicit initialiser as it has no stored properties, or because all its stored properties are assigned default values as part of their declaration
+- have implicit initialiser, if you create a explicit initialiser this will be lost
