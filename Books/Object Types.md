@@ -90,3 +90,16 @@ enum Shape {
 - basically a class with less features
 - struct doesn't need an explicit initialiser as it has no stored properties, or because all its stored properties are assigned default values as part of their declaration
 - have implicit initialiser, if you create a explicit initialiser this will be lost
+```swift
+var d = Digit(123) // digit is a struct
+print(d.number) // 123
+var d2 = d
+d2.number = 42
+print(d.number) // 123 (because structs can't have multiple references, copies the struct rather than pointing to it)
+```
+## Classes
+- classes are reference types - means they are:
+	- mutable
+		- with structs when you change values you are actually replacing the entire struct instance with another instance
+	- can have multiple references
+- classes can have a superclass that they inherit from
