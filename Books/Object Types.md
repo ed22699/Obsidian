@@ -104,3 +104,19 @@ print(d.number) // 123 (because structs can't have multiple references, copies t
 	- can have multiple references
 - classes can have a superclass that they inherit from
 - to override inherited functions you must use the `override` keyword
+- you can access the superclass with `super`
+```swift
+class Dog : Quadruped {
+	func bark () {
+		print("woof")
+	}
+}
+
+class NoisyDog : Dog {
+	override func bark () {
+		for _ in 1...3{
+			super.bark()
+		}
+	}
+}
+```
