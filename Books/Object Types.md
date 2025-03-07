@@ -103,3 +103,4 @@ print(d.number) // 123 (because structs can't have multiple references, copies t
 		- with structs when you change values you are actually replacing the entire struct instance with another instance
 	- can have multiple references
 - classes can have a superclass that they inherit from
+- to override inherited functions you must use the `override` keyword
