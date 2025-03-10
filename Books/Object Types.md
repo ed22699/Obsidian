@@ -122,3 +122,17 @@ class NoisyDog : Dog {
 ```
 - classes can also have deinitialisers which use the `deinit` phrase, subclasses deinitialisers are called before the superclasses
 - `static` members cannot be overridden, think of it as a `class final`
+## Casting
+- a way to get round the `Dog mark = NoisyDog()` issue where you cannot use methods unique to noisyDog
+- Casting utilises the *as* keyword
+	- it will let you cast a superclass to a subclass, this is known as *casting down*, if you use `as!` it will force the computer to do this, e.g. `d as! NoisyDog`
+	- rather than forcing the `as` you can test it first with an `is`
+```swift
+func tellToHush(_ d:Dog){
+	if d is NoisyDog{
+		let d = d as! NoisyDog
+		d.beQuiet()
+	}
+}
+```
+- you can also use `as?` to produce an optional
