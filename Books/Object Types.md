@@ -120,3 +120,5 @@ class NoisyDog : Dog {
 	}
 }
 ```
+- classes can also have deinitialisers which use the `deinit` phrase, subclasses deinitialisers are called before the superclasses
+- `static` members cannot be overridden, think of it as a `class final`
