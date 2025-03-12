@@ -137,3 +137,5 @@ func tellToHush(_ d:Dog){
 ```
 - you can also use `as?` to produce an optional
 - you can bridge between swift and objective-c using the `as` keyword by itself, e.g. `s2 as NSString`
+## Protocols
+- protocols are swifts version of interfaces in java
