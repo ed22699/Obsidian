@@ -142,3 +142,31 @@ func tellToHush(_ d:Dog){
 ## Generics
 - a sort of placeholder for a type
 	- an optional is an example of this with its `.some` case
+```swift
+enum Optional<Wrapped> : ExpressibleByNilLiteral {
+	case none
+	case some(Wrapped)
+	init(_ some: Wrapped)
+}
+```
+- here wrapped is a placeholder
+- another use is in a function which should return the same class level as passed, e.g. dog should return a dog but noisyDog would rather return noisyDog
+```swift
+func dogMakerAndNamer(_ whattype:Dog.Type) -> WhatType {
+	let d = WhatType.init(name:"Fido")
+	return d
+}
+```
+### Generic declarations
+- using `Self` within methods in a protocol body so instances of protocol such as a class Dog can pass type `Dog` into the method
+- `associatedtype` turns a protocol into a generic
+- Generic functions can also be created like below
+```swift 
+func takeAndReturnSameThing<T> (_ t:T) -> T {
+	print(T.self)
+	return t
+}
+```
+- generic object types can be created in a similar way to the function above (can have `var firstThing: T` within the struct of type `T`)
+- can have multiple like `func flockTwoTogether<T, U>(_ f1:T, _ f2:U) {}`
+## Type Constraints
