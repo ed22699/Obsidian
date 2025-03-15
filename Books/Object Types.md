@@ -139,3 +139,6 @@ func tellToHush(_ d:Dog){
 - you can bridge between swift and objective-c using the `as` keyword by itself, e.g. `s2 as NSString`
 ## Protocols
 - protocols are swifts version of interfaces in java
+## Generics
+- a sort of placeholder for a type
+	- an optional is an example of this with its `.some` case
