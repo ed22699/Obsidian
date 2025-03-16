@@ -169,4 +169,11 @@ func takeAndReturnSameThing<T> (_ t:T) -> T {
 ```
 - generic object types can be created in a similar way to the function above (can have `var firstThing: T` within the struct of type `T`)
 - can have multiple like `func flockTwoTogether<T, U>(_ f1:T, _ f2:U) {}`
-## Type Constraints
+### Type Constraints
+- sometimes you want to compare your special `T` type, if you just did this it would cause a compile error, you will need to use `Comparable` like so `func myMin<T:Comparable>(_ things:T...) -> T {`
+### Explicit Specialisation
+- two forms
+	- generic protocol with associated type - resolve an associated type manually through a type alias equating the associated type with some explicit type
+	- generic object type - use the same angle bracket syntax used to declare the generic in the first place, with the actual type name in the angle brackets
+- you can subclass generic classes like so `class NoisyDog<T> : Dog<T> {}`
+### Generic types and covariance
