@@ -176,4 +176,4 @@ func takeAndReturnSameThing<T> (_ t:T) -> T {
 	- generic protocol with associated type - resolve an associated type manually through a type alias equating the associated type with some explicit type
 	- generic object type - use the same angle bracket syntax used to declare the generic in the first place, with the actual type name in the angle brackets
 - you can subclass generic classes like so `class NoisyDog<T> : Dog<T> {}`
-### Generic types and covariance
+### Associated type chains
