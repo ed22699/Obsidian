@@ -184,3 +184,23 @@ func flyAndWalk<T> (_ f:T) where T: Flier {}
 ```
 ## Extensions
 - a way of injecting your own code into an object type that has already been declared elsewhere
+## Umbrella types
+### Any
+- anything can be passed without casting
+```swift
+func anyExpecter(_ a:Any) {}
+anyExpecter("howdy")
+anyExpecter(String.self)
+anyExpecter(Dog())
+anyExpecter(Dog.self)
+anyExpecter(anyExpecter)
+```
+- if you want a more specific type you will need to cast down, make it safe with an if
+```swift
+if anything is String{
+	let s = anything as! String
+}
+```
+### AnyObject
+- empty protocol that all class types conform to automatically
+- useful when you want to take advantage of the behaviour of Objective-C id
