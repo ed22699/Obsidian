@@ -204,3 +204,7 @@ if anything is String{
 ### AnyObject
 - empty protocol that all class types conform to automatically
 - useful when you want to take advantage of the behaviour of Objective-C id
+## Collection types
+- array 
+	- arrays are a generic
+	- are a value type
