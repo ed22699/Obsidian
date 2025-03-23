@@ -208,3 +208,5 @@ if anything is String{
 - array 
 	- arrays are a generic
 	- are a value type
+	- can create an array of three separate dogs (rather than 3 pointers) like so `let dogs = (0..<3).map {_ in Dog()}`
+	
