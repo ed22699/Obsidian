@@ -209,4 +209,12 @@ if anything is String{
 	- arrays are a generic
 	- are a value type
 	- can create an array of three separate dogs (rather than 3 pointers) like so `let dogs = (0..<3).map {_ in Dog()}`
-	
+- dictionary
+	- unordered collection of object pairs
+	- must conform to the hashable protocol (equatable, implement an int hashValue property, equal keys have equal hash values)
+```swift
+var d = [String:String]()
+// or
+var d = ["CA": "California", "NY": "New York"]
+// better to define explicitly
+```
