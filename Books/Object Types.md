@@ -217,4 +217,7 @@ var d = [String:String]()
 // or
 var d = ["CA": "California", "NY": "New York"]
 // better to define explicitly
+let state = d["CA"]
+// if you want a default so no optional is returned
+let state = d["CA", default:"N/A"]
 ```
