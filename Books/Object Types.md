@@ -221,3 +221,13 @@ let state = d["CA"]
 // if you want a default so no optional is returned
 let state = d["CA", default:"N/A"]
 ```
+- set
+	- is an unordered collection of unique objects
+	- type must be hashable and hence equatable
+	- `let set : Set<Int> = [1, 2, 3, 4, 5]`
+	- can be a quick way of uniquing the array as sets do not add duplicates so turning a set to an array will create this unique array
+```swift
+let arr = [1,2,1,4,3,5,3,5]
+let set = Set(arr)
+let arr2 = Array(set) // [5, 2, 3, 1, 4]
+```
