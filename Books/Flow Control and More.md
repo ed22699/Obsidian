@@ -26,3 +26,18 @@ default:
 - can include optionals
 - can include `is` or `as` operators
 - can wrap switch case in tuple
+```swift
+switch i {
+case is Int, is Double:
+	print("some kind of number")
+default:
+	print("not a number")
+}
+```
+## Loops
+- there is a repeat loop
+```swift
+repeat{
+	statements
+} while condition
+```
