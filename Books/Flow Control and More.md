@@ -41,3 +41,7 @@ repeat{
 	statements
 } while condition
 ```
+## Jumping
+- fallthrough - in a switch case aborts execution of the current case code and immediately begins executing the code of the next case
+- continue - aborts execution of the current iteration and proceeds to the next iteration
+- break - aborts the current construct and proceeds after the end of the construct 
