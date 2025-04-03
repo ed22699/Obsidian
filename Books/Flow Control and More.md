@@ -45,3 +45,19 @@ repeat{
 - fallthrough - in a switch case aborts execution of the current case code and immediately begins executing the code of the next case
 - continue - aborts execution of the current iteration and proceeds to the next iteration
 - break - aborts the current construct and proceeds after the end of the construct 
+## Aborting the whole program
+- use `fatalError`
+```swift
+required init?(coder: NSCoder){
+	fatalError("init(coder:) has not been implemented")
+}
+```
+- when your program is made public you throw a build switch which tells the compiler that assert should be ignored. At this stage no assertion calls should be failing as all bugs should be ironed out.
+## Guard
+- when your code needs to decide whether to exit early, you can exit early if the condition fails
+```swift
+guard condition else {
+	statements
+	exit
+}
+```
