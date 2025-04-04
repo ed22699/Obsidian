@@ -61,3 +61,10 @@ guard condition else {
 	exit
 }
 ```
+
+## Privacy
+- internal - default
+- fileprivate - only visible within its containing file
+- private - only visible within its containing curly braces
+- public - visible even outside its containing module
+- open - code in another module can subclass it
