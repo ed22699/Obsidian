@@ -68,3 +68,35 @@ guard condition else {
 - private - only visible within its containing curly braces
 - public - visible even outside its containing module
 - open - code in another module can subclass it
+## Introspection
+- letting an object display the names and values of its properties (intended for debugging)
+	- introspect an object with `reflecting`
+## Operators 
+- infix - takes two parameters and appears between them
+- prefix - takes one parameter and appears before it
+- postfix - takes one parameter and appears after it
+```swift
+infix operator ^^
+extension Int{
+	static func ^^(lhs:Int, rhs:Int) -> Int{
+		var result = lhs
+		for _ in 1..<rhs {result *= lhs}
+		return result
+	}
+}
+
+print(2^^3) //8
+
+let r2 = (1..<10).reversed()
+
+infix operator >>> : RangeFormationPrecedence
+func >>><Bound>(maximum: Bound, minimum: Bound)
+	-> rReversedCollection<Range<Bound>>
+	where Bound : Strideable {
+		return(minimum..<maximim).reversed
+}
+
+let r2 = 10>>>1
+
+```
+## Memory Management
