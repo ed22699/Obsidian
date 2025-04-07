@@ -106,3 +106,7 @@ let r2 = 10>>>1
 - one solution to a retain cycle is to mark the problematic reference as `weak`
 	- weak reference means the object referred to can now go out of existence even while the referrer continues to exist
 - another solution is to make the reference as `unowned`, good for when one object absolutely cannot exist without a reference to another but where this reference need not be a strong reference
+## Miscellaneous Swift Language Features
+### Synthesised Protocol Implementations
+- some protocols can supply code behind the scenes so that an object that adopts the protocol will satisfy the protocol's requirements automatically
+	- Equatable
