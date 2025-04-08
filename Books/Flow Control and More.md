@@ -110,3 +110,29 @@ let r2 = 10>>>1
 ### Synthesised Protocol Implementations
 - some protocols can supply code behind the scenes so that an object that adopts the protocol will satisfy the protocol's requirements automatically
 	- Equatable
+	- Hashable
+	- Comparable
+### Key Paths
+### Instance as Function
+- you can treat instances as functions
+```swift
+struct Adder {
+	let base: Int
+	init(_ base:Int){
+		self.base = base
+	}
+	func callAsFunction(_ addend:Int) -> Int{
+		return self.base + addend
+	}
+}
+
+let add3 = Adder(3)
+let sum = add3(4)
+print(sum) // 7
+```
+### Dynamic Membership
+**notes p331**
+- primary purpose of dynamic membership is to prepare swift for future interoperability with languages like Ruby
+### Property Wrappers
+- purpose will likely be to act as a facade
+**code p333**
