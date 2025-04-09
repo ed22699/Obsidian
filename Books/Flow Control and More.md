@@ -136,3 +136,7 @@ print(sum) // 7
 ### Property Wrappers
 - purpose will likely be to act as a facade
 **code p333**
+- property wrapper may also. vent a value that can be referred to elsewhere by the prefixing dollar sign ($), this is how SwiftUI `@State` attribute works, this is why when you use it you get the binding in return
+### Custom String Interpolation
+**Code p338**
+### Reverse Generics
