@@ -31,3 +31,41 @@ func download(url: URL) {
 }
 ```
 - note above `task.resume()` will actually be done before the `data` line as that is asynchronous code
+#### Returning a value
+- instead of trying to return a value we need to pass our data to the completion handler
+```swift
+func download(url: URL, copletionHandler: @escaping (Data) -> ()) {
+	// obtain data task with a completion handler function
+	let task = URLSession.shared.dataTask(with: url) { data, _, error in
+		// some time later downloading finishes, completion handler function is called and if successful, we'll receive the data object
+		if let data = data {
+			// do something with the downloaded data
+			completionHandler(data)
+		}
+	}
+	// tell the data task to start downloading by calling resume
+	task.resume()
+}
+```
+#### Throwing an error
+- can't throw an error as anonymous function within the function
+```swift
+typealias MyCompletionHandler = (Result<Data, Error>) -> ()
+func download(url: URL, copletionHandler: @escaping MyCompletionHandler {
+	// obtain data task with a completion handler function
+	let task = URLSession.shared.dataTask(with: url) { data, _, error in
+		// some time later downloading finishes, completion handler function is called and if successful, we'll receive the data object
+		if let data = data {
+			// do something with the downloaded data
+			completionHandler(.success(data))
+		} else if let error = error {
+			completionHandler(.failure(error))
+		} else{
+			fatalError("Should be impossible to get here")
+		}
+	}
+	// tell the data task to start downloading by calling resume
+	task.resume()
+}
+```
+## Structured Concurrency Syntax
