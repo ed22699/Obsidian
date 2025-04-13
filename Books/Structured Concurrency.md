@@ -69,3 +69,36 @@ func download(url: URL, copletionHandler: @escaping MyCompletionHandler {
 }
 ```
 ## Structured Concurrency Syntax
+changes for swift 5.5:
+- async code is marked
+- async code runs in order
+- async code can return a value
+- async code can throw an error
+### Async/Await
+- await is used to call an asynchronous method
+```swift
+func download(url: URL) async throws -> Data{
+	let result = try await URLSession.shard.data(from: url)
+	return result.0
+}
+```
+- await waits for async to finish
+- you can only say await in an async context
+### Tasks
+- the basis of all asynchronous activity
+	- async can only be called from within some task
+- a task itself has no concurrency
+	- while a task is running on a thread the same task cannot be running on a different thread
+- task struct is a generic, parameterised on two placeholder types, success and failure
+```swift
+let url = URL(string: "https://www.apeth.com/pep/manny.jpg")
+Task {
+	do {
+		let data = try await self.download(url: url)
+		// do something with data
+	} catch {
+		print(error)
+	}
+}
+```
+### Wrapping a Completion Handler
