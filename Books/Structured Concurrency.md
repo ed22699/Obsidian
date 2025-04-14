@@ -102,3 +102,28 @@ Task {
 }
 ```
 ### Wrapping a Completion Handler
+- exactly one resume must be present 
+```swift
+func myDownload(url:URL) async throws -> Data {
+	return try await withUnsafeThrowingContinuation { continuation in
+		download(url:url) { result in 
+			continuation.resume(with: result)
+		}
+	}
+}
+```
+### Multiple Concurrent Task
+#### Async let
+- for a known finite number of subtasks
+```swift
+func fetchTwoURLs() async throws -> (Data, Data) {
+	let url1 = URL(string:"https://www.apeth.com/pep/manny.jpg")!
+	let url2 = URL(string:"https://www.apeth.com/pep/moe.jpg")!
+	async let data1 = self.download(url: url1)
+	async let data2 = self.download(url: url2)
+	return (try await data1, try await data2)
+}
+```
+#### Task Groups
+- for an interment number of subtasks
+- standard pattern is to loop through an array, however, this is very complicated
