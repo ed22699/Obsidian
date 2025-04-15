@@ -127,3 +127,21 @@ func fetchTwoURLs() async throws -> (Data, Data) {
 #### Task Groups
 - for an interment number of subtasks
 - standard pattern is to loop through an array, however, this is very complicated
+```swift
+func fetchManyURLs() async throws -> [URL:Data] {
+	let urls: [URL] = // ...
+	return try await withThrowingTaskGroup(of: [URL:Data].self) { group in 
+		for url in urls {
+			group.addTask {
+				return [url: try await self.download(url: url)]
+			}
+		}
+		for try await d in group {
+			result.merge(d) {cur,_ in cur}
+		}
+		return result
+	}
+}
+```
+### Asynchronous Sequences
+- a type that conforms to the AsyncSequence protocol
