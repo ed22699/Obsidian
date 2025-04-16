@@ -145,3 +145,11 @@ func fetchManyURLs() async throws -> [URL:Data] {
 ```
 ### Asynchronous Sequences
 - a type that conforms to the AsyncSequence protocol
+### Actors
+- structured concurrency is generally free to assign your code to any thread it chooses
+- an actor is an object type flavour
+	- you can have more than one reference to an actor instance
+- to specify whether code should run on the main thread or on a background thread, you can associate that code with an actor
+- actors help your multithreaded code run safely as actors protect against the possibility of mutating properties on more than one thread by isolating their properties
+- when an actor's code is running, no other code belonging to the same actor can start
+- behind the scenes there is an invisible global actor - the main actor - `@MainActor` attribute runs on the main thread
