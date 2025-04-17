@@ -153,3 +153,55 @@ func fetchManyURLs() async throws -> [URL:Data] {
 - actors help your multithreaded code run safely as actors protect against the possibility of mutating properties on more than one thread by isolating their properties
 - when an actor's code is running, no other code belonging to the same actor can start
 - behind the scenes there is an invisible global actor - the main actor - `@MainActor` attribute runs on the main thread
+## Context Switching
+- a change in thread context: code that has been running on the main thread proceeds to run on a background thread, or vice versa
+- if we want to have some specific code run on a background thread we can use an actor
+```swift
+class ViewController: UIViewController {
+	actor MyDownloader {
+		func download(url: URL) async throws -> Data {
+			//
+		}
+		func fetchManyURLs() async throws -> [URL:Data] {
+			//
+		}
+	}
+	let downloader = MyDownloader()
+	override func viewDidLoad() {
+		super.viewDidLoad()
+		Task {
+			// runs on the main thread
+			// but fetchManyURLs runs on a background thread
+			let result = try? await self.downloader.fetchManyURLs()
+			// ...
+		}	
+	}
+}
+```
+### Explicit Context Switching
+- to prevent the Task initialiser from running on the main thread you can use `Task.detached`
+	- this is a factory method; like the Task initialiser, the result is a Task object
+	- difference is that `Task.detached` cuts off any relationship between the resulting Task object and the surrounding context, so the operation: function runs on its own background thread
+```swift
+class ViewController: UIViewController {
+	override func viewDidLoad() {
+		super.viewDidLoad()
+		Task.detached {
+			// runs on the background thread
+			let result = try? await self.downloader.fetchManyURLs()
+			// ...
+		}	
+	}
+}
+```
+- the other situation is you are running on background code and must be on the main thread for an interface for example
+	- if you want to step out onto the main thread just long enough to mutate a view's property we can call the special MainActor run static method:
+		```swift
+		await MainActor.run{ self.imageView?.image = image }
+		```
+	- this sort of deliberate context switching to the main thread can be expensive, if you have multiple operations to perform on the main thread and you need to call MainActor.run, try to clump those operations into a single call to MainActor.run, as not to switch contexts unnecessarily
+## More Tasks
+### Task Priority
+- by default task priority is inherited from the surrounding context, but can be specified if wanted
+### Sleeping
+- `sleep()` is an async method that pauses your code for a length of time
