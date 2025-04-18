@@ -100,6 +100,7 @@ banner_y: 0
 - 📚 Reading
 	- [[Books]]
 	- [[Blogs]]
+- [[Life Lessons]]
 
 # Work
 - ❓ Leet Code

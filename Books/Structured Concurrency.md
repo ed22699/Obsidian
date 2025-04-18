@@ -205,3 +205,15 @@ class ViewController: UIViewController {
 - by default task priority is inherited from the surrounding context, but can be specified if wanted
 ### Sleeping
 - `sleep()` is an async method that pauses your code for a length of time
+### Yielding
+- if a task takes significant time to run, and if it doesn't say `await` regularly, you might like to express a willingness to be suspended momentarily just in case other tasks are queued up waiting for threads to come free
+	- call the Task `yield` static method to show this willingness 
+	- basically sleeping for an unspecified time
+### Cancellation
+- if a task takes significant time to run, you might discover while the task is still running that you no longer need it to keep doing whatever it's doing, in this case it is possible to cancel the task
+- two main ways to respond to the discovery that the task has been cancelled:
+	- stop looping: examine `Task.isCancelled` at the top of the loop and break if it's true
+	- throw: aborts your code immediately and sends a signal up the call chain
+- cancelling subtasks
+	- when a task is told to cancel, then if it has subtasks, those subtasks are told to cancel automatically
+	- when a task group throws an error, the subtasks of that task group are told to cancel automatically
