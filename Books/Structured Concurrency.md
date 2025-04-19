@@ -217,3 +217,21 @@ class ViewController: UIViewController {
 - cancelling subtasks
 	- when a task is told to cancel, then if it has subtasks, those subtasks are told to cancel automatically
 	- when a task group throws an error, the subtasks of that task group are told to cancel automatically
+- a task with a task group is cancellable internally by way of the task group's subtasks this can happen by:
+	- the task group throws an error: subtasks are told to cancel automatically
+	- you tell the group to cancelAll: tells the task group to send cancel to all of its subtasks
+## More Actors
+### Reentrancy
+- exception to actor serialisation: actors are reentrant
+	- mitigates risk of serialisation being overly aggressive and leading to possible deadlock
+	- the actor itself says await then while the actor's code is waiting its members can be accessed from outside the actor using await
+		- actors that say await must be careful in their assumptions about their own internal shared state
+### The keyword nonisolated
+```swift 
+nonisolated func capID() -> String {
+	return self.id.capitalized
+}
+
+let capID = counter.capID()
+```
+- actor-isolated property total can
