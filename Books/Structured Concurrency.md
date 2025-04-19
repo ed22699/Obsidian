@@ -234,4 +234,5 @@ nonisolated func capID() -> String {
 
 let capID = counter.capID()
 ```
-- actor-isolated property total can
+- actor-isolated property total can not be referenced from a non-isolated context
+### The keyword isolated
