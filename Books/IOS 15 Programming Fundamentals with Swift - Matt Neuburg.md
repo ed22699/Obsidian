@@ -21,9 +21,12 @@ Status: Reading
 ---
 [[Books]]
 key points:
+## Language
 - [[The architecture of swift]]
 - [[Functions]]
 - [[Variables and Simple Types]]
 - [[Object Types]]
 - [[Flow Control and More]]
 - [[Structured Concurrency]]
+## IDE
+- [[Anatomy of an Xcode Project]]

@@ -236,3 +236,22 @@ let capID = counter.capID()
 ```
 - actor-isolated property total can not be referenced from a non-isolated context
 ### The keyword isolated
+```swift
+func inc(counter: isolated Counter){
+	counter.inc()
+}
+```
+## Global Actors
+- to create a global actor, you declare a struct with the `@globalActor` attribute
+	- your struct must conform to the GlobalActor protocol (declare a shared static method that returns an instance of an actor as a singleton)
+```swift
+@globalActor struct MyGlobalActor {
+	actor MyActor {}
+	static let shared = MyActor()
+}
+```
+- the struct name MyGlobalActor becomes the name of an attribute `@MyGlobalActor`, parallel to `@MainActor` so your code elsewhere can now be marked with this
+## Sendable
+- compiler needs to be able to check whether a particular value can safely be communicated between threads
+	- types that are safe to share across threads are called sendable
+	- Sendable protocol enforces this
