@@ -7,3 +7,7 @@ tags:
 	- release: this configuration is used for late-stage testing, when you want to check performance on a device, and for archiving the app to be submitted to the app store
 - a scheme unites a target with a build configuration, with respect to the purpose for which you're building
 - cocoa is a framework
+- you can create your own frameworks
+- swift packages are simpler and more efficient than frameworks as they are just a bunch of source code
+	- swift package dependencies are managed automatically
+	- you can create your own packages
