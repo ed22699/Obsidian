@@ -31,3 +31,4 @@ key points:
 ## IDE
 - [[Anatomy of an Xcode Project]]
 - [[Documentation]]
+- [[Life cycle of a project]]
