@@ -32,3 +32,6 @@ tags:
 ## Backward Compatibility
  - the complier will not allow you to run features not found on the older device as this would cause a crash
 	 - can work around this with an availability check (`if #avalable(iOS 10.0, *){} else{}`)
+## Device Type
+## Arguments and Environment Variables
+## Version Control
