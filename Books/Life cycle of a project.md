@@ -35,3 +35,7 @@ tags:
 ## Device Type
 ## Arguments and Environment Variables
 ## Version Control
+## Text Editing Preferences
+- you can use the `MARK:` comment
+## Multiple Selection
+## Code Completion and Placeholders
