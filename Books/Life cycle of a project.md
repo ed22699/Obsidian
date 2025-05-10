@@ -39,3 +39,5 @@ tags:
 - you can use the `MARK:` comment
 ## Multiple Selection
 ## Code Completion and Placeholders
+## Snippets
+## Navigation
