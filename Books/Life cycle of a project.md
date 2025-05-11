@@ -41,3 +41,13 @@ tags:
 ## Code Completion and Placeholders
 ## Snippets
 ## Navigation
+- you can go back and navigate using `Cmd-Ctr-Left` and `Cmd-Ctr-Right`
+- you can jump to definition with `Cmd-Ctr-J`
+- open quickly with `Cmd-Shift-O`
+## Finding
+- you can do a global find with `Cmd-Shift-F`
+## Running in the Simulator
+- is powerful, can be used to:
+	- slow animations 
+	- simulate low on memory
+	- simulate situations such as an incoming call
