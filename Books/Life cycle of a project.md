@@ -51,3 +51,5 @@ tags:
 	- slow animations 
 	- simulate low on memory
 	- simulate situations such as an incoming call
+## Debugging
+- `dump` has a console output that describes an object along with its class inheritance and its instance properties, by way of a Mirror object
