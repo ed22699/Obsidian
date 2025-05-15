@@ -56,3 +56,10 @@ tags:
 ## Testing
 - unit tests
 - interface tests
+	- in the long run it is better to write the tests yourself but you can get started by recording actions and the code can be generated automatically
+		1. in the test stub create a new empty line and leave the insertion point within it
+		2. choose $Editor \rightarrow Start \; Recording \; UI \; Test$
+		3. in the simulator tap the button in the interface. When the alert appears, tap OK to dismiss it
+		4. return to Xcode and choose $Editor \rightarrow Stop \; Recording \; UI \; Test$. Also choose $Product \rightarrow Stop$ to stop running in the simulator
+- you can view code coverage in the options pane. You can also choose $Editor \rightarrow Code \; Coverage$ to reveal it in the gutter
+- you can also run performance testing by calling `measure(metrics:)` with an array of XCTMetric objects. This test will automatically run several times
