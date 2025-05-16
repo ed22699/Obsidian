@@ -63,3 +63,27 @@ tags:
 		4. return to Xcode and choose $Editor \rightarrow Stop \; Recording \; UI \; Test$. Also choose $Product \rightarrow Stop$ to stop running in the simulator
 - you can view code coverage in the options pane. You can also choose $Editor \rightarrow Code \; Coverage$ to reveal it in the gutter
 - you can also run performance testing by calling `measure(metrics:)` with an array of XCTMetric objects. This test will automatically run several times
+- UI tests may sometimes be constructed for no other purpose than to take screenshots, these may be used on the app store
+	- to do this call the XCUIElement `screenshot` method and call the XCTestCase `add` method to retain the actual screenshot
+```swift
+let screenshot = XCUIApplication().screenshot()
+let attachment = XCTAttachment(screenshot: screenshot)
+attachment.lifetime = .keepAlways
+attachment.name = "OpeningScreen"
+self.add(attachment)
+```
+## Test Plans
+- you can create test plans through $Product \rightarrow Test \; Plan \rightarrow New \; Test \; Plan$
+- you need to convert your scheme to use the test plans you want do this with $Product \rightarrow Scheme \rightarrow Convert \; Scheme \; to \; Use \; Test \; Plans$
+## Massaging the Report
+- you can add data to the report with the `self.add`, with this you can attach issues to your test report
+## Clean
+- good idea to do at some point
+- cleaning removes the cruft. Cleaning removes the built app and all the intermediate build products that Xcode caches in order to construct it, this can often solve a problem
+- can choose $Product \rightarrow Clean \; Build \; Folder$ which removes the entire build folder for this project. Or more extensive cleaning:
+	1. choose $Product \rightarrow Show \; Build \; Folder \; in \; Finder$
+	2. quit Xcode
+	3. back in the finder, press Command-Up arrow twice. You're now in your user derivedData folder. Move all its contents to the trash
+- on top of this you should also remove your app from the simulator
+	- to clean out the current simulator while running the Simulator, choose $Hardware \rightarrow Erase \; All \; Content \; and \; Settings$
+	- to clean out all simulators, quit the simulator and then say in terminal `% xcrun simctl erase all`
