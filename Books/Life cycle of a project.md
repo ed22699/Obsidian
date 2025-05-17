@@ -87,3 +87,26 @@ self.add(attachment)
 - on top of this you should also remove your app from the simulator
 	- to clean out the current simulator while running the Simulator, choose $Hardware \rightarrow Erase \; All \; Content \; and \; Settings$
 	- to clean out all simulators, quit the simulator and then say in terminal `% xcrun simctl erase all`
+## Obtaining a Developer Program Membership
+- you do not need an organisation program to distribute your built app, individual program is sufficient if you are a solo dev
+- your developer program membership involves:
+	- an apple ID: also allows you to post on Apple's development forums, download Xcode beta versions and so forth
+	- a team name: you, under a single apple ID can belong to more than one team. On each team, you will have one or more roles dictating your privileges
+- you should enter your developer program apple ID into the accounts preference pane in Xcode
+## Signing an App
+- an app that is not properly signed for a device will not run on that device. Signing requires:
+	- an identity: represents apple's permission for a given team to develop
+		- a private key: stored in the keychain on the computer. It identifies a computer where this team can potentially develop device-targeted apps
+		- a certificate: virtual permission slip from Apple. Contains the public key matching the private key. With a copy of this certificate, any machine holding the private key can actually be used to develop device-targeted apps under the name of this team
+	- a provisioning profile: virtual permission slip from apple uniting:
+		- an identity
+		- an app, identified by its bundle identifier
+		- a list of eligible devices, identified by their unique device identifiers (UDIDs)
+		- a list of entitlements: special privilege that not every app needs, such as the ability to talk to iCloud. This isn't always needed
+- there are two types of identity, and hence two types of certificate and provisioning profile: development and distribution (production)
+- apple is the ultimate keeper of all the information except the private key. To verify or obtain a copy of this information you will either:
+	- the developer member centre: set of web pages. Click certificates, IDs & Profiles to access all features and information to which you are entitled by your membership type and role
+	- Xcode: most things can be done through Xcode
+## Automatic Signing
+- a way to obtain and manage certificates and profiles in connection with a project. For new projects this is the default
+## Manual Signing
