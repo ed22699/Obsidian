@@ -110,3 +110,6 @@ self.add(attachment)
 ## Automatic Signing
 - a way to obtain and manage certificates and profiles in connection with a project. For new projects this is the default
 ## Manual Signing
+## Managing Development Certificates and Devices
+- if you have automatic signing this will be chill and will work itself out
+## Profiling
