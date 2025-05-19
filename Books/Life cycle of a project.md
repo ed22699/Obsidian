@@ -113,3 +113,43 @@ self.add(attachment)
 ## Managing Development Certificates and Devices
 - if you have automatic signing this will be chill and will work itself out
 ## Profiling
+## Localisation
+- using different languages 
+- this is controlled by localisation folders, this holds resources such as that concerning text, these are identified by their `.strings`
+- you don't have to create or maintaining these files manually, instead you work with exported XML files in the standard `.xliff` format
+- you need to modify the code for it to be localised, this can be done with `String(localized:comment:)`
+```swift
+let greeting = String(
+	localized: "howdy",
+	comment: "Alert title: Say hello"
+)
+```
+### Exporting
+- this generates the .strings files automatically
+- for french:
+	1. edit the target, make sure that the use compiler to extract swift stings build setting has been set to yes
+	2. edit the project. In the info pane, under localisations, click the plus button, in the pop-up menu that appears, choose French
+	3. choose $Editor \rightarrow Export \; for \; localization$, check french. This creates a folder
+- you can modify the `fr.xliff` by supplying a `<target>` tag for every `<source>`
+### Importing
+- to incorporate it back into our project:
+	1. edit the project
+	2. choose $Editor \rightarrow Import \; Localizations$, locate and open the `fr.xcloc` bundle
+> [!note] 
+> Changing the distinct key (the english) will mess up these localisations, a workaround is instead of entering the English user-facing text as the `localized` parameter enter a key string then export the English localisation and "translate" the keys into the desired english user-facing text
+
+## Distribution
+- two primary types:
+	- ad hoc distribution: providing a copy of your app to a limited set of known users that can test on specific devices
+	- app store connect distribution: uploading the app to app store connect. Can be for one of two reasons:
+		- TestFlight testing: temporary access for testing
+		- App Store sale
+### Making an Archive
+- to create a copy of your app for distribution, you need to build an archive of your app. An archive is basically a preserved build. Has three purposes:
+	- distribution: basis for subsequent distribution of the app, this will be exported from the archive
+	- reproduction: every distribution from a particular archive contains identical binary and will behave in the same way. If a bug report arrives based on an app distributed from a particular archive, you can distribute that archive to yourself and run it, knowing that you are testing exactly the same app
+	- symbolication: archive includes a `.dSYM` file that allows Xcode to accept a crash log and report the crash's location in your code. This helps you to deal with crash reports from users
+- how to build:
+	1. set destination in the Scheme pop-up menu in the project window toolbar to any iOS Device. 
+	2. if you like, edit the scheme to confirm that the Release build configuration will be used for the Archive action (is the default but may want to check)
+	3. choose $Product \rightarrow Archive$, the archive itself is stored in a date folder within your user archives folder. It is also listed in Xcode's Organiser window under the app's $Products \rightarrow Archives$ entry. In this window you can add a description and change the archive's name
