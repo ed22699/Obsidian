@@ -153,3 +153,10 @@ let greeting = String(
 	1. set destination in the Scheme pop-up menu in the project window toolbar to any iOS Device. 
 	2. if you like, edit the scheme to confirm that the Release build configuration will be used for the Archive action (is the default but may want to check)
 	3. choose $Product \rightarrow Archive$, the archive itself is stored in a date folder within your user archives folder. It is also listed in Xcode's Organiser window under the app's $Products \rightarrow Archives$ entry. In this window you can add a description and change the archive's name
+- to export your archive, you need a distribution profile, hence a distribution certificate 
+## Distribution Certificate
+- just opt for automatic signing when you exprot to app store connect
+## Distribution Profile
+## Distribution for testing
+- testflights are the better option
+## Final preparations
