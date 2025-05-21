@@ -160,3 +160,9 @@ let greeting = String(
 ## Distribution for testing
 - testflights are the better option
 ## Final preparations
+- your marketing icon cannot be the same as the app icon but cannot be too different either
+- needs a launch image
+- screenshots must demonstrace actual user experience of the app
+	- you can provide a screenshot corresponding to the screeen size and resolution of every device on which your app can run, or you can reuse a larger-size screenshot for smaller sizes
+	- you can obtain these screenshots either from the simulator or from a device connected to the computer
+		- choose $File \rightarrow Save \; Screen$ 
