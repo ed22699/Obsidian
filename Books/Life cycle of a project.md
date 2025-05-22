@@ -162,7 +162,19 @@ let greeting = String(
 ## Final preparations
 - your marketing icon cannot be the same as the app icon but cannot be too different either
 - needs a launch image
-- screenshots must demonstrace actual user experience of the app
-	- you can provide a screenshot corresponding to the screeen size and resolution of every device on which your app can run, or you can reuse a larger-size screenshot for smaller sizes
+- screenshots must demonstrate actual user experience of the app
+	- you can provide a screenshot corresponding to the screen size and resolution of every device on which your app can run, or you can reuse a larger-size screenshot for smaller sizes
 	- you can obtain these screenshots either from the simulator or from a device connected to the computer
 		- choose $File \rightarrow Save \; Screen$ 
+- some settings are very important, see Apple's Information Property List Key Reference 
+	- bundle display name: name that appears under your app's icon on the device screen (needs to be short), you can localise this
+	- supported interface orientations
+	- required device capabilities
+	- Bundle version: your app needs a version number. The best place to set it is the general pane of the target editor. There are two fields:
+		- version: needs to be a version string, such as "1.0", it will be displayed at the app store, failure to do this will cause the app to be rejected
+		- build: user does not see this, it is purely to distinguish different builds that have the same marketing version string, this can just be a number that increments until the marketing version string changes
+## Submission to the app store
+- you should go to the contracts section and complete submission of your contract
+- main pieces you need to supply:
+	- your app's name: 30 characters or less, does not need to be the same as the short form name
+	- subtitle: description of the app, 30 characters or fewer
