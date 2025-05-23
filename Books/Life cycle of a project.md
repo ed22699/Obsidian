@@ -178,3 +178,16 @@ let greeting = String(
 - main pieces you need to supply:
 	- your app's name: 30 characters or less, does not need to be the same as the short form name
 	- subtitle: description of the app, 30 characters or fewer
+	- Description: fewer than 4,000 characters, apple recommends fewer than 580 characters
+	- promotional text: optional, 170 characters or fewer
+	- keywords: comma-separated list, shorter than 100 characters
+	- privacy policy: URL of a web page describing your privacy policy
+	- support: url of a website where users can find ore information about your app
+	- copyright: do not include a copyright symbol in this string; it will be added for you at the app store
+	- SKU: a string identifier that's unique within the world of your own apps. It's convenient if it has something to do with your app's name or bundle identifier
+	- price: you don't get to make up a price. You have to choose from a list of pricing "tiers"
+	- availability date: there's an option to make the app available as soon as it is approved, and this will typically be your choice
+- once registered you can export and upload your archive. Recommend not converting to bitcode. You should accept the option to upload symbols as this will make it easier to analyse subsequent crash reports
+- two ways to dispose of the signed exported app:
+	- upload to app store connect: performed within Xcode
+	- save to disk: upload later using the transporter application
