@@ -1,0 +1,17 @@
+---
+tags:
+  - quantum_computing
+---
+ - quantum computers use quantum bits (can be 0 and 1 at the same time)
+	 - can be any quantum particle that has 2 distinct states, such as a photon of light being polarised either horizontally or vertically
+- still use 0's and 1's: $|0\rangle = \begin{pmatrix}1 \\ 0 \end{pmatrix}, |1\rangle = \begin{pmatrix} 0 \\ 1 \end{pmatrix}$ 
+- superposition: quantum particle is in two states simultaneously 
+- $|\psi \rangle = \begin{pmatrix}\alpha \\ \beta \end{pmatrix}$ 
+	- $\alpha$ represents how much the qubit is in the $|0\rangle$ state
+	- $\beta$ represents how much the qubit is in the $|1\rangle$ state
+- when we measure a quantum system, it collapses into the measured state
+	- when you measure a superposition it will become either 1 or 0
+	- the reason you still have the $\alpha$ and $\beta$ is because it helps us find the probability of it either collapsing into a 0 or 1
+		- $P(|\psi\rangle = 0) = |\alpha|^2$
+		- $P(|\psi\rangle = 1) = |\beta|^2$
+		- $|\alpha|^2 + |\beta|^2 = 1$ 
