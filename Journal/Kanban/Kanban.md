@@ -13,11 +13,9 @@ kanban-plugin: board
 
 ## To Do
 
-- [ ] Make notes from lab 3 #Uni @{2025-02-03}
-- [ ] Make week 4 lecture notes #Uni @{2025-02-06}
-- [ ] Make notes from lab 4 #Uni @{2025-02-09}
-- [ ] make week 5 lecture notes @{2025-02-11} #Uni
-- [ ] Make meeting notes @{2025-02-14} #Uni
+- [ ] Implement buttons on widgets #Personal @{2025-06-01}
+- [ ] Implement notifications for when timers finish #Personal @{2025-06-01}
+- [ ] Fix pomodoro timer transition to extra time #Personal @{2025-06-02}
 
 
 ## In Progress
@@ -27,6 +25,11 @@ kanban-plugin: board
 ## Complete
 
 **Complete**
+- [x] Make meeting notes @{2025-02-14} #Uni
+- [x] make week 5 lecture notes @{2025-02-11} #Uni
+- [x] Make notes from lab 4 #Uni @{2025-02-09}
+- [x] Make week 4 lecture notes #Uni @{2025-02-06}
+- [x] Make notes from lab 3 #Uni @{2025-02-03}
 - [x] Complete Wireframes #Habit @{2025-01-26}
 - [x] Week 5 prereqs @{2025-02-11} #Uni
 - [x] Do prereqs #Uni @{2025-02-05}
