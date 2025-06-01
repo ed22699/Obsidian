@@ -13,13 +13,12 @@ kanban-plugin: board
 
 ## To Do
 
-- [ ] Implement buttons on widgets #Personal @{2025-06-01}
-- [ ] Implement notifications for when timers finish #Personal @{2025-06-01}
-- [ ] Fix pomodoro timer transition to extra time #Personal @{2025-06-02}
+- [ ] Add noise for when timer is complete #Personal @{2025-06-02}
 
 
 ## In Progress
 
+- [ ] Implement buttons on widgets #Personal @{2025-06-01}
 
 
 ## Complete
@@ -29,6 +28,8 @@ kanban-plugin: board
 - [x] make week 5 lecture notes @{2025-02-11} #Uni
 - [x] Make notes from lab 4 #Uni @{2025-02-09}
 - [x] Make week 4 lecture notes #Uni @{2025-02-06}
+- [x] Fix pomodoro timer transition to extra time #Personal @{2025-06-02}
+- [x] Implement notifications for when timers finish #Personal @{2025-06-01}
 - [x] Make notes from lab 3 #Uni @{2025-02-03}
 - [x] Complete Wireframes #Habit @{2025-01-26}
 - [x] Week 5 prereqs @{2025-02-11} #Uni
