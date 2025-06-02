@@ -14,6 +14,7 @@ kanban-plugin: board
 ## To Do
 
 - [ ] Add noise for when timer is complete #Personal @{2025-06-02}
+- [ ] Cancel gym membership #Personal @{2025-06-02}
 
 
 ## In Progress
