@@ -17,7 +17,7 @@ isbn13: 9781098118471
 isbn10: 1098118472
 tags:
   - Book
-Status: Reading
+Status: Read
 ---
 [[Books]]
 key points:
