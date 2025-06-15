@@ -14,14 +14,14 @@ kanban-plugin: board
 ## To Do
 
 - [ ] Book MOT #Personal @{2025-06-09}
-- [ ] Follow up on storage centre #Personal @{2025-06-09}
+- [ ] Implement buttons on widgets #Personal @{2025-06-01}
+- [ ] Add noise for when timer is complete #Personal @{2025-06-02}
 
 
 ## In Progress
 
-- [ ] Implement buttons on widgets #Personal @{2025-06-01}
-- [ ] Add noise for when timer is complete #Personal @{2025-06-02}
 - [ ] Cancel gym membership #Personal @{2025-06-02}
+- [ ] Follow up on storage centre #Personal @{2025-06-09}
 
 
 ## Complete
