@@ -1,0 +1,16 @@
+---
+tags:
+  - deep_work
+---
+- Three types of people will thrive in this society:
+	- High skilled workers: People who can work well with the machines
+	- Super stars: The top people who are known to be proficient in their field
+	- Owners: The people funding these companies
+- the two required abilities to thrive:
+	- ability to quickly master hard things
+	- the ability to produce at an elite level in terms of both quality and speed
+- deliberate practice requires:
+	- attention focused tightly on a specific skill you're trying to improve or an idea you're trying to master
+		- quick mastery requires intense focus without distraction
+		- 
+	- you receive feedback so you can correct your approach to keep your attention exactly where it is most productive
