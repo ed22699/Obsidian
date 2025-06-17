@@ -12,5 +12,6 @@ tags:
 - deliberate practice requires:
 	- attention focused tightly on a specific skill you're trying to improve or an idea you're trying to master
 		- quick mastery requires intense focus without distraction
-		- 
+		- scientists increasingly believe myelin (a layer of fatty tissue that grows around neurons), acting like an insulator that allows the cells to fire faster and cleaner. 
+		- By focusing intensely on a specific skill, you're forcing the specific relevant circuit to fire, again and again, in isolation. This repetitive use of a specific circuit triggers cells called oligodendrocytes to begin wrapping layers of myelin around the neurons in the circuits, effectively cementing the skill. Distraction means many parts of your brain will fire, meaning you cannot isolate the circuit
 	- you receive feedback so you can correct your approach to keep your attention exactly where it is most productive
