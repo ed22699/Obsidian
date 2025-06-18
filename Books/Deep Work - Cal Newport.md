@@ -23,3 +23,4 @@ Status: Reading
 key points:
 - **Deep Work**: Professional activities performed in a state of distraction-free concentration that push your cognitive capabilities to their limit. These efforts create new value, improve your skill, and are hard to replicate
 - [[Deep Work is Valuable]]
+- [[Deep Work is Rare]]

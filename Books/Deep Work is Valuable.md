@@ -15,3 +15,5 @@ tags:
 		- scientists increasingly believe myelin (a layer of fatty tissue that grows around neurons), acting like an insulator that allows the cells to fire faster and cleaner. 
 		- By focusing intensely on a specific skill, you're forcing the specific relevant circuit to fire, again and again, in isolation. This repetitive use of a specific circuit triggers cells called oligodendrocytes to begin wrapping layers of myelin around the neurons in the circuits, effectively cementing the skill. Distraction means many parts of your brain will fire, meaning you cannot isolate the circuit
 	- you receive feedback so you can correct your approach to keep your attention exactly where it is most productive
+- High quality of work produced = (Time Spent) X (Intensity of Focus)
+- Attention residue - when you move from one task to another part of your brain remains on that previous task, and so the new task does not have your complete focus
