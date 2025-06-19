@@ -13,15 +13,12 @@ kanban-plugin: board
 
 ## To Do
 
-- [ ] Book MOT #Personal @{2025-06-09}
 - [ ] Implement buttons on widgets #Personal @{2025-06-01}
 - [ ] Add noise for when timer is complete #Personal @{2025-06-02}
 
 
 ## In Progress
 
-- [ ] Cancel gym membership #Personal @{2025-06-02}
-- [ ] Follow up on storage centre #Personal @{2025-06-09}
 
 
 ## Complete
@@ -29,7 +26,10 @@ kanban-plugin: board
 **Complete**
 - [x] Make meeting notes @{2025-02-14} #Uni
 - [x] make week 5 lecture notes @{2025-02-11} #Uni
+- [x] Follow up on storage centre #Personal @{2025-06-09}
+- [x] Cancel gym membership #Personal @{2025-06-02}
 - [x] Make notes from lab 4 #Uni @{2025-02-09}
+- [x] Book MOT #Personal @{2025-06-09}
 - [x] Make week 4 lecture notes #Uni @{2025-02-06}
 - [x] Fix pomodoro timer transition to extra time #Personal @{2025-06-02}
 - [x] Implement notifications for when timers finish #Personal @{2025-06-01}
