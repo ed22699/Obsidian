@@ -25,3 +25,5 @@ key points:
 - [[Deep Work is Valuable]]
 - [[Deep Work is Rare]]
 - [[Deep Work is Meaningful]]
+- The Rules:
+	1. [[Work Deeply]]
