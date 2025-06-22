@@ -4,4 +4,9 @@ tags:
 ---
 - make it a habit, build it into your daily routine
 - there are many different ways to integrate deep work into your schedule and you need to do that one fit for your circumstances:
-	- 
+	- Cut out all possible forms of shallow work
+	- have periods of either your week of year dedicated to deep work where no shallow work occurs 
+	- have a daily schedule where this deep work becomes a habit, and occurs at a consistent time each day
+	- Just work deeply when you have spare moments
+- rituals are important to help slip into deep work quickly:
+	- ask yourself where you'll work and for how long
