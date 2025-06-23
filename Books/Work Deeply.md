@@ -10,3 +10,6 @@ tags:
 	- Just work deeply when you have spare moments
 - rituals are important to help slip into deep work quickly:
 	- ask yourself where you'll work and for how long
+	- how you'll work once you start to work
+	- how you'll support your work (food, exercise, drink)
+- use of grand gestures to internally inflate the importance of the task and effort/money 
