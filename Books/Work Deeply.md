@@ -12,4 +12,10 @@ tags:
 	- ask yourself where you'll work and for how long
 	- how you'll work once you start to work
 	- how you'll support your work (food, exercise, drink)
-- use of grand gestures to internally inflate the importance of the task and effort/money 
+- use of grand gestures to internally inflate the importance of the task and effort/money was possibly laid down to create the environment to which to complete the task
+- expose yourself to ideas in hubs on regular basis, but maintain a spoke in which to work deeply
+- collaboration can sometime push us into a deeper state of work
+- The what and how is different, you can know what you need to do, the strategy in play but how to execute it is different:
+	- focus on the wildly important: set a few ambitious goals to complete within deep work
+	- Act on the lead measures: lead measures measure new behaviours that will drive success on the lag measures (the things you are trying to improve)
+	- Keep a compelling scoreboard: 
