@@ -15,7 +15,13 @@ tags:
 - use of grand gestures to internally inflate the importance of the task and effort/money was possibly laid down to create the environment to which to complete the task
 - expose yourself to ideas in hubs on regular basis, but maintain a spoke in which to work deeply
 - collaboration can sometime push us into a deeper state of work
-- The what and how is different, you can know what you need to do, the strategy in play but how to execute it is different:
+- The what and how is different, you can know what you need to do, the strategy in play but how to execute it is different (4DX):
 	- focus on the wildly important: set a few ambitious goals to complete within deep work
 	- Act on the lead measures: lead measures measure new behaviours that will drive success on the lag measures (the things you are trying to improve)
-	- Keep a compelling scoreboard: 
+	- Keep a compelling scoreboard 
+	- Create a cadence of accountability 
+- maintain a clear endpoint in your workday:
+	- idle time is good as it allows your subconscious to produce sometimes better insights on problems which require vast knowledge to be drawn from the mind
+	- giving rest time where you can shut down, such as walks in nature, improve your attention restoration
+	- the work that evening downtime replaces is usually not that important
+		- in deliberate practice the limit for intense concentration is around an hour for a novice and around 4 hours for an expert but rarely more
