@@ -25,3 +25,8 @@ tags:
 	- giving rest time where you can shut down, such as walks in nature, improve your attention restoration
 	- the work that evening downtime replaces is usually not that important
 		- in deliberate practice the limit for intense concentration is around an hour for a novice and around 4 hours for an expert but rarely more
+- create a shutdown ritual to tell your mind that work is done for the day
+	- my ritual:
+		- read
+		- set up tomorrows plan
+		- SCOO

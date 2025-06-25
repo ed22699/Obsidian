@@ -27,3 +27,4 @@ key points:
 - [[Deep Work is Meaningful]]
 - The Rules:
 	1. [[Work Deeply]]
+	2. [[Embrace Boredom]]
