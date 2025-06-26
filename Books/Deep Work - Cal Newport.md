@@ -28,3 +28,4 @@ key points:
 - The Rules:
 	1. [[Work Deeply]]
 	2. [[Embrace Boredom]]
+	3. [[Quit Social Media]]
