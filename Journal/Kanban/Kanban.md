@@ -14,7 +14,6 @@ kanban-plugin: board
 ## To Do
 
 - [ ] Add noise for when timer is complete #Personal @{2025-06-02}
-- [ ] Fix notifications with pausing @{2025-06-23} #Personal
 - [ ] Fix timerformat @{2025-06-23} #Personal
 
 
@@ -26,6 +25,7 @@ kanban-plugin: board
 
 **Complete**
 - [x] Make meeting notes @{2025-02-14} #Uni
+- [x] Fix notifications with pausing @{2025-06-23} #Personal
 - [x] make week 5 lecture notes @{2025-02-11} #Uni
 - [x] Implement buttons on widgets #Personal @{2025-06-01}
 - [x] Follow up on storage centre #Personal @{2025-06-09}
