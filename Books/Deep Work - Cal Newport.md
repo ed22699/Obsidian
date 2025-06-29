@@ -29,3 +29,4 @@ key points:
 	1. [[Work Deeply]]
 	2. [[Embrace Boredom]]
 	3. [[Quit Social Media]]
+	4. [[Drain The Shallows]]
