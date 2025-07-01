@@ -17,7 +17,7 @@ isbn13: 9780307887894
 isbn10: 307887898
 tags:
   - Book
-Status: To Read
+Status: Reading
 ---
 [[Books]]
 key points:

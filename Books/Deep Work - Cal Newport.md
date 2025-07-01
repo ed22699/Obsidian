@@ -17,7 +17,7 @@ isbn13: 9781455586660
 isbn10: 1455586668
 tags:
   - Book
-Status: Reading
+Status: Read
 ---
 [[Books]]
 key points:
