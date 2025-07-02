@@ -21,3 +21,15 @@ Status: Reading
 ---
 [[Books]]
 key points:
+## The lean Startup Method
+1. Entrepreneurs are everywhere
+2. Entrepreneurship is management 
+3. Validated learning
+4. Built-Measure-Learn
+5. Innovation accounting
+## Why startups fail
+- the level of uncertainty within the creation of a startup typically results in failure from traditional market research approaches
+- Just do it alternative approach does not work either
+
+## Chapters
+- [[Start]]
