@@ -10,3 +10,4 @@ tags:
 	2. if there was a solution, would they buy it?
 	3. Would they buy it from us?
 	4. Can we build a solution for that problem?
+- identify the assumptions and figure out ways to test them

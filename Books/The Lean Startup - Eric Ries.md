@@ -32,7 +32,11 @@ key points:
 - Just do it alternative approach does not work either
 
 ## Chapters
+Part 1: Vision
 - [[Start]]
 - [[Define]]
 - [[Learn]]
 - [[Experiment]]
+Part 2: Steer
+- [[How vision leads to steering]]
+- [[Leap]]
