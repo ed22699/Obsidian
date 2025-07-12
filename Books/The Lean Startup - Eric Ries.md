@@ -40,3 +40,5 @@ Part 1: Vision
 Part 2: Steer
 - [[How vision leads to steering]]
 - [[Leap]]
+- [[Test]]
+- [[Measure]]

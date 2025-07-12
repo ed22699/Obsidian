@@ -1,0 +1,16 @@
+---
+tags:
+  - the_lean_startup
+---
+- for a NMP don't overbuild or overpromise, early adopters prefer unpolished and they will be the people who validate your early assumptions
+- MVP forms:
+	- a video of the product can be a form of MVP
+	- Build the product without code for a few people and slowly automate as it is validated
+	- wizard of oz prototype
+- Remove all features that do not answer the question the MVP is asking
+- Reasons people have for not releasing MVP
+	- patient protection
+	- legal
+	- reputation - release MVP under an alias 
+	- competition - no one cares 
+- when assumptions are proved wrong don't stop, instead *pivot*
