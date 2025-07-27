@@ -17,7 +17,7 @@ isbn13: 9780307800558
 isbn10: 307800555
 tags:
   - Book
-Status: To Read
+Status: Read
 ---
 [[Books]]
 key points:

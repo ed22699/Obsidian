@@ -10,3 +10,4 @@ tags:
 	2. attempt to tune the engine from the baseline toward the ideal, after the startup has made all the micro changes and product optimisations it can move its baseline toward the ideal. The company reaches a decision point
 	3. pivot or persevere
 - advertising may not bring in a sustainable flow of people however it brings in *data*, new opportunities to see how independent cohorts react to new features
+- measuring requires clear tangible predictions ahead of time that can be measured against
