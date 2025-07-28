@@ -11,3 +11,7 @@ tags:
 	3. pivot or persevere
 - advertising may not bring in a sustainable flow of people however it brings in *data*, new opportunities to see how independent cohorts react to new features
 - measuring requires clear tangible predictions ahead of time that can be measured against
+- beware vanity metrics
+	- use split-test experiments and cohort metrics 
+	- validating features could be a better metric for progress then completing features as it actually gives you a direction in what the customer wants
+- reports from these experiments serve as proof of leaning and can be compared in the future to aid direction

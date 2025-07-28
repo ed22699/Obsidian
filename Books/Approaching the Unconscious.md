@@ -1,0 +1,17 @@
+---
+tags:
+  - man_and_has_symbols
+---
+- **What is a symbol?**: "A word or an image is symbolic when it implies something more than its obvious and immediate meaning", "has a wider unconscious aspect that is never precisely defined or fully explained"
+- **Conscious perception is limited by the senses**: "At some point he reaches the edge of certainty beyond when conscious knowledge cannot pass"
+	- **Reality is translated into the mind**: "Every concrete object is always unknown in a certain respects, because we cannot know the ultimate nature of matter itself"
+	- **Certain events are missed by our conscious** and their emotional/vital **importance later wells up from the unconscious through intuition** and afterthoughts - symbolism of dreams
+- "We too can become disassociated and lose our identity, we can be possessed and altered by moods"
+	- "An ability to control ones emotions that may be very desirable from one point of view would be a questionable accomplishment from another, for it would deprive social intarcorse of variety, colour and warmth"
+- **The unconscious mind expresses itself through dreams**
+- **Free Association**: 
+	- One action/activity triggers the thoughts of another. This is more of Freuds view on dreams
+	- The uprising of complex emotional themes can come from any point be it thought, meditation or dreams. But dreams arise from the emotional upset in the tender spots of our psyche making it a good vessel to the critical secret of thoughts
+	- Jung's opinion on dreams being a form of free association - dreams have a purposeful structure indicating an underlying intention. Rather than using free association it can easily be reached by other means
+		- Jung argues we should focus on the associations of the dreams themselves as they are a more specific expression from ones unconscious
+		- "The dream has its own limitation. Its specific form itself tells us what belings to it and what leas"

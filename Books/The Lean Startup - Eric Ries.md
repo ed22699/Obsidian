@@ -42,3 +42,4 @@ Part 2: Steer
 - [[Leap]]
 - [[Test]]
 - [[Measure]]
+- [[Pivot (or persevere)]]
