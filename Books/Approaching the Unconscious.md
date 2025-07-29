@@ -14,4 +14,13 @@ tags:
 	- The uprising of complex emotional themes can come from any point be it thought, meditation or dreams. But dreams arise from the emotional upset in the tender spots of our psyche making it a good vessel to the critical secret of thoughts
 	- Jung's opinion on dreams being a form of free association - dreams have a purposeful structure indicating an underlying intention. Rather than using free association it can easily be reached by other means
 		- Jung argues we should focus on the associations of the dreams themselves as they are a more specific expression from ones unconscious
-		- "The dream has its own limitation. Its specific form itself tells us what belings to it and what leas"
+		- "The dream has its own limitation. Its specific form itself tells us what belongs to it and what leads away from it"
+- **There is so much in day to day that not everything can remain in the conscious, however it is still stored and processed by the unconscious with the ability to surface**: "But when something slips out of our consciousness it does not cease to exist ... we come across thoughts that were temporarily lost to us"
+	- "Part of the unconscious consists of a multitude of temporarily obscured thoughts, impressions and images that, in spite of being lost, continue to influence our conscious minds"
+	- "Unconscious contents of the mind behave as if they were conscious \[we cannot be sure if an\] action is conscious or not"
+- **Repressed contents**: "Where pride is insistent enough, memory prefers to give way. Thus, among the lost memories, we encounter not a few that owe their subliminal state to their disagreeable and incompatible nature" - Nietzsche
+- "One must learn to discriminate carefully between intentional and unintentional contents of the mind. The former are derived from the ego personality; the latter, however, arise from a source that is not identical with the ego, but is its 'other side'"
+- **The unconscious is complex and vast in its abilities** and so the symbols within dreams can have subliminal material that "can consist of all urges, impulses and intentions; all perceptions and intuitions; all rational and irrational thoughts, conclusions, inductions, deductions and premises; and all varieties of feeling" 
+- Jung argues that **genius is the ability to reach the thoughts and ideas created by our unconscious and "translate it effectively into philosophy, literature, music or scientific discovery"**
+- "One finds that dreams present images and associations that are analogous to primitive ideas, myths and rites", Freud called them "archaic remnants", Jung argues they are not remnants and are instead still of high importance in their symbolism 
+	- He also argues that words in the waking world have primitive symbolism/meaning that has since been stripped but the absurdity of dreams dresses this primitive meaning in ways that are harder to ignore
