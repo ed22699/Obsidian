@@ -24,3 +24,19 @@ tags:
 - Jung argues that **genius is the ability to reach the thoughts and ideas created by our unconscious and "translate it effectively into philosophy, literature, music or scientific discovery"**
 - "One finds that dreams present images and associations that are analogous to primitive ideas, myths and rites", Freud called them "archaic remnants", Jung argues they are not remnants and are instead still of high importance in their symbolism 
 	- He also argues that words in the waking world have primitive symbolism/meaning that has since been stripped but the absurdity of dreams dresses this primitive meaning in ways that are harder to ignore
+- "The general function of dreams is to try to **restore our psychological balance** by producing dream material that re-establishes, in a subtle way the total psychic equilibrium"
+	- "Dream compensates for the deficiencies of their personalities ... warns them of the dangers in their present course"
+- *"One cannot afford to be naive in dealing with dreams. They originate in a spirit that is not quite human, but is rather a breath of nature - a spirit of the beautiful and generous as well as of the cruel goddess"* - dreams can be misleading traps like the Delphic oracle
+- Recurring dreams
+	- "Attempt to compensate for a particular defect in the dreamer's attitude to life"
+	- "Date from a traumatic moment that has left behind some specific prejudice"
+	- "Anticipate a future event of importance"
+- "\[Discussing archetypes\] like the instincts the collective thought patterns of the human mind are innate and inherited. They function when the occasion arises, in more or less the same way in all of us"
+- "**Psyche is more then consciousness**. Animals have little consciousness but many impulses and reactions that denote the existence of a psyche"
+- "There has long been a general belief that the chief function of dreams is prognostication of the future"
+	- "Represented by corresponding thought forms - that is, by the archetypes"
+- *"\[Modern man\] his gods and demons have not disappeared at all; they have merely got new names. They keep him on the run with restlessness, vague apprehensions, psychological complications, an insatiable need for pills, alcohol, tobacco, food - and, above all, a large array of neuroses"*
+	- *"A man likes to believe that he is the master of his soul. But as long as he is unable to control his moods and emotions, or to be conscious of the myriad secret ways in which unconscious functions insinuate themselves into his arrangements and decisions, he is certainly not his own master"*
+- *"The sad truth is that man's real life consists of a complex of inexorable opposites - day and night, birth and death, happiness and misery, good and evil. We are not even sure that one will prevail against the other, that good will overcome evil, or joy defeat pain. List is a battleground, it always has been, and always will be; and if it were not so, existence would come to an end"*
+- *"Our intellect has created a new world that dominates nature, and has populated it with monstrous machines. The latter are so indubitably useful that we cannot see even a possibility of getting rid of them or our subservience to them. Man is bound to follow the adventurous promptings of his scientific and inventive mind and to admire himself for his splendid achievements. At the same time, his genius shows the uncanny tendency to invent things that become more and more dangerous, because they represent better and better means for wholesale suicide"*
+- *"In spite of our proud domination of nature, we are still her victims, for we have not even learned to control our own nature. Slowly but, it appears, inevitably, we are courting disaster"*
