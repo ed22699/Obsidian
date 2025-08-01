@@ -22,3 +22,7 @@ Status: Read
 [[Books]]
 key points:
 - [[Approaching the Unconscious]]
+- [[Ancient Myths and Modern Man]]
+- [[The process of individuation]]
+- [[Symbolism in the Visual Arts]]
+- [[Symbols in an individual analysis]]

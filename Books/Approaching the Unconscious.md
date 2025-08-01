@@ -40,3 +40,26 @@ tags:
 - *"The sad truth is that man's real life consists of a complex of inexorable opposites - day and night, birth and death, happiness and misery, good and evil. We are not even sure that one will prevail against the other, that good will overcome evil, or joy defeat pain. List is a battleground, it always has been, and always will be; and if it were not so, existence would come to an end"*
 - *"Our intellect has created a new world that dominates nature, and has populated it with monstrous machines. The latter are so indubitably useful that we cannot see even a possibility of getting rid of them or our subservience to them. Man is bound to follow the adventurous promptings of his scientific and inventive mind and to admire himself for his splendid achievements. At the same time, his genius shows the uncanny tendency to invent things that become more and more dangerous, because they represent better and better means for wholesale suicide"*
 - *"In spite of our proud domination of nature, we are still her victims, for we have not even learned to control our own nature. Slowly but, it appears, inevitably, we are courting disaster"*
+
+# GPT Summary
+1. The Importance of Dreams
+	- Dreams are the “royal road” to understanding the unconscious.
+	- They are not random but have meaning, often compensating for what the conscious mind ignores.
+	- Dreams use symbolic language that requires interpretation — not fixed meanings but context-dependent.
+	- Example: A dream about a house often represents the dreamer’s psyche (e.g., basement = unconscious, attic = intellect).
+2. Signs vs. Symbols
+	- **Sign:** has a fixed meaning (e.g., red light = stop).
+	- **Symbol:** points beyond itself to something unknown or unconscious (e.g., a circle may symbolise wholeness, eternity, or the Self).
+	- Symbols cannot be invented consciously; they arise spontaneously from the unconscious.
+3. The Collective Unconscious
+	- Distinct from the personal unconscious (forgotten/repressed material).
+	- Holds **archetypes** — universal forms and images (hero, mother, shadow, wise old man, etc.).
+	- Archetypes are inherited patterns of psychic functioning, shaping how humans perceive and experience.
+4. The Psyche in Balance
+	- Consciousness and the unconscious work together.
+	- When the conscious mind becomes one-sided, the unconscious compensates through dreams, fantasies, or even neuroses.
+	- Example: Someone overly rational may have dreams filled with irrational or mythic images.
+5. The Modern Problem
+	- Modern humans live cut off from symbolic understanding, relying on rationalism and science.
+	- This creates inner imbalance, emptiness, and loss of meaning.
+	- Jung argues for re-engaging with symbols to restore wholeness.
