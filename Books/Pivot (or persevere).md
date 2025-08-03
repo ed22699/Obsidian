@@ -4,3 +4,13 @@ tags:
 ---
 - a startups runway is the amount of pivots it can still make
 - have regular pivot or persevere meetings 
+- customer segment pivot: company realises that the product it's building solves a real problem for real customers but that they are not the customers it originally planned to serve
+	- meant they lacked a clear understanding of how their engine of growth operated
+- a pivot is *a special kind of change designed to test a new fundamental hypothesis about the product, business model, and engine of growth*
+- types of pivots:
+	- **Zoom-in Pivot**: single feature becomes the whole product
+	- **Zoom-out Pivot**: single feature is insufficient to support a whole product. The whole product becomes a single feature of a much larger product
+	- **Customer segment pivot**: realises product solves a real problem for real customers, but they are not the type of customers originally planned to served. Product hypothesis is partially confirmed
+	- **Customer need pivot**: get to know customers well, becomes clear that the problem we're trying to solve is not very important to them, however, the customer intimacy leads to discovering other related problems that are important
+	- **Platform Pivot**: change from an application to a platform or vice versa
+	- **Business architecture pivot**: companies generally follow one of two major business architectures: high margin, low volume (complex systems model) or low margin, high volume (volume operations model). The former commonly is associated with business to business or enterprise sales cycles, and the latter with consumer products (there are notable exceptions).
