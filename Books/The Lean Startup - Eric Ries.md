@@ -43,3 +43,5 @@ Part 2: Steer
 - [[Test]]
 - [[Measure]]
 - [[Pivot (or persevere)]]
+Part 3: Accelerate 
+- [[Batch]]
