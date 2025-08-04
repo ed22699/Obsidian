@@ -14,3 +14,7 @@ tags:
 	- **Customer need pivot**: get to know customers well, becomes clear that the problem we're trying to solve is not very important to them, however, the customer intimacy leads to discovering other related problems that are important
 	- **Platform Pivot**: change from an application to a platform or vice versa
 	- **Business architecture pivot**: companies generally follow one of two major business architectures: high margin, low volume (complex systems model) or low margin, high volume (volume operations model). The former commonly is associated with business to business or enterprise sales cycles, and the latter with consumer products (there are notable exceptions).
+	- **Value Capture Pivot**: changes to the way a company captures value can have far-reaching consequences for the rest of the business, product, and marketing strategies
+	- **Engine of Growth Pivot**: there are three primary engines of growth that power startups: the viral, sticky, and paid growth models. In this pivot, a company changes its growth strategy to seek faster or more profitable growth. Commonly but not always, the engine of growth also requires a change in the way value is captured
+	- **Channel Pivot**: the channel is the mechanism by which a company delivers its product to customers. A channel pivot is a recognition that the same basic solution could be delivered through a different channel with greater effectiveness
+	- **Technology Pivot**: Company discovers a way to achieve the same solution by using a completely different technology
