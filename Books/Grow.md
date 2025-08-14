@@ -1,0 +1,24 @@
+---
+tags:
+  - the_lean_startup
+---
+- the engine of growth is the mechanism that startups use to achieve sustainable growth
+	- *new customers come from the actions of past customers*
+- four primary ways past customers drive sustainable growth:
+	- **Word of Mouth**: comes from satisfied customers' enthusiasm of the product
+	- **As a side effect of product usage**: fashion or status, such as luxury goods products, drive awareness of themselves whenever they are used. When you see someone dressed in the latest clothes or driving a certain car, you may be influenced to buy that product. This also included viral products
+	- **Through funded advertising**: for this to be sustainable growth the advertising must be paid for out of revenue. As long as the cost of acquiring a new customer (*marginal cost*) is less than the revenue that customer generates (*marginal revenue*), the excess (*marginal profit*) can be used to acquire more customers
+	- **Through repeat purchase or use**: subscription plan or voluntary repurchases
+- engines of growth are designed to give startups a relatively small set of metrics on which to focus their energies. Startups have to focus on the big experiments that lead to validated learning, engines of growth framework helps stay focused on the metrics that matter
+- **The sticky engine of growth**: the aim is to retain customers
+	- tracks the churn rate: the fraction of customers in any period who fail to remain engaged with the company's product
+	- if the rate of new customer acquisition exceeds the churn rate, the product will grow
+	- *rate of compounding = natural growth - churn rate*
+	- in this the way to find growth is to focus on existing customers. *Improve customer retention*
+- **The viral engine of growth**
+	- the viral loop is determined by a single mathematical term called the viral coefficient, the higher this is the faster the product will spread
+	- *viral coefficient* measures how many new customers will use a product as a consequence of each new customer who signs up (how many friends each customer brings with them)
+	- a viral loop with a coefficient that is greater than $1.0$ will grow exponentially
+	- must *focus on this coefficient for growth*
+	- these *typically rely on indirect sources of revenue such as advertising* as they cannot afford friction to impede the process of signing customers up and recruiting their friends. Makes testing the value hypothesis especially challenging
+- **The paid engine of growth**

@@ -45,3 +45,4 @@ Part 2: Steer
 - [[Pivot (or persevere)]]
 Part 3: Accelerate 
 - [[Batch]]
+- [[Grow]]
