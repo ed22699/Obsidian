@@ -22,3 +22,6 @@ tags:
 	- must *focus on this coefficient for growth*
 	- these *typically rely on indirect sources of revenue such as advertising* as they cannot afford friction to impede the process of signing customers up and recruiting their friends. Makes testing the value hypothesis especially challenging
 - **The paid engine of growth**
+	- for each customer you get £X revenue, however to acquire the customer it requires £Y cost, you are looking to improve that proportion of revenue i.e. $\frac {X - Y}{X}$. To do this you can either increase the revenue from each customer (X) or you can drive down the cost of acquiring a new customer (Y). This is the paid engine of growth
+- You are searching for product market fit, the engine of growth can be a good indicator of this when you evaluate each trip through the Build-Measure-Learn feedback loop
+- every engine of growth eventually runs out of gas. You need to find new sources of growth and tune the engine of growth before this happens

@@ -46,3 +46,4 @@ Part 2: Steer
 Part 3: Accelerate 
 - [[Batch]]
 - [[Grow]]
+- [[Adapt]]
