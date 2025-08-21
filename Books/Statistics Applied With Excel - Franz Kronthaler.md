@@ -20,6 +20,15 @@ tags:
 Status: Reading
 ---
 [[Books]]
-key points:
+## Functions
+| Function        | Description                                                                                      | Formula   |
+| --------------- | ------------------------------------------------------------------------------------------------ | --------- |
+| arithmetic mean | [[Average Values, How people and objects behave in general#The Arithmetic Mean]]                 | AVERAGE   |
+| median          | [[Average Values, How people and objects behave in general#The Median]]                          | MEDIAN    |
+| mode            | [[Average Values, How people and objects behave in general#The Mode]]                            | MODE.SNGL |
+| geometric mean  | [[Average Values, How people and objects behave in general#The Geometric Mean and Growth Rates]] | GEOMEAN   |
+## key points:
 - [[Statistics Is Fun]]
 - [[Excel, A Brief Introduction to the Statistical Tools]]
+- [[Average Values, How people and objects behave in general]]
+- [[Variation, The Deviation from Average Behaviour]]
