@@ -21,14 +21,22 @@ Status: Reading
 ---
 [[Books]]
 ## Functions
-| Function        | Description                                                                                      | Formula   |
-| --------------- | ------------------------------------------------------------------------------------------------ | --------- |
-| arithmetic mean | [[Average Values, How people and objects behave in general#The Arithmetic Mean]]                 | AVERAGE   |
-| median          | [[Average Values, How people and objects behave in general#The Median]]                          | MEDIAN    |
-| mode            | [[Average Values, How people and objects behave in general#The Mode]]                            | MODE.SNGL |
-| geometric mean  | [[Average Values, How people and objects behave in general#The Geometric Mean and Growth Rates]] | GEOMEAN   |
+| Function            | Description                                                                                      | Formula      |
+| ------------------- | ------------------------------------------------------------------------------------------------ | ------------ |
+| arithmetic mean     | [[Average Values, How people and objects behave in general#The Arithmetic Mean]]                 | AVERAGE      |
+| median              | [[Average Values, How people and objects behave in general#The Median]]                          | MEDIAN       |
+| mode                | [[Average Values, How people and objects behave in general#The Mode]]                            | MODE.SNGL    |
+| geometric mean      | [[Average Values, How people and objects behave in general#The Geometric Mean and Growth Rates]] | GEOMEAN      |
+| Range               | [[Variation, The Deviation from Average Behaviour#The Range]]                                    | MIN          |
+| Range               | <br>[[Variation, The Deviation from Average Behaviour#The Range]]                                | MAX          |
+| Standard deviation  | [[Variation, The Deviation from Average Behaviour#The Standard Deviation]]                       | STDEV.S      |
+| Variance            | [[Variation, The Deviation from Average Behaviour#The Variance]]                                 | VAR.S        |
+| Interquartile Range | [[Variation, The Deviation from Average Behaviour#The Interquartile Range]]                      | QUARTILE.INC |
+## Creating the Boxplot with Excel
+- Insert tab $\rightarrow$ Box and Whisker diagram
 ## key points:
 - [[Statistics Is Fun]]
 - [[Excel, A Brief Introduction to the Statistical Tools]]
 - [[Average Values, How people and objects behave in general]]
 - [[Variation, The Deviation from Average Behaviour]]
+- [[Charts, The Possibility to Display Data Visually]]
