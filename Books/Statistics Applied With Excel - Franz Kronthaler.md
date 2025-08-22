@@ -41,3 +41,4 @@ Status: Reading
 - [[Average Values, How people and objects behave in general]]
 - [[Variation, The Deviation from Average Behaviour]]
 - [[Charts, The Possibility to Display Data Visually]]
+- [[Correlation, The Joint Movement of Two Variables]]
