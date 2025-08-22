@@ -32,6 +32,7 @@ Status: Reading
 | Standard deviation  | [[Variation, The Deviation from Average Behaviour#The Standard Deviation]]                       | STDEV.S      |
 | Variance            | [[Variation, The Deviation from Average Behaviour#The Variance]]                                 | VAR.S        |
 | Interquartile Range | [[Variation, The Deviation from Average Behaviour#The Interquartile Range]]                      | QUARTILE.INC |
+| Frequency Table     | [[Charts, The Possibility to Display Data Visually#The Frequency Table]]                         | FREQUENCY    |
 ## Creating the Boxplot with Excel
 - Insert tab $\rightarrow$ Box and Whisker diagram
 ## key points:
