@@ -21,20 +21,27 @@ Status: Reading
 ---
 [[Books]]
 ## Functions
-| Function            | Description                                                                                      | Formula      |
-| ------------------- | ------------------------------------------------------------------------------------------------ | ------------ |
-| arithmetic mean     | [[Average Values, How people and objects behave in general#The Arithmetic Mean]]                 | AVERAGE      |
-| median              | [[Average Values, How people and objects behave in general#The Median]]                          | MEDIAN       |
-| mode                | [[Average Values, How people and objects behave in general#The Mode]]                            | MODE.SNGL    |
-| geometric mean      | [[Average Values, How people and objects behave in general#The Geometric Mean and Growth Rates]] | GEOMEAN      |
-| Range               | [[Variation, The Deviation from Average Behaviour#The Range]]                                    | MIN          |
-| Range               | <br>[[Variation, The Deviation from Average Behaviour#The Range]]                                | MAX          |
-| Standard deviation  | [[Variation, The Deviation from Average Behaviour#The Standard Deviation]]                       | STDEV.S      |
-| Variance            | [[Variation, The Deviation from Average Behaviour#The Variance]]                                 | VAR.S        |
-| Interquartile Range | [[Variation, The Deviation from Average Behaviour#The Interquartile Range]]                      | QUARTILE.INC |
-| Frequency Table     | [[Charts, The Possibility to Display Data Visually#The Frequency Table]]                         | FREQUENCY    |
+| Function                    | Description                                                                                                              | Formula      |
+| --------------------------- | ------------------------------------------------------------------------------------------------------------------------ | ------------ |
+| arithmetic mean             | [[Average Values, How people and objects behave in general#The Arithmetic Mean]]                                         | AVERAGE      |
+| median                      | [[Average Values, How people and objects behave in general#The Median]]                                                  | MEDIAN       |
+| mode                        | [[Average Values, How people and objects behave in general#The Mode]]                                                    | MODE.SNGL    |
+| geometric mean              | [[Average Values, How people and objects behave in general#The Geometric Mean and Growth Rates]]                         | GEOMEAN      |
+| Range                       | [[Variation, The Deviation from Average Behaviour#The Range]]                                                            | MIN          |
+| Range                       | <br>[[Variation, The Deviation from Average Behaviour#The Range]]                                                        | MAX          |
+| Standard deviation          | [[Variation, The Deviation from Average Behaviour#The Standard Deviation]]                                               | STDEV.S      |
+| Variance                    | [[Variation, The Deviation from Average Behaviour#The Variance]]                                                         | VAR.S        |
+| Interquartile Range         | [[Variation, The Deviation from Average Behaviour#The Interquartile Range]]                                              | QUARTILE.INC |
+| Frequency Table             | [[Charts, The Possibility to Display Data Visually#The Frequency Table]]                                                 | FREQUENCY    |
+| Bravais-Pearson Coefficient | [[Correlation, The Joint Movement of Two Variables#The Correlation Coefficient of Bravais-Pearson for Metric Variables]] | CORREL       |
+| Rank (for Spearman's)       | [[Correlation, The Joint Movement of Two Variables#The Correlation Coefficient of Spearman for Ordinal Variables]]       | RANK.AVG     |
 ## Creating the Boxplot with Excel
 - Insert tab $\rightarrow$ Box and Whisker diagram
+## Creating a Pivot Table with Excel
+- there is no function to calculate the phi coefficient or the contingency coefficient
+1. Select entire range of values
+2. Insert tab $\rightarrow$ PivotTable
+3. click on the variables and create the crosstab
 ## key points:
 - [[Statistics Is Fun]]
 - [[Excel, A Brief Introduction to the Statistical Tools]]
@@ -42,3 +49,4 @@ Status: Reading
 - [[Variation, The Deviation from Average Behaviour]]
 - [[Charts, The Possibility to Display Data Visually]]
 - [[Correlation, The Joint Movement of Two Variables]]
+- [[Ratios and Indices, The Opportunity to Generate New Knowledge from Old Ones]]
