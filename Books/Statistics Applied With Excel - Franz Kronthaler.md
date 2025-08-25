@@ -51,3 +51,4 @@ Status: Reading
 - [[Correlation, The Joint Movement of Two Variables]]
 - [[Ratios and Indices, The Opportunity to Generate New Knowledge from Old Ones]]
 - [[Of Data and Truth]]
+- [[Hypotheses, Only a Specification of the Question?]]

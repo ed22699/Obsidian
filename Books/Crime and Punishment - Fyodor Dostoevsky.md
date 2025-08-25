@@ -17,7 +17,7 @@ isbn13: 9788583866237
 isbn10: 8583866236
 tags:
   - Book
-Status: Reading
+Status: Read
 ---
 [[Books]]
 key points:
