@@ -18,4 +18,18 @@ $$
 - we calculate the $z$-value using the test statistic
 - insert the sample mean, the mean from the null hypothesis, and the standard deviation of the sampling distribution
 ## The Decision
-- compare our $z$-value with the critical values
+- compare our $z$-value with the critical values and decide whether to reject the null hypothesis
+- we can also compute the confidence interval
+## The Test When the Standard Deviation in the Population Is Unknown or the Sample Is Small $n \leq 30$
+- we tend to have the problem that we do not know the standard deviation in the population. In this case, we substitute in the formula of the standard deviation of the sampling distribution
+$$
+\sigma_{\bar x} = \frac \sigma {\sqrt n}
+$$
+- the standard deviation of the population $\sigma$ by the standard deviation of the sample $s$. Thus, the standard deviation of the sampling distribution is recalculated as follows:
+$$
+\hat \sigma _{\bar x}  = \frac s {\sqrt n}
+$$
+- where 
+	- $\hat \sigma _{\bar x}$ is the estimated standard deviation of the sampling distribution
+	- $s$ is the standard deviation of the sample
+	- $n$ is the number of observations
