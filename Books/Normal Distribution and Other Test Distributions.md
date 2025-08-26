@@ -8,6 +8,7 @@ tags:
 - its tails converge asymptotically to the x-axis
 - maximum is in the middle of the curve
 - the arithmetic mean, median and mode are equal
+- the area under the normal distribution indicates the probability of finding a value in a particular interval
 ![[Screenshot 2025-08-25 at 22.52.44.png|400]]
 ![[Screenshot 2025-08-25 at 22.55.32.png|500]]
 $$

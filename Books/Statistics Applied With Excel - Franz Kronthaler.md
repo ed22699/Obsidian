@@ -57,3 +57,5 @@ Status: Reading
 - [[Of Data and Truth]]
 - [[Hypotheses, Only a Specification of the Question?]]
 - [[Normal Distribution and Other Test Distributions]]
+- [[Hypothesis Test, What Holds?]]
+- [[The Test for a Group Mean or One-Sample t-Test]]
