@@ -33,3 +33,25 @@ $$Z = \frac{x-\mu}{\sigma}$$
 	- $x$ is the value of the distribution to be standardised 
 	- $\mu$ is the mean value of the distribution
 	- $\sigma$ is the standard deviation of the distribution
+- this transformation moves the normal distribution to the standard normal distribution i.e. $N(0,1)$ 
+![[Screenshot 2025-08-26 at 10.47.08.png|400]]
+- with the $z$-value and the standard normal distribution, we can make a statement about likelihood of a certain value or greater
+- the standard normal distribution has been tabulated, this is important to test hypothesis
+## Normal Distribution, $t$-Distribution, $\chi ^2$-Distribution and $F$-Distribution
+- again all these are tabulated
+- $t$-distribution is symmetrical like the standard normal distribution with a maximum, a mean of zero and asymptotic towards the $x$-axis. But is slightly wider and flatter, this depends on the degrees of freedom.
+	- about 30 degrees of freedom is equal to the standard normal distribution
+![[Screenshot 2025-08-26 at 10.57.57.png|400]]
+- $\chi ^2$-distribution is useful when testing nominal variables. 
+	- depends on degrees of freedom
+![[Screenshot 2025-08-26 at 10.58.22.png|400]]
+- $F$-distribution, needed for analysis of variance and regression
+	- depends on degrees of freedom
+![[Screenshot 2025-08-26 at 11.00.30.png|400]]
+## Creating Distributions with Excel
+### Drawing the normal distribution $N(100,20)$ with Excel
+- open empty Excel worksheet and enter the possible $x$-values in the first column
+- in the second column, the function NORM.DIST gives the values of the normal distribution
+- we enter the $x$-value in the NORM.DIST window for which we want to obtain the function value, further we define the mean and the standard deviation and enter
+- draw the graph using Insert tab $\rightarrow$ Line Chart
+## Drawing the $t$-Distribution Curve with 15 Degrees of Freedom with Excel
