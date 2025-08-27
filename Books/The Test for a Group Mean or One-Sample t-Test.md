@@ -33,3 +33,31 @@ $$
 	- $\hat \sigma _{\bar x}$ is the estimated standard deviation of the sampling distribution
 	- $s$ is the standard deviation of the sample
 	- $n$ is the number of observations
+- the test distribution is then no longer the standard normal distribution, but the $t$-distribution with $df = n - 1$ degrees of freedom
+- a small sample is when the number of observations $n$ is less than or equal to 30, in both cases, the critical values are not taken from the standard normal distribution table but from the $t$-distribution table
+- the test value is $t$-distributed and the test statistic is as follows
+$$
+t = \frac{\bar x - \mu}{\hat \sigma _{\bar x}}
+$$
+## The Effect Size
+- usually used with the one-sample $t$-test in Cohen's $d$
+$$
+Cohen's \; d = \frac{\bar x -\mu}{s}
+$$
+- where:
+	- $\bar x$ is the arithmetic mean of the sample
+	- $\mu$ is the population mean assumed under the null hypothesis
+	- $s$ is the standard deviation of the sample
+- in literature Cohen's $d$ is interpreted as follows
+	- small effect, in the range between 0.2 to < 0.5
+	- medium effect, ranges from 0.5 to < 0.8
+	- large effect,  $\geq 0.8$
+	- note it can also take negative values which would go the other way
+## Calculating the One Sample t-Test with Excel
+- Excel does not provide a function for the one-sample $t$-test
+- we can use NORM.S.DIST to calculate the probability with which our test value occurs
+	- enter the value of the test statistic as the $z$-value and 1 under Cumulative
+	- we get back the probability of the area left of the test statistic
+- accordingly we can use the function T.DIST to calculate the exact probability of our $t$-value to occur when the null hypothesis is correct
+	- enter our $t$-value, define the number of degrees of freedom and enter 1 under cumulative
+	- we get the probability of the area to the left of the $t$-value

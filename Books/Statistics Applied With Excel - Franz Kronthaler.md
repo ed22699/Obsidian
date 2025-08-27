@@ -21,24 +21,26 @@ Status: Reading
 ---
 [[Books]]
 ## Functions
-| Function                    | Description                                                                                                                            | Formula      |
-| --------------------------- | -------------------------------------------------------------------------------------------------------------------------------------- | ------------ |
-| arithmetic mean             | [[Average Values, How people and objects behave in general#The Arithmetic Mean]]                                                       | AVERAGE      |
-| median                      | [[Average Values, How people and objects behave in general#The Median]]                                                                | MEDIAN       |
-| mode                        | [[Average Values, How people and objects behave in general#The Mode]]                                                                  | MODE.SNGL    |
-| geometric mean              | [[Average Values, How people and objects behave in general#The Geometric Mean and Growth Rates]]                                       | GEOMEAN      |
-| Range                       | [[Variation, The Deviation from Average Behaviour#The Range]]                                                                          | MIN          |
-| Range                       | <br>[[Variation, The Deviation from Average Behaviour#The Range]]                                                                      | MAX          |
-| Standard deviation          | [[Variation, The Deviation from Average Behaviour#The Standard Deviation]]                                                             | STDEV.S      |
-| Variance                    | [[Variation, The Deviation from Average Behaviour#The Variance]]                                                                       | VAR.S        |
-| Interquartile Range         | [[Variation, The Deviation from Average Behaviour#The Interquartile Range]]                                                            | QUARTILE.INC |
-| Frequency Table             | [[Charts, The Possibility to Display Data Visually#The Frequency Table]]                                                               | FREQUENCY    |
-| Bravais-Pearson Coefficient | [[Correlation, The Joint Movement of Two Variables#The Correlation Coefficient of Bravais-Pearson for Metric Variables]]               | CORREL       |
-| Rank (for Spearman's)       | [[Correlation, The Joint Movement of Two Variables#The Correlation Coefficient of Spearman for Ordinal Variables]]                     | RANK.AVG     |
-| Normal Distribution         | [[Normal Distribution and Other Test Distributions#The Normal Distribution]]                                                           | NORM.DIST    |
-| $t$-distribution            | [[Normal Distribution and Other Test Distributions#Normal Distribution, $t$-Distribution, $ chi 2$-Distribution and $F$-Distribution]] | T.DIST       |
-| $\chi ^2$-distribution      | [[Normal Distribution and Other Test Distributions#Normal Distribution, $t$-Distribution, $ chi 2$-Distribution and $F$-Distribution]] | CHISQ.DIST   |
-| $F$-distribution            | [[Normal Distribution and Other Test Distributions#Normal Distribution, $t$-Distribution, $ chi 2$-Distribution and $F$-Distribution]] | F.DIST       |
+| Function                    | Description                                                                                                                            | Formula             |
+| --------------------------- | -------------------------------------------------------------------------------------------------------------------------------------- | ------------------- |
+| arithmetic mean             | [[Average Values, How people and objects behave in general#The Arithmetic Mean]]                                                       | AVERAGE             |
+| median                      | [[Average Values, How people and objects behave in general#The Median]]                                                                | MEDIAN              |
+| mode                        | [[Average Values, How people and objects behave in general#The Mode]]                                                                  | MODE.SNGL           |
+| geometric mean              | [[Average Values, How people and objects behave in general#The Geometric Mean and Growth Rates]]                                       | GEOMEAN             |
+| Range                       | [[Variation, The Deviation from Average Behaviour#The Range]]                                                                          | MIN                 |
+| Range                       | <br>[[Variation, The Deviation from Average Behaviour#The Range]]                                                                      | MAX                 |
+| Standard deviation          | [[Variation, The Deviation from Average Behaviour#The Standard Deviation]]                                                             | STDEV.S             |
+| Variance                    | [[Variation, The Deviation from Average Behaviour#The Variance]]                                                                       | VAR.S               |
+| Interquartile Range         | [[Variation, The Deviation from Average Behaviour#The Interquartile Range]]                                                            | QUARTILE.INC        |
+| Frequency Table             | [[Charts, The Possibility to Display Data Visually#The Frequency Table]]                                                               | FREQUENCY           |
+| Bravais-Pearson Coefficient | [[Correlation, The Joint Movement of Two Variables#The Correlation Coefficient of Bravais-Pearson for Metric Variables]]               | CORREL              |
+| Rank (for Spearman's)       | [[Correlation, The Joint Movement of Two Variables#The Correlation Coefficient of Spearman for Ordinal Variables]]                     | RANK.AVG            |
+| Normal Distribution         | [[Normal Distribution and Other Test Distributions#The Normal Distribution]]                                                           | NORM.DIST           |
+| $t$-distribution            | [[Normal Distribution and Other Test Distributions#Normal Distribution, $t$-Distribution, $ chi 2$-Distribution and $F$-Distribution]] | T.DIST              |
+| $\chi ^2$-distribution      | [[Normal Distribution and Other Test Distributions#Normal Distribution, $t$-Distribution, $ chi 2$-Distribution and $F$-Distribution]] | CHISQ.DIST          |
+| $F$-distribution            | [[Normal Distribution and Other Test Distributions#Normal Distribution, $t$-Distribution, $ chi 2$-Distribution and $F$-Distribution]] | F.DIST              |
+| Assisting One Sample t-Test | [[The Test for a Group Mean or One-Sample t-Test#Calculating the One Sample t-Test with Excel]]                                        | NORM.S.DIST, T.DIST |
+|                             |                                                                                                                                        |                     |
 ## Creating the Boxplot with Excel
 - Insert tab $\rightarrow$ Box and Whisker diagram
 ## Creating a Pivot Table with Excel
@@ -59,3 +61,4 @@ Status: Reading
 - [[Normal Distribution and Other Test Distributions]]
 - [[Hypothesis Test, What Holds?]]
 - [[The Test for a Group Mean or One-Sample t-Test]]
+- [[The Test for a Difference Between Group Means or Independent Samples t-Test]]
