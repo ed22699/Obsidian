@@ -35,3 +35,13 @@ $$
 	- r in the range of $0.5$ to $1.0$ indicates a large effect
 	- r cannot be greater than $1.0$ as it is the theoretical maximum
 ## Equal or Unequal Variances
+- excel provides the possibility to compute the test with equal or unequal variances
+## Calculating the Independent Samples t-Test with Excel
+- the commands for testing difference between group means are available within Data tab and in the Data Analysis tool $\rightarrow$ t-Test: Two-Sample Assuming Equal Variances and t-Test: Two-Sample Assuming Unequal variances
+
+
+- In the test for a difference between group means, we address the question whether two groups in their population differ with respect to the average behaviour.
+- The test assumes that the test variable is metric and normally distributed.
+- If the sample is small and the test variable is metric but not normally distributed, or if the test variable is ordinal, we can use the Mann−Whitney test.
+- The test for a difference between group means is often called independent samples t-test.
+- Depending on whether the variances are equal or unequal, we perform the test for equal variances or unequal variances.
