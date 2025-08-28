@@ -24,5 +24,14 @@ $$
 - fill in our test statistic with the required values, using the t-value make the test decision
 ## The Effect Size
 $$
-r = \sqrt{\frac}
+r = \sqrt{\frac{t^2}{t^2 + df}}
 $$
+- where
+	- $t$ is the t-value of the test statistic
+	- $df$ is the degrees of freedom
+- values can be interpreted as follows
+	- r smaller $< 0.3$ indicates a small effect
+	- r in the range between $0.3$ to $<0.5$ is a medium effect
+	- r in the range of $0.5$ to $1.0$ indicates a large effect
+	- r cannot be greater than $1.0$ as it is the theoretical maximum
+## Equal or Unequal Variances
