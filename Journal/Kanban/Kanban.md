@@ -13,7 +13,6 @@ kanban-plugin: board
 
 ## To Do
 
-- [ ] Add noise for when timer is complete #Personal @{2025-06-02}
 
 
 ## In Progress
@@ -23,6 +22,7 @@ kanban-plugin: board
 ## Complete
 
 **Complete**
+- [x] Add noise for when timer is complete #Personal @{2025-06-02}
 - [x] Make meeting notes @{2025-02-14} #Uni
 - [x] Fix notifications with pausing @{2025-06-23} #Personal
 - [x] Fix timerformat @{2025-06-23} #Personal

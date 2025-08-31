@@ -48,6 +48,9 @@ Status: Reading
 1. Select entire range of values
 2. Insert tab $\rightarrow$ PivotTable
 3. click on the variables and create the crosstab
+# Summary of Test Procedures
+![[Screenshot 2025-08-31 at 19.24.45.png|500]]
+![[Screenshot 2025-08-31 at 19.25.03.png|500]]
 ## key points:
 - [[Statistics Is Fun]]
 - [[Excel, A Brief Introduction to the Statistical Tools]]
@@ -66,3 +69,4 @@ Status: Reading
 - [[The Analysis of Variance to Test for Group Differences When There Are More Than Two Groups]]
 - [[The Test for Correlation with Metric, Ordinal, and Nominal Data]]
 - [[More Tests for Nominal Variables]]
+- [[The Simple Linear Regression]]
