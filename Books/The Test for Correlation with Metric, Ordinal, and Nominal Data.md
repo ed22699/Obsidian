@@ -46,3 +46,37 @@ $$
 - where 
 	- $r_{Sp}$ is the correlation coefficient of Spearman
 	- $n$ is the number of observations
+## The Test for Correlation with Nominal Data
+- two situations
+	- nominal variables with two characteristics each
+		- $H_0: r_\Phi = 0$
+		- $H_A: r_\Phi \neq 0$
+	- nominal variables with more than two characteristics 
+		- $H_0: C = 0$
+		- $H_A: C > 0$
+- in both cases the correlation coefficient says nothing about the direction of the relationship
+	- due to this both test procedures are often called tests of independence, if the variables are not correlated then they are independent 
+### Test of Independence for Nominal Variables with Two Characteristics
+$$
+r_{\Phi} = \frac{a \times d - b \times c}{\sqrt{S_1 \times S_2 \times S_3 \times S_4}}
+$$
+- where
+	- $a,b,c,d$ are the fields of a 2x2 matrix
+	- $S_1, S_2, S_3,S_4$ are the row sums and column sums
+![[Screenshot 2025-08-31 at 00.20.58.png|400]]
+- $\chi ^2 = n \times r_\Phi ^2$
+### Test of Independence for Nominal Variables with More Than Two Characteristics
+$$
+C = \sqrt{\frac U {U+n}}
+$$
+- $U$ is the sum of the deviations between the observed and theoretically expected values
+$$
+U = \sum \sum \frac{(f_{jk} - e_{jk})^2}{e_{jk}}
+$$
+- where
+	- $f_{jk}$ are the observed frequencies
+	- $e_{jk}$ are the theoretically expected frequencies
+## Calculating Correlation Tests with Excel
+- no command available to calculate the tests of correlation for metric and ordinal data
+	- calculate the correlation coefficients and then test using the procedure described above
+- for nominal variable we have the CHIQU.TEST it gives back the probability of no correlation between the variables when we put in the observed frequencies and theoretically expected frequencies
