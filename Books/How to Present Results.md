@@ -1,0 +1,11 @@
+---
+tags:
+  - statistics_excel
+---
+- the following points should always be discussed
+	- the problem
+	- the research question
+	- the literature
+	- the data and the method
+	- the empirical results
+	- the summary and the conclusions
