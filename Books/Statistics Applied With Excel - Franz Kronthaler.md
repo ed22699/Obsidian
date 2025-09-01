@@ -70,3 +70,4 @@ Status: Reading
 - [[The Test for Correlation with Metric, Ordinal, and Nominal Data]]
 - [[More Tests for Nominal Variables]]
 - [[The Simple Linear Regression]]
+- [[Multiple Regression Analysis]]
