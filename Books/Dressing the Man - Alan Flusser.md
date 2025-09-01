@@ -14,7 +14,26 @@ description: "Dressing the Man is the definitive guide to what men need to know 
 link: https://books.google.com/books/about/Dressing_the_Man.html?hl=&id=hBnCNOhoh1sC
 previewLink: http://books.google.co.uk/books?id=hBnCNOhoh1sC&dq=dressing+the+man+mastering+the+art+of+permanent+fashion&hl=&as_pt=BOOKS&cd=1&source=gbs_api
 isbn13: 9780060191443
-isbn10: 0060191449
+isbn10: 60191449
+tags:
+  - Book
+Status: Reading
 ---
+[[Books]]
+key points: 
 ## Colour
 - colour leads the viewer's eyes toward the face
+### Two colour technique
+- first approach: the relationship between the complexion and an outfit's level of contrast
+	- the colours of any given ensemble should exhibit the same degree of contrast as that manifested by one's skin and hair tones, a person's two primary colour signposts
+		- contrast complexion is more forgiving, can go for darker bolder colours
+		- mutes complexion requires the brighter richer colours which cause less contrast
+- second approach: highlighting each face by repeating one or more of its natural pigments in the colours worn
+	- blondes wearing gold glasses
+- if your hair is dark and your skin light, you have a contrast complexion
+- if your hair and skin tone are similar, your complexion would be considered muted or tonal
+- eye colour follows skin and hair as the next most important facial indicator
+	- blue shirt for the blue eyes for example
+- the last facial feature to consider is any special pigment such as rosy cheeks or suntanned skin
+	- increases contrast, hence why more colourful outfits in the summer
+## Proportion
