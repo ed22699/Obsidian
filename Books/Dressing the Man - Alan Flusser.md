@@ -37,3 +37,28 @@ key points:
 - the last facial feature to consider is any special pigment such as rosy cheeks or suntanned skin
 	- increases contrast, hence why more colourful outfits in the summer
 ## Proportion
+### The Suit Jacket
+- jackets shoulders frame the head
+	- too narrow, head will appear larger than actual size
+	- too wide, head will appear disproportionately small
+- jacket length
+	- long enough to cover the curvature of the buttocks while giving the leg as long a line as possible
+	- jacket length in relation to the torso: divide in half the distance from the collar's seam to the floor
+	- jacket length in relation to the arm: jacket's bottom should line up with thumb knuckle 
+- the waist button
+	- functions as an axis
+		- raise too much and the torso becomes abbreviated
+		- lower too much and the torso is elongated at the expense of a longer leg line
+	- when fastened should divide the body so that the torso and legs appear at maximum length
+	- should be 1/2 inch below the natural waist
+- the gorge and lapel width
+	- gorge - point where collar and lapel meet to form either a steplike notch or a pointed peak effect
+		- its function should be of ones build
+		- too low and the truncated lapel's line makes the short man appear shorter and the heavy man look heavier
+		- taller man's lapel notches can rest a bit lower in the chest area, condensing the upper body's length while extending its breadth
+	- to smoothly escort the viewer's eyes towards the face the jacket's lapels and the necktie's width should harmonise
+		- breadth of the jacket's shoulder guides the lapels width
+		- broad-shouldered man will naturally require a fuller lapel for proper balance
+		- the single-breasted lapel should cover between two-fifths and three-fifths of the distance between the jacket's chest and shoulder line
+			- results in the average notch lapel measuring from $3 \frac 38$ inches to $4 \frac 1 4$ inches in width
+		- peaked lapels need more breadth to accommodate their upsweep design, they should not be so broad as to become conspicuous
