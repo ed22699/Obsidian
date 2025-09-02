@@ -62,3 +62,28 @@ key points:
 		- the single-breasted lapel should cover between two-fifths and three-fifths of the distance between the jacket's chest and shoulder line
 			- results in the average notch lapel measuring from $3 \frac 38$ inches to $4 \frac 1 4$ inches in width
 		- peaked lapels need more breadth to accommodate their upsweep design, they should not be so broad as to become conspicuous
+- the jacket sleeve
+	- properly cut jacket sleeves lend a trim, well-formed grace to the arm
+	- full at the top or sleevehead and tapering down to the wrist bone
+	- sleeves converging lines should conform to the broad shoulder and narrowing waist of the jacket
+	- the band of linen between jacket sleeve and hand is good
+### The Suit Trouser
+- should extend the line of the jacket
+	- fuller-chested jackets require fuller-cut trousers
+	- more fitted jackets mandate slimmer-fitting trousers
+- should be worn on the waist, not the hip
+	- makes waist appear smaller
+	- better fill up the jacket's bottom opening, thereby lengthening the overall figure
+### The Dress Shirt
+- shirt collar frames the face
+	- smaller man with delicate features requires a collar of restrained dimensions
+### The Necktie
+- widths determined by the jacket's lapel
+	- narrow shoulders, narrower lapel so narrower tie width
+	- broad-shouldered man requires more generous lapel and so a larger-scaled necktie
+- the secret of tie aesthetics lies in compressing the knot so that it can dovetail high up into the inverted V of the collar's converging sides
+	- to enhance its staying power, a dimple or inverted pleat should emerge from under the middle of the knot
+	- if knot not taut, it will not have the necessary spring to arch out form the collar
+### The Pocket Handkerchief
+- one way to ensure a natural effect is to angle the hank outward toward the shoulder, with its points irregularly arranged
+	- echoes the slant of the jacket's lapel, reinforcing breadth of the wearer's chest and upper body
