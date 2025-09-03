@@ -87,3 +87,18 @@ key points:
 ### The Pocket Handkerchief
 - one way to ensure a natural effect is to angle the hank outward toward the shoulder, with its points irregularly arranged
 	- echoes the slant of the jacket's lapel, reinforcing breadth of the wearer's chest and upper body
+### The Tailored ankle
+- rule of thumb is that the trouser bottom should cover about two thirds of the shoe
+- narrow trouser bottoms make larger feet loom even larger
+- wide trouser bottoms make a small foot appear even smaller
+### Proportions and body type
+- short and heavy men
+	- to elongate the figure, the eye needs to be distracted from the waistline and led north to the shoulders and south below the knees. Vertical stripes help that
+	- larger men should have clothes hang loose
+	- short men usually have legs proportionally short in relation to their torso. 
+		- jacket must create the impression that the leg line is actually longer than it really is. Jacket length needs to be kept on the short side, but still cover the seat of his pants
+		- can also optically elevate torso by raising the shoulder line. Higher shoulder gives illusion of elevating the torso while elongating the leg line
+		- single breasted, two-button jacket with a medium V that opens down to the waist is more flattering to the short figure than the higher, closed fronts of the three-button coat
+	- heavy men
+		- avoid jackets with stubby or short-rolled lapels, accentuate breadth
+		
