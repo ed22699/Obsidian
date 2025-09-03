@@ -4,3 +4,17 @@ tags:
 ---
 - in the data you have delete all empty rows and columns
 - make it an official table (Ctrl-T)
+	- you can give the table a name
+- insert a pivot table with your table as the input
+	- drag the thing you want to identify rows by into rows 
+	- drag the thing you want to calculate into values
+	- filters give you the ability to only see data for a certain item
+	- drag the thing you want to be the column headers into columns
+- pivot table charts are automatically tied together with the pivot table
+- you can insert a slicer to look at only certain items
+- you can insert a timeline to look at only certain time periods
+- to calculate new fields
+	- go to fields items and sets
+	- calculated field
+- do not auto update with the initial table, need to refresh view
+- analyse data can be a good way to create a pivot table

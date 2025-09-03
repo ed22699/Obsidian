@@ -1,3 +1,4 @@
 - [[Statistics Applied With Excel - Franz Kronthaler]]
 - [[Formulas]]
 - [[Pivot Tables]]
+- [[Conditional Formatting]]
