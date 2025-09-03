@@ -15,3 +15,4 @@ tags:
 | If          | conditional if                                                                        | IF(D13="smile", "yay", "boo")       |
 | Countif     | count the number of cells with a certain value                                        | Countif(D1:D4, 10)                  |
 | Vlookup     | Find the corresponding value in a table. Note the 2 is what column in the table it is | Vlookup("Avitar", B3:C17, 2, FALSE) |
+| Sumif       | sum the values with the right key                                                     |                                     |
