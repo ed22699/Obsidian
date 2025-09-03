@@ -99,6 +99,14 @@ key points:
 		- jacket must create the impression that the leg line is actually longer than it really is. Jacket length needs to be kept on the short side, but still cover the seat of his pants
 		- can also optically elevate torso by raising the shoulder line. Higher shoulder gives illusion of elevating the torso while elongating the leg line
 		- single breasted, two-button jacket with a medium V that opens down to the waist is more flattering to the short figure than the higher, closed fronts of the three-button coat
+		- lapel notches should rest high on the upper chest, for a longer lapel line
+		- peaked lapels with upswept pointed ends accentuate vertically more than the notched variety
+		- sleeves should taper down to the wrist bone so no unnecessary bulk
+		- wait trouser on natural waist not below it
+		- belt interrupts vertical flow making you look shorter
 	- heavy men
 		- avoid jackets with stubby or short-rolled lapels, accentuate breadth
+		- slanting lines minimise rotundity. Double breasted diagonally running lapels lead the eye away from the centre of the torso and their up-curving pointed ends elongate and narrow the frame
+	- jacket detailing less is more, extra flaps bulk up and shorten lines
+	- should promote a straighter line at the back, hanging from the shoulders with minimal contour on the waist
 		
