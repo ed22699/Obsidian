@@ -109,4 +109,18 @@ key points:
 		- slanting lines minimise rotundity. Double breasted diagonally running lapels lead the eye away from the centre of the torso and their up-curving pointed ends elongate and narrow the frame
 	- jacket detailing less is more, extra flaps bulk up and shorten lines
 	- should promote a straighter line at the back, hanging from the shoulders with minimal contour on the waist
-		
+	- in terms of patterns, solids and vertical patterns	
+	- medium to dark colours and one colour from top to bottom
+- short slim man
+	- the thin physique should always dress large
+	- can entertain more definition to the torso, needs more breadth across his shoulders and chest and fullness in the upper trouser
+	- single-breasted, three-button jacket, so would the double-breasted model with lapels rolled below the waist 
+	- patch pockets add weight to the jacket's proportionally smaller hip
+	- can wear lighter colours
+- tall man
+	- needs to produce more horizontal lines 
+	- long jacket for tall man
+	- jacket's shoulders should slope gently downward
+	- the tall man's jacket shoulders should pitch forward ever so slightly, contributing to the suppleness and softness encircling his upper strata
+	- can wear any jacket, double-breasted are helpful to build out a man with the horizontal thrust of their lapels. Single-breasted, three-button jacket with generous width notch lapels that sit a fraction low on the chest are also good
+	- belts and pockets stop the vertical sweeps, can look good
