@@ -124,3 +124,27 @@ key points:
 	- the tall man's jacket shoulders should pitch forward ever so slightly, contributing to the suppleness and softness encircling his upper strata
 	- can wear any jacket, double-breasted are helpful to build out a man with the horizontal thrust of their lapels. Single-breasted, three-button jacket with generous width notch lapels that sit a fraction low on the chest are also good
 	- belts and pockets stop the vertical sweeps, can look good
+	- trousers should be long in the rise and tailored with deep, forward-facing pleats, don't position below the natural waistline
+	- small-patterned clothes serve to exaggerate the tall man's length, for natural proportions need larger-scaled patterns, preferably those having weight and texture to them
+	- if stripes make sure they have width, checks, overplaids, and boxlike designs are also good
+- athletic build
+	- measures 8 inches or more than his waist
+	- with the V-shaped torso, the goal is to forge a more architecturally harmonious relationship between the highly upholstered upper half of the body and the disproportionately smaller lower half, without sacrificing the overall athletic image
+	- jacket's shoulders must be soft and natural-looking as possible
+	- jacket length should err slightly on the long side, but must not shorten the legs line
+	- single-breasted, two-button model with generous lapels positioned on the upper chest will play down the shoulder's breadth
+	- avoid unnecessary waist suppression
+	- sleeve should taper gently downward to the wrist
+	- jacket detailing should be kept at a minimum to accentuate the vertical line, although flap or patch pockets can add weight to the hip for a better balance with the shoulder
+	- trouser should cut as full around the hip and thigh as possible, fitting as high on the waist as comfortable
+	- trousers should taper down to a cuffed bottom that rests on the shoe with some break, pulling the eye all the way down to the floor
+	- fuller-scale footwear plus the cuff's mass aid in countering the upside-down pyramid effect
+	- smooth-faced fabrics, such as worsted stripes, herringbones, and even windowpanes longer in length and width
+	- vertical-pointing dress shirt collars, such as tabs or straight points are good
+### The fitting room
+- make sure you have your wallet keys and phone in the normal pockets, so when fitted they won't be prominent
+- also wear a shirt with the correct sleeve length and collar height to help the fitting
+- dress shoes with the proper heel height can aid in establishing the correct trouser length and bottom width
+- look out for bounding behind the collar and a gap behind the collar. Also look out for lapels need to lie flat without gapping open
+- should not be wrinkle free, needs sufficient fullness over the shoulder blades for a slight break, or fold of fabric, to extend up the back from below the armholes, folds ensure mobility and comfort
+- watch that the collar does not stand away or have horizontal ridges below the base of the neck, a sign a collar must be lowered by cutting away excess fabric under the collar
