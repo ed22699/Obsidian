@@ -1,0 +1,137 @@
+---
+tags:
+  - dressing_the_man
+---
+## Proportion
+### The Suit Jacket
+- jackets shoulders frame the head
+	- too narrow, head will appear larger than actual size
+	- too wide, head will appear disproportionately small
+- jacket length
+	- long enough to cover the curvature of the buttocks while giving the leg as long a line as possible
+	- jacket length in relation to the torso: divide in half the distance from the collar's seam to the floor
+	- jacket length in relation to the arm: jacket's bottom should line up with thumb knuckle 
+- the waist button
+	- functions as an axis
+		- raise too much and the torso becomes abbreviated
+		- lower too much and the torso is elongated at the expense of a longer leg line
+	- when fastened should divide the body so that the torso and legs appear at maximum length
+	- should be 1/2 inch below the natural waist
+- the gorge and lapel width
+	- gorge - point where collar and lapel meet to form either a steplike notch or a pointed peak effect
+		- its function should be of ones build
+		- too low and the truncated lapel's line makes the short man appear shorter and the heavy man look heavier
+		- taller man's lapel notches can rest a bit lower in the chest area, condensing the upper body's length while extending its breadth
+	- to smoothly escort the viewer's eyes towards the face the jacket's lapels and the necktie's width should harmonise
+		- breadth of the jacket's shoulder guides the lapels width
+		- broad-shouldered man will naturally require a fuller lapel for proper balance
+		- the single-breasted lapel should cover between two-fifths and three-fifths of the distance between the jacket's chest and shoulder line
+			- results in the average notch lapel measuring from $3 \frac 38$ inches to $4 \frac 1 4$ inches in width
+		- peaked lapels need more breadth to accommodate their upsweep design, they should not be so broad as to become conspicuous
+- the jacket sleeve
+	- properly cut jacket sleeves lend a trim, well-formed grace to the arm
+	- full at the top or sleevehead and tapering down to the wrist bone
+	- sleeves converging lines should conform to the broad shoulder and narrowing waist of the jacket
+	- the band of linen between jacket sleeve and hand is good
+### The Suit Trouser
+- should extend the line of the jacket
+	- fuller-chested jackets require fuller-cut trousers
+	- more fitted jackets mandate slimmer-fitting trousers
+- should be worn on the waist, not the hip
+	- makes waist appear smaller
+	- better fill up the jacket's bottom opening, thereby lengthening the overall figure
+### The Dress Shirt
+- shirt collar frames the face
+	- smaller man with delicate features requires a collar of restrained dimensions
+### The Necktie
+- widths determined by the jacket's lapel
+	- narrow shoulders, narrower lapel so narrower tie width
+	- broad-shouldered man requires more generous lapel and so a larger-scaled necktie
+- the secret of tie aesthetics lies in compressing the knot so that it can dovetail high up into the inverted V of the collar's converging sides
+	- to enhance its staying power, a dimple or inverted pleat should emerge from under the middle of the knot
+	- if knot not taut, it will not have the necessary spring to arch out form the collar
+### The Pocket Handkerchief
+- one way to ensure a natural effect is to angle the hank outward toward the shoulder, with its points irregularly arranged
+	- echoes the slant of the jacket's lapel, reinforcing breadth of the wearer's chest and upper body
+### The Tailored ankle
+- rule of thumb is that the trouser bottom should cover about two thirds of the shoe
+- narrow trouser bottoms make larger feet loom even larger
+- wide trouser bottoms make a small foot appear even smaller
+### Proportions and body type
+- short and heavy men
+	- to elongate the figure, the eye needs to be distracted from the waistline and led north to the shoulders and south below the knees. Vertical stripes help that
+	- larger men should have clothes hang loose
+	- short men usually have legs proportionally short in relation to their torso. 
+		- jacket must create the impression that the leg line is actually longer than it really is. Jacket length needs to be kept on the short side, but still cover the seat of his pants
+		- can also optically elevate torso by raising the shoulder line. Higher shoulder gives illusion of elevating the torso while elongating the leg line
+		- single breasted, two-button jacket with a medium V that opens down to the waist is more flattering to the short figure than the higher, closed fronts of the three-button coat
+		- lapel notches should rest high on the upper chest, for a longer lapel line
+		- peaked lapels with upswept pointed ends accentuate vertically more than the notched variety
+		- sleeves should taper down to the wrist bone so no unnecessary bulk
+		- wait trouser on natural waist not below it
+		- belt interrupts vertical flow making you look shorter
+	- heavy men
+		- avoid jackets with stubby or short-rolled lapels, accentuate breadth
+		- slanting lines minimise rotundity. Double breasted diagonally running lapels lead the eye away from the centre of the torso and their up-curving pointed ends elongate and narrow the frame
+	- jacket detailing less is more, extra flaps bulk up and shorten lines
+	- should promote a straighter line at the back, hanging from the shoulders with minimal contour on the waist
+	- in terms of patterns, solids and vertical patterns	
+	- medium to dark colours and one colour from top to bottom
+- short slim man
+	- the thin physique should always dress large
+	- can entertain more definition to the torso, needs more breadth across his shoulders and chest and fullness in the upper trouser
+	- single-breasted, three-button jacket, so would the double-breasted model with lapels rolled below the waist 
+	- patch pockets add weight to the jacket's proportionally smaller hip
+	- can wear lighter colours
+- tall man
+	- needs to produce more horizontal lines 
+	- long jacket for tall man
+	- jacket's shoulders should slope gently downward
+	- the tall man's jacket shoulders should pitch forward ever so slightly, contributing to the suppleness and softness encircling his upper strata
+	- can wear any jacket, double-breasted are helpful to build out a man with the horizontal thrust of their lapels. Single-breasted, three-button jacket with generous width notch lapels that sit a fraction low on the chest are also good
+	- belts and pockets stop the vertical sweeps, can look good
+	- trousers should be long in the rise and tailored with deep, forward-facing pleats, don't position below the natural waistline
+	- small-patterned clothes serve to exaggerate the tall man's length, for natural proportions need larger-scaled patterns, preferably those having weight and texture to them
+	- if stripes make sure they have width, checks, overplaids, and boxlike designs are also good
+- athletic build
+	- measures 8 inches or more than his waist
+	- with the V-shaped torso, the goal is to forge a more architecturally harmonious relationship between the highly upholstered upper half of the body and the disproportionately smaller lower half, without sacrificing the overall athletic image
+	- jacket's shoulders must be soft and natural-looking as possible
+	- jacket length should err slightly on the long side, but must not shorten the legs line
+	- single-breasted, two-button model with generous lapels positioned on the upper chest will play down the shoulder's breadth
+	- avoid unnecessary waist suppression
+	- sleeve should taper gently downward to the wrist
+	- jacket detailing should be kept at a minimum to accentuate the vertical line, although flap or patch pockets can add weight to the hip for a better balance with the shoulder
+	- trouser should cut as full around the hip and thigh as possible, fitting as high on the waist as comfortable
+	- trousers should taper down to a cuffed bottom that rests on the shoe with some break, pulling the eye all the way down to the floor
+	- fuller-scale footwear plus the cuff's mass aid in countering the upside-down pyramid effect
+	- smooth-faced fabrics, such as worsted stripes, herringbones, and even windowpanes longer in length and width
+	- vertical-pointing dress shirt collars, such as tabs or straight points are good
+## The fitting room
+- make sure you have your wallet keys and phone in the normal pockets, so when fitted they won't be prominent
+- also wear a shirt with the correct sleeve length and collar height to help the fitting
+- dress shoes with the proper heel height can aid in establishing the correct trouser length and bottom width
+- look out for bounding behind the collar and a gap behind the collar. Also look out for lapels need to lie flat without gapping open
+- should not be wrinkle free, needs sufficient fullness over the shoulder blades for a slight break, or fold of fabric, to extend up the back from below the armholes, folds ensure mobility and comfort
+- watch that the collar does not stand away or have horizontal ridges below the base of the neck, a sign a collar must be lowered by cutting away excess fabric under the collar
+- jacket collar at the back should be a height where at least half an inch of shirt collar shows above it
+- waist should be slightly suppressed, responding to the natural curves of the body underneath
+	- it is too tight if X-shaped lines form on either side of the fastened waist button
+	- if adjusted be careful not to have it taken to the point where horizontal creases appear in the small of the back, tugging on the jacket's hip and pulling the rear vents open
+	- back bents should hang in a straight line perpendicular to the floor
+- jacket sleeves should also hang straight, with no horizontal wrinkles or breaks forming on the upper arm
+	- if a man carries his arms either too much to the front or back of the coat, the sleeves will not lie smoothly, and they should be removed and rotated accordingly
+- should taper to the wrist bone, with the bottom opening measuring around six inches in diameter, or no larger than to frame the shirt's cuff
+	- short arms should have half inch of shirt cuff below the sleeves
+	- long arms should have 3/4 to 1 inch to give the arms a better proportion
+### Waistcoat
+- fit with back strap fastened
+- chest should be full enough to allow wearer to sit comfortably with no hint of looseness at the waist
+- only a small segment of the waistcoat, revealing no more than the top button, should be visible above the jacket
+- must be long enough to cover the trousers' waistband, stopping in front before its points extend below the hipbone
+- suspenders are recommended for the gap that develops between trouser and vest
+- vest is designed so that the bottom button is left undone, a custom dating bak to the eighteenth century, when Edward VII, a corpulent sovereign, forgot to button his after an unusually vigorous repast, with the oversight ultimately taken and handed down as a style indictor
+### Trousers
+- wear as high on the waist as comfortable
+- with pleated trousers, the hip and thigh must be cut full enough so that the pleats lie flat and do not pull open when standing
+- trousers' front leg crease should bisect the kneecap and finish in the middle of the shoe. Trouser creases should err toward the inside of the knee; those falling to the outside creat
