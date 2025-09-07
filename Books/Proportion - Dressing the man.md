@@ -134,4 +134,13 @@ tags:
 ### Trousers
 - wear as high on the waist as comfortable
 - with pleated trousers, the hip and thigh must be cut full enough so that the pleats lie flat and do not pull open when standing
-- trousers' front leg crease should bisect the kneecap and finish in the middle of the shoe. Trouser creases should err toward the inside of the knee; those falling to the outside creat
+- trousers' front leg crease should bisect the kneecap and finish in the middle of the shoe. Trouser creases should err toward the inside of the knee; those falling to the outside create the illusion of breadth
+- if it will occasionally be worn with suspenders, make sure it is fitted with them as it can change the fit of the waist, back rise, and inseam
+	- if exclusively worn with suspenders allow for more room in the waist, as to suspend from the shoulders
+- different ideas around the length of the trouser
+	- America, worn to rest with a slight break, or shiver on top of the shoe, for this they should be long enough to cover the hose when a man is in stride, with a width that conceals the shoelaces
+		- plain-bottom trousers should slant downward from front to back so as to not fly away at the heel when the man is walking
+		- if cuffed their width should be neither so narrow nor so wide that it calls attention to itself
+		- the proper width of trouser cuffs should be 1 5/8 inches for a man under 5 feed, 10 inches, and 1 3/4 inches if taller
+	- Europeans, the Milanese, wear their trousers narrow cut and a little on the short side, even showing some sock, pants sit lightly on the shoe
+		- called the mid-atlantic solution as its halfway between Europe and America. Idea is although he doesn't want to see your socks, he does want to see your shoes

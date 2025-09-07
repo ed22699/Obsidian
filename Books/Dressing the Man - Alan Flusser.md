@@ -23,3 +23,4 @@ Status: Reading
 key points: 
 - [[Colour - Dressing the man]]
 - [[Proportion - Dressing the man]]
+- [[The Prerogatives of Pattern - Dressing the man]]
