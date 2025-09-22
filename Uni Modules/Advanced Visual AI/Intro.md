@@ -9,4 +9,6 @@ tags:
 	- An image formation process that involves computation
 
 ![[Image Degradation and Restoration Model]]
-![[Inverse Problem]]
+![[Inverse Problems]]
+![[Elements of Bayesian analysis]]
+![[The Maximum a Posteriori (MAP) Estimator]]
