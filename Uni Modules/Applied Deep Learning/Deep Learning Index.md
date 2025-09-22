@@ -6,7 +6,7 @@ tags:
   - index
 ---
 
-[Unit Page]()
+[Unit Page](https://comsm0045-applied-deep-learning.github.io/)
 # Lessons
 ```dataview
 TABLE without ID file.link as Title
