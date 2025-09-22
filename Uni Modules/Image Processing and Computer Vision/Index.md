@@ -1,6 +1,8 @@
 ---
 aliases:
   - Image Processing and Computer Vision
+tags:
+  - index
 ---
 
 [Unit Page](https://www.ole.bris.ac.uk/webapps/blackboard/content/listContent.jsp?course_id=_260097_1&content_id=_8655934_1&mode=reset)

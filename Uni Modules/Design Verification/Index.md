@@ -1,6 +1,8 @@
 ---
 aliases:
   - Design Verification
+tags:
+  - index
 ---
 
 [Unit Page](https://uobdv.github.io/Design-Verification/)

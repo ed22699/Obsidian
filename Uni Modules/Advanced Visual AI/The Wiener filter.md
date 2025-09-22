@@ -1,0 +1,2 @@
+- you are aiming to minimise the cost function
+	- this is the same as what happens with neural networks

@@ -82,14 +82,11 @@ banner_y: 0
 
 # Uni
 - 🗄️ Recent file updates
- `$=dv.list(dv.pages('"Uni Modules"').sort(f=>f.file.mtime.ts,"desc").limit(5).file.link)`
+ `$=dv.list(dv.pages('"Uni Modules"').sort(f=>f.file.mtime.ts, "desc").limit(5).file.link)`
 - 🔖 Tagged:  favorite 
  `$=dv.list( dv.pages('"Uni Modules"') .where(p => p.tags && p.tags.includes("favorite")) .sort(p => p.file.name, "desc") .limit(4) .file.link );`
 - 📚 Modules
-	- [[Uni Modules/Machine Learning/Index|Machine Learning]]
-	- [[Uni Modules/Image Processing and Computer Vision/Index|Image Processing and Computer Vision]]
-	- [[Uni Modules/Design Verification/Index|Design Verification]]
-	- [[Uni Modules/Advanced Algorithms/Index|Advanced Algorithms]]
+ `$=dv.list(dv.pages('"Uni Modules"') .where(p => p.tags && p.tags.includes("index")).sort(f=>f.file.mtime.ts, "desc").file.link)`
 
  # Personal
  - ✍️ Goals
