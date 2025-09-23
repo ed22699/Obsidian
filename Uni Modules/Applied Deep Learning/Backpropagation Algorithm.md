@@ -25,3 +25,6 @@ tags:
 	- initialisation
 	- learning rate
 	- stopping criteria
+
+- leaky ReLU is not as fast as ReLU
+	- only really use the leaky ReLU when you have a model thats particularly hard to train
