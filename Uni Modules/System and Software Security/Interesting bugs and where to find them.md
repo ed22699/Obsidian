@@ -12,3 +12,5 @@ tags:
 ![[Race conditions]]
 ## Buffer overflow
 ![[Buffer Overflow]]
+## Format Strings
+![[Format strings]]

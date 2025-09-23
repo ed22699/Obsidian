@@ -35,3 +35,5 @@ void main() {
 - how do we stop it?
 	- make addresses less predictable (*ASLR*)
 	- stick a canary in the stack and check it hasn't been overwritten before returning (*stack canaries*)
+	- use a research grade CPU architecture like CHERI that doesn't allow you to abuse pointers like this
+	- use [[branch targets]]
