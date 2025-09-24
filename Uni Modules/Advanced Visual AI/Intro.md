@@ -10,5 +10,8 @@ tags:
 
 ![[Image Degradation and Restoration Model]]
 ![[Inverse Problems]]
+- you can imagine $\theta$ in Bayesian analysis as the weights in the neural network that you want to find
 ![[Elements of Bayesian analysis]]
-![[The Maximum a Posteriori (MAP) Estimator]]
+
+
+
