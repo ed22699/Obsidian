@@ -2,6 +2,7 @@
 tags:
   - theoretical_peliminaries
 ---
+- this is a way regularising using [[Bayesian (MAP) and variational frameworks duality]]
 ## Explicit Solvers
 - regularisation technique which consists in choosing the $x$ that minimises the Lagrangian:
 	$$
@@ -14,4 +15,6 @@ tags:
 	$$
 	\hat x = (H^T H +\lambda C ^T C)^{-1}H^Ty
 	$$
-	- large values of $\lambda$
+	- large values of $\lambda$ lead to more regularisation
+		- drawback: restored image will contain more ringing
+	- small values of $\lambda$ will result in less reduction of the noise effects

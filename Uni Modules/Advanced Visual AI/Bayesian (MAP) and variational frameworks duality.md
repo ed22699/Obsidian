@@ -11,4 +11,7 @@ $$
 	- $= \arg \min [- \ln p (y|x) - \ln p(x)]$
 		- rewrite the log-likelihood term as $l(y,y)= - \ln p(y|x)$
 		- rewrite the prior term as $\lambda p(x) = -\ln p(x)$
-		- hence the variational formulation is $\hat x_{MAP} = \arg \min [l(y,x)+ \lambda p(x)]$
+		- hence the variational formulation is:
+			$$\hat x_{MAP} = \arg \min [l(y,x)+ \lambda p(x)]$$
+![[Constrained Least-squares]]
+![[Proximal Splitting]]
