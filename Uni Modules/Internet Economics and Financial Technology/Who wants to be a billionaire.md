@@ -7,3 +7,5 @@ tags:
 	- this means your friends have an impact on the decision, more likely to adopt the technology more beneficial to you. This is a bias by chance that influences a winner
 ## The Long Tail
 ![[The Long Tail]]
+## Disruptive Technology
+![[Disruptive Technology]]
