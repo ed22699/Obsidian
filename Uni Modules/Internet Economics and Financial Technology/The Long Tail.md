@@ -2,6 +2,7 @@
 tags:
   - billionare
 ---
+[[The Long Tail Article]]
 - term comes from a popular book of the same name
 - old days
 	- retailers make money
