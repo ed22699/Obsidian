@@ -10,3 +10,6 @@ tags:
 	- the long tail can actually make a lot of money
 - this creates some rules
 	1. Make everything available
+		- in the long tail economy it is more expensive to evaluate than to release
+	2. Cut the price in half. Now lower it
+		- 
