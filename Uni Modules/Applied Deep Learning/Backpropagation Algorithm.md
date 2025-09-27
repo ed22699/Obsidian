@@ -13,8 +13,14 @@ tags:
 - layer by layer, calculate error derivatives for neurons in hidden layers by combining all connected error derivatives in the layer above and considering the effect of activation functions - thereby, propagating error derivatives backwards
 - use neuron activities to get error derivatives w.r.t. the weights
 ![[Screenshot 2025-09-23 at 16.29.34.png|300]]
-
-
+### Backpropagation: Step 1
+- calculate all $s_j^l$ and $f_j^l$ in a single forward pass
+- at the top of the network, convert the discrepancy between outputs $f^N$ and targets $f^*$ into error derivatives $\delta _j^{N+1}$ linked to all final layer neurons $j$ according to $J$, and compute $\delta _j ^N$
+![[Screenshot 2025-09-27 at 12.47.11.png|200]]
+![[Screenshot 2025-09-27 at 12.48.11.png|500]]
+### Backpropagation: Step 2
+- layer by layer, calculate all error derivatives $\delta _i ^{l-1}$ in each hidden layer from all error derivatives $\delta _j^l$ in the layer above
+![[Screenshot 2025-09-27 at 12.49.50.png|300]]
 
 
 - initialise all weights randomly
