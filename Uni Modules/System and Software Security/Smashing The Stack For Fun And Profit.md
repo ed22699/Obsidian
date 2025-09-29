@@ -480,4 +480,16 @@ void main(int argc, char *argv[]) {
   system("/bin/bash");
 }
 ```
-- depending how much environment data the exploit program has compared with the program you are trying to exploit the gu
+- depending how much environment data the exploit program has compared with the program you are trying to exploit the guessed address may be to low or to high. Experiment both with positive and negative offsets
+## Finding Buffer Overflows
+- C library provides a number of functions for copying or appending strings, that perform no boundary checking
+	- they include: `strcat()`, `strcpy()`, `sprintf()`, and `bsprintf()`
+	- operate on null terminated strings, and do not check for overflow of the receiving string
+	- `gets()` is a function that reads a line from `stdin` into a buffer until either a terminating newline or EOF
+		- performs no checks for buffer overflows
+	- `scanf()` family of functions can also be a problem if you are matching a sequence of non-white-space characters (`%s`), or matching a noon-empty sequence of characters from a specified set (`%[]`), and the array pointed to by the char pointer, is not large enough to accept the whole sequence of characters, and you have not defined the optional maximum field width
+	- if the target of any of these functions is a buffer of static size, and its other argument was somehow derived from user input there is a good possibility that you might be able to exploit a buffer overflow
+- while loop to read one character at a time into a buffer from `stdin` or some file until the end of line, end of file, or some other delimiter is reached
+	- usually uses one of these functions: `getc()`, `fgetc()`, or `getchar()`
+	- if there is no explicit checks for overflows in the while loop, such programs are easily exploited
+- `grep(1)` is your friend
