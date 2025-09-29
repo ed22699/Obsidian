@@ -28,9 +28,16 @@ $$
 $$
 W_{t+1} = W_t + \underbrace{v_{t+1}}_{momentum}
 $$
+- **gave up notes here**
+-----------------------
 ## Nesterov Accelerated Gradient (NAG)
 $$
 v_{t+1} = \alpha v_t - \eta \nabla J(X;\underbrace{W_t + \alpha v_t}_{preview \; location})
 $$
 - lots of parameters because of the hessian matrix
 - inverting the big matrix is costly, in practice cannot be used
+
+
+RMSprop you can think of $\beta$ as a forgetful parameter, as time goes on it remembers less of the previous 
+
+- switch to SGD if ADAM can't fit in memory. SGD is always a fallback
