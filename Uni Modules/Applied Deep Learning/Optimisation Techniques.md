@@ -28,15 +28,56 @@ $$
 $$
 W_{t+1} = W_t + \underbrace{v_{t+1}}_{momentum}
 $$
-- **gave up notes here**
------------------------
 ## Nesterov Accelerated Gradient (NAG)
+- *Idea:* don't calculate gradient at current position since momentum will carry us forward to another position anyway - take lookahead gradient at target
+	- seen as adding a 'correction term' to the standard method of momentum
+	- consistently works slightly better than standard momentum in practice
+- weights as follows:
 $$
 v_{t+1} = \alpha v_t - \eta \nabla J(X;\underbrace{W_t + \alpha v_t}_{preview \; location})
 $$
+- still very slow progress on shallow plateau regions
+## Newton's Method
+- *idea:* let curvature rescale the gradient - multiplying the gradient by the inverse Hessian leads to an optimisation that takes aggressive steps in directions of shallow curvature and shorter steps in directions of steep curvature
+- *pro*: no extra learning rate or hyperparameters needed
+- *con*: computing and inverting the Hessian is very expensive and space consuming (Hessian $\textbf{H}$ has square size w.r.t. number of weights)
+$$
+W_{t+1}=W_t - \textbf{H}(J(X;W_t))^{-1}\nabla J(X;W_t)
+$$
 - lots of parameters because of the hessian matrix
 - inverting the big matrix is costly, in practice cannot be used
-
+- without modifications is attracted to saddle points
+## Saddle Points 
+![[Screenshot 2025-09-30 at 11.17.30.png|500]]
+- for an arbitrary problem, assume sign of Hessian Eigenvalues is random
+	- exponentially less likely to get 'all positive' (i.e. being a minimum) with higher and higher parameter dimensions
+- random matrix theory insight
+	- the lower $J$ is, the more likely to find positive Eigenvalues
+- neural nets without non-linearities have global minima connected via a single manifold and many saddle points
+- Good:
+	- most critical points with higher cost $J$ should be saddle points and they offer a chance to escape from them particularly via symmetry-breaking descent-methods
+	- most local minima should therefore have a low cost $J$ associated with them and may be reachable via descent
+- experiments provide some support that neural nets have as many saddle points as random matrix theory proposes
+	- number of saddle points may increase exponentially with the dimensionality of the function
+- bad:
+	- newton's method will work poorly (since being attracted to saddle points) with a high chance of getting stuck
+	- however, idea of a function-adaptive learning rate seems valuable
+## Per-weight adaptive gradients
+### Adagrad (adaptive gradient)
+- *idea*: keep track of per-weight learning rates to force evenly spread learning speeds 
+	- weights that are associated with high gradients have their effective rate of learning decreased, whilst weights that have infrequent or particularly small updates have their rates increased
+	- 'monotonic learning' may help with issue including breaking of symmetries and slow progress in particular dimensions
+- update now uses a $W_t$-sized accumulator $A$
+$$
+A_{t+1} = A_t + (\nabla J(X; W_t))^2
+$$	
+$$
+W_{t+1} = W_t - \eta \frac{\nabla J(X;W_t)}{(\sqrt{A_{t+1}}+\varepsilon)}
+$$
+	- $\varepsilon$ just avoids division by 0
+	- note in $A_{t+1}$ element-by-element squaring is used
+- *issue*: 'monotonic learning' is a very aggressive approach and lacks the possibility of late adjustments, learning usually stops too early
+### RMSprop
 
 RMSprop you can think of $\beta$ as a forgetful parameter, as time goes on it remembers less of the previous 
 
