@@ -78,7 +78,43 @@ $$
 	- note in $A_{t+1}$ element-by-element squaring is used
 - *issue*: 'monotonic learning' is a very aggressive approach and lacks the possibility of late adjustments, learning usually stops too early
 ### RMSprop
-
-RMSprop you can think of $\beta$ as a forgetful parameter, as time goes on it remembers less of the previous 
+- *idea*: root-mean-square propagation 
+	- combat the aggressive reduction in Adagrad's learning speed by propagation of a smooth running average
+- update equations now introduce a smoothing parameter $\beta$:
+$$
+A_{t+1} = \beta A_t + (1-\beta)(\nabla J (X;W_t))^2
+$$
+$$
+W_{t+1} = W_t - \eta \frac{\nabla J (X; W_t)}{(\sqrt A_{t+1} + \varepsilon)}
+$$
+- RMSprop you can think of $\beta$ as a forgetful parameter, as time goes on it remembers less of the previous 
+- just adding standard momentum does not help much in improving performance further
+	- further smoothing and correction operations can be applied
+![[Screenshot 2025-10-01 at 17.39.44.png|500]]
+## Adam (adaptive moment estimation)
+- *idea*: smooth RMSprop's usually 'noisy' incoming gradient using a new parameter $\alpha$
+$$
+G_{t+1}=\alpha G_t + (1-\alpha)\nabla J (X;W_t)
+$$
+$$
+A_{t+1} = \beta A_t + (1-\beta)(\nabla J (X;W_t))^2
+$$
+$$
+W_{t+1} = W_t - \eta \frac{G_{t+1}}{(\sqrt A_{t+1} + \varepsilon)}
+$$
+- *idea*: correct for the impact of bias introduced by 'initialising' the two smoothed measures
+	- i.e. starting with $t=1$ 'fade-in' the smoothing effect exponentially by introducing $\bar G$ and $\bar A$
+$$
+G_{t+1}=\alpha G_t + (1-\alpha)\nabla J (X;W_t)
+$$
+$$
+\bar G = 
+$$
+$$
+A_{t+1} = \beta A_t + (1-\beta)(\nabla J (X;W_t))^2
+$$
+$$
+W_{t+1} = W_t - \eta \frac{G_{t+1}}{(\sqrt A_{t+1} + \varepsilon)}
+$$
 
 - switch to SGD if ADAM can't fit in memory. SGD is always a fallback
