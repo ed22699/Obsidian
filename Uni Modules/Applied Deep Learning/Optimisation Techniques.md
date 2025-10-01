@@ -29,24 +29,9 @@ $$
 W_{t+1} = W_t + \underbrace{v_{t+1}}_{momentum}
 $$
 ## Nesterov Accelerated Gradient (NAG)
-- *Idea:* don't calculate gradient at current position since momentum will carry us forward to another position anyway - take lookahead gradient at target
-	- seen as adding a 'correction term' to the standard method of momentum
-	- consistently works slightly better than standard momentum in practice
-- weights as follows:
-$$
-v_{t+1} = \alpha v_t - \eta \nabla J(X;\underbrace{W_t + \alpha v_t}_{preview \; location})
-$$
-- still very slow progress on shallow plateau regions
+![[Nesterov Accelerated Gradient (NAG)]]
 ## Newton's Method
-- *idea:* let curvature rescale the gradient - multiplying the gradient by the inverse Hessian leads to an optimisation that takes aggressive steps in directions of shallow curvature and shorter steps in directions of steep curvature
-- *pro*: no extra learning rate or hyperparameters needed
-- *con*: computing and inverting the Hessian is very expensive and space consuming (Hessian $\textbf{H}$ has square size w.r.t. number of weights)
-$$
-W_{t+1}=W_t - \textbf{H}(J(X;W_t))^{-1}\nabla J(X;W_t)
-$$
-- lots of parameters because of the hessian matrix
-- inverting the big matrix is costly, in practice cannot be used
-- without modifications is attracted to saddle points
+![[Newton's Method]]
 ## Saddle Points 
 ![[Screenshot 2025-09-30 at 11.17.30.png|500]]
 - for an arbitrary problem, assume sign of Hessian Eigenvalues is random
@@ -64,57 +49,18 @@ $$
 	- however, idea of a function-adaptive learning rate seems valuable
 ## Per-weight adaptive gradients
 ### Adagrad (adaptive gradient)
-- *idea*: keep track of per-weight learning rates to force evenly spread learning speeds 
-	- weights that are associated with high gradients have their effective rate of learning decreased, whilst weights that have infrequent or particularly small updates have their rates increased
-	- 'monotonic learning' may help with issue including breaking of symmetries and slow progress in particular dimensions
-- update now uses a $W_t$-sized accumulator $A$
-$$
-A_{t+1} = A_t + (\nabla J(X; W_t))^2
-$$	
-$$
-W_{t+1} = W_t - \eta \frac{\nabla J(X;W_t)}{(\sqrt{A_{t+1}}+\varepsilon)}
-$$
-	- $\varepsilon$ just avoids division by 0
-	- note in $A_{t+1}$ element-by-element squaring is used
-- *issue*: 'monotonic learning' is a very aggressive approach and lacks the possibility of late adjustments, learning usually stops too early
+![[Adagrad]]
 ### RMSprop
-- *idea*: root-mean-square propagation 
-	- combat the aggressive reduction in Adagrad's learning speed by propagation of a smooth running average
-- update equations now introduce a smoothing parameter $\beta$:
-$$
-A_{t+1} = \beta A_t + (1-\beta)(\nabla J (X;W_t))^2
-$$
-$$
-W_{t+1} = W_t - \eta \frac{\nabla J (X; W_t)}{(\sqrt A_{t+1} + \varepsilon)}
-$$
-- RMSprop you can think of $\beta$ as a forgetful parameter, as time goes on it remembers less of the previous 
-- just adding standard momentum does not help much in improving performance further
-	- further smoothing and correction operations can be applied
-![[Screenshot 2025-10-01 at 17.39.44.png|500]]
+![[RMSprop]]
 ## Adam (adaptive moment estimation)
-- *idea*: smooth RMSprop's usually 'noisy' incoming gradient using a new parameter $\alpha$
-$$
-G_{t+1}=\alpha G_t + (1-\alpha)\nabla J (X;W_t)
-$$
-$$
-A_{t+1} = \beta A_t + (1-\beta)(\nabla J (X;W_t))^2
-$$
-$$
-W_{t+1} = W_t - \eta \frac{G_{t+1}}{(\sqrt A_{t+1} + \varepsilon)}
-$$
-- *idea*: correct for the impact of bias introduced by 'initialising' the two smoothed measures
-	- i.e. starting with $t=1$ 'fade-in' the smoothing effect exponentially by introducing $\bar G$ and $\bar A$
-$$
-G_{t+1}=\alpha G_t + (1-\alpha)\nabla J (X;W_t)
-$$
-$$
-\bar G = 
-$$
-$$
-A_{t+1} = \beta A_t + (1-\beta)(\nabla J (X;W_t))^2
-$$
-$$
-W_{t+1} = W_t - \eta \frac{G_{t+1}}{(\sqrt A_{t+1} + \varepsilon)}
-$$
+![[Adam]]
 
 - switch to SGD if ADAM can't fit in memory. SGD is always a fallback
+- why is applying Adam to ReLU-based networks not a guarantee for successful deep learning
+	- have introduced new parameters $\alpha, \beta, \varepsilon$ that we now need to set
+	- network initialisation matters
+	- overfitting is likely to occur in deep networks 
+		- regularisation techniques are critical to achieve good generalisation beyond the training data
+	- number of parameters explodes in deep networks
+	- simple loss functions discussed so far need extending to provide better results for common tasks such as classification 
+	- data we deal with is part of the training process
