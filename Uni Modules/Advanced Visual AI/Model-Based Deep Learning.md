@@ -24,4 +24,6 @@ $$
 ![[Screenshot 2025-09-29 at 15.06.32.png|500]]
 ## Deep Image Prior (DIP)
 ![[Deep Image Prior (DIP)]]
-
+## DeepRED
+![[DeepRED]]
+- RARE uses the ideas of DIP and DeepRED but is trained instead on *multiple images*
