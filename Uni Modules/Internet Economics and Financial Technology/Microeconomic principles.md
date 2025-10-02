@@ -51,3 +51,46 @@ tags:
 - *marginal cost* (MC): cost of producing *last* unit
 	- marginal cost equals the change in cost / change in quantity produced
 	- MC initially falls then rises
+- MC curve tends to be upwards sloping
+- firms need to cover the marginal cost of each additional unit produced
+- minimum price they will supply their product is MC
+- also need to cover their *average variable cost* (AVC) in the short term, so will only supply quantity above A
+- in the long term, they need to cover all costs, so will only supply at quantity above B
+	- produces the *supply curve* for a company:
+		- the minimum price they are willing to sell each quantity of product (tends to be upwards sloping)
+![[Screenshot 2025-10-02 at 19.06.50.png|400]]
+- in a market with lots of firms the market supply is the aggregation of all individual firms supply curves
+- *producer surplus*: price received minus minimum supply price, summed over quantity sold (area below market price and above supply curve)
+	- the additional income producers receive above their costs
+	- producers want to maximise this
+		- higher price means more producers are willing to produce
+![[Screenshot 2025-10-02 at 19.11.26.png|400]]
+![[Screenshot 2025-10-02 at 19.12.47.png|500]]
+- horizontal demand: *perfect elasticity*
+- vertical demand: *perfect inelasticity*
+- 45 degrees: *unit elasticity* (% change in price equals % change in demand)
+## Competitive Markets
+![[Screenshot 2025-10-02 at 19.15.19.png|400]]
+- a competitive market creates an efficient allocation of resources at equilibrium, where quantity demanded equals the quantity supplied
+- at equilibrium, marginal benefit equals marginal cost and total surplus for consumers and producers is maximised
+### Excess demand
+![[Screenshot 2025-10-02 at 19.17.23.png|400]]
+- market price below equilibrium, excess demand for products
+- QD-QS products will be demanded but not supplied
+- suppliers will *increase prices* towards equilibrium
+### Excess supply
+![[Screenshot 2025-10-02 at 19.18.23.png|400]]
+- if market price is above equilibrium, there will be an excess supply of products
+- QS-QD products will be supplied, but not purchased
+- suppliers will decrease prices towards equilibrium
+
+![[Screenshot 2025-10-02 at 19.20.59.png|500]]
+## Monopolistic Markets
+- one firm grows to take over an entire market
+- monopoly is a market structure characterised by a single seller; selling a unique product in a market
+- monopolistic market, the monopolist seller faces no competition
+- the monopolist can be a price setter, rather than a price taker
+- pure monopoly has only one firm
+- in real world, any firm with more than 25% market share may be considered a monopolist
+![[Screenshot 2025-10-02 at 19.25.30.png|400]]
+![[Screenshot 2025-10-02 at 19.26.09.png|400]]
