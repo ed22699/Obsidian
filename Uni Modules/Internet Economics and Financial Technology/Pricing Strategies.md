@@ -45,3 +45,6 @@ tags:
 - bundling can help keep monopoly control of a market
 	- if a competitor wants to compete directly, it must offer all products in the bundle, which dramatically increases fixed development costs
 	- consider the success of MS Office
+![[Screenshot 2025-10-02 at 23.05.12.png|500]]
+![[Screenshot 2025-10-02 at 23.05.37.png|500]]
+![[Screenshot 2025-10-02 at 23.05.51.png|500]]

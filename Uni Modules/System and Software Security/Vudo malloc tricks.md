@@ -63,3 +63,13 @@ static void do_syslog( int pri, char * msg )
 }
 ```
 #### The segmentation violation
+- loop [7] does not check for NUL characters and therefore pushes p way after the end of the NUL terminated character string msg
+	- when p reaches the end of the heap Sudo eventually dies with a segmentation violation after an out of-bounds read operation
+	- loop [7] has to be run many times n order to reach the end of the heap, the length of the msg string has to be many times `MAXSYSLOGLEN`
+### Unreal Exploit
+
+
+
+
+
+#### Memory Mapping
