@@ -63,3 +63,21 @@ tags:
 	- the network effect - convincing others to switch
 	- setup costs
 	- reduced service quality due to loss of information
+## Producers
+![[Screenshot 2025-10-02 at 22.27.16.png|500]]
+- if two companies are competing with identical digital products, as their variable costs are near-zero, competition will drive the price down to near-zero
+- a new company won't want to risk competing with an existing company, because the setup costs are high compared with the possible profits
+	- the risk is further enhanced by the network effect, as any new product must reach a critical mass of users, or it will fail
+	- switching costs and lock-in mean that users are less likely to swap to the new product
+- for commodity digital goods, there is a tendency towards monopoly 
+- to succeed, companies must therefore focus on product differentiation or competing for emerging future monopolies
+- innovation more important than efficiency
+- *proprietary formats* are a powerful means of enforcing monopoly
+	- e.g. .doc format is owned by Microsoft word
+		- means high switching costs and users locked in
+- adopting *industry-wide standards* allows a user network to be shared between providers
+	- your part of the network is opened to competition
+	- network effect of competitors's users give value to your users
+	- value of the overall network increases to potential new users, bringing more customers overall
+	- trade off - bigger pie overall, but your slice of the pie may become smaller
+![[Screenshot 2025-10-02 at 22.35.41.png|500]]
