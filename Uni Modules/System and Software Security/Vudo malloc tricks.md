@@ -67,9 +67,45 @@ static void do_syslog( int pri, char * msg )
 	- when p reaches the end of the heap Sudo eventually dies with a segmentation violation after an out of-bounds read operation
 	- loop [7] has to be run many times n order to reach the end of the heap, the length of the msg string has to be many times `MAXSYSLOGLEN`
 ### Unreal Exploit
-
-
-
-
-
+- after the end of the msg buffer is a boundary tag
+	- if the Sudo exploit corrupts that boundary tag during execution of `do_syslog()` evil things could happen
+### Temporary conclusion
+- sudo exploit should
+	- overwrite a byte of the boundary tag located after the msg buffer with the NUL byte, therefore control the content of the memory after msg (control of the msg buffer itself is not sufficient)
+	- take advantage of the erroneously overwritten byte before it is restored, one of the malloc calls should read the corrupted boundary tag and further alter the usual execution of Sudo
+## Doug Lea's Malloc
+- malloc is the memory allocator used by the GNU C Library
+	- manages the heap and therefore provides the calloc, malloc, free and realloc functions which allocate and free dynamic memory
+### A memory allocator
+- "This is not the fastest, most space-conserving, most portable, or most
+tunable malloc ever written. However it is among the fastest while also
+being among the most space-conserving, portable and tunable. Consistent
+balance across these factors results in a good general-purpose allocator
+for malloc-intensive programs."
+#### Goals
+- goal of allocator are maximising compatibility, portability, tunability, locality, error detection and minimising space, time and anomalies
+#### Algorithms
+- "While coalescing via boundary tags and best-fit via binning represent
+the main ideas of the algorithm, further considerations lead to a
+number of heuristic improvements. They include locality preservation,
+wilderness preservation, memory mapping".
+##### Boundary tags
+- chunks of memory carry around size information fields both before and after the chunk. Allows two important capabilities
+	- two bordering unused chunks can be coalesced into one larger chunk. Minimises the number of unusable small chunks
+	- all chunks can be traversed starting from any known chunk in either a forward or backward direction
+- the boundary tag is great for an attack who tries to exploit heap mismanagement 
+	- are control structures located in the very middle of a potentially corruptible memory area (the heap), can eventually execute arbitrary code if they are careful
+##### Binning
+- available chunks are maintained in bins, grouped by size
+- searches for available chunks are processed in smallest-first, best-fit order
+##### Locality preservation
+- if a chunk of the exact desired size is not available, the most recently split-off space is used if it is big enough; otherwise best-fit is used
+- essential to the sudo exploit
+	- could protect another free memory area that had to remain untouched
+##### Wilderness Preservation
+- the space bordering the topmost address allocated from the system
+	- ass its at the border it is the only chunk that can be arbitrarily extended to be bigger than it is
+- treat the wilderness chunk as it is bigger than all others
+	- always being used only if no other chunk exists, further avoiding preventable fragmentation 
+- pain for an attacker
 #### Memory Mapping
