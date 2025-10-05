@@ -40,3 +40,5 @@ tags:
 - highest bid will win, and will pay the price of the second highest bid
 ## Auction Theory
 ![[Auction Theory]]
+## Auctions in practice
+![[Auctions in practice]]
