@@ -108,4 +108,29 @@ wilderness preservation, memory mapping".
 - treat the wilderness chunk as it is bigger than all others
 	- always being used only if no other chunk exists, further avoiding preventable fragmentation 
 - pain for an attacker
-#### Memory Mapping
+### Chunks of memory
+- heap is divided into contiguous chunks of memory
+- heap layout evolves when malloc functions are called
+	- no free chunk physically borders one another (always coalesced into one larger chunk)
+#### Synopsis of public routines
+- allocated and freed via four main public routines
+	- `malloc(size_t n)` 
+	- `free(Void_t* p)`
+	- `realloc(Void_t* p, size_t n)`
+	- `calloc(size_t unit, size_t quantity)`
+#### Vital statistics
+- when user calls malloc to allocate dynamic memory the effective size of the chunk allocated is never equal to the size requested by the user
+	- overhead is a result of the presence of boundary tags before and after the buffer returned to the user
+- since size of chunk is always a multiple of 8 bytes, and first chunk in the heap is 8 byte aligned, the chunks of memory returned to the user are always aligned on addresses that are multiples of 8 bytes
+- each allocated chunk has a hidden overhead of at least 4 bytes, a field of the boundary tag associated with each chunk, holds size and status information 
+#### Available chunks
+- kept in bins
+- top-most available chunk is always free and never included in any bin
+- remainder of the most recently split chunk is always free and never included in any bin
+### Boundary tags
+#### Structure
+- allocated chunks
+![[Screenshot 2025-10-05 at 00.07.23.png|500]]
+- free chunks stored in circular doubly-linked lists
+![[Screenshot 2025-10-05 at 00.09.24.png|500]]
+#### prev_size field
