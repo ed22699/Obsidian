@@ -26,4 +26,7 @@ $$
 ![[Deep Image Prior (DIP)]]
 ## DeepRED
 ![[DeepRED]]
-- RARE uses the ideas of DIP and DeepRED but is trained instead on *multiple images*
+## RARE
+![[RARE]]
+## Deep Unfolding
+![[Deep Unfolding]]
