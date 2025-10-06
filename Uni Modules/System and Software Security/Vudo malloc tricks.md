@@ -133,4 +133,12 @@ wilderness preservation, memory mapping".
 ![[Screenshot 2025-10-05 at 00.07.23.png|500]]
 - free chunks stored in circular doubly-linked lists
 ![[Screenshot 2025-10-05 at 00.09.24.png|500]]
-#### prev_size field
+#### Size field
+- in order to extract the effective size of a chunk p from its size field, `dlmalloc` needs to mask the two status bits and uses `chunksize()` for this purpose
+### Bins
+- free chunks of memory are stored in circular doubly-linked lists
+- one circular doubly-linked list per bin
+	- initially empty as at the start the whole heap is composed of one single chunk (the wilderness chunk)
+	- bin is nothing more than a pair of pointers serving as the head of the associated doubly-linked list
+
+1.2.2
