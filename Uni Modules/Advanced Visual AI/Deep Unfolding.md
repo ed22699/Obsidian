@@ -10,3 +10,4 @@ tags:
 	3. design the layers to imitate the free parameters of each iteration in a trainable fashion
 	4. train the overall resulting network end-to-end
 ![[Screenshot 2025-10-05 at 19.19.11.png|500]]
+- good for designing explainable AI; you can see and interpret the layers of the network
