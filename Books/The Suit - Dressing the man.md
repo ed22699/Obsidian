@@ -21,3 +21,15 @@ tags:
 - single-breasted suit
 - single-breasted peak lapel suit
 - double-breasted suit
+## Suit Jacket Detailing
+- suit pockets
+	- flapped cash pockets diminishes a suit's dressiness
+	- besom style hightens it
+- jacket vents
+	- when men travelled on horseback a single slit in the coat's back permitted its tails to fall naturally on either side of the horse 
+	- ventless back
+		- cleaner and more dressier but functions poorly if you want to sit down or reach into your pockets
+	- center vent
+		- shows your ass when you try to reach in your pocket
+	- side vent
+		- highest union of function and form
