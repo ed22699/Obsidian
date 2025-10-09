@@ -38,3 +38,6 @@ tags:
 ![[Screenshot 2025-10-09 at 16.57.38.png|400]]
 ## The Development Landscape
 ![[FinTech, Development Landscape]]
+## Examples
+### Transferwise
+- exchange rates are not what you get when you transfer money between countries, instead you will have to take the 

@@ -2,3 +2,80 @@
 tags:
   - FinTech
 ---
+## Users
+- users tend to be young
+- users tend to be wealthy
+- but survey was taken in wealthy countries, with mature banking industry, may be biased 
+### Underbanked
+![[Screenshot 2025-10-09 at 21.17.28.png|400]]
+- opportunity for fintech
+- many regions of the world have significant populations with no access to banking facilities
+![[Screenshot 2025-10-09 at 21.18.49.png|450]]
+## Financial Regulation
+- *financial regulation*: authority rules or directives to control and manage services
+	- a government/regulatory body
+	- to protect actors (e.g. FSCS savings and deposit protection)
+	- to improve efficiency (e.g. monopoly regulation/antitrust laws)
+	- to reduce risk (e.g. ring-fencing retail banking from other banking activities)
+	- to help build trust
+- fintech/techfin is disruptive, so therefore may not initially be regulated
+	- can delay progress and destroy an idea before it has time to grow
+- some regulators take a "watch and see" approach (e.g. sandboxing)
+- technology companies do not have expertise of regulatory compliance
+- tend to move through three phases:
+	- too small to care
+	- too large to ignore
+		- regulators must step in 
+	- too big to fail
+		- if company folds it will have an impact, government would need to step in if it were to fail
+![[Screenshot 2025-10-09 at 21.26.59.png|400]]
+- upper-left: bank dominance
+	- *traditional banking sector is already well established* and likely to continue to dominate
+	- in-sector competition may create a positive dynamic of service innovation
+	- nascent local tech ecosystem means *innovation may come from foreign FinTech*
+- upper-right: partnering
+	- *banks well entrenched* and serve most of population
+	- *strong tech ecosystem* supports innovations (to disrupt incumbents)
+	- banks can leverage tech to compete
+	- some *FinTechs will scale*, others will *partner with banks*
+- lower-right: tech dominance 
+	- *well-developed tech eco-system*, while *banks underserve*
+	- opportunities for non-bank innovators
+	- *cross-sector convergence*: tech companies *obtain financial services licenses or partner with banks*, while banks seek new functionality via partnership with FinTechs
+	- China has been relatively open to techfin. Ant financial has more than 340 million clients, 10 times more than served by any one of the world's largest banks - *development-led*
+	- India demands financial services conducted by licensed and regulated institutions. Rules are now changing - *development-lagged*
+- lower-left: race to the finish
+	- *low levels of bank penetration* and *underdeveloped tech ecosystems*
+	- telecom companies are the most significant local tech players - in some countries have led digitalisation of finance through mobile money products
+	- *banks can catch up* if they innovate before telecoms corner the market
+## LASIC: The principles of success
+- financial technologies are digital services with a strong network effect
+	- economics of online/digital goods is also true for financial technology
+	- regulation is also a key factor
+- success summarised through LASIC
+	- low profit margin
+		- internet age: information/services expected to be essentially free
+		- necessary to be able to maintain a low profit margin
+		- profit margins remain low at the user level, so high volumes are necessary
+	- asset light
+		- enables a low profit margin
+		- allows scalability without incurring large fixed costs on assets
+		- low marginal costs
+		- free ride on existing infrastructure to minimise fixed costs
+			- e.g. money transfer using SMS over existing mobile comms infrastructure 
+	- scalable
+		- technology and business model must scale to reap the benefits of the network effect
+		- ensure scale does not compromise efficiency or increase costs
+		- scale quickly if possible to keep ahead of rivals
+	- innovative
+		- products and operations must be innovative - ideally a new business model - to penetrate a new market
+		- not possible to break into a market by offering the same product at slightly cheaper price
+	- compliance-easy
+		- low regulatory compliance enable innovation
+			- trade off: customer protection
+		- businesses that recieve incentives to aid inclusion have an advantage
+		- first mover advantage - proven beneficial products may be allowed to proceed
+		- develop-led regulation rather than development-lagged regulation
+		- if identification remains an issue, scalability may be unattainable
+			- use low-touch solutions such as SIM registration
+			- mobile apps; bank account/ID only required for complex functions
