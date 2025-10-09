@@ -2,3 +2,21 @@
 tags:
   - auction
 ---
+- internet = quicker and cheaper auctions
+	- auction rules are algorithmic, no need for auctioneer
+	- can participate remotely
+	- sealed auctions quicker, no physical letter
+	- bidding can be automated on your behalf
+- rules can be easily adapted, do not have to follow the four common auction types
+- scalable, run simultaneously, and/or repeated one after another
+## Disintermediation
+- dotcom boom: predicted small businesses would no longer need intermediaries to sell
+	- cost of reaching customers directly reduced
+- cost of reaching decreased, cost of getting people's attention increased
+	- competition between sellers
+- new kind of intermediary - the *online marketplace*
+	- single site to access many sellers
+	- mechanisms to help assess trustworthiness
+	- Ebay
+		- 
+	- Amazon
