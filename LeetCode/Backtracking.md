@@ -1,30 +1,23 @@
 - time complexity - $O(2^n)$ 
 ## Example
 ```java
-class Solution {
-	public List<List<Integer>> subsets(int[] nums) {
-		// create result list
-		List<List<Integer>> res = new ArrayList<>();
-		// create the subsets
-		List<Integer> subsets = new ArrayList<>();
-		// call recursive algorithm
-		create_subset(0, nums, subsets, res);
-		return res;
-	}
-	
-	private void create_subset(int i, int[] nums, List<Integer> subset, List<List<Integer>> res){
-		// if at length add subset to res and stopping condition
-		if (i == nums.length){
-			res.add(new ArrayList<>(subset));
-			return;
-		}
-		// add element and recurse
-		subset.add(nums[i]);
-		create_subset(i+1, nums, subset, res);
-		// backtrack
-		subset.remove(subset.size() - 1);
-		create_subset(i+1, nums, subset, res);
-		}
+public List<List<Integer>> subsets(int[] nums) {
+    List<List<Integer>> list = new ArrayList<>();
+    Arrays.sort(nums);
+    backtrack(list, new ArrayList<>(), nums, 0);
+    return list;
+}
+
+private void backtrack(List<List<Integer>> list , List<Integer> tempList, int [] nums, int start){
+    list.add(new ArrayList<>(tempList));
+	// the iterative process
+    for(int i = start; i < nums.length; i++){
+		// go down the route
+        tempList.add(nums[i]);
+        backtrack(list, tempList, nums, i + 1);
+		// the backtrack
+        tempList.remove(tempList.size() - 1);
+    }
 }
 ```
 First of all, we have two choices for `1`. We can create two subsets.
