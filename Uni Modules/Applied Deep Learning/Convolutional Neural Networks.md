@@ -29,7 +29,23 @@ tags:
 		- caveat of assuming that your *data is grid-like*
 ![[Screenshot 2025-10-08 at 16.30.30.png|400]]
 ![[Screenshot 2025-10-08 at 16.31.27.png|400]]
-- usiong only the neighbouring weights is limiting learning
+- using only the neighbouring weights is limiting learning
+- *solution*: add ore layers until we cover more output neurons
+- neuron's influence is known as the *receptive field*
+	- shown in the image below for forwards pass and backpropagation 
+![[Screenshot 2025-10-08 at 16.33.15.png|400]]
+![[Screenshot 2025-10-08 at 16.34.13.png|200]]
+- this is effectively cross-correlation
+$$
+(f*w)(i)=\sum _{j=-1}^1 f(i)w(i+j)
+$$
+> [!note]
+Convolution is lightly different: $(f*w)(i)=\sum_{j=-1}^1 f(i)w(i-j)$
+- kernel is flipped in all dimensions
+- convolution has the commutative property: $f*w=w*f$
+	- this doesn't hold for cross-correlation
+	- in practice, most DL libraries use cross-correlation 
+## Convolution
 
 - Max is the most common for pooling
 
