@@ -33,3 +33,23 @@ tags:
 		- shows your ass when you try to reach in your pocket
 	- side vent
 		- highest union of function and form
+- jacket sleeves
+	- have buttons cause Frederick the Great's order to have them on jackets was to encourage soldiers to use their shirt cuffs instead of jacket sleeves as handkerchiefs
+## The Suit Waistcoat
+- central heating and a shortage of fabric during wartime led to the waistcoat no longer being customary 
+## The Suit Trouser
+- traditionally has 2 pleats, a deep one near the fly and a shallower one placed toward the pocket
+## Colours and Fabrics
+- the charcoal suit
+	- dark grey two-piece is a great starter suit
+	- complements the mens complexions whereas navy's starkness frequently accentuates a pubescent face 
+	- unrivalled flexibility 
+		- white dress shirt and dark tie uptown
+		- black turtleneck or T-shirt downtown
+- the navy suit
+	- bridge between formal and informal, modern business uniform 
+	- quintessential power suit colour
+		- more enriching than stark black, more ceremonial than charcoal
+- the striped suit
+	- most glamour and popularity 
+	- elongates physique
