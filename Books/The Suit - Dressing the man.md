@@ -53,3 +53,17 @@ tags:
 - the striped suit
 	- most glamour and popularity 
 	- elongates physique
+- the plaid suit
+	- good on any physique but expensive as all needs to line up 
+- the windowpane
+	- less popular
+	- can combine well with second or third pattern, encourages far more varied patterns and matched
+- the grey flannel
+	- grows more flattering with wear, can be paired with a lot
+- the brown suit
+- Gabardine
+- summer standards
+	- seersucker is America's most iconic summer suit
+	- wool mohair suit
+	- pure silk dupioni suit
+		- only one mill in Italy weaves this fabric in its original quality and narrow width
