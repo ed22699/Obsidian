@@ -25,3 +25,4 @@ key points:
 - [[Proportion - Dressing the man]]
 - [[The Prerogatives of Pattern - Dressing the man]]
 - [[The Suit - Dressing the man]]
+- [[odd jackets, trousers and waistcoats - Dressing the man]]
