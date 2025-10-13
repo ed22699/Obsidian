@@ -76,7 +76,38 @@ Convolution is lightly different: $(f*w)(i)=\sum_{j=-1}^1 f(i)w(i-j)$
 - pooling allows for small translational invariance
 	- in addition to CNN Kernels also providing this
 - further increases the receptive field
-## CNN Architecut
-
+## CNN Architecture Design 
+- CNN Layers and Pooling layers are alternated
+	- increases receptive field of each neuron
+- after CNN Layers and Pooling, we might be left with
+	- if we're performing classification, we have $n$ classes
+	- solution: reshape, and add one (or more) FC (fully connected) Layers
+![[Screenshot 2025-10-13 at 15.23.39.png|400]]
+![[Screenshot 2025-10-13 at 15.23.54.png|400]]
+![[Screenshot 2025-10-13 at 15.24.15.png|400]]
+## Training CNNs
+![[Screenshot 2025-10-13 at 15.24.47.png|400]]
+### Auto-Differentiation for CNNs
+- each weight now has impact on many different output nodes
+![[Screenshot 2025-10-13 at 15.26.23.png|300]]
+- still need to know local per-edge derivatives
+	- solution: sum all incoming local derivatives multiplied by their associated deltas
+		- i.e. accumulate gradients
+![[Screenshot 2025-10-13 at 15.28.41.png|400]]
+- increasing layer sizes
+	- as always in Deep Learning, Models get deeper
+	- vanishing gradients are still an issue in CNNs
+	- FC layers are easy to train - small size and near the output
 - backpropagation difference is now we compute all our deltas in the backward pass
+## ResNet
+![[Screenshot 2025-10-13 at 15.30.36.png|300]]
+- faster/easier convergence
+- the output is dominated by the residual (original) input, therefore only slight differences are learnt
+- layers are constructed as identity mappings as a starting point, and almost acting as regularisation
+![[Screenshot 2025-10-13 at 15.32.31.png|400]]
 - transformers use ResNet
+## ResNeXt
+![[Screenshot 2025-10-13 at 15.33.17.png|400]]
+![[Screenshot 2025-10-13 at 15.33.32.png|400]]
+## 1x1 Convolutions
+- can be thought of as a weighted pooling along the *depth* dimension
