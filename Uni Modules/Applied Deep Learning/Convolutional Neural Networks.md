@@ -46,8 +46,37 @@ Convolution is lightly different: $(f*w)(i)=\sum_{j=-1}^1 f(i)w(i-j)$
 	- this doesn't hold for cross-correlation
 	- in practice, most DL libraries use cross-correlation 
 ## Convolution
-
-- Max is the most common for pooling
+- padding
+	- adding blank rows/columns so that the output image doesn't shrink
+- stride
+	- how much we move the kernel each step
+	- stride 2 allows for a larger *receptive field*
+	- a larger stride *down-samples* your feature
+### Convolutional Layers
+- if we learn a single kernel per layer - too few weights
+	- even with a 11x11 kernel, only 121 weights per layer
+	- *solution*: stack kernels
+		- output increases in dimensions
+		- with multiple kernels, each can now specialise
+- for images we have 3 dimensions
+	- usually denoted Height, Width and Depth
+	- as our input is 3D, we actually perform a 3D convolution operation
+		- in this case 2D refers to how the kernel is shifted through the image
+		![[Screenshot 2025-10-13 at 15.11.35.png|400]]
+- activation functions? $f_i^{l+1} = g(f_i^l * w_{j,i}^l)$
+	- we just apply the activation function on the output
+![[Screenshot 2025-10-13 at 15.14.51.png|400]]
+## Pooling
+- as the size of our inputs are huge compared to our kernels, after multiple layers we still have huge input features
+- pooling reduces your input size by applying a downscaling function
+	- Max is the most common function for pooling
+	- other functions are available
+		- average, weighted average, L2 norm
+![[Screenshot 2025-10-13 at 15.17.50.png|100]]
+- pooling allows for small translational invariance
+	- in addition to CNN Kernels also providing this
+- further increases the receptive field
+## CNN Architecut
 
 - backpropagation difference is now we compute all our deltas in the backward pass
 - transformers use ResNet
