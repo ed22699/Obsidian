@@ -39,25 +39,6 @@ tags:
 ## Generative Adversarial Networks (GANs)
 ![[Generative Adversarial Networks (GANs)]]
 ## Conditional Generative Adversarial Network (CGAN)
-![[Screenshot 2025-10-15 at 09.23.59.png|300]]
-![[Screenshot 2025-10-15 at 09.24.17.png|250]]
-### Pix2Pix
-- u-net is an encoder-decoder but with a skip connection
-	- **look at U-net not in slides** 
-- adding noise helps with robustness
-	- also ensures more individual outputs that have slight differences
-- we use the absolute error rather than MSE as it is more robust
-	- MSE will change the network too much with outliers, such as if a pixel is slightly offset it will blow up the error
-## Unpaired image-to-image translation
-### CycleGAN
-- background of zebra from horse example grass was more brown, this is because zebra lives in dryer grassland, this low level feature of the training images ultimately got passed through to the translation from horse to zebra
-- used a lot in medical images
-	- means you can use a low-dose CT scan that would include more noise and use a generator that is trained on high-dose CT scans to remove the noise
-- can enhance video of low light using example of what images of the scene would look like in normal lighting
+![[Conditional Generative Adversarial Network (CGAN)]]
 ## CLIP (Contrastive Language-Image Pre-Training)
-- conditioning with language
-- CLIP learns to understand what an image means in natural language, not just to label it with a class name
-
-1. Constructive Pre-training
-![Discover How CLIP Bridges Text and Image Data|400](https://viso.ai/wp-content/uploads/2024/04/vision-language-models-clip-scaled.jpg)
-![CLIP: Connecting text and images | OpenAI|400](https://images.ctfassets.net/kftzwdyauwt9/d9d46e4b-6d6a-4f9e-59a242ea1441/c7b386880f1af005fd02f159de7f4d00/overview-b.svg)
+![[CLIP (Contrastive Language-Image Pre-Training)]]
