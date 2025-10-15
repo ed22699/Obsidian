@@ -26,3 +26,4 @@ key points:
 - [[The Prerogatives of Pattern - Dressing the man]]
 - [[The Suit - Dressing the man]]
 - [[odd jackets, trousers and waistcoats - Dressing the man]]
+- [[The Dress Shirt - Dressing the man]]
