@@ -79,3 +79,59 @@ $$
 - pertubation ensures leans a smooth latent space
 ![[Screenshot 2025-10-13 at 12.47.40.png|400]]
 - Hierarchical VAE is linked to the diffusion probabilistic model
+## Generative Adversarial Networks (GANs)
+- if we can tell a model what looks real or fake during training, we can help it improve
+	- human in the loop would be slow
+	- create a model to determine whether the generation looks real
+- designed with two models
+	- a generator (G)
+	- a discriminator (D)
+	![[Screenshot 2025-10-15 at 09.05.21.png|400]]
+- joint training: $\textbf G$ is generating samples from noise trying to fool $\textbf D$ and $\textbf D$ is trying to guess whether they are good enough
+### Training
+$$
+\mathbb E _x [\log
+$$
+---
+$$
+\mathbb E _x [f(x)] \approx \frac 1 N \sum _1 ^N f(x_i)
+$$
+![[Screenshot 2025-10-15 at 09.09.17.png|300]]
+#### Minimax Game
+- train $\textbf D$ to maximise the probability of assigning the correct label to both training examples ($X_{real}$) and samples from $\textbf G$ ($X_{fake}$)
+![[Screenshot 2025-10-15 at 09.12.01.png|400]]
+---
+- **there are also sigmoid and log graphs on this slide**
+- train $\textbf G$ to minimise the second term so that $\textbf D$ classifies $G(z)$ as real
+- **formula**
+- global optimum: $\textbf G$ reproduces the true data distribution
+#### Non-Saturating versioon
+
+
+
+- generator might overfit towards certain images $\rightarrow$ add regularisation term
+
+
+## Conditional Generative Adversarial Network (CGAN)
+![[Screenshot 2025-10-15 at 09.23.59.png|300]]
+![[Screenshot 2025-10-15 at 09.24.17.png|250]]
+### Pix2Pix
+- u-net is an encoder-decoder but with a skip connection
+	- **look at U-net not in slides** 
+- adding noise helps with robustness
+	- also ensures more individual outputs that have slight differences
+- we use the absolute error rather than MSE as it is more robust
+	- MSE will change the network too much with outliers, such as if a pixel is slightly offset it will blow up the error
+## Unpaired image-to-image translation
+### CycleGAN
+- background of zebra from horse example grass was more brown, this is because zebra lives in dryer grassland, this low level feature of the training images ultimately got passed through to the translation from horse to zebra
+- used a lot in medical images
+	- means you can use a low-dose CT scan that would include more noise and use a generator that is trained on high-dose CT scans to remove the noise
+- can enhance video of low light using example of what images of the scene would look like in normal lighting
+## CLIP (Contrastive Language-Image Pre-Training)
+- conditioning with language
+- CLIP learns to understand what an image means in natural language, not just to label it with a class name
+
+1. Constructive Pre-training
+![Discover How CLIP Bridges Text and Image Data|400](https://viso.ai/wp-content/uploads/2024/04/vision-language-models-clip-scaled.jpg)
+![CLIP: Connecting text and images | OpenAI|400](https://images.ctfassets.net/kftzwdyauwt9/d9d46e4b-6d6a-4f9e-59a242ea1441/c7b386880f1af005fd02f159de7f4d00/overview-b.svg)
