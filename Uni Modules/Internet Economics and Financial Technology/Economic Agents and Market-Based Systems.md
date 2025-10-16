@@ -62,3 +62,6 @@ tags:
 	- ZI-C traders were surprisingly human-like
 - conclusions:
 	- most of the intelligence is in the market, not in the traders
+![[Screenshot 2025-10-16 at 16.18.24.png|400]]
+![[Screenshot 2025-10-16 at 16.19.50.png|400]]
+![[Screenshot 2025-10-16 at 16.20.04.png|400]]
