@@ -123,3 +123,35 @@ $$
 	- $ole(p)$ is the number of offers made $\leq p$ in $H$
 	- $rbge(p)$ is the number of rejected bids $\geq p$ in $H$
 ![[Screenshot 2025-10-18 at 14.54.34.png|400]]
+## Decide best
+- with multiple alternative trader algorithms, deciding which is best becomes an issue
+- attempting to form a full analytic understanding of the capabilities of algorithms such as ZI-C, KSniper, ZIIP, or MGD is typically either:
+	- impossible
+	- so difficult/laborious that it may as well be impossible
+	- requires so many simplifying assumptions that the end conclusions are of limited or zero relevance to the real system
+- *empirical studies* are the method of choice, you need to know
+	- design of experiments (DoE)
+	- Visualisation and statistical analysis of results
+![[Screenshot 2025-10-18 at 14.58.44.png|500]]
+![[Screenshot 2025-10-18 at 14.59.14.png|500]]
+![[Screenshot 2025-10-18 at 15.01.00.png|500]]
+## Homogeneous results
+![[Screenshot 2025-10-18 at 15.01.32.png|400]]
+## Switching strategy
+- shows in first row don't switch to ZI-C
+![[Screenshot 2025-10-18 at 15.02.53.png|400]]
+### Results
+- kaplan is only any good if there are a small number among a larger population
+	- relies on others to equilibriate the market
+- ZI-C clearly dominated by both ZIP and MGD
+- other than this, no clear consistent winner
+	- best strategy depends on the strategy chosen by the rest of the agents
+- further work by IBM looked at a replicator dynamics games where agents would change their strategy over time, and identified attractors and fixed points in the resulting dynamic system
+![[Screenshot 2025-10-18 at 15.07.41.png|500]]
+- here darker shading means steeper
+![[Screenshot 2025-10-18 at 15.10.21.png|500]]
+![[Screenshot 2025-10-18 at 15.11.11.png|500]]
+![[Screenshot 2025-10-18 at 15.17.02.png|300]]
+![[Screenshot 2025-10-18 at 15.17.44.png|300]]
+- note this finding that AA isn't always the best was not peer reviewed
+![[Screenshot 2025-10-18 at 15.19.05.png|500]]
