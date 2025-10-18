@@ -19,4 +19,5 @@ tags:
 	- Many-to-many - positional encoding/attention - transformers
 ## Recurrent Neural Networks (RNNs)
 ![[Recurrent Neural Networks (RNNs)]]
-$\sqrt d$ is good to smooth it a little make the query to key nice
+## Transformers
+![[Transformers]]

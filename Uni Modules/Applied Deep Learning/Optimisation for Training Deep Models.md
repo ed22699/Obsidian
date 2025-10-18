@@ -118,5 +118,26 @@ $$
 	- many cases, gradient norm does not shrink significantly but the $g^THg$ term grows by more than an order of magnitude
 	- learning becomes very slow despite the presence of a strong gradient because the learning rate must be shrunk to compensate for even stronger curvature
 ### Local Minima
+- one of the most prominent features of a convex optimisation problem is that it can be reduced to a problem of finding a local minimum
+	- any local minimum is guaranteed to be a global minimum  
+- non-convex functions will likely have many local minima
+- neural networks have multiple local minima because of the *model identifiability* problem
+	- model is identifiable if a sufficiently large training set can rule out all but one setting of the model's parameters
+	- models with latent variables are often not identifiable
+	- if we have $m$ layers with $n$ units each, then there are $n!^m$ ways of arranging the hidden units. This kind of non-identifiability is known as *weight space symmetry*
+	- additional causes for non-identifiability in neural network
+- identifiability issues mean neural network cost function can have an extremely large amount of local minima
+	- however, all local minima arising from non-identifiability are equivalent to each other in cost function value
+		- these local minima are not a problematic form of nonconvexity
+- local minima problematic if high cost in comparison to the global minimum
+	- if common could pose issue for gradient-based optimisation algorithms
+	- experts now suspect, for a sufficiently large neural network, most local minima have a low cost function value and that it is not important to find a true global minimum rather than to find a point in parameter space that has low but not minimal cost
+- a test that can rule out local minima as the problem is *plotting the norm of the gradient over time*
+	- if norm of gradient does not shrink to insignificant size, problem is neither local minima nor any other kind of critical point
+	- can be difficult to positively establish local minima are a problem in high-dimensional spaces
+		- many structures other than local minima also have small gradients
+### Plateaus, Saddle Points and Other Flat Regions
+- saddle 
 
-281
+286
+10:40
