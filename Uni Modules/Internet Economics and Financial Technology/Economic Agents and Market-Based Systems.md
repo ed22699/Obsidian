@@ -103,3 +103,23 @@ tags:
 	- "the successful demonstration of machine superiority in the CDA and other common auctions could have a much more direct and powerful impact  - one that might be measured n billions of dollars annually"
 - ignoring secret algorithms that people are making money off heres the path of progress
 ![[Screenshot 2025-10-18 at 13.15.52.png|300]]
+## Todd Kaplan's Lurking sniper trader
+- entered into an early trading-agent contest
+- was simple and outperformed all the competition 
+- sat quietly in the background doing nothing until the bid-offer spread drops to a sufficiently small value or the offer is less than the smallest transaction price in the previous period, or there is not much time until the market closes
+	- if any of these conditions are met, sniper jumps in and steals the deal so long as the deal makes the sniper a profit greater than its minimum threshold
+- maybe too simple
+	- don't adapt to market activity
+	- they are unable to infer the market's $P_0$; they will snipe any deal, however far from equilibrium
+	- they free-ride on the goodwill of other traders; and so are not much good when confronted with lots of copies of themselves
+## Gjerstad-Dickhaut GD traders
+- computes a belief function using data fro recent market activity: calculates the belief function from history $H$ and $n$ recent trades
+	- belief function estimates the probability, for each possible bid or offer price, that a bid or offer would be accepted at that price
+$$
+f(p)=\frac{able(p)+ole(p)}{able(p)+ole(p)+rbge(p)}
+$$
+- where for a given price $p$
+	- $able(p)$ is the number of accepted bids $\leq p$ in $H$
+	- $ole(p)$ is the number of offers made $\leq p$ in $H$
+	- $rbge(p)$ is the number of rejected bids $\geq p$ in $H$
+![[Screenshot 2025-10-18 at 14.54.34.png|400]]
