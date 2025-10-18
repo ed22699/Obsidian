@@ -65,3 +65,41 @@ tags:
 ![[Screenshot 2025-10-16 at 16.18.24.png|400]]
 ![[Screenshot 2025-10-16 at 16.19.50.png|400]]
 ![[Screenshot 2025-10-16 at 16.20.04.png|400]]
+## Part 2 lecture
+![[Screenshot 2025-10-18 at 12.33.50.png|500]]
+![[Screenshot 2025-10-18 at 12.34.06.png|500]]
+![[Screenshot 2025-10-18 at 12.35.01.png|500]]
+- the gradients determine the shape of the probability density function of transaction prices as shown by the triangle
+	- peak of triangle is the equilibrium price
+	- means the most likely value is the equilibrium price
+- a lot rests on the symmetry of the supply and demand curve
+![[Screenshot 2025-10-18 at 12.37.51.png|500]]
+- ZI-C is not enough
+## ZIP algorithm
+- for sellers, you have a thing to sell and a limit price $L$ 
+- the price you ask, $P$, is $L$ plus some profit margin $M$
+- if you have a thing to sell, and your current proposed price is $P$ and either
+	- sellers are accepting bids below $P$; or
+	- sellers are making offers below $P$
+- then decrease $M$ but not below zero
+- if trades are happening at prices above $P$, then increase $M$ 
+	- even if you currently have no thing to sell
+- the buyers do the inverse of this
+- the amount by which you adjust your profit margin $M$ is determined by a learning rule (Widrow-Hoff with momentum)
+- ZIP is adaptive - adjust behaviour according to other traders' actions
+![[Screenshot 2025-10-18 at 12.47.55.png|500]]
+![[Screenshot 2025-10-18 at 12.48.34.png|500]]
+![[Screenshot 2025-10-18 at 12.48.52.png|500]]
+![[Screenshot 2025-10-18 at 12.49.23.png|500]]
+- at IBM in 2001
+	- tested trader-bot algorithms: ZI-C, ZIP, Kaplan's Sniper and GD
+	- pitted human traders against trading agents in experimental economics lab
+	- both ZIP and GD beat humans
+	- HP's ZOP did at least as well as IBM's GD traders
+		- average efficiencies: 
+			- ZIPs=1.030
+			- GDs=1.023
+			- Humans=0.876
+	- "the successful demonstration of machine superiority in the CDA and other common auctions could have a much more direct and powerful impact  - one that might be measured n billions of dollars annually"
+- ignoring secret algorithms that people are making money off heres the path of progress
+![[Screenshot 2025-10-18 at 13.15.52.png|300]]
