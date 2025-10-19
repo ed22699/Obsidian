@@ -137,7 +137,30 @@ $$
 	- can be difficult to positively establish local minima are a problem in high-dimensional spaces
 		- many structures other than local minima also have small gradients
 ### Plateaus, Saddle Points and Other Flat Regions
-- saddle 
+- saddle point is a point with zero gradient
+- at the saddle point the Hessian matrix has both positive and negative eigenvalues
+- can think of a saddle point as being a local minimum along one cross-section of the cost function and a local maximum along another cross-section
+- saddle point are more common than local minima in higher-dimensional spaces
+- for a function $f:\mathbb R^n \rightarrow \mathbb R$ of this type, the expected raton of the number of saddle points to local minima grows exponentially with $n$
+	- think of it as in a higher dimension you are flipping more coins, it is less likely all will be heads
+- local minima are ch more likely to have low cost than high cost in a higher-dimensional space 
+	- critical points with high cost are more likely saddle points
+	- extremely high cost more likely local maxima
+- gradient descent seems able to escape saddle points in many cases 
+- saddle points are a problem for Newton's method as it tries to solve for a point where the gradient is zero
+	- saddle-free Newton method for second-order optimisation showed significant improvements over the traditional version
+		- holds promise if it can be scaled
+- maxima are much like saddle points from the perspective of optimisation
+	- many algorithms are not attracted to them, but unmodified Newton's method is
+### Cliffs and Exploding Gradients 
+- neural networks with many layers often have extremely steep regions resembling cliffs
+	- result from the multiplication of several large weights together
+	- on the face of cliff, gradient update step can move the parameters extremely far
+- its most serious consequences can be avoided using the *gradient clipping* heuristic
+	- recall that the gradient specifies not the optimal step size, but only the optimal direction within an infinitesimal region
+	- when gradient descent algorithm proposes a very large step, gradient clipping heuristic intervenes to reduce the step size, making it less likely to go outside the region where the gradient indicates the direction of approximately steepest descent
+- cliffs most common in the cost functions for recurrent neural networks
+	- as such models involve a multiplication of many factors, with one factor for each time step
+	- long temporal sequences thus incur an extreme amount of multiplication
 
 286
-10:40
