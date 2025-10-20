@@ -186,5 +186,29 @@ $$
 		- because gradient estimator introduces a source of noise (the random sampling of $m$ training examples) that does not vanish even when we arrive at a minimum
 	- batch gradient descent can use a fixed learning rate as total cost function becomes 0 when we approach and reach a minimum
 ![[Screenshot 2025-10-20 at 00.17.45.png|400]]
+- a sufficient condition to guarantee convergence of SGD is that 
+$$
+\sum _{k=1} ^\infty \epsilon_k = \infty
+$$
+and 
+$$
+\sum_{k=1}^\infty \epsilon_k^2 < \infty
+$$
+- in practice, it is common to decay the learning rate linearly until iteration $\tau$: $\epsilon _k = (1-\alpha)\epsilon _0 + \alpha \epsilon _\tau$
+	- with $\alpha = \frac k \tau$, after iteration $\tau$, it is common to leave $\epsilon$ constant
+- learning rate may be chosen by trail and error
+	- best to choose by monitoring learning curves that plot the objective function as a function of time
+- usually $\tau$ may be set to the number of iterations required to make a few hundred passes through the training set
+- usually $\epsilon_\tau$ should be set to roughly 1 percent of the value of $\epsilon _0$
+	- if $\epsilon _0$ is too large learning curve will show violent oscillations, with cost function often increasing significantly
+- if learning rate is too low, learning proceeds slowly, may become stuck with a high cost value
+- optimal initial learning rate, in terms of total training time and the final cost value is higher than the learning rate that yields the best performance after the first 100 iterations or so
+	- best to monitor the first several iterations and use a learning rate that is higher than the best-performing learning rate at this time, but not so high that it causes severe instability
+- to study convergence rate of an optimisation algorithm common to measure the excess error $J(\theta) - \min_\theta J(\theta)$ 
+### Momentum
+- designed to accelerate learning, especially in the face of high curvature, small but constant gradients, or noisy gradients
+- introduces a variable $v$ that plays the role of velocity
+	- the direction and speed at which the parameters move through parameter space
+	- set to an exponentially decaying average of the negative gradient
 
-291
+296
