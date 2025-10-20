@@ -10,6 +10,14 @@ y = x \odot \sigma (Wx+b)
 $$
 - where
 	- $\sigma$ is the softmax function 
+	$$
+	\sigma = \frac {e^{z_i}}{\sum _{j=1}^K e^{z_j}}
+	$$
+	- where:
+		- $z_i$ is the logit (output of the previous layer in the network)
+		- $K$ is the number of classes
+		- $e^{z_i}$ represent the exponential of the logit
+		- $\sum_{j=1}^K e^{z_j}$ is the sum of exponentials across all classes
 ![[Drawing 2025-10-18 16.09.08.excalidraw|400]]
 ## Attention Maps
 - if we know the attention weights, we can work out what areas a model is focusing on
@@ -31,5 +39,6 @@ $$
 ![[Drawing 2025-10-20 13.40.37.excalidraw|500]]
 - we can use the matrix form of these matrices to perform self attention all at once
 ![[Screenshot 2025-10-20 at 13.46.32.png|500]]
+## Multi-Head Self-Attention
 
 slide 51
