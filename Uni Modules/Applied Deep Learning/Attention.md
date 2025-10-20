@@ -28,5 +28,8 @@ $$
 ![[Screenshot 2025-10-18 at 16.33.54.png|300]]
 ![[Drawing 2025-10-18 16.34.51.excalidraw|400]]
 - $\sqrt d$ is good to smooth it a little make the query to key nice
+![[Drawing 2025-10-20 13.40.37.excalidraw|500]]
+- we can use the matrix form of these matrices to perform self attention all at once
+![[Screenshot 2025-10-20 at 13.46.32.png|500]]
 
 slide 51
