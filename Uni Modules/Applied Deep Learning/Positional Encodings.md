@@ -9,7 +9,7 @@ tags:
 		- this information represents a small part of the input
 			- easy to ignore by the model
 		- changing the size of the input, need to learn more weights
-	- solution: ass the output of a function to the input
+	- solution: add the output of a function to the input
 $$
 f_{0,i} = e(i)+x_i
 $$
