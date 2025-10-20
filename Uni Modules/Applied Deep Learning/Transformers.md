@@ -16,6 +16,10 @@ tags:
 		- more data
 		- more parameters
 		- more resources
-![[Screenshot 2025-10-18 at 16.05.28.png|400]]
+
 ![[Attention]]
 
+## Positional Encodings
+![[Positional Encodings]]
+![[Screenshot 2025-10-20 at 15.53.13.png|500]]
+## ROtary Positional Encodings

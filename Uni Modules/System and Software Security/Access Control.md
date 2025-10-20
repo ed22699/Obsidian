@@ -82,3 +82,47 @@ tags:
 	- instead we can store each column of the matrix with the object it refers to 
 	- e.g. (O2,(J,RW), (S2,R), (S3,R))
 ![[Screenshot 2025-10-20 at 14.39.32.png|500]]
+![[Screenshot 2025-10-20 at 15.03.41.png|500]]
+## Access Control in Unix/Linux
+- Unix/Linux/Mac use ACL, with groups
+- "uid" set when you log on
+- Linux Kernel then dynamically enforces the ACLS
+- ls -l displays files with their ACL
+- `root` owns everything
+![[Screenshot 2025-10-20 at 15.05.38.png|300]]
+![[Screenshot 2025-10-20 at 15.05.59.png|400]]
+## Sandbox
+- sandboxing is a cybersecurity procedure in which you run code, analyse it, and code in a secure, enclosed environment on a system that resembles end-user working environments
+	- is intended to prevent the potential threat from entering the network and is commonly used to scrutinise unknown or non-secure code
+- often need to run buggy/untrusted code
+	- programs from untrusted internet sites: toolbars, viewers, codecs for media player
+	- old or insecure applications
+	- legacy software
+- *aim*: if application misbehaves kill it
+![[Screenshot 2025-10-20 at 15.09.14.png|500]]
+![[Screenshot 2025-10-20 at 15.09.35.png|500]]
+- *benefits*:
+	- prevents zero-day attacks
+		- exploit unknown security flaws
+		- highly hazardous because manufacturers cannot issue patches unless they fully comprehend the exploited vulnerability
+		- sandboxing software isolates these
+			- there is no assurance that it will prevent zero-day manipulations, most often works for damage limitation by distancing the potential danger from the remainder of the network
+	- enhances other security programs
+		- is an excellent compliment to specific other security software
+			- action monitoring programs
+			- antivirus programs
+		- shields against spyware strains that your virus protection may struggle to detect
+	- helps examine presumably malicious programs for threats
+		- if dealing with new vendors or untrustworthy software sources you can try out the application before incorporating it
+	- allows rigorous software tests before they are released
+		- software changes should be thoroughly tested before they are released to the public
+		- sandboxing can be used to test new code for possible risks before it officially launches
+			- has a vital role to play in application security
+## How to sandbox any program
+- virtual machines
+	- VirtualBox or VMware
+	- creates virtual hardware devices that ut uses to run an operating system
+	- entire operating system is essentially sandboxed, as it does not have access to anything outside of the virtual machine
+- using other tools
+	- Sandboxie
+	- Bufferzone

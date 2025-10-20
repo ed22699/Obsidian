@@ -40,5 +40,14 @@ $$
 - we can use the matrix form of these matrices to perform self attention all at once
 ![[Screenshot 2025-10-20 at 13.46.32.png|500]]
 ## Multi-Head Self-Attention
-
-slide 51
+- when we defined a CNN layer, we started from one filter
+- this left us with too few weight to model anything useful
+- similar idea with multiple heads, each attention head can now specialise
+- 8 heads are better than 1
+	- instead of a single set of $W^Q, W^K, W^V$ we have one per head
+	$$
+	Y_h=\sigma(\frac{Q_hK_h^T}{\sqrt d})\cdot V_h
+	$$
+	- instead of a $d$ output ($n \times d$) we have $Hd$ output 
+	- just have a linear layer to project from $Hd$ back to $d$
+![[Drawing 2025-10-20 15.23.43.excalidraw|600]]
