@@ -162,5 +162,29 @@ $$
 - cliffs most common in the cost functions for recurrent neural networks
 	- as such models involve a multiplication of many factors, with one factor for each time step
 	- long temporal sequences thus incur an extreme amount of multiplication
+### Long-Term Dependencies
+- issue when computation graph becomes extremely deep
+	- e.g. recurrent networks
+	- repeated application of the same parameters gives rise to especially pronounced difficulties
+- *vanishing and exploding gradient problem* refers to the fact that gradients through such a graph are also scaled according to $diag(\lambda)^t$ 
+	- vanishing gradients make it difficult to know which direction the parameters should move to improve the cost function
+	- exploding gradients can make learning unstable
+		- such as the cliff structures
+### Inexact Gradients 
+- most optimisation algorithms designed with assumption that we have access to the exact gradient or Hessian matrix
+	- usually have only a noisy or even biased estimate of there quantities
+	- most rely on sampling-based estimates
+- can avoid by choosing a surrogate loss function that is easier to approximate than the true loss
+### Poor Correspondence between Local and Global Structure
+### Theoretical Limits of Optimisation 
+- there are limits on the performance of any optimisation algorithm we might design for neural networks
+## Basic Algorithms
+### Stochastic Gradient Descent (SGD)
+- probably the most used in general particularly for deep learning
+- crucial parameter is the learning rate
+	- in practice, it is necessary to gradually decrease the learning rate over time, so we now denote the learning rate at iteration $k$ and $\epsilon _k$ 
+		- because gradient estimator introduces a source of noise (the random sampling of $m$ training examples) that does not vanish even when we arrive at a minimum
+	- batch gradient descent can use a fixed learning rate as total cost function becomes 0 when we approach and reach a minimum
+![[Screenshot 2025-10-20 at 00.17.45.png|400]]
 
-286
+291
