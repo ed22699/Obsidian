@@ -240,4 +240,29 @@ $$
 	- proportional to $-v(t)$
 	- causes particle to gradually lose energy over time, eventually converging
 ### Nesterov Momentum
-296
+- variant of momentum inspired by Nesterov's accelerated gradient method
+$$
+v \leftarrow \alpha v - \epsilon \nabla _\theta [\frac 1 m \sum_{i=1}^n L(f(x^{(i)}; \theta +\alpha v), y^{(i)})]
+$$
+$$
+\theta \leftarrow \theta +v
+$$
+- with this gradient is evaluated after the current velocity is applied
+	- attempt to add correction factor
+## Parameter Initialisation Strategies
+![[Screenshot 2025-10-21 at 23.46.57.png|500]]
+- larger initial weights will yield a stronger symmetry-breaking effect, helping to avoid redundant units
+	- in recurrent networks can result in chaos 
+		- such extreme sensitivity to small perturbations of the input that the behaviour of the deterministic forward propagation procedure appears random
+	- may result in extreme values that cause the activation function to saturate, causing complete loss of gradient through saturated units
+- one heuristic is to initialise the weights of a fully connected layer with $m$ inputs and $n$ outputs by sampling each weights from $U(-\frac 1 {\sqrt m}, \frac 1 {\sqrt m})$ while Glorot suggest using the normalised initialisation
+$$
+W_{i,j}\sim U(-\sqrt{\frac 6 {m+n}}, \sqrt{\frac 6 {m+n}})
+$$
+- sparse initialisation
+	- each unit initialised to have exactly $k$ non zero weights
+	- helps to achieve more diversity among the units at initialisation time
+	- also imposes a very strong prior on the weights that are chosen to have large Gaussian values
+- treat the initial scale of the weights for each layer as a hyperparameter
+
+301
