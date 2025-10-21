@@ -210,5 +210,34 @@ $$
 - introduces a variable $v$ that plays the role of velocity
 	- the direction and speed at which the parameters move through parameter space
 	- set to an exponentially decaying average of the negative gradient
-
+$$
+v \leftarrow \alpha v - \epsilon \nabla _\theta (\frac 1 m \sum_{i=1}^mL(f(x^{(i)};\theta), y^{(i)}))
+$$
+$$
+\theta \leftarrow \theta + v
+$$
+![[Screenshot 2025-10-20 at 23.51.35.png|500]]
+- the more previous gradients affect the current direction
+- the size of the step depends on how large and how aligned a sequence of gradients are
+	- largest when successive gradients point in exactly the same direction
+	- if the momentum algorithm always observes gradient $g$, then it will accelerate in the direction of $-g$ until reaching a terminal velocity where the size of each step is $\frac{\epsilon ||g||}{1-\alpha}$
+- common values of $\alpha$ include 0.5, 0.9, and 0.99
+	- $\alpha$ may also be adapted over time, typically begins with a small value and is later raised
+	- adapting $\alpha$ over time is less important than shrinking $\epsilon$ over time
+- position of particle given by $\theta(t)$
+- particle experiences net force $f(t)$, this force causes the particle to accelerate
+$$
+f(t)=\frac{d^2}{dt^2}\theta(t)
+$$
+- we can introduce the variable $v(t)$ representing the velocity of the particle at time $t$
+$$
+v(t) = \frac d {dt}\theta(t)
+$$
+$$
+f(t)= \frac d{dt}v(t)
+$$
+- we add viscous drag to make sure it doesn't go back and forth forever
+	- proportional to $-v(t)$
+	- causes particle to gradually lose energy over time, eventually converging
+### Nesterov Momentum
 296
