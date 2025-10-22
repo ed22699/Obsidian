@@ -264,5 +264,41 @@ $$
 	- helps to achieve more diversity among the units at initialisation time
 	- also imposes a very strong prior on the weights that are chosen to have large Gaussian values
 - treat the initial scale of the weights for each layer as a hyperparameter
+- approach for setting the biases must be coordinated with the approach for setting weights
+	- setting the biases to zero is compatible with most weight initialisation schemes
+	- some situations where we may set the biases to something else
+		- if bias is for an output unit
+		- want to choose the bias to avoid causing too much saturation at initialisation
+			- not compatible with weight initialisation schemes that do not expect strong input from the biases
+		- sometimes a unit controls whether other units are able to participate in a function
+- another common parameter type is variance/precision parameter
+	- can normally initialise variance parameters to 1 safely
+- possible to initialise model parameters using machine learning
+	- initialise a supervised model with the parameters learned by an unsupervised model trained on the same inputs
+	- take someone else's model parameters 
+## Algorithms with adaptive learning rates
+### AdaGrad
+![[Screenshot 2025-10-22 at 22.40.21.png|400]]
+- individually adapts the learning rates of all model parameters by scaling them inversely proportional to the square root of the sum of all the historical squared values of the gradient 
+	- parameters with largest partial derivative of loss have correspondingly rapid decrease in their learning rate
+	- parameters with small partial derivative of loss have relatively small decrease in their learning rate
+- training deep neural network models, the accumulation of squared gradients from the beginning of training can result in a premature and excessive decrease in the effective learning rate
+- performs well for some but not all deep learning models
+### RMSProp
+![[Screenshot 2025-10-22 at 22.40.37.png|400]]
+- modifies AdaGrad to perform better in the non-convex setting 
+	- changes the gradient accumulation into an exponentially weighted moving average
+- uses an exponentially decaying average to discard history from the extreme past so that it can converge rapidly after finding a convex bowl
+- has been shown to be an effective and practical optimisation algorithm for deep neural networks
+- currently one of the go-to optimisation methods
+![[Screenshot 2025-10-22 at 22.46.04.png|400]]
+### Adam
+- adaptive moments
+- variant on the combination of RMSProp and momentum  with a few important distinctions
+	- momentum is incorporated directly as an estimate of the first-order moment of the gradient
+	- includes bias corrections to the estimates of both the first-order moments and the second-order moments to account for their initialisation at the origin
+- unlike in Adam, the RMSProp second-order moment estimate may have high bias early in training
+- Adam generally regarded as being fairly robust to the choice of hyperparameters, though the learning rate sometimes needs to be changed from the suggested default
+### Choosing the right optimisation algorithm
 
-301
+306
