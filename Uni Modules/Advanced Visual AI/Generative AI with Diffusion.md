@@ -36,5 +36,20 @@ tags:
 - conditioning (like text prompts) guides what kind of image is formed
 ## Considerations
 ### Noise Schedule
-- parameters $\beta_t$ and $\sigma_t ^2$ control the variance of the forward diffusion and reverse denoising proceses, respectively
-- often a linear schedule is used for $\beta_t$ and $\sigma_t^2$ si set equal to $\beta_t$
+- parameters $\beta_t$ and $\sigma_t ^2$ control the variance of the forward diffusion and reverse denoising processes, respectively
+- often a linear schedule is used for $\beta_t$, and $\sigma_t^2$ is set equal to $\beta_t$
+	- for small images the image becomes almost pure Gaussian noise very early in the diffusion process
+---
+## Why
+![[Screenshot 2025-10-22 at 09.16.09.png|500]]
+- stable and high quality: Less prone to artefacts than GANs
+- Probabilistic foundation: Based on modelling data distribution through noise transitions
+- controllable generation: can guide results with text prompts, class labels, or images
+---
+![[CLIP (Contrastive Language-Image Pre-Training)]]
+- ViT uses attention to see what are the "key words" of the image
+	- image is split into Patch + Position embedding and this is passed in 
+	- good to find the important parts of an image
+**missed hippo on stable diffusion v3**
+
+- ChatGPT uses DALL-E 3

@@ -25,7 +25,4 @@ tags:
 ## ROtary Positional Encodings
 ![[ROtary Positional Encodings]]
 ## Visual Transformer (ViT)
-### CLS Token
-- this a learnt summary token
-- with self-attention, hopes to capture knowledge of the whole image
-![[Screenshot 2025-10-20 at 17.05.53.png|350]]
+![[Visual Transformer (ViT)]]

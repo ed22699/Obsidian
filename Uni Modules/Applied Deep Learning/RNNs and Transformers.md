@@ -21,3 +21,7 @@ tags:
 ![[Recurrent Neural Networks (RNNs)]]
 ## Transformers
 ![[Transformers]]
+
+- both the RNN and Transformer architecture can scale to any size input
+	- in practice, we usually set a hard limit, anything after the $n^{th}$ word gets cut off
+	- note, this is a maximum so they are still able to handle any size input up to this maximum
