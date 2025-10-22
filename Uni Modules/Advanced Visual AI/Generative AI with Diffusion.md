@@ -3,7 +3,7 @@ tags:
   - Lesson
 ---
 ## Distribution of MNIST data
-- natural images do not scatter randomly across the pixel space; instead, tehy concentrate on a complex, low-dimensional manifold embedded in a high-dimensional space
+- natural images do not scatter randomly across the pixel space; instead, they concentrate on a complex, low-dimensional manifold embedded in a high-dimensional space
 - a generative model learns to generate images that looks like it came from the real data
 - notations
 	- $q(x)$ or $p_{data}(x)$: the probability density function of the distribution of real data
@@ -27,7 +27,7 @@ tags:
 ![[Backward Denoising]]
 ## Training and Sampling
 ![[Screenshot 2025-10-20 at 12.53.13.png|500]]
-
+- how to estimate the noise £
 
 ## Part 2
 ## Generate Image (Sampling Phase)
