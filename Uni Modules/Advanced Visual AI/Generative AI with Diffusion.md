@@ -27,3 +27,14 @@ tags:
 ![[Backward Denoising]]
 ## Training and Sampling
 ![[Screenshot 2025-10-20 at 12.53.13.png|500]]
+
+
+## Part 2
+## Generate Image (Sampling Phase)
+- each step removes a small amount of noise, guided by the model's prediction
+- after hundreds of steps, the model reconstructs a sharp, realistic image
+- conditioning (like text prompts) guides what kind of image is formed
+## Considerations
+### Noise Schedule
+- parameters $\beta_t$ and $\sigma_t ^2$ control the variance of the forward diffusion and reverse denoising proceses, respectively
+- often a linear schedule is used for $\beta_t$ and $\sigma_t^2$ si set equal to $\beta_t$
