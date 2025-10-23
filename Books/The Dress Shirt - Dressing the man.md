@@ -12,3 +12,11 @@ tags:
 ## The straight-point collar
 - collar points should finish between 2 3/4 inches and 3 3/8 inches in length
 - narrow opening between its points favours a rounder, oval-shaped face rather than a narrow one
+## The Spread Collar
+- as they vary in height, point length, and openness, there are models for any head shape or profile
+- should be a permanent fixture in every mans wardrobe
+## The Rounded Collar
+- more victorian society
+## The Tab Collar
+- special tabs fasten to each other under the tie's knot to hold the collar's point in place, thrusting the shirt collar and necktie knot higher up under the wearer's chin
+	- long necked men welcome this higher positioning

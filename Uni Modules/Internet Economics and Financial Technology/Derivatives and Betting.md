@@ -39,4 +39,43 @@ tags:
 	- right to buy N units of underlying
 	- option-holder can buy at strike price
 	- if exercised, option-writer (seller) must sell $N$ shares at strike price
-	- *in-the-money* (ITM) if the underl
+	- *in-the-money* (ITM) if the underlying price is greater than the strike price
+	- *out-of-the-money* (OTM, underwater) if underlying price is less than strike
+	- *at-the-money* if underlying=strike
+- puts
+	- right to sell N units of underlying
+	- option-holder can sell at strike price
+	- if exercised, option-writer must buy N shares at strike price
+	- *In-the-money* (ITM) if the underlying price is less than the strike price
+	- *Out-of-the-money* (OTM, underwater) if underlying price is greater than strike
+	- *at-the-money* if underlying=strike
+![[Screenshot 2025-10-23 at 23.19.18.png|500]]
+![[Screenshot 2025-10-23 at 23.20.01.png|500]]
+![[Screenshot 2025-10-23 at 23.23.27.png|500]]
+![[Screenshot 2025-10-23 at 23.28.20.png|500]]
+![[Screenshot 2025-10-23 at 23.29.24.png|500]]
+![[Screenshot 2025-10-23 at 23.30.44.png|500]]
+![[Screenshot 2025-10-23 at 23.34.59.png|500]]
+![[Screenshot 2025-10-23 at 23.35.28.png|500]]
+![[Screenshot 2025-10-23 at 23.35.52.png|500]]
+![[Screenshot 2025-10-23 at 23.36.07.png|500]]
+![[Screenshot 2025-10-23 at 23.37.06.png|500]]
+![[Screenshot 2025-10-23 at 23.37.40.png|500]]
+![[Screenshot 2025-10-23 at 23.38.04.png|500]]
+![[Screenshot 2025-10-23 at 23.38.37.png|500]]
+![[Screenshot 2025-10-23 at 23.39.33.png|500]]
+![[Screenshot 2025-10-23 at 23.40.05.png|500]]
+- this is just sophisticated betting
+## Betting Exchanges
+- electronic marketplaces where gambler interact to find someone to take the opposite side of their bet: they "buy" (back) or "sell" (lay) the outcome of an event
+	- traditional bookmaker: customer backs event, bookie lays
+	- betting exchange
+		- all customers can either back or lay
+		- buys and sells are displayed in a manner similar to Limit Order Book (LOB)
+		- customers can trade bets "in play" while an event is happening, until final outcome
+- traditional bookmakers have argued that allowing anonymous customers to lay events encourages corruption: it's easier to throw a race than it is to win it
+![[Screenshot 2025-10-23 at 23.49.31.png|500]]
+![[Screenshot 2025-10-23 at 23.55.54.png|400]]
+![[Screenshot 2025-10-23 at 23.56.06.png|400]]
+![[Screenshot 2025-10-23 at 23.57.17.png|500]]
+- IEM is one such prediction market
