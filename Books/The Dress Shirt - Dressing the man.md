@@ -20,3 +20,8 @@ tags:
 ## The Tab Collar
 - special tabs fasten to each other under the tie's knot to hold the collar's point in place, thrusting the shirt collar and necktie knot higher up under the wearer's chin
 	- long necked men welcome this higher positioning
+## Pinned Collars
+- like the tab, it raises the tie knot up on the neck
+- straight point's vertically work to counterpoint the rounded or oval contoured head or chin
+- pinned with plain gold safety pin or spring-loaded slide mechanism
+- its softer, rounder outline harmonises well with the square or angular jawline
