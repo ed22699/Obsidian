@@ -293,6 +293,7 @@ $$
 - currently one of the go-to optimisation methods
 ![[Screenshot 2025-10-22 at 22.46.04.png|400]]
 ### Adam
+![[Screenshot 2025-10-24 at 23.34.04.png|400]]
 - adaptive moments
 - variant on the combination of RMSProp and momentum  with a few important distinctions
 	- momentum is incorporated directly as an estimate of the first-order moment of the gradient
@@ -300,5 +301,22 @@ $$
 - unlike in Adam, the RMSProp second-order moment estimate may have high bias early in training
 - Adam generally regarded as being fairly robust to the choice of hyperparameters, though the learning rate sometimes needs to be changed from the suggested default
 ### Choosing the right optimisation algorithm
+- no single best algorithm
+- most popular
+	- SGD, SGD with momentum, RMSProp, RMSProp with momentum, AdaDelta, and Adam
+## Approximate Second-Order Methods
+- the only objective function we examine is the empirical risk
+$$
+J(\theta)= \mathbb E_{x,y \sim \hat p_{data}(x,y)}[L(f(x;\theta),y)]=\frac 1 m \sum_{i=1}^m L(f(x^{(i)}; \theta), y^{(i)})
+$$
+### Newton's Method
+![[Screenshot 2025-10-24 at 23.41.44.png|400]]
+- most widely used second-order method
+- is an optimisation scheme base on using a second-order Taylor series expansion to approximate $J(\theta)$ near some point $\theta_0$, ignoring derivatives of higher order
+- inverse hessian has to be computed at every training iteration, due to this only networks with a very small number of parameters can be practically trained via Newton's method
+### Conjugate Gradients
+- method to efficiently avoid the calculation of the inverse Hessian by iteratively descending conjugate directions
+- two popular methods for computing the $\beta _t$ are
+![[Screenshot 2025-10-24 at 23.49.22.png|400]]
 
-306
+311
