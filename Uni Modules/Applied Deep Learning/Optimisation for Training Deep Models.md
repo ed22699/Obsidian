@@ -315,8 +315,17 @@ $$
 - is an optimisation scheme base on using a second-order Taylor series expansion to approximate $J(\theta)$ near some point $\theta_0$, ignoring derivatives of higher order
 - inverse hessian has to be computed at every training iteration, due to this only networks with a very small number of parameters can be practically trained via Newton's method
 ### Conjugate Gradients
+![[Screenshot 2025-10-25 at 22.49.07.png|400]]
 - method to efficiently avoid the calculation of the inverse Hessian by iteratively descending conjugate directions
 - two popular methods for computing the $\beta _t$ are
 ![[Screenshot 2025-10-24 at 23.49.22.png|400]]
+### BFGS
+- Broyden-Fletcher-Goldfarb-Shanno algorithm attempts to bring some of the advantages of Newton's method without the computational burden
+- unlike conjugate gradients the success of the approach is not heavily dependent on the line search finding a point very close to the true minimum along the line
+- issue is it must store the inverse Hessian matrix making it impractical
+	- Limited Memory BFGS tries to help this
+## Optimisation strategies and meta-algorithms
+### Batch Normalisation 
+- is a method of adaptive reparametrisation, motived by the difficulty of training very deep models
 
-311
+316
