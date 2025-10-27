@@ -327,5 +327,27 @@ $$
 ## Optimisation strategies and meta-algorithms
 ### Batch Normalisation 
 - is a method of adaptive reparametrisation, motived by the difficulty of training very deep models
+- means the gradient will never propose an operation that acts simply to increase the standard deviation or mean of $h_i$
+	- the normalisation operations remove the effect of such an action and zero out its component in the gradient
+- at test time $\mu$ and $\sigma$ may be replaced by running averages that were collected during training time
+	- allows the model to be evaluated on a single example, without needing to use definitions of $\mu$ and $\sigma$ that depend on an entire minibatch
+- makes the model easier to learn
+- batch normalisation acts to standardise only the mean and variance of each unit in order to stabilise learning
+- can reduce the expressive power of the neural network containing that unit
+	- to maintain the expressive power, replace the batch of hidden unit activations $H$ with $\tau H'+\beta$, $\tau$ and $\beta$ are learned parameters that allow the new variable to have any mean and standard deviation 
+### Coordinate Descent
+- optimise one coordinate at a time
+- block coordinate descent refers to minimising with respect to a subset of the variables simultaneously 
+- makes sense when the different variables in the optimisation problem can be clearly separated into groups that play relatively isolated roles
+### Polyak Averaging
+- consists of averaging several points in the trajectory through parameter space visited by an optimisation algorithm
+- the algorithm may leap back and forth across a valley several times without every visiting a point near the bottom of the valley, the averaging of all the locations on either side should be close to the bottom of the valley though
+### Supervised Pretraining
+- sometimes more effective to train a simpler model to solve the task, then make the model more complex
+	- or train the model to solve a simpler task then move on to confront the final task
+- greedy algorithms may be followed by a fine-tuning stage in which a joint optimisation algorithm searches for an optimal solution to the full problem. Initialising the joint optimisation algorithm with a greedy solution can greatly speed it up and improve the quality of the solution it finds
+- pretraining, especially greedy pretraining are ubiquitous in deep learning
+- *greedy supervised pretraining*: break supervised learning problems into other simpler supervised learning problems
+![[Screenshot 2025-10-27 at 00.08.58.png|400]]
 
-316
+321
