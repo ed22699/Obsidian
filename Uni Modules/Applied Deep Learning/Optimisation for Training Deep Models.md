@@ -349,5 +349,19 @@ $$
 - pretraining, especially greedy pretraining are ubiquitous in deep learning
 - *greedy supervised pretraining*: break supervised learning problems into other simpler supervised learning problems
 ![[Screenshot 2025-10-27 at 00.08.58.png|400]]
-
-321
+### Designing Models to Aid Optimisation 
+- many improvements have come from designing models to be easier to optimise
+- use linear transformation between layers and activation functions that are differentiable 
+	- LSTM, rectified linear units and maxout units have all moved toward using more linear functions than previous models
+	- have nice properties that make optimisation easier
+- linear paths or skip connections between layers reduce the length of the shortest path from the lower layer's parameters to the output, mitigate the vanishing gradient problem
+### Continuation Methods and Curriculum Learning
+- continuation methods are a family of strategies that can make optimisation easier by choosing initial points to ensure that local optimisation spends most of its time in well-behaved regions of space
+	- begin by solving an easy problem then refine the solution to solve incrementally harder problems until we arrive at a solution to the true underlying problem
+	- designed to reach a global minimum despite the presence of many local minima
+		- would construct easier cost functions by blurring the original cost function
+	- can also eliminate flat regions, decrease variance in gradient estimates, improve conditioning of the Hessian matrix
+- curriculum learning or shaping can be interpreted as a continuation method
+	- based on idea of planning a learning process to begin by learning simple concepts and progress to learning more complex concepts that depend on these simpler concepts 
+	- been successful on a wide range of natural language and computer vision tasks
+	- consistent with the way in which humans teach
