@@ -40,3 +40,17 @@ tags:
 ## Dress Shirt Modes
 - the spirited dress shirt alternative can lend smartness to the tailored scenario without compromising the boundaries of good taste
 ## Dress shirt aesthetics
+- pairing fabrics matter
+- the stiffer the collar the more formal the intentions
+- more open collar's points, the dressier the presentation
+- softer collar configurations such as the button-down or unstarched long point rank lower in formality
+- formality begins at the collar, then the cuffs, then the fabric
+- smoother or more lustrous materials are more dressy
+## Solid-Colour Dress Shirt
+- medium blue actually flatters more men's faces than white
+	- white can drain away colour
+	- blue enlivens skin tone
+- find the deepest shade of blue that highlights the face without distracting from it
+	- faired hair man will have lighter tones of blue
+	- can increase the tone of blue when you have a summer tan
+## The Patterned Dress Shirt
