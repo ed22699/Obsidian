@@ -25,3 +25,18 @@ tags:
 - straight point's vertically work to counterpoint the rounded or oval contoured head or chin
 - pinned with plain gold safety pin or spring-loaded slide mechanism
 - its softer, rounder outline harmonises well with the square or angular jawline
+## Button-Down Collar
+## Fitting the dress shirt
+- with top button closed, two fingers should be able to slide comfortably between the neck and the collar of a new shirt
+	- want it to be slightly large as it will shrink after the first few washes
+- should not be tension across the waist
+- should be able to raise your arms without pulling out of the trouser top
+- when necktie is worn, collar's points should remain in touch with the shirt's body
+	- cutaway collars should not have space above the tie knot, with points long enough to be covered by the jacket's neckline
+	- no part of the collar's neckband should peek out over the tie's knot
+- shirt fit snugly around wrist so that the additional length required to keep the cuff from pulling back when the arm is extended does not force it down the hand
+	- shirt cuff and hand should move as one
+	- if the hand can slide through the cuff opening without first unfastening it, the cuff's circumference is too large
+## Dress Shirt Modes
+- the spirited dress shirt alternative can lend smartness to the tailored scenario without compromising the boundaries of good taste
+## Dress shirt aesthetics
