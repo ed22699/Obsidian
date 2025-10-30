@@ -54,3 +54,6 @@ tags:
 	- faired hair man will have lighter tones of blue
 	- can increase the tone of blue when you have a summer tan
 ## The Patterned Dress Shirt
+- amount of contrast found in the complexion will dictate the degree of contrast below
+## Dressing the hand
+## The shirt monogram
