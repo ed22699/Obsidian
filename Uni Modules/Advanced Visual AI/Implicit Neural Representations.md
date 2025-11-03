@@ -21,4 +21,6 @@ tags:
 - *Solution*: Implicit neural representations
 	- neural networks (e.g. MLPs) are used to estimate this function $f$
 	- trained on discrete samples of a signal, neural networks learn to approximate the continuous function $f$, denoted as $\mathcal F$ 
-- network parameterises $\mathcal F$, with $f$ implicitly encoded in the network after training - 
+- network parameterises $\mathcal F$, with $f$ implicitly encoded in the network after training - hence the term *Implicit Neural Representation*
+## Mappings in 2D (Images)
+- for an image, INRs learn a function $f: \mathbb R$  --- **stopped notes here**
