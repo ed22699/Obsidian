@@ -10,3 +10,9 @@ tags:
 - wool neckwear:
 ## Printed Neckwear
 - charvet prints
+- dots and other all-over neats
+- the paisley
+- club and sports
+## Neckwear styles
+- the ascot
+- the bow tie
