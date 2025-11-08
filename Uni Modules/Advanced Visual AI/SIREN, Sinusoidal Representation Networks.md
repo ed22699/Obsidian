@@ -1,0 +1,14 @@
+---
+tags:
+  - Implicit_Neural_Representations
+---
+- SIREN (Sinusoidal Representation Networks) is a neural network architecture that uses sinusoidal activation functions:
+	- $f(x,y) = \sin(W\cdot x +b)$
+	- where 
+		- $f$ is the SIREN output
+		- $W$ is a weight matrix
+		- $b$ is a bias term
+	- allows the network to capture oscillations across the input space
+- *derivative of a SIREN is a SIREN*
+	- periodic activations (e.g. sine functions) allow for continuous and smooth first and second-order derivatives
+	- essential for applications like differentiable rendering
