@@ -70,7 +70,7 @@ tags:
 		- output the signed distance to the closest surface, providing detailed surface information
 		- ideal for *applications needing smooth surface reconstructions with precise surface details*
 ## Applications
-- super resolution
+- super resolution:
 	- enhancing image detail by learning a continuous representation
 		- INRs can represent images as continuous functions, enabling sampling at any resolution
 		- for super-resolution tasks, this property allows generating high-resolution images from low-resolution inputs by sampling finer grids
@@ -78,6 +78,18 @@ tags:
 		- capacity impact: capacity of neural network directly impacts the ability to capture fine details and high-frequency information
 		- higher network capacity enables the INR to model more intricate details, which is essential for realistic and sharp high-resolution inputs
 		- increasing network capacity also requires careful training to avoid overfitting to low-resolution features
-- Image Deblurring
+- Image Deblurring:
 	- how INRs help 
-		- INRs, such as S
+		- INRs, such as SIREN, use a continuous function to represent the image, enabling the network to reconstruct fine details even in blurred regions
+		- by learning high-frequency features with sinusoidal activations, INRs can approximate the underlying sharp image despite blur in the observed data
+	- process
+		- network is trained on the blurred image, learning a continuous function $f_\theta (x,y)$ that approximates the original, sharp image
+		- during training, the model learns to reconstruct sharper details by minimising the difference between the predicted values and a target
+
+|                   | Deblurring (sharpening)                           | Super-Resolution (upscaling)                                  |
+| ----------------- | ------------------------------------------------- | ------------------------------------------------------------- |
+| purpose           | removes blur to sharpen an image                  | enhances image resolution by adding finer details             |
+| problem addressed | reverses blur effects from motion or focus issues | upscales low-resolution images, estimating details like edges |
+| output            | same resolution, but sharper and clearer          | higher-resolution image with added detail                     |
+![[Screenshot 2025-11-08 at 15.23.15.png|500]]
+![[Screenshot 2025-11-08 at 15.23.47.png|500]]
