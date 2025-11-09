@@ -22,3 +22,6 @@ tags:
 	- more simple then the windsor and better suits more face shapes and collars
 	- broader shoulders = larger-scaled necktie
 	- widest point should coincide with the belt's upper edge
+	- a dimple should emerge under the knot
+	- knot should spring out
+- the neckerchief

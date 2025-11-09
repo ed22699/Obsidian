@@ -28,3 +28,4 @@ key points:
 - [[odd jackets, trousers and waistcoats - Dressing the man]]
 - [[The Dress Shirt - Dressing the man]]
 - [[Neckwear - Dressing the man]]
+- [[Hosiery Harmonies - Dressing the man]]
