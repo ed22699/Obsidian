@@ -78,3 +78,13 @@ $$
 		- known as the *spectral bias* of neural networks
 			- tend to prioritise learning smooth low-frequency components first
 	- without proper transformation, the network finds it difficult to represent fine details of the scene, leading to over-smoothed or blurred renderings
+### Step 3: Positional Encoding
+- *Input*: A set of 3D query points $\{x_p, y_p, z_p\}_{n\times m \times H \times W}$
+- *Output*: A set of query points embedded into d-dimensional space $\{x_1, x_2, ..., x_d\}_{n \times m \times H \times W}$ 
+- encoded representation allows the network to effectively capture high-frequency variations in the 3D space
+- encoding function:
+$$
+\gamma (p) = (\sin(\pi p), \cos(\pi p), \sin(2\pi p), \cos(2\pi p),...)
+$$
+- high-frequency features help the network better represent detailed geometry and colours
+- positional encoding helps to overcome the limitations of neural networks in representing high-frequency details effectively
