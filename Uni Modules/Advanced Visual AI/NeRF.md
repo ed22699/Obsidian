@@ -21,7 +21,6 @@ $$
 	- $p_i$ represents the specific 3D coordinates of a point along a ray at step $i$
 	- query points $\{x_p, y_p, z_p\}$ represent the coordinates of the samples points in 3D space, which are essentially the $p_i$ values for different rays and steps
 ![[Screenshot 2025-11-09 at 16.00.09.png|400]]
-**Volume rendering side note??**
 ### Volume Rendering
 - *Input*: A set of 3D query points + their volume profile (volume density) $\sigma +$RGB value
 $$
@@ -88,3 +87,4 @@ $$
 $$
 - high-frequency features help the network better represent detailed geometry and colours
 - positional encoding helps to overcome the limitations of neural networks in representing high-frequency details effectively
+### Step 4: Neural Network Inference
