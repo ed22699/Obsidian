@@ -29,3 +29,4 @@ key points:
 - [[The Dress Shirt - Dressing the man]]
 - [[Neckwear - Dressing the man]]
 - [[Hosiery Harmonies - Dressing the man]]
+- [[Foot Decorum - Dressing the man]]
