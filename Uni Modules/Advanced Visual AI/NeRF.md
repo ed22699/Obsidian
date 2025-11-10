@@ -118,4 +118,6 @@ $$
 	$$
 	L=\sum_{i=1}^n ||I_{rendered}^{(i)}-I_{gt}^{(i)}||^2
 	$$
-	- the computed loss $L$ is then backpropagated to optimise the neural network weights, helping to im
+	- the computed loss $L$ is then back-propagated to optimise the neural network weights, helping to improve the model's predictions in future iterations 
+![[Pasted image 20251110143407.png|400]]
+![[Drawing 2025-11-10 14.34.20.excalidraw|800]]
