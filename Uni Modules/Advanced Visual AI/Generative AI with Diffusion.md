@@ -42,7 +42,7 @@ tags:
 - often a linear schedule is used for $\beta_t$, and $\sigma_t^2$ is set equal to $\beta_t$
 	- for small images the image becomes almost pure Gaussian noise very early in the diffusion process
 ![[Screenshot 2025-10-22 at 11.32.30.png|500]]
----
+
 ## Why
 ![[Screenshot 2025-10-22 at 09.16.09.png|500]]
 - stable and high quality: Less prone to artefacts than GANs
