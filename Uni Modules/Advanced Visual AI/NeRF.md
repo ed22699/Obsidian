@@ -88,3 +88,34 @@ $$
 - high-frequency features help the network better represent detailed geometry and colours
 - positional encoding helps to overcome the limitations of neural networks in representing high-frequency details effectively
 ### Step 4: Neural Network Inference
+- *Input*: A set of 3D query points (after positional encoding)
+	- $\{x_1, x_2, ..., x_d\}_{n\times m \times H\times W}$
+	- each $x_i$ is a positional encoding of the 3D query points across dimensions $n\times m\times H\times W$
+- *Output*: RGB colour and volume density for each query point
+	- $\{RGB, \sigma\}_{n\times m \times H \times W}$
+	- where
+		- $RGB$ represents the colour values $(R,G,B)$ in the range $[0,1]$
+		- $\sigma$ is the volume density (opacity) at each point
+- neural network (MLP) learns to represent the colour and density profiles along each ray by predicting both the colour RGB and density $\sigma$ at each query point based on its encoded representation
+### Step 5: Volume Rendering
+- *Input*: set of 3D query points (after positional encoding) with their volume profile and RGB colour values
+	- $\{x_1, x_2, ..., x_d, RGB, \sigma\}_{n\times m \times H\times W}$
+	- where
+		- query points $\{x_1, x_2, ...,x_d\}$ has an associated RGB colour and volume density $\sigma$
+		- dimensions $n \times m \times H\times W$ represent multiple instances, features, and image resolution
+- *Output*: set of rendered images (one per pose)
+	- $\{H, W\}_n$
+	- where
+		- $h$ and $W$ are the height and width of each image
+		- $n$ is the number of poses
+### Neural Network Training
+- Train with labels and ground truth:
+	- set of rendered images (one per pose): $\{H, W\}_n$
+	- set of ground truth images (one per pose): $\{H,W\}_{n,gt}$
+- loss function
+	- L2 loss between the rendered images and ground truth images calculated as a single scalar value: $\{l\}_n$
+	- compute the L2 loss between each rendered image and corresponding ground truth image
+	$$
+	L=\sum_{i=1}^n ||I_{rendered}^{(i)}-I_{gt}^{(i)}||^2
+	$$
+	- the computed loss $L$ is then backpropagated to optimise the neural network weights, helping to im
