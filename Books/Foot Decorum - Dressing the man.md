@@ -13,3 +13,10 @@ tags:
 - the dress slip-on
 - the side-gusset shoe
 	- very stylish and comfortable but hard to find
+- the monk-strap shoe
+- The suede shoe
+	- makes anything appear more stylish
+	- brown suede shoe is suitable for all seasons
+- crocodile shoes
+- the Norwegian
+- the slip-on moccasin
