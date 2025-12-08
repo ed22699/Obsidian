@@ -63,10 +63,23 @@ tags:
 	- compare $U$ to critical value for $U_{n1,n2,\alpha}$ from lookup table
 	- if $U<U_{n1,n2, \alpha}$ then reject $H_0$
 	![[Pasted image 20251208113453.png|300]]
-	- assumptions:
-		- independent variable has two groups
-		- dependent variable's measurement scale is at least ordinal
-		- data are randomly selected samples from two independent groups
-		- population distributions of the dependent variable for the two groups share a similar shape but have difference in measures of central tendency
-
-	
+- assumptions:
+	- independent variable has two groups
+	- dependent variable's measurement scale is at least ordinal
+	- data are randomly selected samples from two independent groups
+	- population distributions of the dependent variable for the two groups share a similar shape but have difference in measures of central tendency
+- avoid N multiple pairwise tests
+	- use Kruskal-Wallis
+		- extends U test to allow multiple group comparisons
+		- calculates mean ranking for each group's entries in the sorted union list
+		- compute a statistic $H$ from the mean rank and the $n$
+		- use chi-square test to determine if $H$ is significant
+- RRO (Robust rank order) tests are more robust version of U test 
+### Box and whisker
+![[Pasted image 20251208114935.png|300]]
+![[Pasted image 20251208115023.png|300]]
+- box and whisker
+	- emphasise role of data distribution in determining scale
+	- show key statistics
+	- allow easy identification of symmetry and skew in distribution
+	- increase legibility
