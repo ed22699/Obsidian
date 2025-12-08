@@ -2,7 +2,7 @@
 tags:
   - billionare
 ---
-![[Screenshot 2025-09-25 at 22.50.02.png|400]]
+![[Screenshot 2025-09-25 at 22.50.02.png|600]]
 - you evaluate your technology performance compared to customer demands and you realise you will stay above that line, everything is good
 - new technology appears with margins and performance worse than yours, smaller market
 	- but may be lighter/cheaper/more-compact
