@@ -65,3 +65,29 @@ tags:
 	- CPU assumes it will be and fetches anyway
 	- if assumption is wrong the CPU pipeline will have to be flushed before writeback but that should only happen once per call
 	- speedup from removing the pipeline stall is bigger than the single pipeline flush, so performance gains (especially with symmetric multi-threading)
+```c
+if ( x < array1_size ) [[likely]] 
+	y = array2 [array1[x]];
+```
+- if statement won't succeed, but likely to succeed so next line will be speculatively executed anyway and that would segfault anyway
+	- segfault on instruction you never were going to execute
+- as soon as the branch misprediction is detected start the rollback process
+	- undo changes to registers
+	- reset exception flags
+	- cancel any memory writes
+- caches are a separate subsystem and managed by the MMU
+	- when the second line executes the page of memory containing `array2[array1[x]]` will be cached in preparation for the load into y
+	- an exception signalled that the CPU will tell the OS about when it hits writeback which will never actually happen because the if will turn out to be a branch misprediction
+![[Pasted image 20251209225714.png|400]]
+![[Pasted image 20251209225802.png|500]]
+- is the *Spectre vulnerability*, is part of the *meltdown* family of attacks:
+	- meltdown melts down security barriers
+	- spectre make speculative execution scary
+- affects:
+	- all operating systems 
+	- all CPUs with branch prediction
+ - solutions:
+	 - disable branch prediction: require all new hardware and enormous performance impact
+	 - disable caches: would require all new hardware and have an enormous performance impact
+	 - disable multithreading: doable in software for most architectures, would halve the number of available cores. Doesn't fix issue but makes everything harder to exploit
+![[Pasted image 20251209230307.png|400]]
