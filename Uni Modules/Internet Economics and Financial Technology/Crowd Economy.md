@@ -1,0 +1,24 @@
+---
+tags:
+  - sentiment_analysis_crowd_economy
+---
+- platforms, applications and activities that inherently rely on active participation from distributed online crowds of people
+- crowdsourcing: alternative to traditional companies/public sector bodies
+	- for doing work / to solve a problem
+	- citizen engagement
+	- mass collaboration
+	- crowd tasks
+	- useful for tasks that are currently too difficult for a computer to perform
+		- often tasks are tedious and repetitive (e.g. labelling images)
+	- how to recruit
+		- pay them
+		- trick them into doing it implicitly, as a side effect of something they want to do, or have to do anyway
+		- motivate volunteers to do it explicitly for free
+			- make it worthwhile: with public benefit (e.g. zooniverse, wikipedia)
+			- make it fun: gamification
+- crowdfunding: an alternative to traditional financial intermediaries
+	- for raising money
+	- donation-based
+	- reward-based
+	- equity-based (regulated by FCA)
+	- debt-based (P2P lending) (regulated by FCA)

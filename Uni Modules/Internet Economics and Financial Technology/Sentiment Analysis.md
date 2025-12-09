@@ -29,3 +29,17 @@ tags:
 ![[Pasted image 20251209145128.png|400]]
 ![[Pasted image 20251209145223.png|400]]
 ![[Pasted image 20251209150422.png|400]]
+- manipulating sentiment can be rewarding
+![[Pasted image 20251209150922.png|300]]
+- *sockpuppet* is an online identity used for purposes of deception
+	- poses as an independent third-party unaffiliated with the main account operator
+	- use to praise, defend , or support a person or organisation, or to manipulate public opinion
+	- use of many fake personas by one person or organisation can give a misleading impression of an opinion being held widely and diversely
+	- work because people are strongly influenced by the opinions of others. Variants include:
+		- ballot stuffing: submit multiple votes in online poll in favour of the puppeteer
+		- sybil attack: multiple false identities used to create influence within a peer-to-peer online network
+		- stealth marketing: multiple sockpuppets, each claiming to be an enthusiastic supporter of product/service/ideology
+		- strawman sockpuppet: to make a particular point of view look foolish in order to generate negative sentiment against it; or to advance arguments that their puppeteers can easily refute
+		- astroturfing: use sockpuppets to make a message appear as though it originates from, and is supported by, grassroots participants.
+![[Pasted image 20251209152000.png|400]]
+![[Pasted image 20251209152830.png|400]]
