@@ -59,3 +59,42 @@ tags:
 ![[Pasted image 20251210223626.png|500]]
 ![[Pasted image 20251210223701.png|500]]
 ![[Pasted image 20251210223915.png|400]]
+## Blockchain
+### Handling a fork
+![[Pasted image 20251211135645.png|500]]
+![[Pasted image 20251211135745.png|500]]
+![[Pasted image 20251211135853.png|500]]
+![[Pasted image 20251211135928.png|500]]
+![[Pasted image 20251211135945.png|500]]
+![[Pasted image 20251211140009.png|500]]
+![[Pasted image 20251211140035.png|500]]
+![[Pasted image 20251211140048.png|500]]
+- also acts as protection against attacks, if these forks were malicious, trying to make money by
+	- reverse transactions
+	- prevent transactions from gaining any confirmations
+- thy need $>50\%$ of the compute power on the whole network in order to remain in control of the blockchain
+### Decentralised Ledger Revolution
+- R3 CEV LLP consortium of 20+ banks including Goldman Sachs, JPMorgan, Barclays, etc
+- no interested in Bitcoin as a rogue currency but interested in Blockchain as a way of:
+	- handling the problem of maintaining a consensus
+	- in a complex system of agents working in parallel
+	- without needing to rely on a central bottleneck
+- exploring the creation of their own Blockchain for recording and auditing inter-bank transactions
+- others are also interested
+	- land registry in Honduras
+	- Stock exchange trades at NASDAQ
+	- Diamond registry at Everledger
+	- Password substitute at Onename
+	- All or nothing crowd-sourcing
+	- self-owning self-driving cars on Ethereum
+![[Pasted image 20251211140959.png|500]]
+- is very energy consumptive 
+- Blockchain is just a type of distributed system. To computer scientists there are many more favourable alternatives in distributed systems
+![[Pasted image 20251211141328.png|400]]
+- Blockchain is overhyped. Is about greed not decentralisation 
+	- the decentralisation is a myth, more control over market then in north Korea at 0.88
+## History
+![[Pasted image 20251211144949.png|400]]
+![[Pasted image 20251211145139.png|400]]
+- bitcoin is only sudo-anonymous not fully anonymous
+![[Pasted image 20251211145234.png|400]]
