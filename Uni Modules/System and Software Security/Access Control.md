@@ -13,7 +13,7 @@ tags:
 - ability to allow only authorised users, programs of processes system or resource access
 - granting or denying, according to a particular security model, of certain permissions to access a resource
 - an entire set of procedures performed by hardware, software and administrators, to monitor access, identify users requesting access, record access attempts and grant or deny access based on pre-established rules
-![[Screenshot 2025-10-20 at 14.11.57.png|500]]
+![[Screenshot 2025-10-20 at 14.11.57.png|600]]
 - domains and applications
 	- social networks
 	- web browsers
