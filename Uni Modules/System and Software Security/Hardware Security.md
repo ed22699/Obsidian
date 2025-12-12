@@ -37,7 +37,7 @@ tags:
 	- operating systems
 	- software 
 	- hardware
-- sandboxing prevents application from passing rootkit out onto the operating system. e.g. Browser sandbox
+- sandboxing prevents application from passing rootkit out onto the operating system. e.g. Browser sandbox, this reduces the attack surface
 - trusted execution environment prevents passing rootkit into application. e.g. SGX enclave
 	- Trusted computing base (TCB)
 		- looks are what part of the system you need to trust in order to achieve objective
@@ -87,3 +87,51 @@ tags:
 	- no response
 		- malfunctioning device
 		- malicious device
+- PCR cannot be modified
+	- only reset at reboot
+- TPM contains a key used to sign the attestation 
+- verifier
+	- verify the TPM certificate/key
+	- verify the PCRs
+- attestation
+	- PCRs value
+	- sign(PCRs, challenge\[nonce\])
+## Intel SGX
+- an attacker can compromise
+	- user space
+	- operating systems
+	- hardware
+- *solution*:
+	- execute code in its own secure enclave
+		- run application within some isolation unit so it cannot be affected by the OS
+			- do not trust the OS or the VMM/hypervisor
+			- only need to trust the hardware
+			- reduce attack surface
+![[Pasted image 20251212165452.png|400]]
+- SGX preventing memory snooping attack
+	- security boundary is CPU
+	- data unencrypted inside the CPU
+	- data outside the CPU is encrypted
+	- external memory reads and bus snooping only see encrypted data
+	- this means snooping cannot occur on the memory but or in the system memory
+- SGX programming environment
+	- enclave has its own code and data
+		- provides confidentiality and integrity
+	- controlled entry point
+		- can enter enclave code only at specific point
+		- enclave execution takes over
+![[Pasted image 20251212165909.png|200]]
+- SGX application flow
+	1. define and partition application into trusted and untrusted part
+	2. app create enclave
+	3. trusted function is called
+	4. code in enclave process some secret 
+	5. trusted function returns
+	6. app continue as normal
+## ARM Trustzone
+- has its own processor, RAM address and devices, etc
+- used for:
+	- digital right management
+	- secure banking 
+	- multi-factor authentication
+![[Pasted image 20251212170200.png|400]]
