@@ -41,3 +41,49 @@ tags:
 - trusted execution environment prevents passing rootkit into application. e.g. SGX enclave
 	- Trusted computing base (TCB)
 		- looks are what part of the system you need to trust in order to achieve objective
+		- use trusted hardware as the base of trusted computing, rootkits could be in other applications or the OS itself but the hardware is trustworthy
+![[Pasted image 20251212164045.png|400]]
+## Trusted Platform Module (TPM)
+- trusted computing group
+	- Microsoft, Intel, IMB
+- promotes standard for more trusted computing
+	- additional chip on the motherboard called TPM
+	- used for
+		- disk encryption
+		- system integrity
+		- password protection
+- requirements
+	- achieve trust if we can verify the system has booted correctly
+	- assume the PC hardware has not been modified
+		- key function is in the hardware TPM
+	- need to monitor the boot process
+		- initial boot measure by the core root of trust (CRTM)
+			- first piece of BIOS that executes on the main processor during the boot process
+			- On trusted platform is implicitly trusted to bootstrap the process of building a measurement chain for subsequent attestation of other firmware and software that is executed on the computer system
+		- hash the BIOS, store results in TPM, start the BIOS
+		- BIOS do its job, load the next stage, hash it store in TPM
+![[Pasted image 20251212155821.png|400]]
+### TPM Registers
+- platform configuration registers (PCRs)
+	- used to store platform integrity metrics
+	- holds a summary of a series of value
+		- not the entire chain of hash (this can be infinite)
+- a PCR register is extended
+	- PCR = HASH(PCR | new measurement)
+	- shielded TPM locations (i.e. cannot be modified from outside)
+	- measurement are provided by software
+### Remote attestation
+- attestation is a mechanism for software to prove its identity
+- goal is to prove to a remote party that your operating system and application software are intact and trustworthy
+- verifier trusts that attestation data is accurate because it is signed by a TPM whose key is certified by the CA
+![[Pasted image 20251212164626.png|500]]
+- remote attestation tells you
+	- positive result
+		- correct memory content
+		- good device
+	- negative result
+		- malfunctioning device
+		- malicious device
+	- no response
+		- malfunctioning device
+		- malicious device
