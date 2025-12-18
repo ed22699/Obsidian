@@ -1,0 +1,3 @@
+- first time buyers will not buy brand new properties
+- first time buyers are looking for a house not a flat
+- first time buyers aim to buy into an "up and coming area", i.e. are open to buying within dodgy areas which are likely to be gentrified in the coming years

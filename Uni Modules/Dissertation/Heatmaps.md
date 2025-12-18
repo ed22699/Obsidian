@@ -1,0 +1,24 @@
+## Metrics For Initial Heatmap
+- Heatmaps of: 
+	- *median house price*
+		- exclude areas under x amount of sales
+		- median allows for
+			- non-parametric tests
+			- robustness against outliers
+				- is suitable for skewed distributions and heteroscedastic areas
+	- *volume of transactions*
+	- *multi-year % change*
+		- adjusted for inflation
+- potential partitions:
+	- postcodes (good for *training and general early use*)
+		- capture population density
+		- align with how housing markets behave
+		- enough volume for reliable medians
+		- aligns with existing demographic data
+	- Geohashing (good for *deeper evaluation of attribute effects* on prices)
+		- dynamic cell sizes depending on zoom level
+	- LSOA (good for *report*)
+		- common in academia 
+		- government-designed for statistical use
+		- spatially meaningful
+		- population-balanced

@@ -1,0 +1,35 @@
+{
+	"nodes":[
+		{"id":"43b06f94409eea6e","x":-140,"y":-300,"width":250,"height":60,"color":"2","type":"text","text":"Dissertation Initial Questions"},
+		{"id":"c65022205bf2c8cf","x":-1640,"y":-10,"width":250,"height":100,"color":"1","type":"text","text":"What percentage level over how many years should I pick?"},
+		{"id":"98df406c50335e02","x":-1480,"y":283,"width":250,"height":174,"color":"1","type":"text","text":"Why have I chosen to make this a binary problem instead of outputting most likely area percent change?"},
+		{"id":"77314ed294aa8e92","x":-800,"y":-10,"width":250,"height":108,"color":"1","type":"text","text":"What metrics can I use to evaluate model performance?"},
+		{"id":"10fd1e626cbcd6c8","x":-1050,"y":175,"width":250,"height":195,"type":"text","text":"Miss out on exact value evaluation metrics with this binary structure (can weight directional correctness over exact value accuracy)"},
+		{"id":"9ea49b0c2f0efbaa","x":-675,"y":204,"width":250,"height":166,"color":"4","type":"text","text":"Compare models decision with heatmap of multi-year percent change overlayed on map of area, partitioned by LSOA"},
+		{"id":"0b9fdb36476f3e64","x":-650,"y":640,"width":450,"height":440,"color":"5","type":"file","file":"Uni Modules/Dissertation/Heatmaps.md"},
+		{"id":"e72c4470f6202d00","x":-140,"y":4,"width":250,"height":80,"color":"1","type":"text","text":"What data attributes can I use?"},
+		{"id":"24af1d451cc9cb9f","x":800,"y":4,"width":250,"height":60,"color":"1","type":"text","text":"What models should I try?"},
+		{"id":"93d4337eef460c1f","x":1840,"y":4,"width":250,"height":68,"color":"1","type":"text","text":"What are the signs of a housing market collapse?"},
+		{"id":"25779ec0653f1f16","x":2880,"y":4,"width":250,"height":60,"color":"1","type":"text","text":"What assumptions do I make?"},
+		{"id":"c4fd477a8c4f076b","x":2805,"y":254,"width":400,"height":400,"color":"4","type":"file","file":"Uni Modules/Dissertation/Persona Assumptions.md"},
+		{"id":"722442f93fbd240d","x":1965,"y":240,"width":250,"height":108,"color":"1","type":"text","text":"Is it better to buy or rent before/during a hosing market collapse?"},
+		{"id":"c42392dd846d5df5","x":-2200,"y":-10,"width":250,"height":226,"color":"1","type":"text","text":"What timeframe should I take, i.e. how far back should the model observe the temporal data and how is this split (monthly, quaterly or yearly)?"},
+		{"id":"264a2f1c7022bdb6","x":-875,"y":-620,"width":200,"height":320,"type":"file","file":"Excalidraw/DisCanvasKey.md"}
+	],
+	"edges":[
+		{"id":"50b3052bc2793f9e","fromNode":"43b06f94409eea6e","fromSide":"bottom","toNode":"c65022205bf2c8cf","toSide":"top"},
+		{"id":"87a22ca0b3da5709","fromNode":"43b06f94409eea6e","fromSide":"bottom","toNode":"25779ec0653f1f16","toSide":"top"},
+		{"id":"3c1e0c21d12117dd","fromNode":"25779ec0653f1f16","fromSide":"bottom","toNode":"c4fd477a8c4f076b","toSide":"top"},
+		{"id":"8ed6b079699571b8","fromNode":"43b06f94409eea6e","fromSide":"bottom","toNode":"e72c4470f6202d00","toSide":"top"},
+		{"id":"7604721fc07a5a40","fromNode":"43b06f94409eea6e","fromSide":"bottom","toNode":"77314ed294aa8e92","toSide":"top"},
+		{"id":"eee4a2c72275db27","fromNode":"77314ed294aa8e92","fromSide":"bottom","toNode":"9ea49b0c2f0efbaa","toSide":"top"},
+		{"id":"a68f641218601779","fromNode":"9ea49b0c2f0efbaa","fromSide":"bottom","toNode":"0b9fdb36476f3e64","toSide":"top"},
+		{"id":"0d012956628b8b5d","fromNode":"43b06f94409eea6e","fromSide":"bottom","toNode":"24af1d451cc9cb9f","toSide":"top"},
+		{"id":"33050b08a2cd4dd9","fromNode":"43b06f94409eea6e","fromSide":"bottom","toNode":"93d4337eef460c1f","toSide":"top"},
+		{"id":"9e3952653a355173","fromNode":"93d4337eef460c1f","fromSide":"bottom","toNode":"722442f93fbd240d","toSide":"top"},
+		{"id":"5edd770e35717a12","fromNode":"c65022205bf2c8cf","fromSide":"bottom","toNode":"98df406c50335e02","toSide":"top"},
+		{"id":"7ff8cbf95475dbde","fromNode":"98df406c50335e02","fromSide":"right","toNode":"10fd1e626cbcd6c8","toSide":"left"},
+		{"id":"a56fbe51750ed1ee","fromNode":"10fd1e626cbcd6c8","fromSide":"top","toNode":"77314ed294aa8e92","toSide":"left"},
+		{"id":"f88ecad896c9b717","fromNode":"43b06f94409eea6e","fromSide":"bottom","toNode":"c42392dd846d5df5","toSide":"top"}
+	]
+}
