@@ -2,7 +2,6 @@
 aliases:
   - Internet Economics and Financial Technology
 tags:
-  - favorite
   - index
 ---
 

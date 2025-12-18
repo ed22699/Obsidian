@@ -2,7 +2,6 @@
 aliases:
   - System and Software Security
 tags:
-  - favorite
   - index
 ---
 

@@ -2,7 +2,6 @@
 aliases:
   - Advanced Visual AI
 tags:
-  - favorite
   - index
 ---
 

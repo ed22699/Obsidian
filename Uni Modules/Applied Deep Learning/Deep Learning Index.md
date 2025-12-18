@@ -2,7 +2,6 @@
 aliases:
   - Applied Deep Learning
 tags:
-  - favorite
   - index
 ---
 
