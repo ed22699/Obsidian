@@ -30,6 +30,10 @@
 - PPD Category Type
 	- A = Standard residential sale
 	- B = Additional price paid entry (e.g. repossessions, buy-to-lets)
+- Record Status
+	- A - Added
+	- C - Changed
+	- D - Deleted
 
 ### Example of format of first row
 ```python
