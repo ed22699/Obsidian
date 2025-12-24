@@ -1,20 +1,22 @@
 {
 	"nodes":[
-		{"id":"43b06f94409eea6e","x":-140,"y":-300,"width":250,"height":60,"color":"2","type":"text","text":"Dissertation Initial Questions"},
-		{"id":"c65022205bf2c8cf","x":-1640,"y":-10,"width":250,"height":100,"color":"1","type":"text","text":"What percentage level over how many years should I pick?"},
-		{"id":"98df406c50335e02","x":-1480,"y":283,"width":250,"height":174,"color":"1","type":"text","text":"Why have I chosen to make this a binary problem instead of outputting most likely area percent change?"},
-		{"id":"77314ed294aa8e92","x":-800,"y":-10,"width":250,"height":108,"color":"1","type":"text","text":"What metrics can I use to evaluate model performance?"},
-		{"id":"10fd1e626cbcd6c8","x":-1050,"y":175,"width":250,"height":195,"type":"text","text":"Miss out on exact value evaluation metrics with this binary structure (can weight directional correctness over exact value accuracy)"},
-		{"id":"9ea49b0c2f0efbaa","x":-675,"y":204,"width":250,"height":166,"color":"4","type":"text","text":"Compare models decision with heatmap of multi-year percent change overlayed on map of area, partitioned by LSOA"},
-		{"id":"0b9fdb36476f3e64","x":-650,"y":640,"width":450,"height":440,"color":"5","type":"file","file":"Uni Modules/Dissertation/Heatmaps.md"},
-		{"id":"e72c4470f6202d00","x":-140,"y":4,"width":250,"height":80,"color":"1","type":"text","text":"What data attributes can I use?"},
-		{"id":"24af1d451cc9cb9f","x":800,"y":4,"width":250,"height":60,"color":"1","type":"text","text":"What models should I try?"},
-		{"id":"93d4337eef460c1f","x":1840,"y":4,"width":250,"height":68,"color":"1","type":"text","text":"What are the signs of a housing market collapse?"},
-		{"id":"25779ec0653f1f16","x":2880,"y":4,"width":250,"height":60,"color":"1","type":"text","text":"What assumptions do I make?"},
-		{"id":"c4fd477a8c4f076b","x":2805,"y":254,"width":400,"height":400,"color":"4","type":"file","file":"Uni Modules/Dissertation/Persona Assumptions.md"},
-		{"id":"722442f93fbd240d","x":1965,"y":240,"width":250,"height":108,"color":"1","type":"text","text":"Is it better to buy or rent before/during a hosing market collapse?"},
-		{"id":"c42392dd846d5df5","x":-2200,"y":-10,"width":250,"height":226,"color":"1","type":"text","text":"What timeframe should I take, i.e. how far back should the model observe the temporal data and how is this split (monthly, quaterly or yearly)?"},
-		{"id":"264a2f1c7022bdb6","x":-875,"y":-620,"width":200,"height":320,"type":"file","file":"Excalidraw/DisCanvasKey.md"}
+		{"id":"43b06f94409eea6e","type":"text","text":"Dissertation Initial Questions","x":-140,"y":-300,"width":250,"height":60,"color":"2"},
+		{"id":"c65022205bf2c8cf","type":"text","text":"What percentage level over how many years should I pick?","x":-1640,"y":-10,"width":250,"height":100,"color":"1"},
+		{"id":"98df406c50335e02","type":"text","text":"Why have I chosen to make this a binary problem instead of outputting most likely area percent change?","x":-1480,"y":283,"width":250,"height":174,"color":"1"},
+		{"id":"77314ed294aa8e92","type":"text","text":"What metrics can I use to evaluate model performance?","x":-800,"y":-10,"width":250,"height":108,"color":"1"},
+		{"id":"10fd1e626cbcd6c8","type":"text","text":"Miss out on exact value evaluation metrics with this binary structure (can weight directional correctness over exact value accuracy)","x":-1050,"y":175,"width":250,"height":195},
+		{"id":"9ea49b0c2f0efbaa","type":"text","text":"Compare models decision with heatmap of multi-year percent change overlayed on map of area, partitioned by LSOA","x":-675,"y":204,"width":250,"height":166,"color":"4"},
+		{"id":"0b9fdb36476f3e64","type":"file","file":"Uni Modules/Dissertation/Heatmaps.md","x":-650,"y":640,"width":450,"height":440,"color":"5"},
+		{"id":"e72c4470f6202d00","type":"text","text":"What data attributes can I use?","x":-140,"y":4,"width":250,"height":80,"color":"1"},
+		{"id":"24af1d451cc9cb9f","type":"text","text":"What models should I try?","x":800,"y":4,"width":250,"height":60,"color":"1"},
+		{"id":"93d4337eef460c1f","type":"text","text":"What are the signs of a housing market collapse?","x":1840,"y":4,"width":250,"height":68,"color":"1"},
+		{"id":"25779ec0653f1f16","type":"text","text":"What assumptions do I make?","x":2880,"y":4,"width":250,"height":60,"color":"1"},
+		{"id":"c4fd477a8c4f076b","type":"file","file":"Uni Modules/Dissertation/Persona Assumptions.md","x":2805,"y":254,"width":400,"height":400,"color":"4"},
+		{"id":"722442f93fbd240d","type":"text","text":"Is it better to buy or rent before/during a hosing market collapse?","x":1965,"y":240,"width":250,"height":108,"color":"1"},
+		{"id":"c42392dd846d5df5","type":"text","text":"What timeframe should I take, i.e. how far back should the model observe the temporal data and how is this split (monthly, quaterly or yearly)?","x":-2200,"y":-10,"width":250,"height":226,"color":"1"},
+		{"id":"264a2f1c7022bdb6","type":"file","file":"Excalidraw/DisCanvasKey.md","x":-875,"y":-620,"width":200,"height":320},
+		{"id":"44af28ccb2a6480a","x":-2400,"y":340,"width":250,"height":60,"color":"4","type":"text","text":"Use yearly data split as more stable"},
+		{"id":"b66f1f0e6f4a0044","x":-2720,"y":560,"width":400,"height":400,"color":"5","type":"file","file":"Uni Modules/Dissertation/Data timeframing.md"}
 	],
 	"edges":[
 		{"id":"50b3052bc2793f9e","fromNode":"43b06f94409eea6e","fromSide":"bottom","toNode":"c65022205bf2c8cf","toSide":"top"},
@@ -30,6 +32,8 @@
 		{"id":"5edd770e35717a12","fromNode":"c65022205bf2c8cf","fromSide":"bottom","toNode":"98df406c50335e02","toSide":"top"},
 		{"id":"7ff8cbf95475dbde","fromNode":"98df406c50335e02","fromSide":"right","toNode":"10fd1e626cbcd6c8","toSide":"left"},
 		{"id":"a56fbe51750ed1ee","fromNode":"10fd1e626cbcd6c8","fromSide":"top","toNode":"77314ed294aa8e92","toSide":"left"},
-		{"id":"f88ecad896c9b717","fromNode":"43b06f94409eea6e","fromSide":"bottom","toNode":"c42392dd846d5df5","toSide":"top"}
+		{"id":"f88ecad896c9b717","fromNode":"43b06f94409eea6e","fromSide":"bottom","toNode":"c42392dd846d5df5","toSide":"top"},
+		{"id":"88f8a95d5787e1ac","fromNode":"c42392dd846d5df5","fromSide":"bottom","toNode":"44af28ccb2a6480a","toSide":"top"},
+		{"id":"cd33eb500319c369","fromNode":"44af28ccb2a6480a","fromSide":"bottom","toNode":"b66f1f0e6f4a0044","toSide":"top"}
 	]
 }

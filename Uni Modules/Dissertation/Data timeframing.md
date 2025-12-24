@@ -5,14 +5,20 @@
 		- avoids spurious correlations
 	- better aligned with a 3-year horizon decision
 	- captures:
-		- sustained tre
+		- sustained trends
+		- genuine momentum
 - Cons: 
 	- fewer points
-
 ## Using Quarterly Data
 - Pros:
 	- more observations
 	- higher temporal resolution
+	- measuring:
+		- price volatility 
+		- transaction seasonality strength
+		- liquidity shocks
 - Cons: 
 	- strong seasonality
 		- overreact to seasonal cycles
+		- artificially extreme % changes
+	- unstable medians
