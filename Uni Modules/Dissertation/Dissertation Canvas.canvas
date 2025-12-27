@@ -11,12 +11,13 @@
 		{"id":"24af1d451cc9cb9f","type":"text","text":"What models should I try?","x":800,"y":4,"width":250,"height":60,"color":"1"},
 		{"id":"93d4337eef460c1f","type":"text","text":"What are the signs of a housing market collapse?","x":1840,"y":4,"width":250,"height":68,"color":"1"},
 		{"id":"25779ec0653f1f16","type":"text","text":"What assumptions do I make?","x":2880,"y":4,"width":250,"height":60,"color":"1"},
-		{"id":"c4fd477a8c4f076b","type":"file","file":"Uni Modules/Dissertation/Persona Assumptions.md","x":2805,"y":254,"width":400,"height":400,"color":"4"},
 		{"id":"722442f93fbd240d","type":"text","text":"Is it better to buy or rent before/during a hosing market collapse?","x":1965,"y":240,"width":250,"height":108,"color":"1"},
 		{"id":"c42392dd846d5df5","type":"text","text":"What timeframe should I take, i.e. how far back should the model observe the temporal data and how is this split (monthly, quaterly or yearly)?","x":-2200,"y":-10,"width":250,"height":226,"color":"1"},
 		{"id":"264a2f1c7022bdb6","type":"file","file":"Excalidraw/DisCanvasKey.md","x":-875,"y":-620,"width":200,"height":320},
-		{"id":"44af28ccb2a6480a","x":-2400,"y":340,"width":250,"height":60,"color":"4","type":"text","text":"Use yearly data split as more stable"},
-		{"id":"b66f1f0e6f4a0044","x":-2720,"y":560,"width":400,"height":400,"color":"5","type":"file","file":"Uni Modules/Dissertation/Data timeframing.md"}
+		{"id":"44af28ccb2a6480a","type":"text","text":"Use yearly data split as more stable","x":-2400,"y":340,"width":250,"height":60,"color":"4"},
+		{"id":"b66f1f0e6f4a0044","type":"file","file":"Uni Modules/Dissertation/Data timeframing.md","x":-2720,"y":560,"width":400,"height":400,"color":"5"},
+		{"id":"5782550a9ab41f64","x":-3000,"y":-10,"width":250,"height":60,"color":"1","type":"text","text":"How large is the area we are predicting"},
+		{"id":"c4fd477a8c4f076b","type":"file","file":"Uni Modules/Dissertation/Persona Assumptions.md","x":2805,"y":240,"width":400,"height":400,"color":"4"}
 	],
 	"edges":[
 		{"id":"50b3052bc2793f9e","fromNode":"43b06f94409eea6e","fromSide":"bottom","toNode":"c65022205bf2c8cf","toSide":"top"},
@@ -34,6 +35,7 @@
 		{"id":"a56fbe51750ed1ee","fromNode":"10fd1e626cbcd6c8","fromSide":"top","toNode":"77314ed294aa8e92","toSide":"left"},
 		{"id":"f88ecad896c9b717","fromNode":"43b06f94409eea6e","fromSide":"bottom","toNode":"c42392dd846d5df5","toSide":"top"},
 		{"id":"88f8a95d5787e1ac","fromNode":"c42392dd846d5df5","fromSide":"bottom","toNode":"44af28ccb2a6480a","toSide":"top"},
-		{"id":"cd33eb500319c369","fromNode":"44af28ccb2a6480a","fromSide":"bottom","toNode":"b66f1f0e6f4a0044","toSide":"top"}
+		{"id":"cd33eb500319c369","fromNode":"44af28ccb2a6480a","fromSide":"bottom","toNode":"b66f1f0e6f4a0044","toSide":"top"},
+		{"id":"1b73a1bd0d0fdb26","fromNode":"43b06f94409eea6e","fromSide":"bottom","toNode":"5782550a9ab41f64","toSide":"top"}
 	]
 }
