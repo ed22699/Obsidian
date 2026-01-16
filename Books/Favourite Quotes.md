@@ -7,3 +7,7 @@
 - "Somewhere, right at the bottom of one's own being, one generally does know where one should go and what one should do. But there are times when the clown we call 'I' behaves in such a distracting fashion that the inner voice cannot make its presence felt" - M.-L. von Franz, [[Man and His Symbols - Carl G Jung]]
 - "Pain and suffering are always inevitable for a large intelligence and a deep heart. The really great men must, I think, have great sadness on earth." - Fyodor Dostoevsky, [[Crime and Punishment - Fyodor Dostoevsky]]
 - "To go wrong in one's own way is better than to go right in someone else's." - Fyodor Dostoevsky, [[Crime and Punishment - Fyodor Dostoevsky]]
+- "'What is hell?' I maintain that it is the suffering of being unable to love. Once in infinite existence, immeasurable in time and space, a spiritual creature was given on his coming to earth, the power of saying, 'I am and I love.'" - Fyodor Dostoevsky, [[The Brothers Karamazov - Fyodor Dostoyevsky]]
+- "naked came I out of my mother's womb, and naked shall I return into the earth" - Fyodor Dostoevsky, [[The Brothers Karamazov - Fyodor Dostoyevsky]]
+- "it's the great mystery of human life that old grief passes gradually into quiet, tender joy" - Fyodor Dostoevsky, [[The Brothers Karamazov - Fyodor Dostoyevsky]]
+- "Love life more then the meaning of it?" - Fyodor Dostoevsky, [[The Brothers Karamazov - Fyodor Dostoyevsky]]
