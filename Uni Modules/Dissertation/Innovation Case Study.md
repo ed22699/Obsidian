@@ -1,0 +1,5 @@
+- use model to predict if housing area will increase by more than x% over the next 3 years
+- customers:
+	- *estate agents*: gain confidence within first time buyers, means more likely to buy, strengthens the overall housing chain
+	- *bank*: can better assist the risk of providing a mortgage
+	- *personal*: can buy house low, do up over 3 years, make profit through selling or renting when house price then high
