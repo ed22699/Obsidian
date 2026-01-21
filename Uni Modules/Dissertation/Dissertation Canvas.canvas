@@ -18,8 +18,9 @@
 		{"id":"b66f1f0e6f4a0044","type":"file","file":"Uni Modules/Dissertation/Data timeframing.md","x":-2720,"y":560,"width":400,"height":400,"color":"5"},
 		{"id":"5782550a9ab41f64","type":"text","text":"How large is the area we are predicting","x":-3000,"y":-10,"width":250,"height":60,"color":"1"},
 		{"id":"c4fd477a8c4f076b","type":"file","file":"Uni Modules/Dissertation/Persona Assumptions.md","x":2805,"y":240,"width":400,"height":400,"color":"4"},
-		{"id":"2c225da5e2806ca2","x":-3000,"y":216,"width":250,"height":60,"color":"4","type":"text","text":"Split into LSOA areas"},
-		{"id":"31019a798b59091e","x":2279,"y":148,"width":250,"height":112,"color":"2","type":"text","text":"Extention: Risk factor, is it likely to be an unstable market in the future"}
+		{"id":"2c225da5e2806ca2","type":"text","text":"Split into LSOA areas","x":-3000,"y":216,"width":250,"height":60,"color":"4"},
+		{"id":"31019a798b59091e","type":"text","text":"Extention: Risk factor, is it likely to be an unstable market in the future","x":2279,"y":148,"width":250,"height":112,"color":"2"},
+		{"id":"ead185fa78dd1042","x":-1820,"y":219,"width":250,"height":136,"color":"4","type":"text","text":"Dynamically calculated the 70th or 80th percentile increases over the years before it"}
 	],
 	"edges":[
 		{"id":"50b3052bc2793f9e","fromNode":"43b06f94409eea6e","fromSide":"bottom","toNode":"c65022205bf2c8cf","toSide":"top"},
@@ -40,6 +41,7 @@
 		{"id":"cd33eb500319c369","fromNode":"44af28ccb2a6480a","fromSide":"bottom","toNode":"b66f1f0e6f4a0044","toSide":"top"},
 		{"id":"1b73a1bd0d0fdb26","fromNode":"43b06f94409eea6e","fromSide":"bottom","toNode":"5782550a9ab41f64","toSide":"top"},
 		{"id":"66aacb50d2823440","fromNode":"5782550a9ab41f64","fromSide":"bottom","toNode":"2c225da5e2806ca2","toSide":"top"},
-		{"id":"7d5e41f60ee8cb40","fromNode":"93d4337eef460c1f","fromSide":"right","toNode":"31019a798b59091e","toSide":"top"}
+		{"id":"7d5e41f60ee8cb40","fromNode":"93d4337eef460c1f","fromSide":"right","toNode":"31019a798b59091e","toSide":"top"},
+		{"id":"63a81ee4b91f3c1a","fromNode":"c65022205bf2c8cf","fromSide":"bottom","toNode":"ead185fa78dd1042","toSide":"top"}
 	]
 }
