@@ -41,7 +41,7 @@ tags:
 	- uses ONSPD_MAY_2025_UK to link
 		- LSOA
 		- longitude/latitude
-	- Adjust prices for inflation (using 2025 as a base price and taking the mean cpi for the year)
+	- Adjust prices for inflation (using 2015 as a base year and taking the mean cpi for the year)
 		- note is adjusted based off year not season
 - DF formatter
 	- uses LSOA_2021_EW_BGC_V5 to link LOSA scores to geographic locations
