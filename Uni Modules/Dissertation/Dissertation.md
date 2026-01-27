@@ -24,3 +24,12 @@ tags:
 
 ## Heatmaps
 ![[Heatmaps]]
+
+## What code has done/uses
+- parquet formatting
+	- takes the complete PPD data 
+	- creates a year column
+	- removes 
+		- new properties 
+		- flats/mansionettes
+		- other
