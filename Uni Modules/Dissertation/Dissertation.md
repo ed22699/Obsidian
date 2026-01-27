@@ -32,4 +32,27 @@ tags:
 	- removes 
 		- new properties 
 		- flats/mansionettes
-		- other
+		- others
+	- drops columns
+		- oldNew
+		- property type
+		- ppd type
+		- record
+	- uses ONSPD_MAY_2025_UK to link
+		- LSOA
+		- longitude/latitude
+	- Adjust prices for inflation (using 2025 as a base price and taking the mean cpi for the year)
+		- note is adjusted based off year not season
+- DF formatter
+	- uses LSOA_2021_EW_BGC_V5 to link LOSA scores to geographic locations
+	- get_dataset_for_map
+		- filters by year or multiyear
+		- decides a score format: volume, median or % increase
+		- returns a geographic dataframe that can be used in maps
+	- get_dataset_significance 
+		- returns a dataframe of price and year
+- Significance level
+	- takes a year and the number of years back and looks at those number of years back that are before the current year, given a significance level will then find the percentile boundary 
+- Heatmap
+	- Will build a map or an area, uses a postcode finds the LSOA area it resides in and centres a map upon that LSOA, produces a circular area of a defined distance around that area
+	- can show either a binary map of higher or lower than percentile increase over 3 years, a map of volume of sales that year or a map of median sale prices that year
