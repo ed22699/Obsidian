@@ -8,3 +8,13 @@
 - *desirability*: do enough people want it more than the alternatives
 - *feasibility*: can it be made? Will it work?
 - *viability*: do the profits outweigh the costs? Can it be sustained and scaled?
+- idea of value
+- evidence idea works (reduces a real problem)
+- evidence people want it
+- evidence people want it more than competitors and alternatives
+- evidence that relevant trends can be adapted to advantageously
+- evidence that the team proposing the idea can do it
+- sufficient resource to make it happen
+
+- business model canvas useful
+- model is how you create, deliver and capture
