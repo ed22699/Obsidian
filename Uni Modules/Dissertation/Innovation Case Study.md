@@ -3,3 +3,8 @@
 	- *estate agents*: gain confidence within first time buyers, means more likely to buy, strengthens the overall housing chain
 	- *bank*: can better assist the risk of providing a mortgage
 	- *personal*: can buy house low, do up over 3 years, make profit through selling or renting when house price then high
+
+## Business Plans
+- *desirability*: do enough people want it more than the alternatives
+- *feasibility*: can it be made? Will it work?
+- *viability*: do the profits outweigh the costs? Can it be sustained and scaled?
