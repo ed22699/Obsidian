@@ -18,3 +18,13 @@
 
 - business model canvas useful
 - model is how you create, deliver and capture
+
+- be specific in how this contributes, use references
+
+- point: what claim are you making
+- evidence: what's your evidence for this claim
+- analysis: what does this mean for your overarching argument, or your answer to the assignment question
+
+Buying a house is an important decision with both mental and physical impacts, this technology is more robust then previous models, utilising UK specific metrics such as LSOA coupled with spatial evaluations to produces stronger predictions. Unlike other models this also looks 3 years in advance rather than 1, producing a more useful metric of evaluation that can improve confidence levels, strengthening the overall housing chain.
+
+although most houses all increase in value over time, there are submarkets, identifying the most beneficial submarkets allows for more bang for your buck allowing you to climb the housing chain faster and end quicker in your ideal home, which is important in both physical and mental factors
