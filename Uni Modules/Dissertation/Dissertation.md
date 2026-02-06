@@ -26,9 +26,10 @@ tags:
 ![[Heatmaps]]
 
 ## What code has done/uses
-- parquet formatting
+- parquet formatting, using: [Price Paid Data - GOV.UK](https://www.gov.uk/government/statistical-data-sets/price-paid-data-downloads)
 	- takes the complete PPD data 
 	- creates a year column
+	- creates a quarterly column
 	- removes 
 		- new properties 
 		- flats/mansionettes
@@ -38,13 +39,15 @@ tags:
 		- property type
 		- ppd type
 		- record
-	- uses ONSPD_MAY_2025_UK to link
+	- uses [ONSPD_MAY_2025_UK](https://geoportal.statistics.gov.uk/datasets/3be72478d8454b59bb86ba97b4ee325b/about) to link: 
 		- LSOA
 		- longitude/latitude
-	- Adjust prices for inflation (using 2015 as a base year and taking the mean cpi for the year)
+		- LAD (local authority district - housing markets)
+			- ONS Local Authority District (Upper Tier / Lower Tier combined) - legacy name
+	- Adjust prices for inflation (using 2015 as a base year and taking the mean cpi for the year) [Consumer price inflation time series - Office for National Statistics](https://www.ons.gov.uk/economy/inflationandpriceindices/datasets/consumerpriceindices)
 		- note is adjusted based off year not season
 - DF formatter
-	- uses LSOA_2021_EW_BGC_V5 to link LOSA scores to geographic locations
+	- uses LSOA_2021_EW_BGC_V5 to link LOSA scores to geographic locations: [Lower layer Super Output Areas (December 2021) Boundaries EW BGC (V5)](https://geoportal.statistics.gov.uk/datasets/ons::lower-layer-super-output-areas-december-2021-boundaries-ew-bgc-v5-2/about)
 	- get_dataset_for_map
 		- filters by year or multiyear
 		- decides a score format: volume, median or % increase
