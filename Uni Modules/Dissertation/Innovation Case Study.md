@@ -34,7 +34,48 @@ although most houses all increase in value over time, there are submarkets, iden
 [CLG data shows house prices up 10 per cent | Mortgage Introducer](https://www.mpamag.com/uk/news/general/clg-data-shows-house-prices-up-10-per-cent/343499#:~:text=The%20North%20East%20was%20the,owned%20property%20was%20%C2%A3208%2C451.)
 - first time buyers April 2010 in UK, average price £153,803
 	- over the last 15 years the:
-		- 50th percentile increase = 54.1% = £237,010
+		- 50th percentile increase (not including inflation) = 54.1% = £237,010
 			- £83,207 profit (not including inflation)
-		- 70th percentile increase = 96% = £301,454
+		- 50th percentile increase (with inflation) = 113.7% = £328,677
+			- £174,874 profit (with inflation)
+		- 70th percentile increase (not including inflation) = 96% = £301,454
 			- £147,651 profit (not including inflation)
+		- 70th percentile increase (with inflation) = 171.3% = £417,268
+			- £263,465 profit (with inflation)
+		- shows the importance for someone who is simply buying a first time house to live in it
+	- using the strategy of re-buying every 3 years for 15 years (with inflation)
+		- 2010-2013:
+			- 50th percentile: 33.4% = £205,173
+			- 70th percentile: 37% = £210,710
+		- 2013-2016:
+			- 50th percentile: 25.1% = £256,672
+			- 70th percentile: 34.4% = £283,194
+		- 2016-2019:
+			- 50th percentile: 16.8% = £299,792
+			- 70th percentile: 33.7% = £378,630
+		- 2019-2022:
+			- 50th percentile: 15.3% = £345,660
+			- 70th percentile: 33.4% = £505,093
+		- 2022-2025:
+			- 50th percentile: 14.3% = £395,090
+				- £66,413 more than if you were to buy and hold for 15 years given each purchase is at the 50th percentile each year
+			- 70th percentile: 28.6% = £649,550
+				- £232,282 more than if you were to buy and hold for 15 years given each purchase is at the 70th percentile each year
+	- using the strategy of re-buying every 3 years for 15 years (not including inflation)
+		- 2010-2013:
+			- 50th percentile: 26.3% = £194,253
+			- 70th percentile: 32.4% = £203,635
+		- 2013-2016:
+			- 50th percentile: 17.6% = £228,442
+			- 70th percentile: 29.4% = £263,503
+		- 2016-2019:
+			- 50th percentile: 11.3% = £254,256
+			- 70th percentile: 27.3% = £335,440
+		- 2019-2022:
+			- 50th percentile: 10.1% = £279,935
+			- 70th percentile: 26.4% = £423,997
+		- 2022-2025:
+			- 50th percentile: 8.8% = £304,570
+				- £67,560 more than if you were to buy and hold for 15 years given each purchase is at the 50th percentile each year
+			- 70th percentile: 19.5% = £506,676
+				- £205,222 more than if you were to buy and hold for 15 years given each purchase is at the 70th percentile each year
