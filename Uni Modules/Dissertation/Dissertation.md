@@ -39,13 +39,14 @@ tags:
 		- property type
 		- ppd type
 		- record
+	- groups upon LSOA areas so price is median price of area and volume is volume of sales in area
 	- uses [ONSPD_MAY_2025_UK](https://geoportal.statistics.gov.uk/datasets/3be72478d8454b59bb86ba97b4ee325b/about) to link: 
 		- LSOA
-		- longitude/latitude
 		- LAD (local authority district - housing markets)
 			- ONS Local Authority District (Upper Tier / Lower Tier combined) - legacy name
 	- Adjust prices for inflation (using 2015 as a base year and taking the mean cpi for the year) [Consumer price inflation time series - Office for National Statistics](https://www.ons.gov.uk/economy/inflationandpriceindices/datasets/consumerpriceindices)
 		- note is adjusted based off year not season
+		- $price_{infl} = price \cdot \frac{100}{CPI_{2015 \; adj}}$
 - DF formatter
 	- uses LSOA_2021_EW_BGC_V5 to link LOSA scores to geographic locations: [Lower layer Super Output Areas (December 2021) Boundaries EW BGC (V5)](https://geoportal.statistics.gov.uk/datasets/ons::lower-layer-super-output-areas-december-2021-boundaries-ew-bgc-v5-2/about)
 	- get_dataset_for_map
@@ -56,6 +57,7 @@ tags:
 		- returns a dataframe of price and year
 - Significance level
 	- takes a year and the number of years back and looks at those number of years back that are before the current year, given a significance level will then find the percentile boundary 
+		- $sig = \frac{E[median(price|LSOA)_{t}]} {E[median(price|LSOA)_{t-3}]}$
 - Heatmap
 	- Will build a map or an area, uses a postcode finds the LSOA area it resides in and centres a map upon that LSOA, produces a circular area of a defined distance around that area
 	- can show either a binary map of higher or lower than percentile increase over 3 years, a map of volume of sales that year or a map of median sale prices that year
