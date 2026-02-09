@@ -35,45 +35,47 @@ although most houses all increase in value over time, there are submarkets, iden
 - first time buyers April 2010 in UK, average price £153,803
 	- over the last 15 years the:
 		- 50th percentile increase (including inflation) = 120.3% = £338,828
-			- £ (including inflation)
+			- £185,025 (including inflation)
 		- 50th percentile increase (not including inflation) = 58.8% = £244,239
+			- £90,436 (not including inflation)
 		- 70th percentile increase (including inflation) = 180.6% = £431,571
-			- £147,651 profit (including inflation)
-		- 70th percentile increase (not including inflation) = 102.7% = £
+			- £277,768 profit (including inflation)
+		- 70th percentile increase (not including inflation) = 102.7% = £311,759
+			- £157,956 (not including inflation)
 		- shows the importance for someone who is simply buying a first time house to live in it
 	- using the strategy of re-buying every 3 years for 15 years (not including inflation)
 		- 2010-2013:
-			- 50th percentile: 21% = £
-			- 70th percentile: 36.9% = £
+			- 50th percentile: 21% = £186,102
+			- 70th percentile: 36.9% = £210,556
 		- 2013-2016:
-			- 50th percentile: 17.7% = £
-			- 70th percentile: 33.5% = £
+			- 50th percentile: 17.7% = £219,041
+			- 70th percentile: 33.5% = £281,092
 		- 2016-2019:
-			- 50th percentile: 16.7% = £
-			- 70th percentile: 29.9% = £
+			- 50th percentile: 16.7% = £255,622
+			- 70th percentile: 29.9% = £365,139
 		- 2019-2022:
-			- 50th percentile: 13.7% = £
-			- 70th percentile: 21.9% = £
+			- 50th percentile: 13.7% = £290,642
+			- 70th percentile: 21.9% = £445,105
 		- 2022-2025:
-			- 50th percentile: 10.6% = £
-				- £ more than if you were to buy and hold for 15 years given each purchase is at the 50th percentile each year
-			- 70th percentile: 20.1% = £
-				- £ more than if you were to buy and hold for 15 years given each purchase is at the 70th percentile each year
+			- 50th percentile: 10.6% = £321,450
+				- £77,211 more than if you were to buy and hold for 15 years given each purchase is at the 50th percentile each year
+			- 70th percentile: 20.1% = £534,571
+				- £222,812 more than if you were to buy and hold for 15 years given each purchase is at the 70th percentile each year
 	- using the strategy of re-buying every 3 years for 15 years (with inflation)
 		- 2010-2013:
-			- 50th percentile: 28% = £
-			- 70th percentile: 42% = £
+			- 50th percentile: 28% = £196,868
+			- 70th percentile: 42% = £218,400
 		- 2013-2016:
-			- 50th percentile: 25.2% = £
-			- 70th percentile: 39.9% = £
+			- 50th percentile: 25.2% = £246,479
+			- 70th percentile: 39.9% = £305,542
 		- 2016-2019:
-			- 50th percentile: 22.5% = £
-			- 70th percentile: 36.1% = £
+			- 50th percentile: 22.5% = £301,936
+			- 70th percentile: 36.1% = £415,843
 		- 2019-2022:
-			- 50th percentile: 17.9% = £
-			- 70th percentile: 28.9% = £
+			- 50th percentile: 17.9% = £355,983
+			- 70th percentile: 28.9% = £536,021
 		- 2022-2025:
-			- 50th percentile: 17.6% = £
-				- £67,560 more than if you were to buy and hold for 15 years given each purchase is at the 50th percentile each year
-			- 70th percentile: 26.2% = £
-				- £205,222 more than if you were to buy and hold for 15 years given each purchase is at the 70th percentile each year
+			- 50th percentile: 17.6% = £418,636
+				- £79,808 more than if you were to buy and hold for 15 years given each purchase is at the 50th percentile each year
+			- 70th percentile: 26.2% = £676,459
+				- £244,888 more than if you were to buy and hold for 15 years given each purchase is at the 70th percentile each year
