@@ -45,37 +45,33 @@ although most houses all increase in value over time, there are submarkets, iden
 		- shows the importance for someone who is simply buying a first time house to live in it
 	- using the strategy of re-buying every 3 years for 15 years (not including inflation)
 		- 2010-2013:
-			- 50th percentile: 21% = £186,102
-			- 70th percentile: 36.9% = £210,556
+			- 50th percentile: 21% = £186,102 = £182,380 post stamp
+			- 70th percentile: 36.9% = £210,556 = £206,345 post stamp
 		- 2013-2016:
-			- 50th percentile: 17.7% = £219,041
-			- 70th percentile: 33.5% = £281,092
+			- 50th percentile: 17.7% = £214,661 = £210,368 post stamp
+			- 70th percentile: 33.5% = £275,470 = £261,697 post stamp
 		- 2016-2019:
-			- 50th percentile: 16.7% = £255,622
-			- 70th percentile: 29.9% = £365,139
+			- 50th percentile: 16.7% = £245,499 = £240,589 post stamp
+			- 70th percentile: 29.9% = £339,944 = £322,947 post stamp
 		- 2019-2022:
-			- 50th percentile: 13.7% = £290,642
-			- 70th percentile: 21.9% = £445,105
+			- 50th percentile: 13.7% = £273,550 = £259,873 post stamp
+			- 70th percentile: 21.9% = £393,672 = £373,989 post stamp
 		- 2022-2025:
-			- 50th percentile: 10.6% = £321,450
-				- £77,211 more than if you were to buy and hold for 15 years given each purchase is at the 50th percentile each year
-			- 70th percentile: 20.1% = £534,571
-				- £222,812 more than if you were to buy and hold for 15 years given each purchase is at the 70th percentile each year
+			- 50th percentile: 10.6% = £287,419
+			- 70th percentile: 20.1% = £449,160
 	- using the strategy of re-buying every 3 years for 15 years (with inflation)
 		- 2010-2013:
-			- 50th percentile: 28% = £196,868
-			- 70th percentile: 42% = £218,400
+			- 50th percentile: 28% = £196,868 = £192,930 post stamp
+			- 70th percentile: 42% = £218,400 = £214,032 post stamp
 		- 2013-2016:
-			- 50th percentile: 25.2% = £246,479
-			- 70th percentile: 39.9% = £305,542
+			- 50th percentile: 25.2% = £241,549 = £236,718 post stamp
+			- 70th percentile: 39.9% = £299,430 = £284,459 post stamp
 		- 2016-2019:
-			- 50th percentile: 22.5% = £301,936
-			- 70th percentile: 36.1% = £415,843
+			- 50th percentile: 22.5% = £289,979 = £275,481 post stamp
+			- 70th percentile: 36.1% = £387,149 = £367,792 post stamp 
 		- 2019-2022:
-			- 50th percentile: 17.9% = £355,983
-			- 70th percentile: 28.9% = £536,021
+			- 50th percentile: 17.9% = £324,792 = £308,552 post stamp
+			- 70th percentile: 28.9% = £474,083 = £450,379 post stamp
 		- 2022-2025:
-			- 50th percentile: 17.6% = £418,636
-				- £79,808 more than if you were to buy and hold for 15 years given each purchase is at the 50th percentile each year
-			- 70th percentile: 26.2% = £676,459
-				- £244,888 more than if you were to buy and hold for 15 years given each purchase is at the 70th percentile each year
+			- 50th percentile: 17.6% = £362,857
+			- 70th percentile: 26.2% = £568,378
