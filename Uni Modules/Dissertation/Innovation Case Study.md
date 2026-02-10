@@ -61,17 +61,17 @@ although most houses all increase in value over time, there are submarkets, iden
 			- 70th percentile: 20.1% = £449,160
 	- using the strategy of re-buying every 3 years for 15 years (with inflation)
 		- 2010-2013:
-			- 50th percentile: 28% = £196,868 = £192,930 post stamp
-			- 70th percentile: 42% = £218,400 = £214,032 post stamp
+			- 50th percentile: 28% = £196,868 = £195,431 PS
+			- 70th percentile: 42% = £218,400 = £216,532 PS
 		- 2013-2016:
-			- 50th percentile: 25.2% = £241,549 = £236,718 post stamp
-			- 70th percentile: 39.9% = £299,430 = £284,459 post stamp
+			- 50th percentile: 25.2% = £244,680 = £242,287 PS
+			- 70th percentile: 39.9% = £302,928 = £297782 PS
 		- 2016-2019:
-			- 50th percentile: 22.5% = £289,979 = £275,481 post stamp
-			- 70th percentile: 36.1% = £387,149 = £367,792 post stamp 
+			- 50th percentile: 22.5% = £296,801 = £291,961 PS
+			- 70th percentile: 36.1% = £405,282 = £395,018 PS
 		- 2019-2022:
-			- 50th percentile: 17.9% = £324,792 = £308,552 post stamp
-			- 70th percentile: 28.9% = £474,083 = £450,379 post stamp
+			- 50th percentile: 17.9% = £344,222 = £337011 PS
+			- 70th percentile: 28.9% = £509,178 = £493,720 PS
 		- 2022-2025:
-			- 50th percentile: 17.6% = £362,857
-			- 70th percentile: 26.2% = £568,378
+			- 50th percentile: 17.6% = £396,325
+			- 70th percentile: 26.2% = £623,074
