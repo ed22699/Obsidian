@@ -61,3 +61,21 @@ tags:
 - Heatmap
 	- Will build a map or an area, uses a postcode finds the LSOA area it resides in and centres a map upon that LSOA, produces a circular area of a defined distance around that area
 	- can show either a binary map of higher or lower than percentile increase over 3 years, a map of volume of sales that year or a map of median sale prices that year
+- splitData
+	- tried:
+		- adding in historical aggregation: had 0.0008 correlation ratio
+	- splits data into groups of 3 years 
+	- calculates the 3 year % increase
+	- splits into test regions and non test regions
+	- saves 2 files, features and ground_truths for each year (note none of these splits contain the test regions)
+		- 1995-2012 train
+		- 2013-2015 val
+		- 2016-2019 test
+	- test regions 2016-2019
+- correlation map
+	- maps the correlation between features
+	- can also get the correlation ratio for a specific feature
+- Multi linear regression model
+	- one-hot encodes LAD 
+	- uses all features (except LSOA as this is technically embedded into each row)
+	- takes all the training years and concatenates them into a singular file for training, does a similar thing for validation
