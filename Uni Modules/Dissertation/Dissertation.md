@@ -79,3 +79,4 @@ tags:
 	- one-hot encodes LAD 
 	- uses all features (except LSOA as this is technically embedded into each row)
 	- takes all the training years and concatenates them into a singular file for training, does a similar thing for validation
+	- tried it with only years and years and quarters, found quarters were better
