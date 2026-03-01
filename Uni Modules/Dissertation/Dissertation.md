@@ -80,3 +80,6 @@ tags:
 	- uses all features (except LSOA as this is technically embedded into each row)
 	- takes all the training years and concatenates them into a singular file for training, does a similar thing for validation
 	- tried it with only years and years and quarters, found quarters were better
+
+- GWR
+	- [Local Authority Districts (December 2021) Boundaries GB BFC](https://geoportal.statistics.gov.uk/datasets/ons::local-authority-districts-december-2021-boundaries-gb-bfc/about) to split LAD into coordinates
