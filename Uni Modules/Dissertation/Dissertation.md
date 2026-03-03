@@ -76,10 +76,11 @@ tags:
 	- maps the correlation between features
 	- can also get the correlation ratio for a specific feature
 - Multi linear regression model
-	- one-hot encodes LAD 
+	- one-hot encodes LAD (could not do LSOA as there are over 33,000 of them so will exceed RAM space)
 	- uses all features (except LSOA as this is technically embedded into each row)
 	- takes all the training years and concatenates them into a singular file for training, does a similar thing for validation
 	- tried it with only years and years and quarters, found quarters were better
 
-- GWR
+- GTWR
 	- [Local Authority Districts (December 2021) Boundaries GB BFC](https://geoportal.statistics.gov.uk/datasets/ons::local-authority-districts-december-2021-boundaries-gb-bfc/about) to split LAD into coordinates
+	- aggregated via LAD instead of LSOA for training use to LSOA exceeding RAM limits, still validated at LSOA level to keep it fair
