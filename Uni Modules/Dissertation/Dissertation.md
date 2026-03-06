@@ -82,7 +82,7 @@ tags:
 	- tried it with only years and years and quarters, found quarters were better
 
 - GTWR
-	- [Local Authority Districts (December 2021) Boundaries GB BFC](https://geoportal.statistics.gov.uk/datasets/ons::local-authority-districts-december-2021-boundaries-gb-bfc/about) to split LAD into coordinates
+	- [Local Authority Districts (December 2021) Boundaries GB BFC](https://geoportal.statistics.gov.uk/datasets/ons::local-authority-districts-december-2021-boundaries-gb-bfc/about) to split LAD into coordinates to get the centeroids of each LAD area
 	- aggregated via LAD instead of LSOA for training use to LSOA exceeding RAM limits, still validated at LSOA level to keep it fair
 	- parallelised and chunked for speed and ram limitations
 	- coded in R
