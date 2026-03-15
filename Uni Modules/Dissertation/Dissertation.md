@@ -87,3 +87,11 @@ tags:
 	- parallelised and chunked for speed and ram limitations
 	- coded in R
 - XGBoost [GitHub - dmlc/xgboost: Scalable, Portable and Distributed Gradient Boosting (GBDT, GBRT or GBM) Library, for Python, R, Java, Scala, C++ and more. Runs on single machine, Hadoop, Spark, Dask, Flink and DataFlow · GitHub](https://github.com/dmlc/xgboost)
+	- print out a co
+
+- transformer
+	- changes to spacetimeformer
+		- add quarterly data
+		- create a `__len__` and and `__getItem__`
+		- simplify CSVTimeSeries to not automatically split data into train, val and test, so I can keep it consistent with others
+		- remove the assumption that each feature has its own time encoding, made it to only have 1 for all features
