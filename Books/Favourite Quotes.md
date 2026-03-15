@@ -11,3 +11,4 @@
 - "naked came I out of my mother's womb, and naked shall I return into the earth" - Fyodor Dostoevsky, [[The Brothers Karamazov - Fyodor Dostoyevsky]]
 - "it's the great mystery of human life that old grief passes gradually into quiet, tender joy" - Fyodor Dostoevsky, [[The Brothers Karamazov - Fyodor Dostoyevsky]]
 - "Love life more then the meaning of it?" - Fyodor Dostoevsky, [[The Brothers Karamazov - Fyodor Dostoyevsky]]
+- "It was your pride made you think I was a fool." - Fyodor Dostoevsky, [[The Brothers Karamazov - Fyodor Dostoyevsky]]
