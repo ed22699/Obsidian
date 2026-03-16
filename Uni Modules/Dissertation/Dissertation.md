@@ -87,7 +87,8 @@ tags:
 	- parallelised and chunked for speed and ram limitations
 	- coded in R
 - XGBoost [GitHub - dmlc/xgboost: Scalable, Portable and Distributed Gradient Boosting (GBDT, GBRT or GBM) Library, for Python, R, Java, Scala, C++ and more. Runs on single machine, Hadoop, Spark, Dask, Flink and DataFlow · GitHub](https://github.com/dmlc/xgboost)
-	- print out a co
+	- print out a feature importance graph
+		- lead to changing inflPrice to %increase over year per quarter and LSOA price compared to LAD ratio
 
 - transformer
 	- changes to spacetimeformer
