@@ -86,6 +86,7 @@ tags:
 	- aggregated via LAD instead of LSOA for training use to LSOA exceeding RAM limits, still validated at LSOA level to keep it fair
 	- parallelised and chunked for speed and ram limitations
 	- coded in R
+	- had to make adaptive false as too many datapoints so was basically static and not calculating anything over 8 hours
 - XGBoost [GitHub - dmlc/xgboost: Scalable, Portable and Distributed Gradient Boosting (GBDT, GBRT or GBM) Library, for Python, R, Java, Scala, C++ and more. Runs on single machine, Hadoop, Spark, Dask, Flink and DataFlow · GitHub](https://github.com/dmlc/xgboost)
 	- print out a feature importance graph
 		- lead to changing inflPrice to %increase over year per quarter and LSOA price compared to LAD ratio
