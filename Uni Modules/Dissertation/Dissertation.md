@@ -103,7 +103,7 @@ tags:
 - this would be useful for future cases [Points of Interest Documentation | OS Download Products' Documentation](https://docs.os.uk/os-downloads/products/addresses-and-names-portfolio/points-of-interest)
 - school data
 	- initial formula $score_{LSOA} = \sum_{i \in S_{LSOA, t}} (W_p \cdot  P_i + W_s \cdot S_i + W_f \cdot F_i)$ 
-		- $p$ = primary
+		- $p$ = primary (higher weighting then the others)
 		- $s$ = secondary
 		- $f$ = sixth form
 		- $S_{LSOA, t}$ = set of all schools active in a specific LSOA during year $t$
