@@ -99,8 +99,16 @@ tags:
 		- remove the assumption that each feature has its own time encoding, made it to only have 1 for all features
 	- got the geographical centroids of each LSOA and added the long and lat to take the spatial data
 	- made it run on GPU
-- adding spatial features
-	- this would be useful for future cases [Points of Interest Documentation | OS Download Products' Documentation](https://docs.os.uk/os-downloads/products/addresses-and-names-portfolio/points-of-interest)
+### adding spatial features
+- this would be useful for future cases [Points of Interest Documentation | OS Download Products' Documentation](https://docs.os.uk/os-downloads/products/addresses-and-names-portfolio/points-of-interest)
+- school data
+	- initial formula $score_{LSOA} = \sum_{i \in S_{LSOA, t}} (W_p \cdot  P_i + W_s \cdot S_i + W_f \cdot F_i)$ 
+		- $p$ = primary
+		- $s$ = secondary
+		- $f$ = sixth form
+		- $S_{LSOA, t}$ = set of all schools active in a specific LSOA during year $t$
+		- $w$ are the chosen weights
+	
 
 > [!NOTE]
 > As you have your decay, for schools you could also have a OFSTED factor, could also weight off school type i.e. primary school
