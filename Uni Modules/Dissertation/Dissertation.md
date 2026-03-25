@@ -72,6 +72,7 @@ tags:
 		- 2013-2015 val
 		- 2016-2019 test
 	- test regions 2016-2019
+	- skip shock year predictions (2008, 2009, 2021, 2022)
 - correlation map
 	- maps the correlation between features
 	- can also get the correlation ratio for a specific feature
