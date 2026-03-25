@@ -90,7 +90,7 @@ tags:
 - XGBoost [GitHub - dmlc/xgboost: Scalable, Portable and Distributed Gradient Boosting (GBDT, GBRT or GBM) Library, for Python, R, Java, Scala, C++ and more. Runs on single machine, Hadoop, Spark, Dask, Flink and DataFlow · GitHub](https://github.com/dmlc/xgboost)
 	- print out a feature importance graph
 		- lead to changing inflPrice to %increase over year per quarter and LSOA price compared to LAD ratio
-	- got the geographical centroids of each LAD and added the long and lat to take the spatial data (could not do LSOA too computationally expensive)
+	- got the geographical centroids of each LSOA and added the long and lat to take the spatial data
 - transformer
 	- changes to spacetimeformer
 		- add quarterly data
