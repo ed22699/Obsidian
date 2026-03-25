@@ -90,10 +90,17 @@ tags:
 - XGBoost [GitHub - dmlc/xgboost: Scalable, Portable and Distributed Gradient Boosting (GBDT, GBRT or GBM) Library, for Python, R, Java, Scala, C++ and more. Runs on single machine, Hadoop, Spark, Dask, Flink and DataFlow · GitHub](https://github.com/dmlc/xgboost)
 	- print out a feature importance graph
 		- lead to changing inflPrice to %increase over year per quarter and LSOA price compared to LAD ratio
-
+	- got the geographical centroids of each LAD and added the long and lat to take the spatial data (could not do LSOA too computationally expensive)
 - transformer
 	- changes to spacetimeformer
 		- add quarterly data
 		- create a `__len__` and and `__getItem__`
 		- simplify CSVTimeSeries to not automatically split data into train, val and test, so I can keep it consistent with others
 		- remove the assumption that each feature has its own time encoding, made it to only have 1 for all features
+	- got the geographical centroids of each LSOA and added the long and lat to take the spatial data
+	- made it run on GPU
+- adding spatial features
+	- this would be useful for future cases [Points of Interest Documentation | OS Download Products' Documentation](https://docs.os.uk/os-downloads/products/addresses-and-names-portfolio/points-of-interest)
+
+> [!NOTE]
+> As you have your decay, for schools you could also have a OFSTED factor
