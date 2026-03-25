@@ -103,4 +103,4 @@ tags:
 	- this would be useful for future cases [Points of Interest Documentation | OS Download Products' Documentation](https://docs.os.uk/os-downloads/products/addresses-and-names-portfolio/points-of-interest)
 
 > [!NOTE]
-> As you have your decay, for schools you could also have a OFSTED factor
+> As you have your decay, for schools you could also have a OFSTED factor, could also weight off school type i.e. primary school
