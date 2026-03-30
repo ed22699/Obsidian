@@ -101,6 +101,7 @@ tags:
 		- remove the assumption that each feature has its own time encoding, made it to only have 1 for all features
 	- got the geographical centroids of each LSOA and added the long and lat to take the spatial data
 	- made it run on GPU
+	- issue 5 epochs took 6 hours to run
 ### adding spatial features
 - this would be useful for future cases [Points of Interest Documentation | OS Download Products' Documentation](https://docs.os.uk/os-downloads/products/addresses-and-names-portfolio/points-of-interest)
 - school data
