@@ -104,13 +104,17 @@ tags:
 	- issue 5 epochs took 6 hours to run
 ### adding spatial features
 - this would be useful for future cases [Points of Interest Documentation | OS Download Products' Documentation](https://docs.os.uk/os-downloads/products/addresses-and-names-portfolio/points-of-interest)
-- school data
+- school data: [Downloads - GOV.UK](https://get-information-schools.service.gov.uk/Downloads)
 	- initial formula $score_{LSOA} = \sum_{i \in S_{LSOA, t}} (W_p \cdot  P_i + W_s \cdot S_i + W_f \cdot F_i)$ 
 		- $p$ = primary (higher weighting then the others)
 		- $s$ = secondary
 		- $f$ = sixth form
 		- $S_{LSOA, t}$ = set of all schools active in a specific LSOA during year $t$
 		- $w$ are the chosen weights
+- train and bus data: [Download national stop data - NaPTAN - DfT](https://beta-naptan.dft.gov.uk/download/national)
+	- is a binary 1 if in, 0 if not in for both bus and train
+- uni:
+	- no good premade data, had to scrape Wikipedia for start and end dates: [List of universities in the United Kingdom by date of foundation - Wikipedia](https://en.wikipedia.org/wiki/List_of_universities_in_the_United_Kingdom_by_date_of_foundation)
 	
 
 > [!NOTE]
