@@ -115,6 +115,8 @@ tags:
 	- is a binary 1 if in, 0 if not in for both bus and train
 - uni:
 	- no good premade data, had to scrape Wikipedia for start and end dates: [List of universities in the United Kingdom by date of foundation - Wikipedia](https://en.wikipedia.org/wiki/List_of_universities_in_the_United_Kingdom_by_date_of_foundation)
+		- had to manually alter some technicalities e.g. UCL becoming a Uni in 2023 because UL was awarding the certificates till then
+	- use an API to determine which LAD area each uni resides in
 	
 
 > [!NOTE]
