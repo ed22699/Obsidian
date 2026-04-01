@@ -131,6 +131,8 @@ tags:
 		- got 2007 regional sums for death and birth
 		- $2009_{birth_{LAD}} = 2007_{birth_{LAD}} \cdot \frac{2009_{birth_{regional}}}{2007_{birth_{regional}}}$ 
 		- 2008 is the midpoint for each LAD between 2007 and 2009
+	- use table 125 to get dwellings: [Live tables on dwelling stock (including vacants) - GOV.UK](https://www.gov.uk/government/statistical-data-sets/live-tables-on-dwelling-stock-including-vacants)
+		- interpolate using 5 year average to predict 1995 to 2000
 	
 
 > [!NOTE]
