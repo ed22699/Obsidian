@@ -117,6 +117,13 @@ tags:
 	- no good premade data, had to scrape Wikipedia for start and end dates: [List of universities in the United Kingdom by date of foundation - Wikipedia](https://en.wikipedia.org/wiki/List_of_universities_in_the_United_Kingdom_by_date_of_foundation)
 		- had to manually alter some technicalities e.g. UCL becoming a Uni in 2023 because UL was awarding the certificates till then
 	- use an API to determine which LAD area each uni resides in
+- business:
+	- $score = \frac{births}{deaths+1}$
+	- 1995-2007
+		- use [No dataset selected - Nomis - Official Census and Labour Market Statistics](https://www.nomisweb.co.uk/query/construct/components/stdListComponent.asp?menuopt=12&subcomp=100)
+		- convert 2011 LADs to 2021
+	- 2010-2024
+		- use [Business demography, UK - Office for National Statistics](https://www.ons.gov.uk/businessindustryandtrade/business/activitysizeandlocation/datasets/businessdemographyreferencetable/current)
 	
 
 > [!NOTE]
