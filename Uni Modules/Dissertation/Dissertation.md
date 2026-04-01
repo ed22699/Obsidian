@@ -124,7 +124,13 @@ tags:
 		- convert 2011 LADs to 2021
 	- 2010-2024
 		- use [Business demography, UK - Office for National Statistics](https://www.ons.gov.uk/businessindustryandtrade/business/activitysizeandlocation/datasets/businessdemographyreferencetable/current)
-	- 
+	- 2008-2009
+		- could not find the LAD data for this, however in an archive I found a pdf showing the birth and death rates per region, I used this to interpolate based of ratios within regions for the 2007 data
+			- [Error 500: Internal Server Error](https://webarchive.nationalarchives.gov.uk/ukgwa/20151013215343/http://www.ons.gov.uk/ons/rel/bus-register/business-demography/2009/index.html)
+				- only accurate to the 1000
+		- got 2007 regional sums for death and birth
+		- $2009_{birth_{LAD}} = 2007_{birth_{LAD}} \cdot \frac{2009_{birth_{regional}}}{2007_{birth_{regional}}}$ 
+		- 2008 is the midpoint for each LAD between 2007 and 2009
 	
 
 > [!NOTE]
