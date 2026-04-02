@@ -119,6 +119,8 @@ tags:
 	- use an API to determine which LAD area each uni resides in
 - business:
 	- $score = \frac{births}{deaths+1}$
+	- new more sophisticated score:
+		- $$\text{Business Score} = \log\left(\frac{\text{Active Stock}}{\text{Households}}+\varepsilon\right) \times \left(\frac{\text{Births} + 1}{\text{Deaths} + 1}\right)$$
 	- 1995-2007
 		- use [No dataset selected - Nomis - Official Census and Labour Market Statistics](https://www.nomisweb.co.uk/query/construct/components/stdListComponent.asp?menuopt=12&subcomp=100)
 		- convert 2011 LADs to 2021
