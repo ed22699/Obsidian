@@ -136,6 +136,9 @@ tags:
 	- use table 125 to get dwellings: [Live tables on dwelling stock (including vacants) - GOV.UK](https://www.gov.uk/government/statistical-data-sets/live-tables-on-dwelling-stock-including-vacants)
 		- interpolate using 5 year average to predict 1995 to 2000
 	
-
+- spatial-temporal lag
+	- $$ \label{eq:1}
+ST_i=\frac{\sum _{j|sd_{[i,j]}<r_s;td_{[i,j]}<r_t}\frac{1}{sd_{[i,j]}} *hp_j}{\sum \frac{1}{sd_{[i,j]}}}
+$$
 > [!NOTE]
 > As you have your decay, for schools you could also have a OFSTED factor, could also weight off school type i.e. primary school
