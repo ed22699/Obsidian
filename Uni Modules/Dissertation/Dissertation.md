@@ -121,6 +121,13 @@ tags:
 	- $score = \frac{births}{deaths+1}$
 	- new more sophisticated score:
 		- $$\text{Business Score} = \log\left(\frac{\text{Active Stock}}{\text{Households}}+\varepsilon\right) \times \left(\frac{\text{Births} + 1}{\text{Deaths} + 1}\right)$$
+	- upgraded score:
+		- $$BVS_{i,t} = \left( \text{ScaledLogDensity}_{i,t} + 1 \right) \times \left( \text{ScaledMomentum}_{i,t} + 1 \right)$$
+		- $$\text{LogDensity} = \ln\left(1 + \frac{\text{Active Businesses}}{\text{Households}}\right)$$
+		- $$\text{Momentum} = \frac{\text{Births} + 1}{\text{Deaths} + 1}$$
+		- $$\text{ScaledValue} = \frac{x - x_{min, t}}{x_{max, t} - x_{min, t}}$$
+	- upgrades business score with LAD lag
+		- $$BusScore_{Total} = BusScore_{Local} + \sum \left( \frac{BusScore_{Neighbor}}{Distance_{ij}} \right)$$
 	- 1995-2007
 		- use [No dataset selected - Nomis - Official Census and Labour Market Statistics](https://www.nomisweb.co.uk/query/construct/components/stdListComponent.asp?menuopt=12&subcomp=100)
 		- convert 2011 LADs to 2021
@@ -137,8 +144,8 @@ tags:
 		- interpolate using 5 year average to predict 1995 to 2000
 	
 - spatial-temporal lag
-	- $$ \label{eq:1}
-ST_i=\frac{\sum _{j|sd_{[i,j]}<r_s;td_{[i,j]}<r_t}\frac{1}{sd_{[i,j]}} *hp_j}{\sum \frac{1}{sd_{[i,j]}}}
+	- $$
+ST_i=\frac{\sum _{j|sd_{[i,j]}<r_s;td_{[i,j]}<r_t}\frac{1}{sd_{[i,j]}^2} *hp_j}{\sum \frac{1}{sd_{[i,j]}}^2}
 $$
 > [!NOTE]
 > As you have your decay, for schools you could also have a OFSTED factor, could also weight off school type i.e. primary school
