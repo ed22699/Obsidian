@@ -121,6 +121,7 @@ tags:
 	- no good premade data, had to scrape Wikipedia for start and end dates: [List of universities in the United Kingdom by date of foundation - Wikipedia](https://en.wikipedia.org/wiki/List_of_universities_in_the_United_Kingdom_by_date_of_foundation)
 		- had to manually alter some technicalities e.g. UCL becoming a Uni in 2023 because UL was awarding the certificates till then
 	- use an API to determine which LAD area each uni resides in
+	- used this to get student population per uni: [Just a moment...](https://www.hesa.ac.uk/data-and-analysis/students/table-1)
 - business:
 	- $score = \frac{births}{deaths+1}$
 	- new more sophisticated score:
