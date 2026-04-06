@@ -111,6 +111,10 @@ tags:
 		- $f$ = sixth form
 		- $S_{LSOA, t}$ = set of all schools active in a specific LSOA during year $t$
 		- $w$ are the chosen weights
+	- advanced formula:
+		- $$SchoolScore_{LSOA} = \sum_{j \in Radius} \frac{BaseWeight_{j} \times Multipliers_{j}}{(Distance_{j} + \epsilon)^{p}}$$
+			- base weight is the initial value based on if its primary secondary of sixth form
+			- multipliers features of the school, e.g. if its single sex or selective school
 - train and bus data: [Download national stop data - NaPTAN - DfT](https://beta-naptan.dft.gov.uk/download/national)
 	- is a binary 1 if in, 0 if not in for both bus and train
 - uni:
