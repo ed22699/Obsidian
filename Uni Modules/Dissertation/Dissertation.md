@@ -122,6 +122,10 @@ tags:
 		- had to manually alter some technicalities e.g. UCL becoming a Uni in 2023 because UL was awarding the certificates till then
 	- use an API to determine which LAD area each uni resides in
 	- used this to get student population per uni: [Just a moment...](https://www.hesa.ac.uk/data-and-analysis/students/table-1)
+	- advanced score:
+		- Weighted mass: $$M_i = Population_i \times PrestigeWeight_i$$
+		- spatial decay: $$I_T = \sum_{i \in 30km} \frac{M_i}{(d_{Ti} + 1)^2}$$
+		- score: $$S_T = \ln\left(1 + \left(\frac{I_T}{Households_T} \times 100\right)\right)$$
 - business:
 	- $score = \frac{births}{deaths+1}$
 	- new more sophisticated score:
