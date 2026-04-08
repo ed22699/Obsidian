@@ -62,16 +62,16 @@ although most houses all increase in value over time, there are submarkets, iden
 	- using the strategy of re-buying every 3 years for 15 years (with inflation)
 		- 2010-2013:
 			- 50th percentile: 28% = £196,868 = £195,431 PS
-			- 70th percentile: 42% = £218,400 = £216,532 PS
+			- 70th percentile: 42.7% = £219,476 = £206,613 PS
 		- 2013-2016:
 			- 50th percentile: 25.2% = £244,680 = £242,287 PS
-			- 70th percentile: 39.9% = £302,928 = £297782 PS
+			- 70th percentile: 40.9% = £291,118 = £272,007 PS
 		- 2016-2019:
 			- 50th percentile: 22.5% = £296,801 = £291,961 PS
-			- 70th percentile: 36.1% = £405,282 = £395,018 PS
+			- 70th percentile: 37.6% = £374,283 = £346,855 PS
 		- 2019-2022:
 			- 50th percentile: 17.9% = £344,222 = £337011 PS
-			- 70th percentile: 28.9% = £509,178 = £493,720 PS
+			- 70th percentile: 31.4% = £455,767 = £420,191 PS
 		- 2022-2025:
 			- 50th percentile: 17.6% = £396,325
-			- 70th percentile: 26.2% = £623,074
+			- 70th percentile: 26.5% = £531,542
