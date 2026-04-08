@@ -117,6 +117,12 @@ tags:
 			- multipliers features of the school, e.g. if its single sex or selective school
 - train and bus data: [Download national stop data - NaPTAN - DfT](https://beta-naptan.dft.gov.uk/download/national)
 	- is a binary 1 if in, 0 if not in for both bus and train
+	- advanced score:
+		- weighted volume: $$V_{i} = \sum (\text{StopType Weight})$$
+			- weights: railway (5.0), Metro (3.0), Tram (3.0), Bus (1.0)
+		- Hub multiplier: $$V_{weighted} = \begin{cases} V_{i} \times 3.0 && \text{if } \; isHub = 1 \\ V_{i} && \text{otherwise} \end{cases}$$
+		- Spatial decay: $$P_T = \sum_{n \in 3km} \frac{V_{weighted, n}}{(d_{Tn}^2 + 0.5)}$$
+		- Normalisation: $$\text{Transport Score} = \ln(1 + P_T)$$
 - uni:
 	- no good premade data, had to scrape Wikipedia for start and end dates: [List of universities in the United Kingdom by date of foundation - Wikipedia](https://en.wikipedia.org/wiki/List_of_universities_in_the_United_Kingdom_by_date_of_foundation)
 		- had to manually alter some technicalities e.g. UCL becoming a Uni in 2023 because UL was awarding the certificates till then
