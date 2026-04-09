@@ -162,5 +162,7 @@ tags:
 	- $$
 ST_i=\frac{\sum _{j|sd_{[i,j]}<r_s;td_{[i,j]}<r_t}\frac{1}{sd_{[i,j]}^2} *hp_j}{\sum \frac{1}{sd_{[i,j]}}^2}
 $$
+	- new formula: $$ST_i(q) = \frac{\sum_{j \in R_s, \Delta q \in R_t} \left( \frac{1}{sd_{ij}^2 + 0.5} \cdot e^{-\lambda \Delta q} \cdot \Delta \% hp_j \right)}{\sum_{j \in R_s, \Delta q \in R_t} \left( \frac{1}{sd_{ij}^2 + 0.5} \cdot e^{-\lambda \Delta q} \right)}$$
+		- I use the yoy instead of infl_price now
 > [!NOTE]
 > As you have your decay, for schools you could also have a OFSTED factor, could also weight off school type i.e. primary school
