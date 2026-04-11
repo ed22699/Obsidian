@@ -118,11 +118,12 @@ tags:
 - train and bus data: [Download national stop data - NaPTAN - DfT](https://beta-naptan.dft.gov.uk/download/national)
 	- is a binary 1 if in, 0 if not in for both bus and train
 	- advanced score:
-		- weighted volume: $$V_{i} = \sum (\text{StopType Weight})$$
+		- weighted volume: $$V_{i,t} = \sum (\text{StopType Weight}) \quad \forall \text{ stops where } StartYear \le t \le EndYear$$
 			- weights: railway (5.0), Metro (3.0), Tram (3.0), Bus (1.0)
-		- Hub multiplier: $$V_{weighted} = \begin{cases} V_{i} \times 3.0 && \text{if } \; isHub = 1 \\ V_{i} && \text{otherwise} \end{cases}$$
+		- Hub multiplier: $$V_{weighted} = \begin{cases} V_{i} \times 3.0 & \text{if } \sum(\text{MajorStops}) > 1 \\ V_{i} & \text{otherwise} \end{cases}$$
 		- Spatial decay: $$P_T = \sum_{n \in 3km} \frac{V_{weighted, n}}{(d_{Tn}^2 + 0.5)}$$
 		- Normalisation: $$\text{Transport Score} = \ln(1 + P_T)$$
+		- $$\text{Improvement}_t = \text{Score}_t - \text{Score}_{t-3}$$
 - uni:
 	- no good premade data, had to scrape Wikipedia for start and end dates: [List of universities in the United Kingdom by date of foundation - Wikipedia](https://en.wikipedia.org/wiki/List_of_universities_in_the_United_Kingdom_by_date_of_foundation)
 		- had to manually alter some technicalities e.g. UCL becoming a Uni in 2023 because UL was awarding the certificates till then
@@ -164,5 +165,7 @@ ST_i=\frac{\sum _{j|sd_{[i,j]}<r_s;td_{[i,j]}<r_t}\frac{1}{sd_{[i,j]}^2} *hp_j}{
 $$
 	- new formula: $$ST_i(q) = \frac{\sum_{j \in R_s, \Delta q \in R_t} \left( \frac{1}{sd_{ij}^2 + 0.5} \cdot e^{-\lambda \Delta q} \cdot \Delta \% hp_j \right)}{\sum_{j \in R_s, \Delta q \in R_t} \left( \frac{1}{sd_{ij}^2 + 0.5} \cdot e^{-\lambda \Delta q} \right)}$$
 		- I use the yoy instead of infl_price now
+	- $$ST_i(q) = \frac{\sum (W_{spatial} \cdot W_{temporal} \cdot \text{Growth}_j)}{\sum (W_{spatial} \cdot W_{temporal})}$$
+	- `main_df['relative_spatial_lag'] = main_df['st_lag_score'] - main_df['price_delta_yoy']`
 > [!NOTE]
 > As you have your decay, for schools you could also have a OFSTED factor, could also weight off school type i.e. primary school
