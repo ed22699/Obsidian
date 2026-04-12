@@ -16,7 +16,7 @@ previewLink: http://books.google.co.uk/books?id=7vF8AAAAIAAJ&q=the+brothers+kara
 isbn13: UCSC:32106005440653
 tags:
   - Book
-Status: Reading
+Status: Read
 ---
 [[Books]]
 key points:

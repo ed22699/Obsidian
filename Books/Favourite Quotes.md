@@ -12,3 +12,4 @@
 - "it's the great mystery of human life that old grief passes gradually into quiet, tender joy" - Fyodor Dostoevsky, [[The Brothers Karamazov - Fyodor Dostoyevsky]]
 - "Love life more then the meaning of it?" - Fyodor Dostoevsky, [[The Brothers Karamazov - Fyodor Dostoyevsky]]
 - "It was your pride made you think I was a fool." - Fyodor Dostoevsky, [[The Brothers Karamazov - Fyodor Dostoyevsky]]
+- "My forgiveness is no good to you, nor yours to me; whether you forgive me or not, you will always be a sore place in my heart, and I in yours--so it must be..." - Fyodor Dostoevsky, [[The Brothers Karamazov - Fyodor Dostoyevsky]]

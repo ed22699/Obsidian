@@ -7,6 +7,7 @@ T - Read 3 books this year
 
 2024 Success - 6 books read
 2025 Success - 7 books read
+2026 - 1 book read
 ## Read Books:
 
 ![[Books]]
