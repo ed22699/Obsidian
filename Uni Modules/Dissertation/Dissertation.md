@@ -102,6 +102,7 @@ tags:
 	- got the geographical centroids of each LSOA and added the long and lat to take the spatial data
 	- made it run on GPU
 	- issue 5 epochs took 6 hours to run
+	- got it down to 1 epoch per hour, to make it viable had to then use a subset of the train data, taking random samples from each LAD, took 40% as this approximately goes to 1 epoch every 24mins and so 30 epochs in 12 hours
 ### adding spatial features
 - this would be useful for future cases [Points of Interest Documentation | OS Download Products' Documentation](https://docs.os.uk/os-downloads/products/addresses-and-names-portfolio/points-of-interest)
 - school data: [Downloads - GOV.UK](https://get-information-schools.service.gov.uk/Downloads)
