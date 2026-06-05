@@ -20,3 +20,8 @@ tags:
 - crocodile shoes
 - the Norwegian
 - the slip-on moccasin
+- the turf or chukka boot
+- the gucci slip-on
+- the white buck
+- the spectator
+- the dress slipper
