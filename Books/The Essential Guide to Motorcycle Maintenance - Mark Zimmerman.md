@@ -17,7 +17,8 @@ isbn13: 9780760352717
 isbn10: 760352712
 tags:
   - Book
-Status: To Read
+Status: Reading
 ---
 [[Books]]
 key points:
+- [[engine design and basic theory]]
