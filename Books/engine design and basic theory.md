@@ -76,3 +76,33 @@ tags:
 - single-cylinder engines require a heavy flywheel to keep their one big piston moving up and down smoothly
 - multiple cylinder engines with proportionally smaller pistons and a fair amount of crankshaft mass needed to accommodate the extra hardware required for their multiple cylinders can make do with lighter flywheels
 ### The Bottom end
+- consists of
+	- crankcase
+		- houses all the bottom end parts
+		- in some engines the oil is stored in the crankcase (wet-sump engines), on others it is stored in a separate tank (dry-sump engines)
+		- many modern motorcycles also house the transmission and clutch assembly inside the crankcase (unit-construction engines), if the clutch and tranny are in a separate case they are called non-unit engines
+		- most crankcases are built in two pieces, incorporating a vertical or horizontal seam to facilitate assembly, and are commonly referred to as 'cases'
+	- crankshaft
+		- the backbone of the crankcase
+		- converts the up and down motion of the piston into a rotary motion that's used to drive the motorcycle
+		- can be made of several separate pieces that are pressed or bolted together
+			- known as pressed, built-up or assembly crankshafts
+		- the crankshaft may be forged from a single chunk of steel alloy called forged or unit crankshaft
+	- main bearings
+		- supports the crankshaft in the crankcase
+		- may be as few as two in a single cylinder or twin cylinder engine and up to six on a four cylinder engine
+		- the main bearing may be either automotive-type shell bearings (plain bearings) or ball or roller bearings, some designs use both
+			- due to the peculiar lubrication requirements ball or roller bearings must be used to support two-stroke crankshafts
+	- connecting rods
+		- connects the piston to the crankshaft
+		- needs to be both light and strong
+		- must be able to transmit the heavy loads imposed on it by the piston with out deflecting
+		- the end of the connecting rob that fastens to the crankshaft is called the big end because it has a larger diameter than the part connected to the piston (the small end)
+		- rods intending for use in plain-bearing engines are constructed in two pieces
+			- the bottom cap is removable so the bearing can be installed into the rod and the rod onto the crankshaft
+	- rod bearings
+		- one piece rods normally use a roller bearing
+		- a four-stoke may use either plain or roller bearings
+		- a one-piece forged crankshaft must use rods with plain-bearing big ends
+- converts the up and down motion of the pistons into the round and round motion needed to power the transmission
+### The Top End
