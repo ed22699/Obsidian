@@ -54,3 +54,25 @@ tags:
 	- one piston stroke is the piston movement from the top of the cylinder to the bottom or from the bottom to the top
 	- when the piston reaches the top (closest to cylinder head) it is top dead centre (TDC)
 	- when the piston reaches the bottom of its stroke (far from head as possible) it is bottom dead centre (BDC)
+- how it works
+	- on the *intake stroke* the piston heads toward BDC, the intake valve opens, and fuel/air mix flows into the cylinder
+		- moves from TDC to BDC
+		- creates vacuum 
+		- intake valve then opens and a mixture of air and fuel from the carburetor flows into the cylinder
+			- in truth the intake valve opens before TDC and closes some time after BDC in order to take advantage of the inertial effects of the flowing air
+	- on the *compression stroke* the piston rises toward TDC, compressing the fuel/air mix
+	- on the *power stroke* the spark plug fires the compressed mix, pushing the piston back down to BDC
+		- as piston reaches TDC the ignition system creates a spark at the spark plug tip
+		- spark ignites the fuel/air mixture inside the cylinder
+		- the burning mixture expands creating high pressures (4-6 tonnes)
+	- on the *exhaust stroke* while inertia carries the piston back towards TDC the exhaust valve opens and the burned gases are expelled
+- it is very difficult to keep an engine running relying solely on the inertia provided by the piston and crankshaft assembly
+	- to solve this, energy is stored in a large mass bolted to, or manufactured as, part of the crankshaft. This is the *flywheel*
+		- stores energy between power strokes
+		- uses the stored energy to keep the engine turning over smoothly and prevent stalling
+		- the *lighter the flywheel* the less energy it stores, bikes with light flywheels *tend to stall more* but will also *respond to changes in engine rpm a lot quicker*
+- *high rpm engines*, e.g. sportbikes and race bikes will have *light flywheels*
+- touring bikes and cruisers will have heavier flywheels
+- single-cylinder engines require a heavy flywheel to keep their one big piston moving up and down smoothly
+- multiple cylinder engines with proportionally smaller pistons and a fair amount of crankshaft mass needed to accommodate the extra hardware required for their multiple cylinders can make do with lighter flywheels
+### The Bottom end
