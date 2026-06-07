@@ -106,3 +106,42 @@ tags:
 		- a one-piece forged crankshaft must use rods with plain-bearing big ends
 - converts the up and down motion of the pistons into the round and round motion needed to power the transmission
 ### The Top End
+- consists of 
+	- cylinders
+		- set atop the crankcase
+		- most use a pressed-in-place liner made of steel alloy
+			- if liner damaged it can be re-bored to accept an oversize piston
+		- some engines use plated bores instead of liners
+			- lighter
+			- tend to cool slightly better
+			- resist wear better
+			- more expensive to make
+			- cannot be re-bored if damaged
+			- used to be used only on race bikes but are now found in a few street bikes
+		- contains coolant passages depending upon whether the engine is liquid cooled or air-cooled
+	- cylinder head
+	- pistons 
+		- is a disc or small cylinder fitted into a hollow cylinder that is acted upon by fluid pressure and used to transmit motion
+		- each piston moves up and down in the cylinder bore
+		- piston pin connects the piston to the connecting rod
+			- the portion of the piston that the pin passes through is a reinforced area called the piston-pin boss
+			- all modern motorcycles use a full-floating piston pin
+				- pin is free to move in both rod and piston
+		- piston rings used to maintain a gas-tight seal and control the oil that lubricates the piston skirt and assists in cooling the piston
+		- two types of rings found in a four-stroke engine
+			- upper rings are the compression rings
+				- prevent combustion gases from leaking past the piston
+				- normally two are used
+			- below the compression rings lie the oil ring
+			- all rings are split for easy instalment
+			- in a four-stroke engine the rings can rotate, in a two-stroke they cannot as the ports cut into the cylinder wall, rotating would likely lead to a spring out into the port, destroying the ring, piston and cylinder
+	- valves
+		- every cylinder of a four-stoke engine has at least one intake valve and one exhaust valve
+			- high performance engines generally have two of each for each cylinder
+		- all valves today are located in the cylinder head, design known as OHV (overhead valve)
+		- valves used in motorcycle engines are called poppet valves, mushroom valves
+		- valves are made in either one or two piece configuration 
+		- intake valve is always larger than the exhaust valve to enhance flow
+		- the valve seat is the circular opening in the port where the face of the valve rests between strokes
+	- cams (if over-head-cam design is being used)
+- controls the flow of gases in and out of the engine and turn combustion energy into up-and-down motion of the piston
