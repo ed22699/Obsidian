@@ -144,4 +144,22 @@ tags:
 		- intake valve is always larger than the exhaust valve to enhance flow
 		- the valve seat is the circular opening in the port where the face of the valve rests between strokes
 	- cams (if over-head-cam design is being used)
+		- is just a wheel with a lump on one side to give it an irregular motion
+		- used to bump or lift all types of things from switches to valves
+		- when you place one or more cams on a shaft you have a camshaft
+		- are spun by the crankshaft at half the engine speed as valves are only opened and closed during two of the cycles
+		- cams are turned by either gears, chain or rubber belts
+		- *cam-in-head*
+			- overhead cam design using very short, rigid pushrods to open the valves
+			- driven by a belt and operates the valves through a short pushrod and rocker-arm arrangement
+		- *Desmodromic method*
+			- uses rockers both to push the valves open and pull them closed (used in ducati)
+			- uses conventional camshaft above the valve to open it through a rocker arm, another rocker arm is located below the first. The second rocker arm has a forked end on it, which rides just below the valve stem tip
+				- second rocker is used to close the valve without using springs
 - controls the flow of gases in and out of the engine and turn combustion energy into up-and-down motion of the piston
+## Engine Layout
+- single-cylinder
+	- weight, simplicity, and a strong, wide power band outweigh the need of almost anything else
+	- easy to maintain are light and narrow
+	- moderate-to-high levels of vibration
+	- power band and basic design makes unsuitable for high-speed touring
