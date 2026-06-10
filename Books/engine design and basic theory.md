@@ -163,3 +163,28 @@ tags:
 	- easy to maintain are light and narrow
 	- moderate-to-high levels of vibration
 	- power band and basic design makes unsuitable for high-speed touring
+- parallel twin
+	- both cylinders are located side by side
+	- compact design capable of churning out some real horsepower
+	- mounting the exhaust and carburetors is easy because the cylinders are next to each other
+	- main problem is vibration
+- opposed-twin
+	- cylinders 180 degrees apart
+	- design known as a flat twin or pancake
+	- vibration levels are extremely low as the pistons move in and out together
+	- cylinders intrude on space needed for foot pegs
+- V-twin
+	- vibration levels and torque are high, power output moderate
+- ninety-degree twins
+	- perfect primary balance so vibration levels are low
+	- good torque, is narrow, and has a good look, popular for cruisers
+	- front cylinder may intrude on spare required for the front wheel
+- V-4
+	- practically vibration-free
+	- compact, no longer than a V-twin and barely wider
+	- shoehorning the engine and its peripheral bits into the frame can sometimes compromise maintenance
+- inline transversely-mounted
+	- crankshaft sitting at right angles to the frame
+	- multiple-cylinder engines
+	- more and smaller cylinders mean less vibration and higher rpm, which translates into high housepower
+	- design is excess width
