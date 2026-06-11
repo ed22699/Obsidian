@@ -22,3 +22,4 @@ Status: Reading
 [[Books]]
 key points:
 - [[engine design and basic theory]]
+- [[engine cooling and lubrication]]
