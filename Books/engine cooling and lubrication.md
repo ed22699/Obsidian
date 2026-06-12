@@ -18,3 +18,12 @@ tags:
 - matte finishes are actually better than chrome coverings in regard to engine cooling
 - clean engine works better than a dirty one
 - overheating common when cast-iron used, aluminum alloy was lighter and dissipated heat better
+### Air Cooling
+- requires 4 times as much air than water for the same cooling
+- need to be a little heavier and wider than a liquid cooled model
+### Liquid Cooling
+- quieter
+- don't overheat when stuck in traffic
+- more complex
+	- require a pump, hoses and water passages, radiator and cooling fan
+	- also an expansion tank for overflow, a thermostat and the fluid itself - 50:50 mix of water and antifreeze
