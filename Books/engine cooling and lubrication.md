@@ -27,3 +27,42 @@ tags:
 - more complex
 	- require a pump, hoses and water passages, radiator and cooling fan
 	- also an expansion tank for overflow, a thermostat and the fluid itself - 50:50 mix of water and antifreeze
+- Radiator
+	- designed to dissipate the heat the coolant has absorbed from the engine
+- cooling fan and switch
+	- fan works in conjunction with the radiator
+	- cooling fan is only found on a street bike
+	- prevents overheating in traffic
+	- fan is switched on by a temperature sensor or switch
+	- these fans may come on after a few seconds to a minute of the bike being shut down to prevent the bike from overheating
+		- don't get your fingers caught in it
+- radiator caps and expansion tanks
+	- cap is designed to increase the pressure in the cooling system (boiling point therefore increases)
+	- as the coolant heats up it also expands, further increasing the pressure
+	- when pressure exceeds preset limit a valve inside the cap opens and excess coolant is allowed to flow through a hose connection into a small reservoir called an expansion tank
+	- after engine cools off another valve in the cap is opened by atmospheric pressure, the vacuum from the coolants reduced volume causes the coolant to flow from the expansion tank back to the radiator
+	- expansion tank also removes the air bubbles from the coolant
+		- aerated coolant doesn't work as well as air bubbles act as insulators
+- thermostats
+	- installed between the water-jacket outlet and the radiator
+	- stays closed until the engine reaches operating temperature then wax pellet inside the thermostat expands opening the thermostat valve and coolant flows from the engine to the radiator and back again
+	- if coolant temperature drops off thermostat will close until it again reaches the correct temperature
+- water pumps
+	- pump ensures water is delivered at a uniform rate to the cylinder and head
+	- forces coolant to circulate throughout the entire system
+	- normally the pump is driven by the crankshaft
+	- centrifugal motion created by the pump impeller pulls the coolant in from the bottom of the radiator and then discharges it into the water jacket
+	- water pumps are sometimes built with a small discharge hole
+		- if pump fails internally the coolant will leak out of the hole rather than be pumped back into the engine contaminating the oil
+		- any fluid leak from the hole is a cause for concern, likely means the internal seals have failed and total pump failure is about to occur
+- coolant
+	- pure water works but has disadvantages 
+		- turns into a solid at low temperatures
+		- corrode the various parts of the cooling system
+	- antifreeze is an additive that lowers the freezing point of water
+		- prevents internal engine corrosion
+		- prevents rust and scale from forming in the water passages and the radiator
+		- is highly toxic and tastes sweet
+- water
+	- adding tap water to antifreeze is a bad move as tap water contains a host of impurities that will promote cooling system corrosion
+	- mix antifreeze with distilled or demineralised water 
