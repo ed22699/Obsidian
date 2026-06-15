@@ -66,3 +66,15 @@ tags:
 - water
 	- adding tap water to antifreeze is a bad move as tap water contains a host of impurities that will promote cooling system corrosion
 	- mix antifreeze with distilled or demineralised water 
+	- can be purchased premixed, make sure it is for use in aluminum block engines
+- safety precautions
+	- can be scalded to death if a dumbass with it
+	- never remove a radiator cap when the engine is hot
+		- let it cool down first then investigate, pressure from heat = bad time if you remove that cap
+	- dispose of antifreeze responsibly
+- oil cooling
+	- functions in the same way - convection
+### Engine oil and lubrication
+- basic function of engine oil is to prevent engine's internal rotating, sliding and reciprocating parts from grinding themselves into paste or welding themselves into one large lump
+- most current four-strokes use a wet-sump lubrication system
+	- carry all oil in the crankcase, pumped through a screen or filter and then pressure-fed to components, gravity returns the oil to the sump
