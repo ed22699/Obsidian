@@ -1,22 +1,58 @@
-Year: {{date | format("YYYY")}}
-Authors: {{authors}}
+---
+title: "{{title}}"
+authors: "{{authors}}"
+Year: '{{date | format("YYYY")}}'
+Url: "{{url}}"
+Zotero Link: "{{pdfZoteroLink}}"
+tags:
+---
+### Tags
+{% if tags.length > 0 -%}
+{% for t in tags -%}
+#{{t.tag | replace(" ", "-")}}{% if not loop.last %}, {% endif %}
+{%- endfor %}
+{%- else -%}
+No tags assigned.
+{%- endif %}
 
-Title: {{title}}
-URL: {{url}}
-Zotero Link: {{pdfZoteroLink}}
+### General Notes & Main Standalone Notes
+{% if notes.length > 0 -%}
+{% for n in notes -%}
+#### Main Standalone Note {{loop.index}}
+{{n.note | safe}}
 
-
-
-{% for annotation in annotations -%}
-	{%- if annotation.annotatedText -%}
-	{{annotation.annotatedText}}"{% if annotation.color %} {{annotation.colorCategory}}
-	{{annotation.type | capitalize}} {% else %} {{annotation.type | capitalize}} {% endif %}Page{{annotation.page}}
-	{%- endif %}
-	{%- if annotation.imageRelativePath -%}
-	{%- endif %}
-{% if annotation.comment %}
-{% endif %}
-{% if annotation.allTags %}
-{{annotation.allTags}}
-{% endif %}
 {% endfor -%}
+{%- else -%}
+*No general standalone notes for this paper.*
+{%- endif %}
+
+### PDF Annotations & Text Highlights
+{% if annotations.length > 0 -%}
+{% for annotation in annotations -%}
+  {% if annotation.annotatedText -%}
+- **Highlight:** "{{annotation.annotatedText}}" {% if annotation.page %}(Page {{annotation.page}}){% endif %}
+    {%- if annotation.comment %}
+  - **Comment:** {{annotation.comment}}
+    {% endif %}
+  {% elif annotation.comment -%}
+- **Standalone Note:** {{annotation.comment}} {% if annotation.page %}[(Page {{annotation.page}})](zotero://open-pdf/library/items/{{annotation.attachment.itemKey}}?page){% endif %}
+  {% endif %}
+{% endfor %}
+{%- else -%}
+*No text annotations found in this PDF.*
+{%- endif %}
+
+### Images
+{%- set has_images = false -%}
+{%- for annotation in annotations -%}
+  {%- if annotation.imageRelativePath -%}
+    {%- set has_images = true -%}
+![[{{annotation.imageRelativePath}}]]
+    {%- if annotation.comment -%}
+Comments: {{annotation.comment}}
+    {%- endif %}
+  {%- endif -%}
+{%- endfor -%}
+{%- if not has_images -%}
+*No images found in annotations.*
+{%- endif %}
