@@ -1,8 +1,8 @@
 ---
 title: "Amenity effects of urban facilities on housing prices in China: Accessibility, scarcity, and urban spaces"
-authors: Feng Yuan, Yehua Dennis Wei, Jiawei Wu
-Year: "2020"
-Url: https://linkinghub.elsevier.com/retrieve/pii/S0264275118304700
+authors: "Feng Yuan, Yehua Dennis Wei, Jiawei Wu"
+Year: '2020'
+Url: "https://linkinghub.elsevier.com/retrieve/pii/S0264275118304700"
 ZoteroLink: "[PDF](zotero://select/library/items/HDDTFCRU)"
 tags:
 ---

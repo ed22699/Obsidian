@@ -2,7 +2,6 @@
 aliases:
   - Diss
 tags:
-  - favorite
 ---
 [[Dissertation Canvas.canvas|Dissertation Canvas]]
 ## Predict

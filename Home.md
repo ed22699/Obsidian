@@ -80,7 +80,13 @@ banner_y: 0
 
 	- [[Kanban]]
 
-# Uni
+# PhD
+- 🗄️ Recent file updates
+ `$=dv.list(dv.pages('"PhD"').sort(f=>f.file.mtime.ts, "desc").limit(5).file.link)`
+- 🔖 Tagged:  favorite 
+ `$=dv.list( dv.pages('"PhD"') .where(p => p.tags && p.tags.includes("favorite")) .sort(p => p.file.name, "desc") .limit(4) .file.link );`
+ 
+# Uni Undergrad
 - 🗄️ Recent file updates
  `$=dv.list(dv.pages('"Uni Modules"').sort(f=>f.file.mtime.ts, "desc").limit(5).file.link)`
 - 🔖 Tagged:  favorite 
