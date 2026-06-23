@@ -30,12 +30,12 @@ No tags assigned.
 {% if annotations.length > 0 -%}
 {% for annotation in annotations -%}
   {% if annotation.annotatedText -%}
-- **Highlight:** "{{annotation.annotatedText}}" {% if annotation.page %}(Page {{annotation.page}}){% endif %}
+- **Highlight:** "{{annotation.annotatedText}}" [(Page {{annotation.page}})](zotero://open-pdf/library/items/{{annotation.attachment.itemKey}}?page={{annotation.page}}&annotation={{annotation.id}})
     {%- if annotation.comment %}
   - **Comment:** {{annotation.comment}}
     {% endif %}
   {% elif annotation.comment -%}
-- **Standalone Note:** {{annotation.comment}} {% if annotation.page %}[(Page {{annotation.page}})](zotero://open-pdf/library/items/{{annotation.attachment.itemKey}}?page){% endif %}
+- **Standalone Note:** {{annotation.comment}} {% if annotation.page %}[(Page {{annotation.page}})](zotero://open-pdf/library/items/{{annotation.attachment.itemKey}}?page={{annotation.page}}&annotation={{annotation.id}}){% endif %}
   {% endif %}
 {% endfor %}
 {%- else -%}
@@ -43,13 +43,14 @@ No tags assigned.
 {%- endif %}
 
 ### Images
-{%- set has_images = false -%}
-{%- for annotation in annotations -%}
-  {%- if annotation.imageRelativePath -%}
-    {%- set has_images = true -%}
+
+{% set has_images = false -%}
+{% for annotation in annotations -%}
+  {% if annotation.imageRelativePath -%}
+    {% set has_images = true -%}
 ![[{{annotation.imageRelativePath}}]]
     {%- if annotation.comment -%}
-Comments: {{annotation.comment}}
+- **Comment**: {{annotation.comment}}
     {%- endif %}
   {%- endif -%}
 {%- endfor -%}
