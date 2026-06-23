@@ -6,13 +6,11 @@ kanban-plugin: board
 
 ## Backlog
 
-- [ ] Create notes for [[The Cold Outbound Playbook]] #Habit
-- [ ] Create notes for [[I am not a failure. Lessons I've learned from six failed startup attempts]] #Habit
-- [ ] Update notes on salt #Habit
 
 
 ## To Do
 
+- [ ] Test @{2026-06-22} #Personal #Uni
 
 
 ## In Progress
@@ -22,6 +20,15 @@ kanban-plugin: board
 ## Complete
 
 **Complete**
+
+
+***
+
+## Archive
+
+- [ ] Create notes for [[The Cold Outbound Playbook]] #Habit
+- [ ] Create notes for [[I am not a failure. Lessons I've learned from six failed startup attempts]] #Habit
+- [ ] Update notes on salt #Habit
 - [x] Add noise for when timer is complete #Personal @{2025-06-02}
 - [x] Make meeting notes @{2025-02-14} #Uni
 - [x] Fix notifications with pausing @{2025-06-23} #Personal
@@ -55,9 +62,6 @@ kanban-plugin: board
 - [x] Data Science Notes week 2 #Uni @{2025-01-21}
 - [x] Meeting notes #Uni @{2025-01-21}
 - [x] Complete Design document #Habit @{2025-01-13}
-
-
-
 
 %% kanban:settings
 ```

@@ -8,29 +8,6 @@ banner_y: 0
 <div class="title" style="color:white">HOME</div>
 
 # Trackers
-- 👨‍💻 Code
-	- ```tracker
-	searchType: frontmatter, frontmatter
-	searchTarget: date, HoursCoded
-	xDataset: 0
-	fixedScale: 0.7
-	folder: Journal/Weekly Notes
-	line:
-		fillGap: true
-		title: Personal Project Weekly Coding Hours
-		yAxisLabel: Hours
-		yMin: 0
-		yAxisTickInterval: 1
-		xAxisTickInterval: 1w
-
-
-	- ```tracker
-	searchType: frontmatter, frontmatter
-	searchTarget: date, HoursCoded
-	xDataset: 0
-	folder: Journal/Weekly Notes
-	summary:
-		template: "Maximum: {{max()}} hours\nAverage: {{average()}} hours"
 - 📚 Reading
 	- ```tracker
 	searchType: frontmatter
