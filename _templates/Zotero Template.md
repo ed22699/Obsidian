@@ -3,7 +3,7 @@ title: "{{title}}"
 authors: "{{authors}}"
 Year: '{{date | format("YYYY")}}'
 Url: "{{url}}"
-Zotero Link: "{{pdfZoteroLink}}"
+ZoteroLink: "{{pdfZoteroLink}}"
 tags:
 ---
 ### Tags

@@ -1,9 +1,9 @@
 ---
-title: "Finding Moments in Video Collections Using Natural Language"
-authors: "Victor Escorcia, Mattia Soldan, Josef Sivic, Bernard Ghanem, Bryan Russell"
-Year: '2022'
-Url: "http://arxiv.org/abs/1907.12763"
-Zotero Link: "[Full Text PDF](zotero://select/library/items/HX8TAJID)"
+title: Finding Moments in Video Collections Using Natural Language
+authors: Victor Escorcia, Mattia Soldan, Josef Sivic, Bernard Ghanem, Bryan Russell
+Year: "2022"
+Url: http://arxiv.org/abs/1907.12763
+ZoteroLink: "[Full Text PDF](zotero://select/library/items/HX8TAJID)"
 tags:
 ---
 ### Tags
