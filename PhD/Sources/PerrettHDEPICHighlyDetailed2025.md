@@ -7,6 +7,7 @@ ZoteroLink: "[Full Text PDF](zotero://select/library/items/I25UGWAD)"
 tags:
 ---
 ### Tags
+#hd_epic
 
 
 ### General Notes & Main Standalone Notes
