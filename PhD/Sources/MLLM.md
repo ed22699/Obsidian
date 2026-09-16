@@ -1,0 +1,2 @@
+- Multimodal large language model
+- combines traditional large language models with the ability to process and reason across multiple data types or modalities, such as images, video, and audio

@@ -53,7 +53,7 @@ tags:
 - after finding ambiguous events it finds a query image to uniquely ground the target event
     
     - employ pre-trained image grounding model to localize the subject using the text query
-    - Verify using a MLLM which scores each candidate crop based on:
+    - Verify using a [[MLLM]] which scores each candidate crop based on:
         
         - consistency
         - image clarity
@@ -209,7 +209,7 @@ tags:
   
 - **Highlight:** "pretrained image grounding model" [(Page 4)](zotero://open-pdf/library/items/SY63SRAL?page=4&annotation=9N4EYQTH)
   
-- **Highlight:** "MLLM [1] then acts as a verifier, scoring each candidate crop based on subject consistency, image clarity, and the visibility of identity features" [(Page 4)](zotero://open-pdf/library/items/SY63SRAL?page=4&annotation=9I7CAKX6)
+- **Highlight:** "[[MLLM]] [1] then acts as a verifier, scoring each candidate crop based on subject consistency, image clarity, and the visibility of identity features" [(Page 4)](zotero://open-pdf/library/items/SY63SRAL?page=4&annotation=9I7CAKX6)
   
 - **Highlight:** "highest-scoring image is selected as the query." [(Page 4)](zotero://open-pdf/library/items/SY63SRAL?page=4&annotation=5NS4XVHZ)
   
