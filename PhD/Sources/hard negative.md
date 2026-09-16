@@ -1,0 +1,1 @@
+- training example that belongs to a different class than your target (a negative sample), but is so similar or confusable with the target that the model easily mistakes it for a positive one

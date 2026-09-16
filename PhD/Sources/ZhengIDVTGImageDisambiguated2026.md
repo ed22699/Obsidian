@@ -7,7 +7,8 @@ ZoteroLink: "[PDF](zotero://select/library/items/SY63SRAL)"
 tags:
 ---
 ### Tags
-#temporal_grounding
+#temporal_grounding #MLLM
+
 
 ### General Notes & Main Standalone Notes
 #### Main Standalone Note 1
