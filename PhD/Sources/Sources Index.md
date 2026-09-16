@@ -9,3 +9,4 @@ From "PhD/Sources"
 Where file != this.file
 ```
 
+- hard negatives are commonly used to strengthen cross-model alignment by providing confusing mismatched samples - MARS
