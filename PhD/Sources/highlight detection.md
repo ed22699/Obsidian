@@ -1,1 +1,2 @@
 - automated process that identifies, localizes, and scores the most engaging, significant, or highlight-worthy segments within a video
+- [[saliency scores]] are used to determine the importance of video segments for highlight detection in text-guided highlights in papers - [[FlanaganMomentUntruth]]
