@@ -1,0 +1,3 @@
+- aims to detect text-guided highlights for a given video - [[FlanaganMomentUntruth]]
+- saliency scores are much more discriminative between positive and negative than indicator scores - [[FlanaganMomentUntruth]]
+- pseudo-saliency scores used for datasets without ground truth human-annotated saliency scores are not as informative, which results in weaker negative rejection performance particularly in the in-domain case - [[FlanaganMomentUntruth]]

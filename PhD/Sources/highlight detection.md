@@ -1,0 +1,1 @@
+- automated process that identifies, localizes, and scores the most engaging, significant, or highlight-worthy segments within a video
